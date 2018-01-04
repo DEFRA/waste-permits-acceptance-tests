@@ -1,0 +1,37 @@
+{
+  "name": "wastepermits-cucumberjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "devDependencies": {
+    "app-root-dir": "^1.0.2",
+    "chai": "^3.5.0",
+    "chromedriver": "^2.27.2",
+    "cucumber": "^1.3.1",
+    "cucumber-html-reporter": "^0.3.7",
+    "eslint": "^3.13.1",
+    "geckodriver": "^1.3.0",
+    "iedriver": "^3.0.0",
+    "jsel": "^1.1.4",
+    "mocha": "^4.1.0",
+    "mock-http-server": "^0.2.0",
+    "nock": "^9.1.5",
+    "node-mocks-http": "^1.5.6",
+    "selenium-webdriver": "^3.0.1",
+    "xmlhttprequest": "^1.8.0"
+  },
+  "scripts": {
+    "eslint": "eslint cucumberjs",
+    "eslint:fix": "eslint --fix cucumberjs",
+    "test:chrome-desktop": "node node_modules/cucumber/bin/cucumber.js cucumberjs/features -p chrome-desktop -f json:cucumberjs/features/reports/cucumber_report_desktop.json",
+    "test:chrome-phone": "node --harmony-async-await node_modules/cucumber/bin/cucumber.js cucumberjs/features -p chrome-phone -f json:cucumberjs/features/reports/cucumber_report_chrome_phone.json",
+    "test:chrome-tablet": "node --harmony-async-await node_modules/cucumber/bin/cucumber.js cucumberjs/features -p chrome-tablet -f json:cucumberjs/features/reports/cucumber_report_chrome_tablet.json",
+    "test:firefox-desktop": "node --harmony-async-await node_modules/cucumber/bin/cucumber.js cucumberjs/features -p firefox-desktop -f json:cucumberjs/features/reports/cucumber_report_firefox_desktop.json",
+    "test:ie-desktop": "node --harmony-async-await node_modules/cucumber/bin/cucumber.js cucumberjs/features -p ie-desktop -f json:cucumberjs/features/reports/cucumber_report_ie_desktop.json"
+  },
+  "author": "Amruta Bendre",
+  "license": "ISC"
+}
