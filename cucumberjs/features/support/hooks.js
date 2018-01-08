@@ -8,7 +8,6 @@ let frontEndVersion;
 let backEndVersion;
 
 module.exports = function () {
-
 	this.Before((scenario) => {
 		scenario.attach(getWorldParameters().platform);
 		nock.disableNetConnect();
@@ -21,12 +20,15 @@ module.exports = function () {
 
 		//console.log(scope.isDone());
 		console.log(nock.isDone());
+
+		//Empty reports folder
+
 	});
 
 	this.After(async () => {
 		console.log(nock.isDone());
 		// const getBrowserHandle = await driver.getBrowser();
-		return driver.quitBrowser();
+		//return driver.quitBrowser();
 
 	});
 

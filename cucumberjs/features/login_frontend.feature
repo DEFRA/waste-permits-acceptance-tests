@@ -5,5 +5,7 @@ Background:
   #And the app is started after being configured
 
  @desktop
+ @phone
+ @tablet
   Scenario: Login Waste Permits Frontend
   Given the application has been launched

@@ -4,7 +4,7 @@
       {
         "id": "login-waste-permits-backend;login-waste-permits-backend",
         "keyword": "Scenario",
-        "line": 8,
+        "line": 10,
         "name": "Login Waste Permits Backend",
         "steps": [
           {
@@ -12,17 +12,17 @@
             "keyword": "Before ",
             "result": {
               "status": "passed",
-              "duration": 5191869
+              "duration": 5750274
             },
             "hidden": true,
             "embeddings": [
               {
-                "data": "Y2hyb21lLWRlc2t0b3A=",
+                "data": "ZmlyZWZveC1kZXNrdG9w",
                 "mime_type": "text/plain"
               }
             ],
             "match": {
-              "location": "/home/amruta/Desktop/cucumberjs/cucumberjs/features/support/hooks.js:12"
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/support/hooks.js:11"
             }
           },
           {
@@ -31,11 +31,11 @@
             "name": "the CRM application has been launched",
             "result": {
               "status": "passed",
-              "duration": 2698539362
+              "duration": 4762830408
             },
-            "line": 9,
+            "line": 11,
             "match": {
-              "location": "/home/amruta/Desktop/cucumberjs/cucumberjs/features/step_definitions/application-steps.js:11"
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/application-steps.js:11"
             }
           },
           {
@@ -43,11 +43,11 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 67487390
+              "duration": 581931
             },
             "hidden": true,
             "match": {
-              "location": "/home/amruta/Desktop/cucumberjs/cucumberjs/features/support/hooks.js:26"
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/support/hooks.js:28"
             }
           }
         ],
@@ -55,6 +55,14 @@
           {
             "name": "@desktop",
             "line": 7
+          },
+          {
+            "name": "@phone",
+            "line": 8
+          },
+          {
+            "name": "@tablet",
+            "line": 9
           }
         ],
         "type": "scenario"
@@ -65,14 +73,14 @@
     "line": 1,
     "name": "Login Waste Permits Backend",
     "tags": [],
-    "uri": "/home/amruta/Desktop/cucumberjs/cucumberjs/features/login_backendCRM.feature"
+    "uri": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/login_backendCRM.feature"
   },
   {
     "elements": [
       {
         "id": "login-waste-permits-frontend;login-waste-permits-frontend",
         "keyword": "Scenario",
-        "line": 8,
+        "line": 10,
         "name": "Login Waste Permits Frontend",
         "steps": [
           {
@@ -80,17 +88,17 @@
             "keyword": "Before ",
             "result": {
               "status": "passed",
-              "duration": 875821
+              "duration": 703961
             },
             "hidden": true,
             "embeddings": [
               {
-                "data": "Y2hyb21lLWRlc2t0b3A=",
+                "data": "ZmlyZWZveC1kZXNrdG9w",
                 "mime_type": "text/plain"
               }
             ],
             "match": {
-              "location": "/home/amruta/Desktop/cucumberjs/cucumberjs/features/support/hooks.js:12"
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/support/hooks.js:11"
             }
           },
           {
@@ -99,11 +107,11 @@
             "name": "the application has been launched",
             "result": {
               "status": "passed",
-              "duration": 1168725761
+              "duration": 1807637597
             },
-            "line": 9,
+            "line": 11,
             "match": {
-              "location": "/home/amruta/Desktop/cucumberjs/cucumberjs/features/step_definitions/application-steps.js:6"
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/application-steps.js:6"
             }
           },
           {
@@ -111,11 +119,11 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 58755663
+              "duration": 281432
             },
             "hidden": true,
             "match": {
-              "location": "/home/amruta/Desktop/cucumberjs/cucumberjs/features/support/hooks.js:26"
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/support/hooks.js:28"
             }
           }
         ],
@@ -123,6 +131,14 @@
           {
             "name": "@desktop",
             "line": 7
+          },
+          {
+            "name": "@phone",
+            "line": 8
+          },
+          {
+            "name": "@tablet",
+            "line": 9
           }
         ],
         "type": "scenario"
@@ -133,6 +149,6 @@
     "line": 1,
     "name": "Login Waste Permits Frontend",
     "tags": [],
-    "uri": "/home/amruta/Desktop/cucumberjs/cucumberjs/features/login_frontend.feature"
+    "uri": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/login_frontend.feature"
   }
 ]

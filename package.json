@@ -27,11 +27,10 @@
     "eslint": "eslint cucumberjs",
     "eslint:fix": "eslint --fix cucumberjs",
     "test:chrome-desktop": "node node_modules/cucumber/bin/cucumber.js cucumberjs/features -p chrome-desktop -f json:cucumberjs/features/reports/cucumber_report_desktop.json",
-    "test:chrome-phone": "node --harmony-async-await node_modules/cucumber/bin/cucumber.js cucumberjs/features -p chrome-phone -f json:cucumberjs/features/reports/cucumber_report_chrome_phone.json",
-    "test:chrome-tablet": "node --harmony-async-await node_modules/cucumber/bin/cucumber.js cucumberjs/features -p chrome-tablet -f json:cucumberjs/features/reports/cucumber_report_chrome_tablet.json",
-    "test:firefox-desktop": "node --harmony-async-await node_modules/cucumber/bin/cucumber.js cucumberjs/features -p firefox-desktop -f json:cucumberjs/features/reports/cucumber_report_firefox_desktop.json",
-    "test:ie-desktop": "node --harmony-async-await node_modules/cucumber/bin/cucumber.js cucumberjs/features -p ie-desktop -f json:cucumberjs/features/reports/cucumber_report_ie_desktop.json"
+    "test:chrome-phone": "node node_modules/cucumber/bin/cucumber.js cucumberjs/features -p chrome-phone -f json:cucumberjs/features/reports/cucumber_report_chrome_phone.json",
+    "test:chrome-tablet": "node node_modules/cucumber/bin/cucumber.js cucumberjs/features -p chrome-tablet -f json:cucumberjs/features/reports/cucumber_report_chrome_tablet.json",
+    "test:firefox-desktop": "node node_modules/cucumber/bin/cucumber.js cucumberjs/features -p firefox-desktop -f json:cucumberjs/features/reports/cucumber_report_firefox_desktop.json",
+    "test:ie-desktop": "node node_modules/cucumber/bin/cucumber.js cucumberjs/features -p ie-desktop -f json:cucumberjs/features/reports/cucumber_report_ie_desktop.json"
   },
-  "author": "Amruta Bendre",
   "license": "ISC"
 }
