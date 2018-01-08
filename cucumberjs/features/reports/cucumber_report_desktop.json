@@ -1,0 +1,134 @@
+[
+  {
+    "elements": [
+      {
+        "id": "we-832-upload-technical-competence-evidence;as-a-user-when-i-click-on-the-upload-technical-management-qualifications-page,-then-the-technical-qualifications-selection-page-should-be-displayed",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "As a user when I click on the Upload technical management qualifications page, then the Technical qualifications selection page should be displayed",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Before ",
+            "result": {
+              "status": "passed",
+              "duration": 3129365
+            },
+            "hidden": true,
+            "embeddings": [
+              {
+                "data": "Y2hyb21lLWRlc2t0b3AtdGVzdA==",
+                "mime_type": "text/plain"
+              }
+            ],
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/support/hooks.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "the application has been launched",
+            "result": {
+              "status": "passed",
+              "duration": 1576197676
+            },
+            "line": 4,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/application-steps.js:6"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I am on \"Apply for a standard rules waste permit\" page",
+            "result": {
+              "status": "passed",
+              "duration": 41520557
+            },
+            "line": 18,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I select \"Start a new application\" waste permit application page",
+            "result": {
+              "status": "passed",
+              "duration": 18885126
+            },
+            "line": 19,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:12"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click on \"Continue\" button",
+            "result": {
+              "status": "passed",
+              "duration": 56767508
+            },
+            "line": 20,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:26"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I am on \"Select a permit\" page",
+            "result": {
+              "status": "passed",
+              "duration": 2613012301
+            },
+            "line": 21,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 345156
+            },
+            "hidden": true,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/support/hooks.js:28"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@desktop",
+            "line": 13
+          },
+          {
+            "name": "@phone",
+            "line": 14
+          },
+          {
+            "name": "@tablet",
+            "line": 15
+          },
+          {
+            "name": "@ui",
+            "line": 16
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "we-832-upload-technical-competence-evidence",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "WE-832 Upload technical competence evidence",
+    "tags": [],
+    "uri": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/upload_technical_competence_evidence.feature"
+  }
+]

@@ -1,4 +1,5 @@
 const Application = require("./application").Application;
+const NewApplication = require("./new-application").NewApplication;
 const Fakes = require("./fakes").Fakes;
 
 class Factory {
@@ -8,6 +9,7 @@ class Factory {
 		this.testdata = testdata;
 		this.pages = {
 			application: Application,
+			newapplication: NewApplication,
 			fakes: Fakes
 		};
 	}

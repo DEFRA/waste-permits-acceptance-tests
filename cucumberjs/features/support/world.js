@@ -15,6 +15,7 @@ module.exports.World = function World(parameters) {
 	const browser = driver.getBrowser(parameters);
 	this.testdata = new TestData(assetsJson);
 	this.pageFactory = new Factory(browser, this.testdata);
+	this.newApplication = this.pageFactory.create("newapplication");
 	this.parameters = parameters;
 
 	// Create page objects

@@ -1,0 +1,154 @@
+[
+  {
+    "elements": [
+      {
+        "id": "login-waste-permits-backend;login-waste-permits-backend",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Login Waste Permits Backend",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Before ",
+            "result": {
+              "status": "passed",
+              "duration": 1785327
+            },
+            "hidden": true,
+            "embeddings": [
+              {
+                "data": "Y2hyb21lLXBob25lLWRldg==",
+                "mime_type": "text/plain"
+              }
+            ],
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/support/hooks.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "the CRM application has been launched",
+            "result": {
+              "status": "passed",
+              "duration": 1996012463
+            },
+            "line": 11,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/application-steps.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 55781471
+            },
+            "hidden": true,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/support/hooks.js:28"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@desktop",
+            "line": 7
+          },
+          {
+            "name": "@phone",
+            "line": 8
+          },
+          {
+            "name": "@tablet",
+            "line": 9
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-waste-permits-backend",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Login Waste Permits Backend",
+    "tags": [],
+    "uri": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/login_backendCRM.feature"
+  },
+  {
+    "elements": [
+      {
+        "id": "login-waste-permits-frontend;login-waste-permits-frontend",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Login Waste Permits Frontend",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Before ",
+            "result": {
+              "status": "passed",
+              "duration": 185817
+            },
+            "hidden": true,
+            "embeddings": [
+              {
+                "data": "Y2hyb21lLXBob25lLWRldg==",
+                "mime_type": "text/plain"
+              }
+            ],
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/support/hooks.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "the application has been launched",
+            "result": {
+              "status": "passed",
+              "duration": 719529606
+            },
+            "line": 11,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/application-steps.js:6"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 53012736
+            },
+            "hidden": true,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/support/hooks.js:28"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@desktop",
+            "line": 7
+          },
+          {
+            "name": "@phone",
+            "line": 8
+          },
+          {
+            "name": "@tablet",
+            "line": 9
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-waste-permits-frontend",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Login Waste Permits Frontend",
+    "tags": [],
+    "uri": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/login_frontend.feature"
+  }
+]
