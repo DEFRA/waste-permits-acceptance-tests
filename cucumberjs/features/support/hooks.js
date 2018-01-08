@@ -28,7 +28,7 @@ module.exports = function () {
 	this.After(async () => {
 		console.log(nock.isDone());
 		// const getBrowserHandle = await driver.getBrowser();
-		//return driver.quitBrowser();
+		return driver.quitBrowser();
 
 	});
 
