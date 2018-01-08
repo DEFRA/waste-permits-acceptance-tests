@@ -10,16 +10,16 @@ let backEndVersion;
 module.exports = function () {
 	this.Before((scenario) => {
 		scenario.attach(getWorldParameters().platform);
-		nock.disableNetConnect();
-		nock.enableNetConnect("127.0.0.1");
-		const scope = nock("http://www.bbc.co.uk")
-			.post("/qsp/gateway/http/js/signonService/signonByUser")
-			.reply(200, {
-				data: "hello world this is just a test"
-			});
+		// nock.disableNetConnect();
+		// nock.enableNetConnect("127.0.0.1");
+		// const scope = nock("http://www.bbc.co.uk")
+		// 	.post("/qsp/gateway/http/js/signonService/signonByUser")
+		// 	.reply(200, {
+		// 		data: "hello world this is just a test"
+		// 	});
 
-		//console.log(scope.isDone());
-		console.log(nock.isDone());
+		// //console.log(scope.isDone());
+		// console.log(nock.isDone());
 
 		//Empty reports folder
 
