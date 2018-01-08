@@ -2,17 +2,23 @@ const webdriver = require("selenium-webdriver");
 const appRootDir = require("app-root-dir").get();
 const encode = require("./chrome-util").base64EncodeCrx;
 const config = require("../../../config").config;
+const configCRM = require("../../../configCRM").configCRM;
 
 require("chromedriver");
-//require("geckodriver");
+require("geckodriver");
 require("iedriver");
 
 const PLATFORMS = {
-	CHROME_PHONE: "chrome-phone",
-	CHROME_DESKTOP: "chrome-desktop",
-	CHROME_TABLET: "chrome-tablet",
-	IE_DESKTOP: "ie-desktop",
-	FIREFOX_DESKTOP: "firefox-desktop"
+	CHROME_PHONE_DEV: "chrome-phone-dev",
+	CHROME_PHONE_TEST: "chrome-phone-test",
+	CHROME_DESKTOP_DEV: "chrome-desktop-dev",
+	CHROME_DESKTOP_TEST: "chrome-desktop-test",
+	CHROME_TABLET_DEV: "chrome-tablet-dev",
+	CHROME_TABLET_TEST: "chrome-tablet-test",
+	IE_DESKTOP_DEV: "ie-desktop-dev",
+	IE_DESKTOP_TEST: "ie-desktop-test",
+	FIREFOX_DESKTOP_DEV: "firefox-desktop-dev",
+	FIREFOX_DESKTOP_TEST: "firefox-desktop-test"
 };
 
 class Driver {
@@ -75,20 +81,58 @@ class Driver {
 		let spec;
 
 		switch (platform) {
-			case PLATFORMS.CHROME_PHONE:
+			case PLATFORMS.CHROME_PHONE_DEV:
 				spec = this.getChromePhoneSpec(width, height);
+				config.appUrl = config.appUrlDev;
+				configCRM.appUrlCRM = configCRM.appUrlCRMDevMaster;
 				break;
-			case PLATFORMS.CHROME_DESKTOP:
+			case PLATFORMS.CHROME_PHONE_TEST:
+				spec = this.getChromePhoneSpec(width, height);
+				config.appUrl = config.appUrlTest;
+				configCRM.appUrlCRM = configCRM.appUrlCRMTest;
+				break;
+			case PLATFORMS.CHROME_DESKTOP_DEV:
 				spec = this.getChromeDesktopSpec(width, height);
+				config.appUrl = config.appUrlDev;
+				configCRM.appUrlCRM = configCRM.appUrlCRMDevMaster;
 				break;
-			case PLATFORMS.CHROME_TABLET:
+			case PLATFORMS.CHROME_DESKTOP_TEST:
+				spec = this.getChromeDesktopSpec(width, height);
+				config.appUrl = config.appUrlTest;
+				configCRM.appUrlCRM = configCRM.appUrlCRMTest;
+				break;
+			case PLATFORMS.CHROME_TABLET_DEV:
 				spec = this.getChromeTabletSpec(width, height);
+				config.appUrl = config.appUrlDev;
+				configCRM.appUrlCRM = configCRM.appUrlCRMDevMaster;
 				break;
-			case PLATFORMS.FIREFOX_DESKTOP:
+			case PLATFORMS.CHROME_TABLET_TEST:
+				spec = this.getChromeTabletSpec(width, height);
+				config.appUrl = config.appUrlTest;
+				configCRM.appUrlCRM = configCRM.appUrlCRMTest;
+				break;
+			case PLATFORMS.FIREFOX_DESKTOP_DEV:
 				spec = this.getFirefoxDesktopSpec();
+				config.appUrl = config.appUrlDev;
+				configCRM.appUrlCRM = configCRM.appUrlCRMDevMaster;
+				config.appUrl = config.appUrlTest;
+				configCRM.appUrlCRM = configCRM.appUrlCRMTest;
 				break;
-			case PLATFORMS.IE_DESKTOP:
+			case PLATFORMS.FIREFOX_DESKTOP_TEST:
+				spec = this.getFirefoxDesktopSpec();
+				config.appUrl = config.appUrlTest;
+				configCRM.appUrlCRM = configCRM.appUrlCRMTest;
+				break;
+			case PLATFORMS.IE_DESKTOP_DEV:
 				spec = this.getIeDesktopSpec();
+				config.appUrl = config.appUrlDev;
+				configCRM.appUrlCRM = configCRM.appUrlCRMDevMaster;
+				break;
+			case PLATFORMS.IE_DESKTOP_TEST:
+				spec = this.getIeDesktopSpec();
+				config.appUrl = config.appUrlTest;
+				configCRM.appUrlCRM = configCRM.appUrlCRMTest;
+				break;
 		}
 		return spec;
 	}
@@ -96,13 +140,23 @@ class Driver {
 	getBrowser(parameters) {
 		if (!this.browser) {
 			switch (parameters.platform) {
-				case PLATFORMS.CHROME_PHONE:
-				case PLATFORMS.CHROME_DESKTOP:
-				case PLATFORMS.CHROME_TABLET:
+				case PLATFORMS.CHROME_PHONE_DEV:
+				case PLATFORMS.CHROME_PHONE_TEST:
+				case PLATFORMS.CHROME_DESKTOP_TEST:
+				case PLATFORMS.CHROME_DESKTOP_DEV:
+				case PLATFORMS.CHROME_TABLET_TEST:
 					this.browser = new webdriver.Builder().withCapabilities(this.getDriverSpec(parameters.platform, parameters.width, parameters.height)).build();
 					break;
-				case PLATFORMS.FIREFOX_DESKTOP:
-				case PLATFORMS.IE_DESKTOP:
+				case PLATFORMS.CHROME_TABLET_DEV:
+					this.browser = new webdriver.Builder().withCapabilities(this.getDriverSpec(parameters.platform, parameters.width, parameters.height)).build();
+					break;
+				case PLATFORMS.FIREFOX_DESKTOP_DEV:
+				case PLATFORMS.FIREFOX_DESKTOP_TEST:
+				case PLATFORMS.IE_DESKTOP_TEST:
+					this.browser = new webdriver.Builder().withCapabilities(this.getDriverSpec(parameters.platform)).build();
+					this.browser.manage().window().setSize(parameters.width, parameters.height);
+					break;
+				case PLATFORMS.IE_DESKTOP_DEV:
 					this.browser = new webdriver.Builder().withCapabilities(this.getDriverSpec(parameters.platform)).build();
 					this.browser.manage().window().setSize(parameters.width, parameters.height);
 					break;

@@ -28,11 +28,16 @@
   "scripts": {
     "eslint": "eslint cucumberjs",
     "eslint:fix": "eslint --fix cucumberjs",
-    "test:chrome-desktop": "node node_modules/cucumber/bin/cucumber.js cucumberjs/features -p chrome-desktop -f json:cucumberjs/features/reports/cucumber_report_desktop.json",
-    "test:chrome-phone": "node node_modules/cucumber/bin/cucumber.js cucumberjs/features -p chrome-phone -f json:cucumberjs/features/reports/cucumber_report_chrome_phone.json",
-    "test:chrome-tablet": "node node_modules/cucumber/bin/cucumber.js cucumberjs/features -p chrome-tablet -f json:cucumberjs/features/reports/cucumber_report_chrome_tablet.json",
-    "test:firefox-desktop": "node node_modules/cucumber/bin/cucumber.js cucumberjs/features -p firefox-desktop -f json:cucumberjs/features/reports/cucumber_report_firefox_desktop.json",
-    "test:ie-desktop": "node node_modules/cucumber/bin/cucumber.js cucumberjs/features -p ie-desktop -f json:cucumberjs/features/reports/cucumber_report_ie_desktop.json"
+    "test:chrome-desktop-dev": "node node_modules/cucumber/bin/cucumber.js cucumberjs/features -p chrome-desktop-dev -f json:cucumberjs/features/reports/cucumber_report_desktop.json",
+    "test:chrome-desktop-test": "node node_modules/cucumber/bin/cucumber.js cucumberjs/features -p chrome-desktop-test -f json:cucumberjs/features/reports/cucumber_report_desktop.json",
+    "test:chrome-phone-dev": "node node_modules/cucumber/bin/cucumber.js cucumberjs/features -p chrome-phone-dev -f json:cucumberjs/features/reports/cucumber_report_chrome_phone.json",
+    "test:chrome-phone-test": "node node_modules/cucumber/bin/cucumber.js cucumberjs/features -p chrome-phone-test -f json:cucumberjs/features/reports/cucumber_report_chrome_phone.json",
+    "test:chrome-tablet-dev": "node node_modules/cucumber/bin/cucumber.js cucumberjs/features -p chrome-tablet-dev -f json:cucumberjs/features/reports/cucumber_report_chrome_tablet.json",
+    "test:chrome-tablet-test": "node node_modules/cucumber/bin/cucumber.js cucumberjs/features -p chrome-tablet-test -f json:cucumberjs/features/reports/cucumber_report_chrome_tablet.json",
+    "test:firefox-desktop-dev": "node node_modules/cucumber/bin/cucumber.js cucumberjs/features -p firefox-desktop-dev -f json:cucumberjs/features/reports/cucumber_report_firefox_desktop.json",
+    "test:firefox-desktop-test": "node node_modules/cucumber/bin/cucumber.js cucumberjs/features -p firefox-desktop-test -f json:cucumberjs/features/reports/cucumber_report_firefox_desktop.json",
+    "test:ie-desktop-dev": "node node_modules/cucumber/bin/cucumber.js cucumberjs/features -p ie-desktop-dev -f json:cucumberjs/features/reports/cucumber_report_ie_desktop.json",
+    "test:ie-desktop-test": "node node_modules/cucumber/bin/cucumber.js cucumberjs/features -p ie-desktop-test -f json:cucumberjs/features/reports/cucumber_report_ie_desktop.json"
   },
   "license": "ISC"
 }
