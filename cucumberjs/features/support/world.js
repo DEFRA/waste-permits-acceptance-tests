@@ -16,6 +16,9 @@ module.exports.World = function World(parameters) {
 	this.testdata = new TestData(assetsJson);
 	this.pageFactory = new Factory(browser, this.testdata);
 	this.newApplication = this.pageFactory.create("newapplication");
+	this.selectPermit = this.pageFactory.create("selectpermit");
+	this.taskList = this.pageFactory.create("tasklist");
+	this.uploadTechCompetency = this.pageFactory.create("uploadtechcompetency")
 	this.parameters = parameters;
 
 	// Create page objects

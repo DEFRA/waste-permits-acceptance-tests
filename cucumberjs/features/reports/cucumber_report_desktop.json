@@ -12,7 +12,7 @@
             "keyword": "Before ",
             "result": {
               "status": "passed",
-              "duration": 3129365
+              "duration": 3892958
             },
             "hidden": true,
             "embeddings": [
@@ -31,7 +31,7 @@
             "name": "the application has been launched",
             "result": {
               "status": "passed",
-              "duration": 1576197676
+              "duration": 2156160816
             },
             "line": 4,
             "match": {
@@ -41,10 +41,10 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "name": "I am on \"Apply for a standard rules waste permit\" page",
+            "name": "I am on the \"Apply for a standard rules waste permit\" page",
             "result": {
               "status": "passed",
-              "duration": 41520557
+              "duration": 35397617
             },
             "line": 18,
             "match": {
@@ -57,11 +57,11 @@
             "name": "I select \"Start a new application\" waste permit application page",
             "result": {
               "status": "passed",
-              "duration": 18885126
+              "duration": 30906708
             },
             "line": 19,
             "match": {
-              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:12"
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:11"
             }
           },
           {
@@ -70,20 +70,20 @@
             "name": "I click on \"Continue\" button",
             "result": {
               "status": "passed",
-              "duration": 56767508
+              "duration": 2037599159
             },
             "line": 20,
             "match": {
-              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:26"
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:25"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "name": "I am on \"Select a permit\" page",
+            "name": "I am on the \"Select a permit\" page",
             "result": {
               "status": "passed",
-              "duration": 2613012301
+              "duration": 42616233
             },
             "line": 21,
             "match": {
@@ -92,10 +92,118 @@
           },
           {
             "arguments": [],
+            "keyword": "And ",
+            "name": "I select a permit \"SR2010-No-4\"",
+            "result": {
+              "status": "passed",
+              "duration": 36179031
+            },
+            "line": 22,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/select-permit-steps.js:9"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click on \"Continue\" button",
+            "result": {
+              "status": "passed",
+              "duration": 2833503505
+            },
+            "line": 23,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:25"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I am on the Task list page",
+            "result": {
+              "status": "passed",
+              "duration": 70659397
+            },
+            "line": 24,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/task-list-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I click on the \"Upload technical management qualifications\" link",
+            "result": {
+              "status": "passed",
+              "duration": 31227885
+            },
+            "line": 25,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/task-list-steps.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I am on the \"Which qualification does the person providing technical management have?\" page",
+            "result": {
+              "status": "passed",
+              "duration": 738703555
+            },
+            "line": 26,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:7"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "options"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "WAMITAB qualification"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Registered on a course - grace period"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Deemed competence"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "ESA/EU skills"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "name": "following are the options on the the technical qualifications page:",
+            "result": {
+              "status": "passed",
+              "duration": 739341
+            },
+            "line": 27,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/upload-technical-competence-evidence-steps.js:9"
+            }
+          },
+          {
+            "arguments": [],
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 345156
+              "duration": 543469
             },
             "hidden": true,
             "match": {

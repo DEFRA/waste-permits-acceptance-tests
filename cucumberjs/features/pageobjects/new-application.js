@@ -22,7 +22,7 @@ class NewApplication {
     }
 
     continueButton() {
-        return this.browser.wait(until.elementLocated(By.id("submit-button")), 5 * 2000);
+        return this.browser.wait(until.elementLocated(By.id("submit-button")), 5 * 8000);
     }
 
 

@@ -4,8 +4,7 @@ module.exports = function () {
 
     this.World = World;
 
-    this.defineStep(/^I am on "(.*?)" page$/, async function (title) {
-        console.log(title);
+    this.defineStep(/^I am on the "(.*?)" page$/, async function (title) {
         await this.newApplication.waitUntilLoaded(title);
     });
 
@@ -27,7 +26,7 @@ module.exports = function () {
         switch (button) {
             case "Continue":
                 const continueButton = await this.newApplication.continueButton();
-                continueButton.click();
+                await continueButton.click();
                 break;
             default: break;
         }
