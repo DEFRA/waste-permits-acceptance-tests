@@ -38,10 +38,10 @@ class AppConfiguration {
 	}
 
 	injectInterceptor() {
-		this.browser.executeScript(interceptor);
-		this.browser.executeScript(interceptorHelper);
-		this.browser.executeScript(getInterceptions);
-		this.browser.executeScript(postInterceptions);
+		// this.browser.executeScript(interceptor);
+		// this.browser.executeScript(interceptorHelper);
+		// this.browser.executeScript(getInterceptions);
+		// this.browser.executeScript(postInterceptions);
 	}
 }
 
