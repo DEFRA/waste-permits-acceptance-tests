@@ -9,9 +9,10 @@ const assetsJson = jsel(json1);
 let params;
 
 module.exports.World = function World(parameters) {
-
+	
 	params = parameters;
 
+	console.log("PARAM" +JSON.stringify(parameters));
 	const browser = driver.getBrowser(parameters);
 	this.testdata = new TestData(assetsJson);
 	this.pageFactory = new Factory(browser, this.testdata);

@@ -1,6 +1,7 @@
 module.exports.config = {
-	appUrl: "https://wpt-tst.aws.defra.cloud/start/start-or-open-saved",
-	appUrlTest: "https://wpt-tst.aws.defra.cloud/start/start-or-open-saved",
-	appUrlDev: "https://wpt-dev.aws.defra.cloud/start/start-or-open-saved",
+	appUrl: process.argv[7].substring(2),
+	appUrlCRM: process.argv[8].substring(2),
+	//appUrlTest: JSON.stringify(process.argv[7].substring(2)),
+	//appUrlDev: JSON.stringify(process.argv[7].substring(2)),
 	loadChromeNmpExtension: false
 };

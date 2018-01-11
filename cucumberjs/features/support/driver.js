@@ -83,55 +83,55 @@ class Driver {
 		switch (platform) {
 			case PLATFORMS.CHROME_PHONE_DEV:
 				spec = this.getChromePhoneSpec(width, height);
-				config.appUrl = config.appUrlDev;
-				configCRM.appUrlCRM = configCRM.appUrlCRMDevMaster;
+				//config.appUrl = config.appUrlDev;
+				//configCRM.appUrlCRM = configCRM.appUrlCRMDevMaster;
 				break;
 			case PLATFORMS.CHROME_PHONE_TEST:
 				spec = this.getChromePhoneSpec(width, height);
-				config.appUrl = config.appUrlTest;
-				configCRM.appUrlCRM = configCRM.appUrlCRMTest;
+				//config.appUrl = config.appUrlTest;
+				//configCRM.appUrlCRM = configCRM.appUrlCRMTest;
 				break;
 			case PLATFORMS.CHROME_DESKTOP_DEV:
 				spec = this.getChromeDesktopSpec(width, height);
-				config.appUrl = config.appUrlDev;
-				configCRM.appUrlCRM = configCRM.appUrlCRMDevMaster;
+				//config.appUrl = config.appUrlDev;
+				//configCRM.appUrlCRM = configCRM.appUrlCRMDevMaster;
 				break;
 			case PLATFORMS.CHROME_DESKTOP_TEST:
 				spec = this.getChromeDesktopSpec(width, height);
-				config.appUrl = config.appUrlTest;
-				configCRM.appUrlCRM = configCRM.appUrlCRMTest;
+				//config.appUrl = config.appUrlTest;
+				//configCRM.appUrlCRM = configCRM.appUrlCRMTest;
 				break;
 			case PLATFORMS.CHROME_TABLET_DEV:
 				spec = this.getChromeTabletSpec(width, height);
-				config.appUrl = config.appUrlDev;
-				configCRM.appUrlCRM = configCRM.appUrlCRMDevMaster;
+				//config.appUrl = config.appUrlDev;
+				//configCRM.appUrlCRM = configCRM.appUrlCRMDevMaster;
 				break;
 			case PLATFORMS.CHROME_TABLET_TEST:
 				spec = this.getChromeTabletSpec(width, height);
-				config.appUrl = config.appUrlTest;
-				configCRM.appUrlCRM = configCRM.appUrlCRMTest;
+				//config.appUrl = config.appUrlTest;
+				//configCRM.appUrlCRM = configCRM.appUrlCRMTest;
 				break;
 			case PLATFORMS.FIREFOX_DESKTOP_DEV:
 				spec = this.getFirefoxDesktopSpec();
-				config.appUrl = config.appUrlDev;
-				configCRM.appUrlCRM = configCRM.appUrlCRMDevMaster;
-				config.appUrl = config.appUrlTest;
-				configCRM.appUrlCRM = configCRM.appUrlCRMTest;
+				//config.appUrl = config.appUrlDev;
+				//configCRM.appUrlCRM = configCRM.appUrlCRMDevMaster;
+				//config.appUrl = config.appUrlTest;
+				//configCRM.appUrlCRM = configCRM.appUrlCRMTest;
 				break;
 			case PLATFORMS.FIREFOX_DESKTOP_TEST:
 				spec = this.getFirefoxDesktopSpec();
-				config.appUrl = config.appUrlTest;
-				configCRM.appUrlCRM = configCRM.appUrlCRMTest;
+				//config.appUrl = config.appUrlTest;
+				//configCRM.appUrlCRM = configCRM.appUrlCRMTest;
 				break;
 			case PLATFORMS.IE_DESKTOP_DEV:
 				spec = this.getIeDesktopSpec();
-				config.appUrl = config.appUrlDev;
-				configCRM.appUrlCRM = configCRM.appUrlCRMDevMaster;
+				//config.appUrl = config.appUrlDev;
+				//configCRM.appUrlCRM = configCRM.appUrlCRMDevMaster;
 				break;
 			case PLATFORMS.IE_DESKTOP_TEST:
 				spec = this.getIeDesktopSpec();
-				config.appUrl = config.appUrlTest;
-				configCRM.appUrlCRM = configCRM.appUrlCRMTest;
+				//config.appUrl = config.appUrlTest;
+				//configCRM.appUrlCRM = configCRM.appUrlCRMTest;
 				break;
 		}
 		return spec;

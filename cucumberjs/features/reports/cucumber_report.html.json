@@ -2,17 +2,93 @@
   {
     "elements": [
       {
-        "id": "we-832-upload-technical-competence-evidence;as-a-user-when-i-click-on-the-upload-technical-management-qualifications-page,-then-the-technical-qualifications-selection-page-should-be-displayed",
+        "id": "login-waste-permits-backend;login-waste-permits-backend",
         "keyword": "Scenario",
-        "line": 17,
-        "name": "As a user when I click on the Upload technical management qualifications page, then the Technical qualifications selection page should be displayed",
+        "line": 10,
+        "name": "Login Waste Permits Backend",
         "steps": [
           {
             "arguments": [],
             "keyword": "Before ",
             "result": {
               "status": "passed",
-              "duration": 7403057
+              "duration": 1499571
+            },
+            "hidden": true,
+            "embeddings": [
+              {
+                "data": "Y2hyb21lLWRlc2t0b3AtdGVzdA==",
+                "mime_type": "text/plain"
+              }
+            ],
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/support/hooks.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "the CRM application has been launched",
+            "result": {
+              "status": "passed",
+              "duration": 2873357849
+            },
+            "line": 11,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/application-steps.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 238085
+            },
+            "hidden": true,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/support/hooks.js:28"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@desktop",
+            "line": 7
+          },
+          {
+            "name": "@phone",
+            "line": 8
+          },
+          {
+            "name": "@tablet",
+            "line": 9
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-waste-permits-backend",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Login Waste Permits Backend",
+    "tags": [],
+    "uri": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/login_backendCRM.feature"
+  },
+  {
+    "elements": [
+      {
+        "id": "login-waste-permits-frontend;login-waste-permits-frontend",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Login Waste Permits Frontend",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Before ",
+            "result": {
+              "status": "passed",
+              "duration": 157496
             },
             "hidden": true,
             "embeddings": [
@@ -31,7 +107,83 @@
             "name": "the application has been launched",
             "result": {
               "status": "passed",
-              "duration": 3008252187
+              "duration": 1328901557
+            },
+            "line": 11,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/application-steps.js:6"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 238167
+            },
+            "hidden": true,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/support/hooks.js:28"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@desktop",
+            "line": 7
+          },
+          {
+            "name": "@phone",
+            "line": 8
+          },
+          {
+            "name": "@tablet",
+            "line": 9
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-waste-permits-frontend",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Login Waste Permits Frontend",
+    "tags": [],
+    "uri": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/login_frontend.feature"
+  },
+  {
+    "elements": [
+      {
+        "id": "we-832-upload-technical-competence-evidence;as-a-user-when-i-click-on-the-upload-technical-management-qualifications-page,-then-the-technical-qualifications-selection-page-should-be-displayed",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "As a user when I click on the Upload technical management qualifications page, then the Technical qualifications selection page should be displayed",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Before ",
+            "result": {
+              "status": "passed",
+              "duration": 140881
+            },
+            "hidden": true,
+            "embeddings": [
+              {
+                "data": "Y2hyb21lLWRlc2t0b3AtdGVzdA==",
+                "mime_type": "text/plain"
+              }
+            ],
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/support/hooks.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "the application has been launched",
+            "result": {
+              "status": "passed",
+              "duration": 825902935
             },
             "line": 4,
             "match": {
@@ -44,7 +196,7 @@
             "name": "I am on the \"Apply for a standard rules waste permit\" page",
             "result": {
               "status": "passed",
-              "duration": 54737016
+              "duration": 36520336
             },
             "line": 5,
             "match": {
@@ -57,7 +209,7 @@
             "name": "I select \"Start a new application\" waste permit application page",
             "result": {
               "status": "passed",
-              "duration": 36876954
+              "duration": 26082462
             },
             "line": 6,
             "match": {
@@ -70,7 +222,7 @@
             "name": "I click on \"Continue\" button",
             "result": {
               "status": "passed",
-              "duration": 2262311598
+              "duration": 1613506262
             },
             "line": 7,
             "match": {
@@ -83,7 +235,7 @@
             "name": "I am on the \"Select a permit\" page",
             "result": {
               "status": "passed",
-              "duration": 51627587
+              "duration": 17813713
             },
             "line": 8,
             "match": {
@@ -96,7 +248,7 @@
             "name": "I select a permit \"SR2010-No-4\"",
             "result": {
               "status": "passed",
-              "duration": 31711093
+              "duration": 23016153
             },
             "line": 9,
             "match": {
@@ -109,7 +261,7 @@
             "name": "I click on \"Continue\" button",
             "result": {
               "status": "passed",
-              "duration": 3797101066
+              "duration": 2139613246
             },
             "line": 10,
             "match": {
@@ -122,7 +274,7 @@
             "name": "I am on the Task list page",
             "result": {
               "status": "passed",
-              "duration": 42504567
+              "duration": 45280743
             },
             "line": 11,
             "match": {
@@ -135,7 +287,7 @@
             "name": "I click on the \"Upload technical management qualifications\" link",
             "result": {
               "status": "passed",
-              "duration": 34106417
+              "duration": 17979207
             },
             "line": 19,
             "match": {
@@ -148,7 +300,7 @@
             "name": "I am on the \"Which qualification does the person providing technical management have?\" page",
             "result": {
               "status": "passed",
-              "duration": 807798390
+              "duration": 564506841
             },
             "line": 20,
             "match": {
@@ -191,7 +343,7 @@
             "name": "following are the options on the the technical qualifications page:",
             "result": {
               "status": "passed",
-              "duration": 3928235
+              "duration": 1203252
             },
             "line": 21,
             "match": {
@@ -203,7 +355,7 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 1481697
+              "duration": 309083
             },
             "hidden": true,
             "match": {
@@ -242,7 +394,7 @@
             "keyword": "Before ",
             "result": {
               "status": "passed",
-              "duration": 659590
+              "duration": 82562
             },
             "hidden": true,
             "embeddings": [
@@ -261,7 +413,7 @@
             "name": "the application has been launched",
             "result": {
               "status": "passed",
-              "duration": 1063885680
+              "duration": 367257834
             },
             "line": 4,
             "match": {
@@ -274,7 +426,7 @@
             "name": "I am on the \"Apply for a standard rules waste permit\" page",
             "result": {
               "status": "passed",
-              "duration": 34386410
+              "duration": 31804440
             },
             "line": 5,
             "match": {
@@ -287,7 +439,7 @@
             "name": "I select \"Start a new application\" waste permit application page",
             "result": {
               "status": "passed",
-              "duration": 23280383
+              "duration": 28938674
             },
             "line": 6,
             "match": {
@@ -300,7 +452,7 @@
             "name": "I click on \"Continue\" button",
             "result": {
               "status": "passed",
-              "duration": 2179212976
+              "duration": 1906010364
             },
             "line": 7,
             "match": {
@@ -313,7 +465,7 @@
             "name": "I am on the \"Select a permit\" page",
             "result": {
               "status": "passed",
-              "duration": 55392236
+              "duration": 36317888
             },
             "line": 8,
             "match": {
@@ -326,7 +478,7 @@
             "name": "I select a permit \"SR2010-No-4\"",
             "result": {
               "status": "passed",
-              "duration": 35692496
+              "duration": 25920625
             },
             "line": 9,
             "match": {
@@ -339,7 +491,7 @@
             "name": "I click on \"Continue\" button",
             "result": {
               "status": "passed",
-              "duration": 2826815944
+              "duration": 2817818964
             },
             "line": 10,
             "match": {
@@ -352,7 +504,7 @@
             "name": "I am on the Task list page",
             "result": {
               "status": "passed",
-              "duration": 28163807
+              "duration": 38521407
             },
             "line": 11,
             "match": {
@@ -365,7 +517,7 @@
             "name": "I click on the \"Upload technical management qualifications\" link",
             "result": {
               "status": "passed",
-              "duration": 23799787
+              "duration": 18178167
             },
             "line": 34,
             "match": {
@@ -378,7 +530,7 @@
             "name": "I am on the \"Which qualification does the person providing technical management have?\" page",
             "result": {
               "status": "passed",
-              "duration": 686127841
+              "duration": 954369856
             },
             "line": 35,
             "match": {
@@ -421,7 +573,7 @@
             "name": "following are the options on the the technical qualifications page:",
             "result": {
               "status": "passed",
-              "duration": 2147460
+              "duration": 441227
             },
             "line": 36,
             "match": {
@@ -434,7 +586,7 @@
             "name": "I click on \"WAMITAB qualification\" on the Upload technical management qualifications page",
             "result": {
               "status": "passed",
-              "duration": 238600035
+              "duration": 137258210
             },
             "line": 42,
             "match": {
@@ -447,7 +599,7 @@
             "name": "I click on \"Continue\" button",
             "result": {
               "status": "passed",
-              "duration": 1562491052
+              "duration": 2891532192
             },
             "line": 43,
             "match": {
@@ -460,7 +612,7 @@
             "name": "I am on the \"Upload the WAMITAB certificate\" page",
             "result": {
               "status": "passed",
-              "duration": 39806825
+              "duration": 29898377
             },
             "line": 44,
             "match": {
@@ -473,7 +625,7 @@
             "name": "I click back",
             "result": {
               "status": "passed",
-              "duration": 511313755
+              "duration": 72635583
             },
             "line": 45,
             "match": {
@@ -486,7 +638,7 @@
             "name": "I am on the \"Which qualification does the person providing technical management have?\" page",
             "result": {
               "status": "passed",
-              "duration": 49722087
+              "duration": 321413560
             },
             "line": 46,
             "match": {
@@ -499,7 +651,7 @@
             "name": "I click on \"Registered on a course - grace period\" on the Upload technical management qualifications page",
             "result": {
               "status": "passed",
-              "duration": 118207722
+              "duration": 76949658
             },
             "line": 47,
             "match": {
@@ -512,7 +664,7 @@
             "name": "I click on \"Continue\" button",
             "result": {
               "status": "passed",
-              "duration": 1496537701
+              "duration": 2970652703
             },
             "line": 48,
             "match": {
@@ -525,7 +677,7 @@
             "name": "I am on the \"Upload the course registration email or letter\" page",
             "result": {
               "status": "passed",
-              "duration": 41013415
+              "duration": 46068862
             },
             "line": 49,
             "match": {
@@ -538,7 +690,7 @@
             "name": "I click back",
             "result": {
               "status": "passed",
-              "duration": 511794606
+              "duration": 64288764
             },
             "line": 50,
             "match": {
@@ -551,7 +703,7 @@
             "name": "I am on the \"Which qualification does the person providing technical management have?\" page",
             "result": {
               "status": "passed",
-              "duration": 25018943
+              "duration": 596283869
             },
             "line": 51,
             "match": {
@@ -564,7 +716,7 @@
             "name": "I click on \"Deemed competence\" on the Upload technical management qualifications page",
             "result": {
               "status": "passed",
-              "duration": 159810952
+              "duration": 76975331
             },
             "line": 52,
             "match": {
@@ -577,7 +729,7 @@
             "name": "I click on \"Continue\" button",
             "result": {
               "status": "passed",
-              "duration": 1580640427
+              "duration": 1706194968
             },
             "line": 53,
             "match": {
@@ -590,7 +742,7 @@
             "name": "I am on the \"Upload evidence of their qualification\" page",
             "result": {
               "status": "passed",
-              "duration": 64821580
+              "duration": 21188608
             },
             "line": 54,
             "match": {
@@ -603,7 +755,7 @@
             "name": "I click back",
             "result": {
               "status": "passed",
-              "duration": 541006934
+              "duration": 61210772
             },
             "line": 55,
             "match": {
@@ -616,7 +768,7 @@
             "name": "I am on the \"Which qualification does the person providing technical management have?\" page",
             "result": {
               "status": "passed",
-              "duration": 21567322
+              "duration": 994848082
             },
             "line": 56,
             "match": {
@@ -629,7 +781,7 @@
             "name": "I click on \"ESA/EU skills\" on the Upload technical management qualifications page",
             "result": {
               "status": "passed",
-              "duration": 128076971
+              "duration": 72936013
             },
             "line": 57,
             "match": {
@@ -642,7 +794,7 @@
             "name": "I click on \"Continue\" button",
             "result": {
               "status": "passed",
-              "duration": 1614658143
+              "duration": 1150756588
             },
             "line": 58,
             "match": {
@@ -655,7 +807,7 @@
             "name": "I am on the \"Upload the ESA EU Skills scheme certificate\" page",
             "result": {
               "status": "passed",
-              "duration": 69739249
+              "duration": 18439804
             },
             "line": 59,
             "match": {
@@ -668,7 +820,7 @@
             "name": "I click back",
             "result": {
               "status": "passed",
-              "duration": 132953625
+              "duration": 55779375
             },
             "line": 60,
             "match": {
@@ -681,7 +833,7 @@
             "name": "I am on the \"Which qualification does the person providing technical management have?\" page",
             "result": {
               "status": "passed",
-              "duration": 391401899
+              "duration": 348933995
             },
             "line": 61,
             "match": {
@@ -693,7 +845,7 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 237738
+              "duration": 188793
             },
             "hidden": true,
             "match": {
@@ -732,7 +884,7 @@
             "keyword": "Before ",
             "result": {
               "status": "passed",
-              "duration": 188488
+              "duration": 164292
             },
             "hidden": true,
             "embeddings": [
@@ -751,7 +903,7 @@
             "name": "the application has been launched",
             "result": {
               "status": "passed",
-              "duration": 404661477
+              "duration": 421577965
             },
             "line": 4,
             "match": {
@@ -764,7 +916,7 @@
             "name": "I am on the \"Apply for a standard rules waste permit\" page",
             "result": {
               "status": "passed",
-              "duration": 36408125
+              "duration": 21523069
             },
             "line": 5,
             "match": {
@@ -777,7 +929,7 @@
             "name": "I select \"Start a new application\" waste permit application page",
             "result": {
               "status": "passed",
-              "duration": 41815023
+              "duration": 17677874
             },
             "line": 6,
             "match": {
@@ -790,7 +942,7 @@
             "name": "I click on \"Continue\" button",
             "result": {
               "status": "passed",
-              "duration": 2319775980
+              "duration": 2472576178
             },
             "line": 7,
             "match": {
@@ -803,7 +955,7 @@
             "name": "I am on the \"Select a permit\" page",
             "result": {
               "status": "passed",
-              "duration": 40054866
+              "duration": 36935452
             },
             "line": 8,
             "match": {
@@ -816,7 +968,7 @@
             "name": "I select a permit \"SR2010-No-4\"",
             "result": {
               "status": "passed",
-              "duration": 34007157
+              "duration": 17966102
             },
             "line": 9,
             "match": {
@@ -829,7 +981,7 @@
             "name": "I click on \"Continue\" button",
             "result": {
               "status": "passed",
-              "duration": 2188895517
+              "duration": 2514915108
             },
             "line": 10,
             "match": {
@@ -842,7 +994,7 @@
             "name": "I am on the Task list page",
             "result": {
               "status": "passed",
-              "duration": 46979285
+              "duration": 35216792
             },
             "line": 11,
             "match": {
@@ -855,7 +1007,7 @@
             "name": "I click on the \"Upload technical management qualifications\" link",
             "result": {
               "status": "passed",
-              "duration": 32634542
+              "duration": 20455248
             },
             "line": 69,
             "match": {
@@ -868,7 +1020,7 @@
             "name": "I am on the \"Which qualification does the person providing technical management have?\" page",
             "result": {
               "status": "passed",
-              "duration": 849519952
+              "duration": 1189877936
             },
             "line": 70,
             "match": {
@@ -911,7 +1063,7 @@
             "name": "following are the options on the the technical qualifications page:",
             "result": {
               "status": "passed",
-              "duration": 849669
+              "duration": 310846
             },
             "line": 71,
             "match": {
@@ -924,7 +1076,7 @@
             "name": "I click on \"WAMITAB qualification\" on the Upload technical management qualifications page",
             "result": {
               "status": "passed",
-              "duration": 365282846
+              "duration": 103069326
             },
             "line": 77,
             "match": {
@@ -937,7 +1089,7 @@
             "name": "I click on \"Continue\" button",
             "result": {
               "status": "passed",
-              "duration": 1366013215
+              "duration": 1485329936
             },
             "line": 78,
             "match": {
@@ -950,7 +1102,7 @@
             "name": "I am on the \"Upload the WAMITAB certificate\" page",
             "result": {
               "status": "passed",
-              "duration": 39167443
+              "duration": 45058175
             },
             "line": 79,
             "match": {
@@ -963,7 +1115,7 @@
             "name": "I select img file to upload",
             "result": {
               "status": "passed",
-              "duration": 1964703436
+              "duration": 2586725308
             },
             "line": 80,
             "match": {
@@ -976,7 +1128,7 @@
             "name": "I select pdf file to upload",
             "result": {
               "status": "passed",
-              "duration": 6826555065
+              "duration": 16055993307
             },
             "line": 81,
             "match": {
@@ -989,7 +1141,7 @@
             "name": "I click on \"Continue\" button",
             "result": {
               "status": "passed",
-              "duration": 1831724565
+              "duration": 1974483794
             },
             "line": 82,
             "match": {
@@ -1002,7 +1154,7 @@
             "name": "I am on the Task list page",
             "result": {
               "status": "passed",
-              "duration": 40420729
+              "duration": 42231809
             },
             "line": 83,
             "match": {
@@ -1015,7 +1167,7 @@
             "name": "Upload documents is marked as completed",
             "result": {
               "status": "passed",
-              "duration": 37149977
+              "duration": 18781689
             },
             "line": 84,
             "match": {
@@ -1027,7 +1179,2436 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 394466
+              "duration": 160385
+            },
+            "hidden": true,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/support/hooks.js:28"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@desktop",
+            "line": 64
+          },
+          {
+            "name": "@phone",
+            "line": 65
+          },
+          {
+            "name": "@tablet",
+            "line": 66
+          },
+          {
+            "name": "@ui",
+            "line": 67
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "we-832-upload-technical-competence-evidence",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "WE-832 Upload technical competence evidence",
+    "tags": [],
+    "uri": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/upload_technical_competence_evidence.feature"
+  },
+  {
+    "elements": [
+      {
+        "id": "login-waste-permits-backend;login-waste-permits-backend",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Login Waste Permits Backend",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Before ",
+            "result": {
+              "status": "passed",
+              "duration": 1499571
+            },
+            "hidden": true,
+            "embeddings": [
+              {
+                "data": "Y2hyb21lLWRlc2t0b3AtdGVzdA==",
+                "mime_type": "text/plain"
+              }
+            ],
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/support/hooks.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "the CRM application has been launched",
+            "result": {
+              "status": "passed",
+              "duration": 2873357849
+            },
+            "line": 11,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/application-steps.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 238085
+            },
+            "hidden": true,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/support/hooks.js:28"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@desktop",
+            "line": 7
+          },
+          {
+            "name": "@phone",
+            "line": 8
+          },
+          {
+            "name": "@tablet",
+            "line": 9
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-waste-permits-backend",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Login Waste Permits Backend",
+    "tags": [],
+    "uri": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/login_backendCRM.feature"
+  },
+  {
+    "elements": [
+      {
+        "id": "login-waste-permits-frontend;login-waste-permits-frontend",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Login Waste Permits Frontend",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Before ",
+            "result": {
+              "status": "passed",
+              "duration": 157496
+            },
+            "hidden": true,
+            "embeddings": [
+              {
+                "data": "Y2hyb21lLWRlc2t0b3AtdGVzdA==",
+                "mime_type": "text/plain"
+              }
+            ],
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/support/hooks.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "the application has been launched",
+            "result": {
+              "status": "passed",
+              "duration": 1328901557
+            },
+            "line": 11,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/application-steps.js:6"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 238167
+            },
+            "hidden": true,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/support/hooks.js:28"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@desktop",
+            "line": 7
+          },
+          {
+            "name": "@phone",
+            "line": 8
+          },
+          {
+            "name": "@tablet",
+            "line": 9
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-waste-permits-frontend",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Login Waste Permits Frontend",
+    "tags": [],
+    "uri": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/login_frontend.feature"
+  },
+  {
+    "elements": [
+      {
+        "id": "we-832-upload-technical-competence-evidence;as-a-user-when-i-click-on-the-upload-technical-management-qualifications-page,-then-the-technical-qualifications-selection-page-should-be-displayed",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "As a user when I click on the Upload technical management qualifications page, then the Technical qualifications selection page should be displayed",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Before ",
+            "result": {
+              "status": "passed",
+              "duration": 140881
+            },
+            "hidden": true,
+            "embeddings": [
+              {
+                "data": "Y2hyb21lLWRlc2t0b3AtdGVzdA==",
+                "mime_type": "text/plain"
+              }
+            ],
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/support/hooks.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "the application has been launched",
+            "result": {
+              "status": "passed",
+              "duration": 825902935
+            },
+            "line": 4,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/application-steps.js:6"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I am on the \"Apply for a standard rules waste permit\" page",
+            "result": {
+              "status": "passed",
+              "duration": 36520336
+            },
+            "line": 5,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I select \"Start a new application\" waste permit application page",
+            "result": {
+              "status": "passed",
+              "duration": 26082462
+            },
+            "line": 6,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click on \"Continue\" button",
+            "result": {
+              "status": "passed",
+              "duration": 1613506262
+            },
+            "line": 7,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:25"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I am on the \"Select a permit\" page",
+            "result": {
+              "status": "passed",
+              "duration": 17813713
+            },
+            "line": 8,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I select a permit \"SR2010-No-4\"",
+            "result": {
+              "status": "passed",
+              "duration": 23016153
+            },
+            "line": 9,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/select-permit-steps.js:9"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click on \"Continue\" button",
+            "result": {
+              "status": "passed",
+              "duration": 2139613246
+            },
+            "line": 10,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:25"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I am on the Task list page",
+            "result": {
+              "status": "passed",
+              "duration": 45280743
+            },
+            "line": 11,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/task-list-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I click on the \"Upload technical management qualifications\" link",
+            "result": {
+              "status": "passed",
+              "duration": 17979207
+            },
+            "line": 19,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/task-list-steps.js:16"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I am on the \"Which qualification does the person providing technical management have?\" page",
+            "result": {
+              "status": "passed",
+              "duration": 564506841
+            },
+            "line": 20,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:7"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "options"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "WAMITAB qualification"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Registered on a course - grace period"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Deemed competence"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "ESA/EU skills"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "name": "following are the options on the the technical qualifications page:",
+            "result": {
+              "status": "passed",
+              "duration": 1203252
+            },
+            "line": 21,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/upload-technical-competence-evidence-steps.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 309083
+            },
+            "hidden": true,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/support/hooks.js:28"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@desktop",
+            "line": 13
+          },
+          {
+            "name": "@phone",
+            "line": 14
+          },
+          {
+            "name": "@tablet",
+            "line": 15
+          },
+          {
+            "name": "@ui",
+            "line": 16
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "id": "we-832-upload-technical-competence-evidence;as-a-user-when-i-click-on-the-options-on-the-upload-technical-management-qualifications-page,-then-the-respective-upload-documents-page-should-be-displayed",
+        "keyword": "Scenario",
+        "line": 33,
+        "name": "As a user when I click on the options on the Upload technical management qualifications page, then the respective upload documents page should be displayed",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Before ",
+            "result": {
+              "status": "passed",
+              "duration": 82562
+            },
+            "hidden": true,
+            "embeddings": [
+              {
+                "data": "Y2hyb21lLWRlc2t0b3AtdGVzdA==",
+                "mime_type": "text/plain"
+              }
+            ],
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/support/hooks.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "the application has been launched",
+            "result": {
+              "status": "passed",
+              "duration": 367257834
+            },
+            "line": 4,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/application-steps.js:6"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I am on the \"Apply for a standard rules waste permit\" page",
+            "result": {
+              "status": "passed",
+              "duration": 31804440
+            },
+            "line": 5,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I select \"Start a new application\" waste permit application page",
+            "result": {
+              "status": "passed",
+              "duration": 28938674
+            },
+            "line": 6,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click on \"Continue\" button",
+            "result": {
+              "status": "passed",
+              "duration": 1906010364
+            },
+            "line": 7,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:25"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I am on the \"Select a permit\" page",
+            "result": {
+              "status": "passed",
+              "duration": 36317888
+            },
+            "line": 8,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I select a permit \"SR2010-No-4\"",
+            "result": {
+              "status": "passed",
+              "duration": 25920625
+            },
+            "line": 9,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/select-permit-steps.js:9"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click on \"Continue\" button",
+            "result": {
+              "status": "passed",
+              "duration": 2817818964
+            },
+            "line": 10,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:25"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I am on the Task list page",
+            "result": {
+              "status": "passed",
+              "duration": 38521407
+            },
+            "line": 11,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/task-list-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I click on the \"Upload technical management qualifications\" link",
+            "result": {
+              "status": "passed",
+              "duration": 18178167
+            },
+            "line": 34,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/task-list-steps.js:16"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I am on the \"Which qualification does the person providing technical management have?\" page",
+            "result": {
+              "status": "passed",
+              "duration": 954369856
+            },
+            "line": 35,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:7"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "options"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "WAMITAB qualification"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Registered on a course - grace period"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Deemed competence"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "ESA/EU skills"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "name": "following are the options on the the technical qualifications page:",
+            "result": {
+              "status": "passed",
+              "duration": 441227
+            },
+            "line": 36,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/upload-technical-competence-evidence-steps.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I click on \"WAMITAB qualification\" on the Upload technical management qualifications page",
+            "result": {
+              "status": "passed",
+              "duration": 137258210
+            },
+            "line": 42,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/upload-technical-competence-evidence-steps.js:36"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click on \"Continue\" button",
+            "result": {
+              "status": "passed",
+              "duration": 2891532192
+            },
+            "line": 43,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:25"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I am on the \"Upload the WAMITAB certificate\" page",
+            "result": {
+              "status": "passed",
+              "duration": 29898377
+            },
+            "line": 44,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I click back",
+            "result": {
+              "status": "passed",
+              "duration": 72635583
+            },
+            "line": 45,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/upload-technical-competence-evidence-steps.js:62"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I am on the \"Which qualification does the person providing technical management have?\" page",
+            "result": {
+              "status": "passed",
+              "duration": 321413560
+            },
+            "line": 46,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I click on \"Registered on a course - grace period\" on the Upload technical management qualifications page",
+            "result": {
+              "status": "passed",
+              "duration": 76949658
+            },
+            "line": 47,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/upload-technical-competence-evidence-steps.js:36"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click on \"Continue\" button",
+            "result": {
+              "status": "passed",
+              "duration": 2970652703
+            },
+            "line": 48,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:25"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I am on the \"Upload the course registration email or letter\" page",
+            "result": {
+              "status": "passed",
+              "duration": 46068862
+            },
+            "line": 49,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I click back",
+            "result": {
+              "status": "passed",
+              "duration": 64288764
+            },
+            "line": 50,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/upload-technical-competence-evidence-steps.js:62"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I am on the \"Which qualification does the person providing technical management have?\" page",
+            "result": {
+              "status": "passed",
+              "duration": 596283869
+            },
+            "line": 51,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I click on \"Deemed competence\" on the Upload technical management qualifications page",
+            "result": {
+              "status": "passed",
+              "duration": 76975331
+            },
+            "line": 52,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/upload-technical-competence-evidence-steps.js:36"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click on \"Continue\" button",
+            "result": {
+              "status": "passed",
+              "duration": 1706194968
+            },
+            "line": 53,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:25"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I am on the \"Upload evidence of their qualification\" page",
+            "result": {
+              "status": "passed",
+              "duration": 21188608
+            },
+            "line": 54,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I click back",
+            "result": {
+              "status": "passed",
+              "duration": 61210772
+            },
+            "line": 55,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/upload-technical-competence-evidence-steps.js:62"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I am on the \"Which qualification does the person providing technical management have?\" page",
+            "result": {
+              "status": "passed",
+              "duration": 994848082
+            },
+            "line": 56,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I click on \"ESA/EU skills\" on the Upload technical management qualifications page",
+            "result": {
+              "status": "passed",
+              "duration": 72936013
+            },
+            "line": 57,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/upload-technical-competence-evidence-steps.js:36"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click on \"Continue\" button",
+            "result": {
+              "status": "passed",
+              "duration": 1150756588
+            },
+            "line": 58,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:25"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I am on the \"Upload the ESA EU Skills scheme certificate\" page",
+            "result": {
+              "status": "passed",
+              "duration": 18439804
+            },
+            "line": 59,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I click back",
+            "result": {
+              "status": "passed",
+              "duration": 55779375
+            },
+            "line": 60,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/upload-technical-competence-evidence-steps.js:62"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I am on the \"Which qualification does the person providing technical management have?\" page",
+            "result": {
+              "status": "passed",
+              "duration": 348933995
+            },
+            "line": 61,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 188793
+            },
+            "hidden": true,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/support/hooks.js:28"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@desktop",
+            "line": 29
+          },
+          {
+            "name": "@phone",
+            "line": 30
+          },
+          {
+            "name": "@tablet",
+            "line": 31
+          },
+          {
+            "name": "@ui",
+            "line": 32
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "id": "we-832-upload-technical-competence-evidence;as-a-user,-i-should-be-able-to-upload-technical-documents-for-the-technical-competencies",
+        "keyword": "Scenario",
+        "line": 68,
+        "name": "As a user, I should be able to upload technical documents for the technical competencies",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Before ",
+            "result": {
+              "status": "passed",
+              "duration": 164292
+            },
+            "hidden": true,
+            "embeddings": [
+              {
+                "data": "Y2hyb21lLWRlc2t0b3AtdGVzdA==",
+                "mime_type": "text/plain"
+              }
+            ],
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/support/hooks.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "the application has been launched",
+            "result": {
+              "status": "passed",
+              "duration": 421577965
+            },
+            "line": 4,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/application-steps.js:6"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I am on the \"Apply for a standard rules waste permit\" page",
+            "result": {
+              "status": "passed",
+              "duration": 21523069
+            },
+            "line": 5,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I select \"Start a new application\" waste permit application page",
+            "result": {
+              "status": "passed",
+              "duration": 17677874
+            },
+            "line": 6,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click on \"Continue\" button",
+            "result": {
+              "status": "passed",
+              "duration": 2472576178
+            },
+            "line": 7,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:25"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I am on the \"Select a permit\" page",
+            "result": {
+              "status": "passed",
+              "duration": 36935452
+            },
+            "line": 8,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I select a permit \"SR2010-No-4\"",
+            "result": {
+              "status": "passed",
+              "duration": 17966102
+            },
+            "line": 9,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/select-permit-steps.js:9"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click on \"Continue\" button",
+            "result": {
+              "status": "passed",
+              "duration": 2514915108
+            },
+            "line": 10,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:25"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I am on the Task list page",
+            "result": {
+              "status": "passed",
+              "duration": 35216792
+            },
+            "line": 11,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/task-list-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I click on the \"Upload technical management qualifications\" link",
+            "result": {
+              "status": "passed",
+              "duration": 20455248
+            },
+            "line": 69,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/task-list-steps.js:16"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I am on the \"Which qualification does the person providing technical management have?\" page",
+            "result": {
+              "status": "passed",
+              "duration": 1189877936
+            },
+            "line": 70,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:7"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "options"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "WAMITAB qualification"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Registered on a course - grace period"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Deemed competence"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "ESA/EU skills"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "name": "following are the options on the the technical qualifications page:",
+            "result": {
+              "status": "passed",
+              "duration": 310846
+            },
+            "line": 71,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/upload-technical-competence-evidence-steps.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I click on \"WAMITAB qualification\" on the Upload technical management qualifications page",
+            "result": {
+              "status": "passed",
+              "duration": 103069326
+            },
+            "line": 77,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/upload-technical-competence-evidence-steps.js:36"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click on \"Continue\" button",
+            "result": {
+              "status": "passed",
+              "duration": 1485329936
+            },
+            "line": 78,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:25"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I am on the \"Upload the WAMITAB certificate\" page",
+            "result": {
+              "status": "passed",
+              "duration": 45058175
+            },
+            "line": 79,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I select img file to upload",
+            "result": {
+              "status": "passed",
+              "duration": 2586725308
+            },
+            "line": 80,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/upload-technical-competence-evidence-steps.js:67"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I select pdf file to upload",
+            "result": {
+              "status": "passed",
+              "duration": 16055993307
+            },
+            "line": 81,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/upload-technical-competence-evidence-steps.js:73"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I click on \"Continue\" button",
+            "result": {
+              "status": "passed",
+              "duration": 1974483794
+            },
+            "line": 82,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:25"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I am on the Task list page",
+            "result": {
+              "status": "passed",
+              "duration": 42231809
+            },
+            "line": 83,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/task-list-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "Upload documents is marked as completed",
+            "result": {
+              "status": "passed",
+              "duration": 18781689
+            },
+            "line": 84,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/task-list-steps.js:12"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 160385
+            },
+            "hidden": true,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/support/hooks.js:28"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@desktop",
+            "line": 64
+          },
+          {
+            "name": "@phone",
+            "line": 65
+          },
+          {
+            "name": "@tablet",
+            "line": 66
+          },
+          {
+            "name": "@ui",
+            "line": 67
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "we-832-upload-technical-competence-evidence",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "WE-832 Upload technical competence evidence",
+    "tags": [],
+    "uri": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/upload_technical_competence_evidence.feature"
+  },
+  {
+    "elements": [
+      {
+        "id": "login-waste-permits-backend;login-waste-permits-backend",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Login Waste Permits Backend",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Before ",
+            "result": {
+              "status": "passed",
+              "duration": 2010450
+            },
+            "hidden": true,
+            "embeddings": [
+              {
+                "data": "ZmlyZWZveC1kZXNrdG9wLXRlc3Q=",
+                "mime_type": "text/plain"
+              }
+            ],
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/support/hooks.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "the CRM application has been launched",
+            "result": {
+              "status": "passed",
+              "duration": 4987232758
+            },
+            "line": 11,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/application-steps.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 249742
+            },
+            "hidden": true,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/support/hooks.js:28"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@desktop",
+            "line": 7
+          },
+          {
+            "name": "@phone",
+            "line": 8
+          },
+          {
+            "name": "@tablet",
+            "line": 9
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-waste-permits-backend",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Login Waste Permits Backend",
+    "tags": [],
+    "uri": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/login_backendCRM.feature"
+  },
+  {
+    "elements": [
+      {
+        "id": "login-waste-permits-frontend;login-waste-permits-frontend",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Login Waste Permits Frontend",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Before ",
+            "result": {
+              "status": "passed",
+              "duration": 140636
+            },
+            "hidden": true,
+            "embeddings": [
+              {
+                "data": "ZmlyZWZveC1kZXNrdG9wLXRlc3Q=",
+                "mime_type": "text/plain"
+              }
+            ],
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/support/hooks.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "the application has been launched",
+            "result": {
+              "status": "passed",
+              "duration": 3278611003
+            },
+            "line": 11,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/application-steps.js:6"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 141785
+            },
+            "hidden": true,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/support/hooks.js:28"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@desktop",
+            "line": 7
+          },
+          {
+            "name": "@phone",
+            "line": 8
+          },
+          {
+            "name": "@tablet",
+            "line": 9
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-waste-permits-frontend",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Login Waste Permits Frontend",
+    "tags": [],
+    "uri": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/login_frontend.feature"
+  },
+  {
+    "elements": [
+      {
+        "id": "we-832-upload-technical-competence-evidence;as-a-user-when-i-click-on-the-upload-technical-management-qualifications-page,-then-the-technical-qualifications-selection-page-should-be-displayed",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "As a user when I click on the Upload technical management qualifications page, then the Technical qualifications selection page should be displayed",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Before ",
+            "result": {
+              "status": "passed",
+              "duration": 93249
+            },
+            "hidden": true,
+            "embeddings": [
+              {
+                "data": "ZmlyZWZveC1kZXNrdG9wLXRlc3Q=",
+                "mime_type": "text/plain"
+              }
+            ],
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/support/hooks.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "the application has been launched",
+            "result": {
+              "status": "passed",
+              "duration": 387714140
+            },
+            "line": 4,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/application-steps.js:6"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I am on the \"Apply for a standard rules waste permit\" page",
+            "result": {
+              "status": "passed",
+              "duration": 11928795
+            },
+            "line": 5,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I select \"Start a new application\" waste permit application page",
+            "result": {
+              "status": "passed",
+              "duration": 12283731
+            },
+            "line": 6,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click on \"Continue\" button",
+            "result": {
+              "status": "passed",
+              "duration": 2285687671
+            },
+            "line": 7,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:25"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I am on the \"Select a permit\" page",
+            "result": {
+              "status": "passed",
+              "duration": 9277542
+            },
+            "line": 8,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I select a permit \"SR2010-No-4\"",
+            "result": {
+              "status": "passed",
+              "duration": 7162601
+            },
+            "line": 9,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/select-permit-steps.js:9"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click on \"Continue\" button",
+            "result": {
+              "status": "passed",
+              "duration": 2465234522
+            },
+            "line": 10,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:25"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I am on the Task list page",
+            "result": {
+              "status": "passed",
+              "duration": 10711797
+            },
+            "line": 11,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/task-list-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I click on the \"Upload technical management qualifications\" link",
+            "result": {
+              "status": "passed",
+              "duration": 6621883
+            },
+            "line": 19,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/task-list-steps.js:16"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I am on the \"Which qualification does the person providing technical management have?\" page",
+            "result": {
+              "status": "passed",
+              "duration": 791660033
+            },
+            "line": 20,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:7"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "options"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "WAMITAB qualification"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Registered on a course - grace period"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Deemed competence"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "ESA/EU skills"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "name": "following are the options on the the technical qualifications page:",
+            "result": {
+              "status": "passed",
+              "duration": 930367
+            },
+            "line": 21,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/upload-technical-competence-evidence-steps.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 516274
+            },
+            "hidden": true,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/support/hooks.js:28"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@desktop",
+            "line": 13
+          },
+          {
+            "name": "@phone",
+            "line": 14
+          },
+          {
+            "name": "@tablet",
+            "line": 15
+          },
+          {
+            "name": "@ui",
+            "line": 16
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "id": "we-832-upload-technical-competence-evidence;as-a-user-when-i-click-on-the-options-on-the-upload-technical-management-qualifications-page,-then-the-respective-upload-documents-page-should-be-displayed",
+        "keyword": "Scenario",
+        "line": 33,
+        "name": "As a user when I click on the options on the Upload technical management qualifications page, then the respective upload documents page should be displayed",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Before ",
+            "result": {
+              "status": "passed",
+              "duration": 201634
+            },
+            "hidden": true,
+            "embeddings": [
+              {
+                "data": "ZmlyZWZveC1kZXNrdG9wLXRlc3Q=",
+                "mime_type": "text/plain"
+              }
+            ],
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/support/hooks.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "the application has been launched",
+            "result": {
+              "status": "passed",
+              "duration": 784552837
+            },
+            "line": 4,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/application-steps.js:6"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I am on the \"Apply for a standard rules waste permit\" page",
+            "result": {
+              "status": "passed",
+              "duration": 20619462
+            },
+            "line": 5,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I select \"Start a new application\" waste permit application page",
+            "result": {
+              "status": "passed",
+              "duration": 9475482
+            },
+            "line": 6,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click on \"Continue\" button",
+            "result": {
+              "status": "passed",
+              "duration": 1677500591
+            },
+            "line": 7,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:25"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I am on the \"Select a permit\" page",
+            "result": {
+              "status": "passed",
+              "duration": 9546590
+            },
+            "line": 8,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I select a permit \"SR2010-No-4\"",
+            "result": {
+              "status": "passed",
+              "duration": 19032133
+            },
+            "line": 9,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/select-permit-steps.js:9"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click on \"Continue\" button",
+            "result": {
+              "status": "passed",
+              "duration": 2683151011
+            },
+            "line": 10,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:25"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I am on the Task list page",
+            "result": {
+              "status": "passed",
+              "duration": 33070021
+            },
+            "line": 11,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/task-list-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I click on the \"Upload technical management qualifications\" link",
+            "result": {
+              "status": "passed",
+              "duration": 7428880
+            },
+            "line": 34,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/task-list-steps.js:16"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I am on the \"Which qualification does the person providing technical management have?\" page",
+            "result": {
+              "status": "passed",
+              "duration": 1096671766
+            },
+            "line": 35,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:7"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "options"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "WAMITAB qualification"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Registered on a course - grace period"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Deemed competence"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "ESA/EU skills"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "name": "following are the options on the the technical qualifications page:",
+            "result": {
+              "status": "passed",
+              "duration": 781713
+            },
+            "line": 36,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/upload-technical-competence-evidence-steps.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I click on \"WAMITAB qualification\" on the Upload technical management qualifications page",
+            "result": {
+              "status": "passed",
+              "duration": 272940119
+            },
+            "line": 42,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/upload-technical-competence-evidence-steps.js:36"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click on \"Continue\" button",
+            "result": {
+              "status": "passed",
+              "duration": 1369610400
+            },
+            "line": 43,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:25"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I am on the \"Upload the WAMITAB certificate\" page",
+            "result": {
+              "status": "passed",
+              "duration": 11497493
+            },
+            "line": 44,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I click back",
+            "result": {
+              "status": "passed",
+              "duration": 740768349
+            },
+            "line": 45,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/upload-technical-competence-evidence-steps.js:62"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I am on the \"Which qualification does the person providing technical management have?\" page",
+            "result": {
+              "status": "passed",
+              "duration": 32616112
+            },
+            "line": 46,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I click on \"Registered on a course - grace period\" on the Upload technical management qualifications page",
+            "result": {
+              "status": "passed",
+              "duration": 232622663
+            },
+            "line": 47,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/upload-technical-competence-evidence-steps.js:36"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click on \"Continue\" button",
+            "result": {
+              "status": "passed",
+              "duration": 1915732296
+            },
+            "line": 48,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:25"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I am on the \"Upload the course registration email or letter\" page",
+            "result": {
+              "status": "passed",
+              "duration": 29307936
+            },
+            "line": 49,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I click back",
+            "result": {
+              "status": "passed",
+              "duration": 337016588
+            },
+            "line": 50,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/upload-technical-competence-evidence-steps.js:62"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I am on the \"Which qualification does the person providing technical management have?\" page",
+            "result": {
+              "status": "passed",
+              "duration": 19506506
+            },
+            "line": 51,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I click on \"Deemed competence\" on the Upload technical management qualifications page",
+            "result": {
+              "status": "passed",
+              "duration": 248477449
+            },
+            "line": 52,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/upload-technical-competence-evidence-steps.js:36"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click on \"Continue\" button",
+            "result": {
+              "status": "passed",
+              "duration": 1494231602
+            },
+            "line": 53,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:25"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I am on the \"Upload evidence of their qualification\" page",
+            "result": {
+              "status": "passed",
+              "duration": 13521847
+            },
+            "line": 54,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I click back",
+            "result": {
+              "status": "passed",
+              "duration": 1599868890
+            },
+            "line": 55,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/upload-technical-competence-evidence-steps.js:62"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I am on the \"Which qualification does the person providing technical management have?\" page",
+            "result": {
+              "status": "passed",
+              "duration": 8101417
+            },
+            "line": 56,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I click on \"ESA/EU skills\" on the Upload technical management qualifications page",
+            "result": {
+              "status": "passed",
+              "duration": 245131659
+            },
+            "line": 57,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/upload-technical-competence-evidence-steps.js:36"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click on \"Continue\" button",
+            "result": {
+              "status": "passed",
+              "duration": 1845519305
+            },
+            "line": 58,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:25"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I am on the \"Upload the ESA EU Skills scheme certificate\" page",
+            "result": {
+              "status": "passed",
+              "duration": 5483998
+            },
+            "line": 59,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I click back",
+            "result": {
+              "status": "passed",
+              "duration": 527712472
+            },
+            "line": 60,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/upload-technical-competence-evidence-steps.js:62"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I am on the \"Which qualification does the person providing technical management have?\" page",
+            "result": {
+              "status": "passed",
+              "duration": 8896688
+            },
+            "line": 61,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 240752
+            },
+            "hidden": true,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/support/hooks.js:28"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@desktop",
+            "line": 29
+          },
+          {
+            "name": "@phone",
+            "line": 30
+          },
+          {
+            "name": "@tablet",
+            "line": 31
+          },
+          {
+            "name": "@ui",
+            "line": 32
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "id": "we-832-upload-technical-competence-evidence;as-a-user,-i-should-be-able-to-upload-technical-documents-for-the-technical-competencies",
+        "keyword": "Scenario",
+        "line": 68,
+        "name": "As a user, I should be able to upload technical documents for the technical competencies",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Before ",
+            "result": {
+              "status": "passed",
+              "duration": 194503
+            },
+            "hidden": true,
+            "embeddings": [
+              {
+                "data": "ZmlyZWZveC1kZXNrdG9wLXRlc3Q=",
+                "mime_type": "text/plain"
+              }
+            ],
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/support/hooks.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "the application has been launched",
+            "result": {
+              "status": "passed",
+              "duration": 446846289
+            },
+            "line": 4,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/application-steps.js:6"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I am on the \"Apply for a standard rules waste permit\" page",
+            "result": {
+              "status": "passed",
+              "duration": 11938859
+            },
+            "line": 5,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I select \"Start a new application\" waste permit application page",
+            "result": {
+              "status": "passed",
+              "duration": 19300808
+            },
+            "line": 6,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click on \"Continue\" button",
+            "result": {
+              "status": "passed",
+              "duration": 1763897220
+            },
+            "line": 7,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:25"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I am on the \"Select a permit\" page",
+            "result": {
+              "status": "passed",
+              "duration": 10381718
+            },
+            "line": 8,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I select a permit \"SR2010-No-4\"",
+            "result": {
+              "status": "passed",
+              "duration": 16853881
+            },
+            "line": 9,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/select-permit-steps.js:9"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click on \"Continue\" button",
+            "result": {
+              "status": "passed",
+              "duration": 3170982768
+            },
+            "line": 10,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:25"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I am on the Task list page",
+            "result": {
+              "status": "passed",
+              "duration": 11424988
+            },
+            "line": 11,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/task-list-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I click on the \"Upload technical management qualifications\" link",
+            "result": {
+              "status": "passed",
+              "duration": 13162992
+            },
+            "line": 69,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/task-list-steps.js:16"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I am on the \"Which qualification does the person providing technical management have?\" page",
+            "result": {
+              "status": "passed",
+              "duration": 751855535
+            },
+            "line": 70,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:7"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "options"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "WAMITAB qualification"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Registered on a course - grace period"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Deemed competence"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "ESA/EU skills"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "name": "following are the options on the the technical qualifications page:",
+            "result": {
+              "status": "passed",
+              "duration": 503857
+            },
+            "line": 71,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/upload-technical-competence-evidence-steps.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I click on \"WAMITAB qualification\" on the Upload technical management qualifications page",
+            "result": {
+              "status": "passed",
+              "duration": 256609486
+            },
+            "line": 77,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/upload-technical-competence-evidence-steps.js:36"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click on \"Continue\" button",
+            "result": {
+              "status": "passed",
+              "duration": 1914212534
+            },
+            "line": 78,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:25"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I am on the \"Upload the WAMITAB certificate\" page",
+            "result": {
+              "status": "passed",
+              "duration": 21064444
+            },
+            "line": 79,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I select img file to upload",
+            "result": {
+              "status": "failed",
+              "duration": 554822986,
+              "error_message": "UnknownCommandError: POST /session/d32908bf-9660-4f87-abae-e53cbdefd0b3/element/0cfb4212-b14f-474a-8df0-8add654a24fa/submit did not match a known command\n    at Object.throwDecodedError (/home/amruta/waste-permits-acceptance-tests/node_modules/selenium-webdriver/lib/error.js:514:15)\n    at parseHttpResponse (/home/amruta/waste-permits-acceptance-tests/node_modules/selenium-webdriver/lib/http.js:519:13)\n    at doSend.then.response (/home/amruta/waste-permits-acceptance-tests/node_modules/selenium-webdriver/lib/http.js:441:30)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)\nFrom: Task: WebElement.submit()\n    at thenableWebDriverProxy.schedule (/home/amruta/waste-permits-acceptance-tests/node_modules/selenium-webdriver/lib/webdriver.js:807:17)\n    at WebElement.schedule_ (/home/amruta/waste-permits-acceptance-tests/node_modules/selenium-webdriver/lib/webdriver.js:2010:25)\n    at WebElement.submit (/home/amruta/waste-permits-acceptance-tests/node_modules/selenium-webdriver/lib/webdriver.js:2338:17)\n    at UploadTechCompetency.enterJPGFile (/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/pageobjects/upload-tech-competency.js:83:31)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)"
+            },
+            "line": 80,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/upload-technical-competence-evidence-steps.js:67"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I select pdf file to upload",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 81,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/upload-technical-competence-evidence-steps.js:73"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I click on \"Continue\" button",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 82,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/new-application-steps.js:25"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I am on the Task list page",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 83,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/task-list-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "Upload documents is marked as completed",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 84,
+            "match": {
+              "location": "/home/amruta/waste-permits-acceptance-tests/cucumberjs/features/step_definitions/task-list-steps.js:12"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 156662
             },
             "hidden": true,
             "match": {

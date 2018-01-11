@@ -11,6 +11,7 @@ class Application {
 	}
 
 	async launch(appConfiguration) {
+		const args = process.argv;
 		await this.browser.get(config.appUrl);
 		await this.browser.wait(async () => (
 			await this.browser.wait(appConfiguration.getReadyState()) === "complete"
@@ -18,7 +19,7 @@ class Application {
 	}
 
 	async launchCRM(appConfiguration) {
-		await this.browser.get(configCRM.appUrlCRM);
+		await this.browser.get(config.appUrlCRM);
 		await this.browser.wait(async () => (
 			await this.browser.wait(appConfiguration.getReadyState()) === "complete"
 		), 10000);
