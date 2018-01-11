@@ -18,7 +18,7 @@ module.exports.World = function World(parameters) {
 	this.newApplication = this.pageFactory.create("newapplication");
 	this.selectPermit = this.pageFactory.create("selectpermit");
 	this.taskList = this.pageFactory.create("tasklist");
-	this.uploadTechCompetency = this.pageFactory.create("uploadtechcompetency")
+	this.uploadTechCompetency = this.pageFactory.create("uploadtechcompetency");
 	this.parameters = parameters;
 
 	// Create page objects

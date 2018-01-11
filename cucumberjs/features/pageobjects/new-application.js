@@ -10,15 +10,15 @@ class NewApplication {
     }
 
     waitUntilLoaded(title) {
-        return this.browser.wait(until.elementLocated(By.xpath(`//h1[contains(text(),"${title}")]`)), 5 * 2000);
+        return this.browser.wait(until.elementLocated(By.xpath(`//h1[contains(text(),"${title}")]`)), 5 * 20000);
     }
 
     startApplicationRadio() {
-        return this.browser.wait(until.elementLocated(By.id("start-application")), 5 * 2000);
+        return this.browser.wait(until.elementLocated(By.id("start-application")), 5 * 20000);
     }
 
     openApplicationRadio() {
-        return this.browser.wait(until.elementLocated(By.id("open-application")), 5 * 2000);
+        return this.browser.wait(until.elementLocated(By.id("open-application")), 5 * 20000);
     }
 
     continueButton() {

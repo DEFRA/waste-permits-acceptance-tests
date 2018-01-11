@@ -38,7 +38,7 @@ class Application {
 	async findElementByID(parameters) {
 		let foundElement;
 		try {
-			foundElement = await this.browser.wait(until.elementLocated(By.id(parameters)), 5 * 2000);
+			foundElement = await this.browser.wait(until.elementLocated(By.id(parameters)), 5 * 20000);
 			console.log (foundElement);
 		} catch (err) {
 			throw err;
@@ -50,7 +50,7 @@ class Application {
 	async findElementByXpath(parameters) {
 		let foundElement;
 		try {
-			foundElement = await this.browser.wait(until.elementLocated(By.xpath(parameters)), 5 * 2000);
+			foundElement = await this.browser.wait(until.elementLocated(By.xpath(parameters)), 5 * 20000);
 
 		} catch (err) {
 			if (err.state && err.state === "no such element") {

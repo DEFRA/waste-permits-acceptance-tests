@@ -4,11 +4,11 @@ module.exports = function () {
 
     this.World = World;
 
-    this.defineStep(/^I am on the "(.*?)" page$/, async function (title) {
+    this.defineStep(/^I am on the "(.*?)" page$/,{ timeout: 60000 }, async function (title) {
         await this.newApplication.waitUntilLoaded(title);
     });
 
-    this.defineStep(/^I select "(.*?)" waste permit application page$/, async function (option) {
+    this.defineStep(/^I select "(.*?)" waste permit application page$/, { timeout: 60000 }, async function (option) {
         switch (option) {
             case "Start a new application":
                 const startApplication = await this.newApplication.startApplicationRadio();
@@ -22,7 +22,7 @@ module.exports = function () {
         }
     });
 
-    this.defineStep(/^I click on "(.*?)" button$/, async function (button) {
+    this.defineStep(/^I click on "(.*?)" button$/, { timeout: 60000 }, async function (button) {
         switch (button) {
             case "Continue":
                 const continueButton = await this.newApplication.continueButton();

@@ -6,7 +6,7 @@ module.exports = function () {
 
     this.World = World;
 
-    this.defineStep(/^I select a permit "(.*?)"$/, async function (option) {
+    this.defineStep(/^I select a permit "(.*?)"$/, { timeout: 60000 }, async function (option) {
         switch (option) {
             case "SR2010-No-4":
                 const permitSR2010No4Radio = await this.selectPermit.permitSR2010No4Radio();

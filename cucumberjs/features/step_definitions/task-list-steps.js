@@ -4,11 +4,16 @@ module.exports = function () {
 
     this.World = World;
 
-    this.defineStep(/^I am on the Task list page$/, async function () {
+    this.defineStep(/^I am on the Task list page$/, { timeout: 60000 }, async function () {
         await this.taskList.waitUntilLoaded();
     });
 
-    this.defineStep(/^I click on the "(.*?)" link$/, async function (option) {
+    
+    this.defineStep(/^Upload documents is marked as completed$/, { timeout: 60000 }, async function () {
+        await this.taskList.uploadCompleted();
+    });
+
+    this.defineStep(/^I click on the "(.*?)" link$/, { timeout: 60000 }, async function (option) {
         switch (option) {
             case "Upload technical management qualifications":
                 const uploadTechnicalManagementQualificationsLink = await this.taskList.uploadTechnicalManagementQualificationsLink();

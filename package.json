@@ -12,17 +12,29 @@
     "chromedriver": "^2.27.2",
     "cucumber": "^1.3.1",
     "cucumber-html-reporter": "^0.3.7",
+    "download-file": "^0.1.5",
+    "download-pdf": "^0.1.6",
     "eslint": "^3.13.1",
-    "get-firefox": "^2.1.0",
+    "file-download": "^0.1.2",
     "firefox-profile": "^1.1.0",
     "geckodriver": "^1.3.0",
+    "get-firefox": "^2.1.0",
     "iedriver": "^3.0.0",
+    "image-downloader": "^3.3.0",
     "jsel": "^1.1.4",
+    "mkdirp": "^0.5.1",
     "mocha": "^4.1.0",
     "mock-http-server": "^0.2.0",
     "nock": "^9.1.5",
+    "node-key-sender": "^1.0.9",
     "node-mocks-http": "^1.5.6",
+    "os": "^0.1.1",
+    "pdf-bulk-downloader": "^0.8.2",
+    "robot-js": "^1.0.2",
     "selenium-webdriver": "^3.0.1",
+    "url2image": "0.0.3",
+    "url2img": "^1.0.3",
+    "urllib": "^2.25.3",
     "xmlhttprequest": "^1.8.0"
   },
   "scripts": {
@@ -39,5 +51,6 @@
     "test:ie-desktop-dev": "node node_modules/cucumber/bin/cucumber.js cucumberjs/features -p ie-desktop-dev -f json:cucumberjs/features/reports/cucumber_report_ie_desktop.json",
     "test:ie-desktop-test": "node node_modules/cucumber/bin/cucumber.js cucumberjs/features -p ie-desktop-test -f json:cucumberjs/features/reports/cucumber_report_ie_desktop.json"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {}
 }
