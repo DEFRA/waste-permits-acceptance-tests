@@ -43,22 +43,22 @@ Feature:  WE-832 Upload technical competence evidence
         And I click on "Continue" button
         Then I am on the "Upload the WAMITAB certificate" page
         When I click back
-        Then I am on the "Which qualification does the person providing technical management have?" page
+        Then I am on the "Who will provide technical management on your site?" page
         When I click on "Registered on a course - grace period" on the Upload technical management qualifications page
         And I click on "Continue" button
         Then I am on the "Upload the course registration email or letter" page
         When I click back
-        Then I am on the "Which qualification does the person providing technical management have?" page
+        Then I am on the "Who will provide technical management on your site?" page
         When I click on "Deemed competence" on the Upload technical management qualifications page
         And I click on "Continue" button
         Then I am on the "Upload evidence of their qualification" page
         When I click back
-        Then I am on the "Which qualification does the person providing technical management have?" page
+        Then I am on the "Who will provide technical management on your site?" page
         When I click on "ESA/EU skills" on the Upload technical management qualifications page
         And I click on "Continue" button
         Then I am on the "Upload the ESA EU Skills scheme certificate" page
         When I click back
-        Then I am on the "Which qualification does the person providing technical management have?" page
+        Then I am on the "Who will provide technical management on your site?" page
 
 
     @desktop
