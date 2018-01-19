@@ -17,7 +17,7 @@ Feature:  WE-832 Upload technical competence evidence
     Scenario: As a user when I click on the Upload technical management qualifications page, then the Technical qualifications selection page should be displayed
 
         When I click on the "Upload technical management qualifications" link
-        Then I am on the "Which qualification does the person providing technical management have?" page
+        Then I am on the "Who will provide technical management on your site?" page
         And following are the options on the the technical qualifications page:
             | options                               |
             | WAMITAB qualification                 |
@@ -32,7 +32,7 @@ Feature:  WE-832 Upload technical competence evidence
     @ui
     Scenario: As a user when I click on the options on the Upload technical management qualifications page, then the respective upload documents page should be displayed
         When I click on the "Upload technical management qualifications" link
-        Then I am on the "Which qualification does the person providing technical management have?" page
+        Then I am on the "Who will provide technical management on your site?" page
         And following are the options on the the technical qualifications page:
             | options                               |
             | WAMITAB qualification                 |
@@ -67,7 +67,7 @@ Feature:  WE-832 Upload technical competence evidence
     @ui
     Scenario: As a user, I should be able to upload technical documents for the technical competencies
         When I click on the "Upload technical management qualifications" link
-        Then I am on the "Which qualification does the person providing technical management have?" page
+        Then I am on the "Who will provide technical management on your site?" page
         And following are the options on the the technical qualifications page:
             | options                               |
             | WAMITAB qualification                 |
