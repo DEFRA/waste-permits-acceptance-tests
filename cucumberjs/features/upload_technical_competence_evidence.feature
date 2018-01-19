@@ -2,7 +2,7 @@ Feature:  WE-832 Upload technical competence evidence
 
     Background:
         Given the application has been launched
-        And I am on the "Apply for a standard rules waste permit" page
+        And I am on the "Apply for a mobile plant standard rules waste permit" page
         #And I select "Start a new application" waste permit application page
         And I click on "Continue" button
         And I am on the "Select a permit" page
