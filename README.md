@@ -36,13 +36,20 @@ npm install
 
 ## Running the test locally (This runs FrontEnd and BackEnd functional acceptance tests)
 # Run the tests on Chrome 
-npm run test:chrome-desktop
+To Run on QA :- npm run test:chrome-desktop-test -- --https://<QAFRONTEND URL> --https://<QABACKEND URL>
+To Run on DEV :- npm run test:chrome-desktop-dev -- --https://<DEVFRONTEND URL> --https://<DEVBACKEND URL>
+
+# Run the tests on Chrome- TABLET and PHONE EMULATORS
+To Run on TABLET :- npm run test:chrome-tablet-test -- --https://<QAFRONTEND URL> --https://<QABACKEND URL>
+To Run on PHONE :- npm run test:chrome-phone-test -- --https://<QAFRONTEND URL> --https://<QABACKEND URL>
 
 #Run the tests on Firefox
-npm run test:firefox-desktop
+To Run on QA :- npm run test:firefox-desktop-test -- --https://<QAFRONTEND URL> --https://<QABACKEND URL>
+To Run on DEV :- npm run test:firefox-desktop-dev -- --https://<DEVFRONTEND URL> --https://<DEVBACKEND URL>
 
 #Run the tests on IE
-npm run test:ie-desktop
+To Run on QA :- npm run test:ie-desktop-test -- --https://<QAFRONTEND URL> --https://<QABACKEND URL>
+To Run on DEV :- npm run test:ie-desktop-dev -- --https://<DEVFRONTEND URL> --https://<DEVBACKEND URL>
 
 #Note you can change the url in the config.js and configCRM.js to point it to any headend
 
