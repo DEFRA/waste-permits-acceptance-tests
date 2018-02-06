@@ -12,12 +12,12 @@
             "keyword": "Before ",
             "result": {
               "status": "passed",
-              "duration": 713101
+              "duration": 2580194
             },
             "hidden": true,
             "embeddings": [
               {
-                "data": "Y2hyb21lLWRlc2t0b3AtdGVzdA==",
+                "data": "Y2hyb21lLXBob25lLXRlc3Q=",
                 "mime_type": "text/plain"
               }
             ],
@@ -31,7 +31,7 @@
             "name": "the CRM application has been launched",
             "result": {
               "status": "passed",
-              "duration": 3739349891
+              "duration": 4142066905
             },
             "line": 11,
             "match": {
@@ -44,7 +44,7 @@
             "name": "I am on the CRM login page",
             "result": {
               "status": "passed",
-              "duration": 34080706
+              "duration": 49666297
             },
             "line": 12,
             "match": {
@@ -53,23 +53,10 @@
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "name": "I login as \"amruta.bendre@defradev.onmicrosoft.com\" password \"W@ste-Permits\"",
-            "result": {
-              "status": "passed",
-              "duration": 13676107449
-            },
-            "line": 13,
-            "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\login-crm-steps.js:12"
-            }
-          },
-          {
-            "arguments": [],
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 266855
+              "duration": 236510
             },
             "hidden": true,
             "match": {
@@ -114,12 +101,12 @@
             "keyword": "Before ",
             "result": {
               "status": "passed",
-              "duration": 73631
+              "duration": 130303
             },
             "hidden": true,
             "embeddings": [
               {
-                "data": "Y2hyb21lLWRlc2t0b3AtdGVzdA==",
+                "data": "Y2hyb21lLXBob25lLXRlc3Q=",
                 "mime_type": "text/plain"
               }
             ],
@@ -133,7 +120,7 @@
             "name": "the application has been launched",
             "result": {
               "status": "passed",
-              "duration": 910287579
+              "duration": 1556031105
             },
             "line": 11,
             "match": {
@@ -145,7 +132,7 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 45517
+              "duration": 78093
             },
             "hidden": true,
             "match": {
@@ -190,12 +177,12 @@
             "keyword": "Before ",
             "result": {
               "status": "passed",
-              "duration": 49533
+              "duration": 60243
             },
             "hidden": true,
             "embeddings": [
               {
-                "data": "Y2hyb21lLWRlc2t0b3AtdGVzdA==",
+                "data": "Y2hyb21lLXBob25lLXRlc3Q=",
                 "mime_type": "text/plain"
               }
             ],
@@ -209,7 +196,7 @@
             "name": "the application has been launched",
             "result": {
               "status": "passed",
-              "duration": 362699895
+              "duration": 692887195
             },
             "line": 4,
             "match": {
@@ -222,7 +209,7 @@
             "name": "I am on the \"Apply for a mobile plant standard rules waste permit\" page",
             "result": {
               "status": "passed",
-              "duration": 27398171
+              "duration": 34739365
             },
             "line": 5,
             "match": {
@@ -235,7 +222,7 @@
             "name": "I click on \"Continue\" button",
             "result": {
               "status": "passed",
-              "duration": 2273104837
+              "duration": 2310532390
             },
             "line": 7,
             "match": {
@@ -248,7 +235,7 @@
             "name": "I am on the \"Select a permit\" page",
             "result": {
               "status": "passed",
-              "duration": 33353325
+              "duration": 27662795
             },
             "line": 8,
             "match": {
@@ -261,7 +248,7 @@
             "name": "I select a permit \"SR2010-No-4\"",
             "result": {
               "status": "passed",
-              "duration": 29047497
+              "duration": 34364519
             },
             "line": 9,
             "match": {
@@ -274,7 +261,7 @@
             "name": "I click on \"Continue\" button",
             "result": {
               "status": "passed",
-              "duration": 5493718193
+              "duration": 2221026580
             },
             "line": 10,
             "match": {
@@ -286,9 +273,8 @@
             "keyword": "And ",
             "name": "I am on the Task list page",
             "result": {
-              "status": "failed",
-              "duration": 60000725597,
-              "error_message": "function timed out after 60000 milliseconds"
+              "status": "passed",
+              "duration": 29975242
             },
             "line": 11,
             "match": {
@@ -300,7 +286,8 @@
             "keyword": "When ",
             "name": "I click on the \"Upload technical management qualifications\" link",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 29509807
             },
             "line": 19,
             "match": {
@@ -312,7 +299,8 @@
             "keyword": "Then ",
             "name": "I am on the \"Who will provide technical management on your site?\" page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 546379695
             },
             "line": 20,
             "match": {
@@ -354,11 +342,12 @@
             "keyword": "And ",
             "name": "following are the options on the the technical qualifications page:",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1968838
             },
             "line": 21,
             "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\upload-technical-competence-evidence-steps.js:15"
+              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\upload-technical-competence-evidence-steps.js:11"
             }
           },
           {
@@ -366,7 +355,7 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 39270
+              "duration": 821093
             },
             "hidden": true,
             "match": {
@@ -405,12 +394,12 @@
             "keyword": "Before ",
             "result": {
               "status": "passed",
-              "duration": 24989
+              "duration": 91481
             },
             "hidden": true,
             "embeddings": [
               {
-                "data": "Y2hyb21lLWRlc2t0b3AtdGVzdA==",
+                "data": "Y2hyb21lLXBob25lLXRlc3Q=",
                 "mime_type": "text/plain"
               }
             ],
@@ -424,7 +413,7 @@
             "name": "the application has been launched",
             "result": {
               "status": "passed",
-              "duration": 345547982
+              "duration": 350885531
             },
             "line": 4,
             "match": {
@@ -437,7 +426,7 @@
             "name": "I am on the \"Apply for a mobile plant standard rules waste permit\" page",
             "result": {
               "status": "passed",
-              "duration": 27679306
+              "duration": 17273293
             },
             "line": 5,
             "match": {
@@ -450,7 +439,7 @@
             "name": "I click on \"Continue\" button",
             "result": {
               "status": "passed",
-              "duration": 1711523770
+              "duration": 1514736831
             },
             "line": 7,
             "match": {
@@ -463,7 +452,7 @@
             "name": "I am on the \"Select a permit\" page",
             "result": {
               "status": "passed",
-              "duration": 47963422
+              "duration": 14812246
             },
             "line": 8,
             "match": {
@@ -476,7 +465,7 @@
             "name": "I select a permit \"SR2010-No-4\"",
             "result": {
               "status": "passed",
-              "duration": 29098815
+              "duration": 16610618
             },
             "line": 9,
             "match": {
@@ -489,7 +478,7 @@
             "name": "I click on \"Continue\" button",
             "result": {
               "status": "passed",
-              "duration": 1982211292
+              "duration": 2234288121
             },
             "line": 10,
             "match": {
@@ -502,7 +491,7 @@
             "name": "I am on the Task list page",
             "result": {
               "status": "passed",
-              "duration": 21802245
+              "duration": 21268535
             },
             "line": 11,
             "match": {
@@ -515,7 +504,7 @@
             "name": "I click on the \"Upload technical management qualifications\" link",
             "result": {
               "status": "passed",
-              "duration": 28015329
+              "duration": 17497309
             },
             "line": 34,
             "match": {
@@ -528,7 +517,7 @@
             "name": "I am on the \"Who will provide technical management on your site?\" page",
             "result": {
               "status": "passed",
-              "duration": 554103322
+              "duration": 567290340
             },
             "line": 35,
             "match": {
@@ -571,11 +560,11 @@
             "name": "following are the options on the the technical qualifications page:",
             "result": {
               "status": "passed",
-              "duration": 1050910
+              "duration": 760403
             },
             "line": 36,
             "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\upload-technical-competence-evidence-steps.js:15"
+              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\upload-technical-competence-evidence-steps.js:11"
             }
           },
           {
@@ -584,11 +573,11 @@
             "name": "I click on \"WAMITAB qualification\" on the Upload technical management qualifications page",
             "result": {
               "status": "passed",
-              "duration": 160968550
+              "duration": 174957919
             },
             "line": 42,
             "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\upload-technical-competence-evidence-steps.js:40"
+              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\upload-technical-competence-evidence-steps.js:36"
             }
           },
           {
@@ -597,7 +586,7 @@
             "name": "I click on \"Continue\" button",
             "result": {
               "status": "passed",
-              "duration": 1307311385
+              "duration": 1240692200
             },
             "line": 43,
             "match": {
@@ -610,7 +599,7 @@
             "name": "I am on the \"Upload the WAMITAB certificate\" page",
             "result": {
               "status": "passed",
-              "duration": 31847690
+              "duration": 28802507
             },
             "line": 44,
             "match": {
@@ -623,11 +612,11 @@
             "name": "I click back",
             "result": {
               "status": "passed",
-              "duration": 461378294
+              "duration": 511159723
             },
             "line": 45,
             "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\upload-technical-competence-evidence-steps.js:66"
+              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\upload-technical-competence-evidence-steps.js:62"
             }
           },
           {
@@ -636,7 +625,7 @@
             "name": "I am on the \"Who will provide technical management on your site?\" page",
             "result": {
               "status": "passed",
-              "duration": 13614968
+              "duration": 21144478
             },
             "line": 46,
             "match": {
@@ -649,11 +638,11 @@
             "name": "I click on \"Registered on a course - grace period\" on the Upload technical management qualifications page",
             "result": {
               "status": "passed",
-              "duration": 68585347
+              "duration": 93212775
             },
             "line": 47,
             "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\upload-technical-competence-evidence-steps.js:40"
+              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\upload-technical-competence-evidence-steps.js:36"
             }
           },
           {
@@ -662,7 +651,7 @@
             "name": "I click on \"Continue\" button",
             "result": {
               "status": "passed",
-              "duration": 1232949829
+              "duration": 1283544765
             },
             "line": 48,
             "match": {
@@ -675,7 +664,7 @@
             "name": "I am on the \"Upload the course registration email or letter\" page",
             "result": {
               "status": "passed",
-              "duration": 23876397
+              "duration": 32089556
             },
             "line": 49,
             "match": {
@@ -688,11 +677,11 @@
             "name": "I click back",
             "result": {
               "status": "passed",
-              "duration": 351713318
+              "duration": 346452968
             },
             "line": 50,
             "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\upload-technical-competence-evidence-steps.js:66"
+              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\upload-technical-competence-evidence-steps.js:62"
             }
           },
           {
@@ -701,7 +690,7 @@
             "name": "I am on the \"Who will provide technical management on your site?\" page",
             "result": {
               "status": "passed",
-              "duration": 13419066
+              "duration": 13111603
             },
             "line": 51,
             "match": {
@@ -714,11 +703,11 @@
             "name": "I click on \"Deemed competence\" on the Upload technical management qualifications page",
             "result": {
               "status": "passed",
-              "duration": 65437081
+              "duration": 94713947
             },
             "line": 52,
             "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\upload-technical-competence-evidence-steps.js:40"
+              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\upload-technical-competence-evidence-steps.js:36"
             }
           },
           {
@@ -727,7 +716,7 @@
             "name": "I click on \"Continue\" button",
             "result": {
               "status": "passed",
-              "duration": 1151631297
+              "duration": 1257954336
             },
             "line": 53,
             "match": {
@@ -740,7 +729,7 @@
             "name": "I am on the \"Upload evidence of their qualification\" page",
             "result": {
               "status": "passed",
-              "duration": 24178506
+              "duration": 35101271
             },
             "line": 54,
             "match": {
@@ -753,11 +742,11 @@
             "name": "I click back",
             "result": {
               "status": "passed",
-              "duration": 558656371
+              "duration": 330626405
             },
             "line": 55,
             "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\upload-technical-competence-evidence-steps.js:66"
+              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\upload-technical-competence-evidence-steps.js:62"
             }
           },
           {
@@ -766,7 +755,7 @@
             "name": "I am on the \"Who will provide technical management on your site?\" page",
             "result": {
               "status": "passed",
-              "duration": 13046004
+              "duration": 18648624
             },
             "line": 56,
             "match": {
@@ -779,11 +768,11 @@
             "name": "I click on \"ESA/EU skills\" on the Upload technical management qualifications page",
             "result": {
               "status": "passed",
-              "duration": 82468955
+              "duration": 109531548
             },
             "line": 57,
             "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\upload-technical-competence-evidence-steps.js:40"
+              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\upload-technical-competence-evidence-steps.js:36"
             }
           },
           {
@@ -792,7 +781,7 @@
             "name": "I click on \"Continue\" button",
             "result": {
               "status": "passed",
-              "duration": 1351994898
+              "duration": 1188651873
             },
             "line": 58,
             "match": {
@@ -805,7 +794,7 @@
             "name": "I am on the \"Upload the ESA EU Skills scheme certificate\" page",
             "result": {
               "status": "passed",
-              "duration": 35342244
+              "duration": 34136933
             },
             "line": 59,
             "match": {
@@ -818,11 +807,11 @@
             "name": "I click back",
             "result": {
               "status": "passed",
-              "duration": 348163429
+              "duration": 314972984
             },
             "line": 60,
             "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\upload-technical-competence-evidence-steps.js:66"
+              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\upload-technical-competence-evidence-steps.js:62"
             }
           },
           {
@@ -831,7 +820,7 @@
             "name": "I am on the \"Who will provide technical management on your site?\" page",
             "result": {
               "status": "passed",
-              "duration": 9637576
+              "duration": 15771229
             },
             "line": 61,
             "match": {
@@ -843,7 +832,7 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 34361
+              "duration": 49980
             },
             "hidden": true,
             "match": {
@@ -882,12 +871,12 @@
             "keyword": "Before ",
             "result": {
               "status": "passed",
-              "duration": 28113
+              "duration": 83001
             },
             "hidden": true,
             "embeddings": [
               {
-                "data": "Y2hyb21lLWRlc2t0b3AtdGVzdA==",
+                "data": "Y2hyb21lLXBob25lLXRlc3Q=",
                 "mime_type": "text/plain"
               }
             ],
@@ -901,7 +890,7 @@
             "name": "the application has been launched",
             "result": {
               "status": "passed",
-              "duration": 181195547
+              "duration": 201626478
             },
             "line": 4,
             "match": {
@@ -914,7 +903,7 @@
             "name": "I am on the \"Apply for a mobile plant standard rules waste permit\" page",
             "result": {
               "status": "passed",
-              "duration": 11161953
+              "duration": 28025594
             },
             "line": 5,
             "match": {
@@ -927,7 +916,7 @@
             "name": "I click on \"Continue\" button",
             "result": {
               "status": "passed",
-              "duration": 1323050485
+              "duration": 1481819934
             },
             "line": 7,
             "match": {
@@ -940,7 +929,7 @@
             "name": "I am on the \"Select a permit\" page",
             "result": {
               "status": "passed",
-              "duration": 12531929
+              "duration": 48249466
             },
             "line": 8,
             "match": {
@@ -953,7 +942,7 @@
             "name": "I select a permit \"SR2010-No-4\"",
             "result": {
               "status": "passed",
-              "duration": 10194938
+              "duration": 33106551
             },
             "line": 9,
             "match": {
@@ -966,7 +955,7 @@
             "name": "I click on \"Continue\" button",
             "result": {
               "status": "passed",
-              "duration": 1904272628
+              "duration": 1766493702
             },
             "line": 10,
             "match": {
@@ -979,7 +968,7 @@
             "name": "I am on the Task list page",
             "result": {
               "status": "passed",
-              "duration": 12569413
+              "duration": 29011797
             },
             "line": 11,
             "match": {
@@ -992,7 +981,7 @@
             "name": "I click on the \"Upload technical management qualifications\" link",
             "result": {
               "status": "passed",
-              "duration": 9908894
+              "duration": 33227484
             },
             "line": 69,
             "match": {
@@ -1005,7 +994,7 @@
             "name": "I am on the \"Who will provide technical management on your site?\" page",
             "result": {
               "status": "passed",
-              "duration": 488411435
+              "duration": 456993479
             },
             "line": 70,
             "match": {
@@ -1048,11 +1037,11 @@
             "name": "following are the options on the the technical qualifications page:",
             "result": {
               "status": "passed",
-              "duration": 551560
+              "duration": 603771
             },
             "line": 71,
             "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\upload-technical-competence-evidence-steps.js:15"
+              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\upload-technical-competence-evidence-steps.js:11"
             }
           },
           {
@@ -1061,11 +1050,11 @@
             "name": "I click on \"WAMITAB qualification\" on the Upload technical management qualifications page",
             "result": {
               "status": "passed",
-              "duration": 104740651
+              "duration": 148348711
             },
             "line": 77,
             "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\upload-technical-competence-evidence-steps.js:40"
+              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\upload-technical-competence-evidence-steps.js:36"
             }
           },
           {
@@ -1074,7 +1063,7 @@
             "name": "I click on \"Continue\" button",
             "result": {
               "status": "passed",
-              "duration": 1639340342
+              "duration": 1385262991
             },
             "line": 78,
             "match": {
@@ -1087,7 +1076,7 @@
             "name": "I am on the \"Upload the WAMITAB certificate\" page",
             "result": {
               "status": "passed",
-              "duration": 15348188
+              "duration": 46591215
             },
             "line": 79,
             "match": {
@@ -1100,11 +1089,11 @@
             "name": "I select img file to upload",
             "result": {
               "status": "passed",
-              "duration": 1753311146
+              "duration": 1554887376
             },
             "line": 80,
             "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\upload-technical-competence-evidence-steps.js:71"
+              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\upload-technical-competence-evidence-steps.js:67"
             }
           },
           {
@@ -1113,11 +1102,11 @@
             "name": "I select pdf file to upload",
             "result": {
               "status": "passed",
-              "duration": 5620368189
+              "duration": 7962545673
             },
             "line": 81,
             "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\upload-technical-competence-evidence-steps.js:77"
+              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\upload-technical-competence-evidence-steps.js:73"
             }
           },
           {
@@ -1126,7 +1115,7 @@
             "name": "I click on \"Continue\" button",
             "result": {
               "status": "passed",
-              "duration": 2048020542
+              "duration": 1966672111
             },
             "line": 82,
             "match": {
@@ -1139,7 +1128,7 @@
             "name": "I am on the Task list page",
             "result": {
               "status": "passed",
-              "duration": 32231909
+              "duration": 42950740
             },
             "line": 83,
             "match": {
@@ -1152,7 +1141,7 @@
             "name": "Upload documents is marked as completed",
             "result": {
               "status": "passed",
-              "duration": 23201673
+              "duration": 34172186
             },
             "line": 84,
             "match": {
@@ -1164,7 +1153,7 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 51764
+              "duration": 137444
             },
             "hidden": true,
             "match": {
@@ -1188,583 +1177,6 @@
           {
             "name": "@ui",
             "line": 67
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "id": "we-832-upload-technical-competence-evidence;as-a-user,-i-should-be-able-to-see-error-message-when-i-do-not-upload-a-file-and-try-to-proceed",
-        "keyword": "Scenario",
-        "line": 90,
-        "name": "As a user, I should be able to see error message when I do not upload a file and try to proceed",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Before ",
-            "result": {
-              "status": "passed",
-              "duration": 48195
-            },
-            "hidden": true,
-            "embeddings": [
-              {
-                "data": "Y2hyb21lLWRlc2t0b3AtdGVzdA==",
-                "mime_type": "text/plain"
-              }
-            ],
-            "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\support\\hooks.js:11"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "name": "the application has been launched",
-            "result": {
-              "status": "passed",
-              "duration": 170189779
-            },
-            "line": 4,
-            "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\application-steps.js:6"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "I am on the \"Apply for a mobile plant standard rules waste permit\" page",
-            "result": {
-              "status": "passed",
-              "duration": 23086541
-            },
-            "line": 5,
-            "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\new-application-steps.js:7"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "I click on \"Continue\" button",
-            "result": {
-              "status": "passed",
-              "duration": 1453199049
-            },
-            "line": 7,
-            "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\new-application-steps.js:25"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "I am on the \"Select a permit\" page",
-            "result": {
-              "status": "passed",
-              "duration": 36527921
-            },
-            "line": 8,
-            "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\new-application-steps.js:7"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "I select a permit \"SR2010-No-4\"",
-            "result": {
-              "status": "passed",
-              "duration": 24353434
-            },
-            "line": 9,
-            "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\select-permit-steps.js:9"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "I click on \"Continue\" button",
-            "result": {
-              "status": "passed",
-              "duration": 2110781484
-            },
-            "line": 10,
-            "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\new-application-steps.js:25"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "I am on the Task list page",
-            "result": {
-              "status": "passed",
-              "duration": 12774241
-            },
-            "line": 11,
-            "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\task-list-steps.js:7"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "name": "I click on the \"Upload technical management qualifications\" link",
-            "result": {
-              "status": "passed",
-              "duration": 28796260
-            },
-            "line": 91,
-            "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\task-list-steps.js:16"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "name": "I am on the \"Who will provide technical management on your site?\" page",
-            "result": {
-              "status": "passed",
-              "duration": 460276066
-            },
-            "line": 92,
-            "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\new-application-steps.js:7"
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "options"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "WAMITAB qualification"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Registered on a course - grace period"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Deemed competence"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "ESA/EU skills"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "And ",
-            "name": "following are the options on the the technical qualifications page:",
-            "result": {
-              "status": "passed",
-              "duration": 584136
-            },
-            "line": 93,
-            "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\upload-technical-competence-evidence-steps.js:15"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "name": "I click on \"WAMITAB qualification\" on the Upload technical management qualifications page",
-            "result": {
-              "status": "passed",
-              "duration": 154777332
-            },
-            "line": 99,
-            "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\upload-technical-competence-evidence-steps.js:40"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "I click on \"Continue\" button",
-            "result": {
-              "status": "passed",
-              "duration": 1239731432
-            },
-            "line": 100,
-            "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\new-application-steps.js:25"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "name": "I am on the \"Upload the WAMITAB certificate\" page",
-            "result": {
-              "status": "passed",
-              "duration": 26205356
-            },
-            "line": 101,
-            "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\new-application-steps.js:7"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "name": "I click on \"Continue\" button",
-            "result": {
-              "status": "passed",
-              "duration": 556123924
-            },
-            "line": 102,
-            "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\new-application-steps.js:25"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "name": "I should be able to see an error message \"You must upload at least one file. Choose a file then press the 'Upload chosen file' button.\"",
-            "result": {
-              "status": "passed",
-              "duration": 804582
-            },
-            "line": 103,
-            "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\upload-technical-competence-evidence-steps.js:11"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "After ",
-            "result": {
-              "status": "passed",
-              "duration": 432412
-            },
-            "hidden": true,
-            "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\support\\hooks.js:28"
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@desktop",
-            "line": 86
-          },
-          {
-            "name": "@phone",
-            "line": 87
-          },
-          {
-            "name": "@tablet",
-            "line": 88
-          },
-          {
-            "name": "@ui",
-            "line": 89
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "id": "we-832-upload-technical-competence-evidence;as-a-user,-when-i-try-to-upload-a-wrong-file,-i-should-be-able-to-see-error-message",
-        "keyword": "Scenario",
-        "line": 109,
-        "name": "As a user, when I try to upload a wrong file, I should be able to see error message",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Before ",
-            "result": {
-              "status": "passed",
-              "duration": 79878
-            },
-            "hidden": true,
-            "embeddings": [
-              {
-                "data": "Y2hyb21lLWRlc2t0b3AtdGVzdA==",
-                "mime_type": "text/plain"
-              }
-            ],
-            "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\support\\hooks.js:11"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "name": "the application has been launched",
-            "result": {
-              "status": "passed",
-              "duration": 193499444
-            },
-            "line": 4,
-            "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\application-steps.js:6"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "I am on the \"Apply for a mobile plant standard rules waste permit\" page",
-            "result": {
-              "status": "passed",
-              "duration": 22928570
-            },
-            "line": 5,
-            "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\new-application-steps.js:7"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "I click on \"Continue\" button",
-            "result": {
-              "status": "passed",
-              "duration": 1323625250
-            },
-            "line": 7,
-            "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\new-application-steps.js:25"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "I am on the \"Select a permit\" page",
-            "result": {
-              "status": "passed",
-              "duration": 12973712
-            },
-            "line": 8,
-            "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\new-application-steps.js:7"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "I select a permit \"SR2010-No-4\"",
-            "result": {
-              "status": "passed",
-              "duration": 15153624
-            },
-            "line": 9,
-            "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\select-permit-steps.js:9"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "I click on \"Continue\" button",
-            "result": {
-              "status": "passed",
-              "duration": 2161755282
-            },
-            "line": 10,
-            "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\new-application-steps.js:25"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "I am on the Task list page",
-            "result": {
-              "status": "passed",
-              "duration": 33783506
-            },
-            "line": 11,
-            "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\task-list-steps.js:7"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "name": "I click on the \"Upload technical management qualifications\" link",
-            "result": {
-              "status": "passed",
-              "duration": 22613967
-            },
-            "line": 110,
-            "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\task-list-steps.js:16"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "name": "I am on the \"Who will provide technical management on your site?\" page",
-            "result": {
-              "status": "passed",
-              "duration": 402726831
-            },
-            "line": 111,
-            "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\new-application-steps.js:7"
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "options"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "WAMITAB qualification"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Registered on a course - grace period"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Deemed competence"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "ESA/EU skills"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "And ",
-            "name": "following are the options on the the technical qualifications page:",
-            "result": {
-              "status": "passed",
-              "duration": 980403
-            },
-            "line": 112,
-            "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\upload-technical-competence-evidence-steps.js:15"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "name": "I click on \"WAMITAB qualification\" on the Upload technical management qualifications page",
-            "result": {
-              "status": "passed",
-              "duration": 110687772
-            },
-            "line": 118,
-            "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\upload-technical-competence-evidence-steps.js:40"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "I click on \"Continue\" button",
-            "result": {
-              "status": "passed",
-              "duration": 1123815887
-            },
-            "line": 119,
-            "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\new-application-steps.js:25"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "name": "I am on the \"Upload the WAMITAB certificate\" page",
-            "result": {
-              "status": "passed",
-              "duration": 15122388
-            },
-            "line": 120,
-            "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\new-application-steps.js:7"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "name": "I select ppt file to upload",
-            "result": {
-              "status": "passed",
-              "duration": 2344686726
-            },
-            "line": 121,
-            "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\upload-technical-competence-evidence-steps.js:83"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "I click on \"Continue\" button",
-            "result": {
-              "status": "passed",
-              "duration": 516390619
-            },
-            "line": 122,
-            "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\new-application-steps.js:25"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "name": "I should be able to see an error message \"That file’s too big. Upload a file that’s no more than 30MB.\"",
-            "result": {
-              "status": "passed",
-              "duration": 222677
-            },
-            "line": 123,
-            "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\upload-technical-competence-evidence-steps.js:11"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "After ",
-            "result": {
-              "status": "passed",
-              "duration": 297199
-            },
-            "hidden": true,
-            "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\support\\hooks.js:28"
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@desktop",
-            "line": 105
-          },
-          {
-            "name": "@phone",
-            "line": 106
-          },
-          {
-            "name": "@tablet",
-            "line": 107
-          },
-          {
-            "name": "@ui",
-            "line": 108
           }
         ],
         "type": "scenario"

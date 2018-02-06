@@ -7,12 +7,14 @@ const configCRM = require("../../../configCRM").configCRM;
 require("chromedriver");
 require("geckodriver");
 require("iedriver");
+require("cucumber");
 
 const PLATFORMS = {
 	CHROME_PHONE_DEV: "chrome-phone-dev",
 	CHROME_PHONE_TEST: "chrome-phone-test",
 	CHROME_DESKTOP_DEV: "chrome-desktop-dev",
 	CHROME_DESKTOP_TEST: "chrome-desktop-test",
+	CHROME_DESKTOP_HEADLESS_TEST: "chrome-desktop-headless-test",
 	CHROME_TABLET_DEV: "chrome-tablet-dev",
 	CHROME_TABLET_TEST: "chrome-tablet-test",
 	IE_DESKTOP_DEV: "ie-desktop-dev",
@@ -32,6 +34,15 @@ class Driver {
 			browserName: "chrome",
 			chromeOptions: {
 				args: ["--window-size=" + width + "," + height]
+			}
+		};
+	}
+
+	getChromeDesktopHeadlessSpec(width, height) {
+		return {
+			browserName: "chrome",
+			chromeOptions: {
+				args: ["--headless" + "," + "--window-size=" + width + "," + height]
 			}
 		};
 	}
@@ -96,6 +107,11 @@ class Driver {
 				//config.appUrl = config.appUrlDev;
 				//configCRM.appUrlCRM = configCRM.appUrlCRMDevMaster;
 				break;
+			case PLATFORMS.CHROME_DESKTOP_HEADLESS_TEST:
+				spec = this.getChromeDesktopHeadlessSpec(width, height);
+				//config.appUrl = config.appUrlDev;
+				//configCRM.appUrlCRM = configCRM.appUrlCRMDevMaster;
+				break;	
 			case PLATFORMS.CHROME_DESKTOP_TEST:
 				spec = this.getChromeDesktopSpec(width, height);
 				//config.appUrl = config.appUrlTest;
@@ -143,6 +159,7 @@ class Driver {
 				case PLATFORMS.CHROME_PHONE_DEV:
 				case PLATFORMS.CHROME_PHONE_TEST:
 				case PLATFORMS.CHROME_DESKTOP_TEST:
+				case PLATFORMS.CHROME_DESKTOP_HEADLESS_TEST:
 				case PLATFORMS.CHROME_DESKTOP_DEV:
 				case PLATFORMS.CHROME_TABLET_TEST:
 					this.browser = new webdriver.Builder().withCapabilities(this.getDriverSpec(parameters.platform, parameters.width, parameters.height)).build();

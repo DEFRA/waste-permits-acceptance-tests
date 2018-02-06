@@ -3,6 +3,7 @@ const NewApplication = require("./new-application").NewApplication;
 const SelectPermit = require("./select-permit").SelectPermit;
 const TaskList = require("./task-list").TaskList;
 const UploadTechCompetency = require("./upload-tech-competency").UploadTechCompetency;
+const LoginCRM = require("./login-crm").LoginCRM;
 const Fakes = require("./fakes").Fakes;
 
 class Factory {
@@ -16,6 +17,7 @@ class Factory {
 			uploadtechcompetency: UploadTechCompetency,
 			selectpermit: SelectPermit,
 			tasklist: TaskList,
+			logincrm: LoginCRM,
 			fakes: Fakes
 		};
 	}

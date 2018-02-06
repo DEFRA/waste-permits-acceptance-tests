@@ -37,13 +37,54 @@ class UploadTechCompetency {
         return await this.browser.wait(until.elementLocated(By.id("file")), 5 * 20000);
     }
 
+    async errorMessage() {
+        return await this.browser.wait(until.elementLocated(By.id("error-summary-list")), 5 * 20000);
+    }
+
+    waitUntilErrorMessageLoaded(title) {
+        return this.browser.wait(until.elementLocated(By.xpath(`//a[contains(text(),"${title}")]`)), 5 * 20000);
+    }
+
+
+    async enterPPTFile() {
+        const usernameElement = await this.chooseFile();
+        const path = require("path");
+        const download = require('image-downloader');
+
+        // Download to a directory and save with the original filename
+        const options = {
+            url: 'https://scholar.harvard.edu/files/torman_personal/files/samplepptx.pptx',
+            dest: __dirname                  // Save to /path/to/dest/image.jpg
+        };
+
+        const { filename, image } = await download.image(options);
+
+        await usernameElement.sendKeys(filename);
+        await usernameElement.submit();
+        
+    }
+
+    async enter30MBPlusFile() {
+        const usernameElement = await this.chooseFile();
+        const path = require("path");
+        const download = require('image-downloader');
+
+        // Download to a directory and save with the original filename
+        const options = {
+            url: 'https://eoimages.gsfc.nasa.gov/images/imagerecords/73000/73751/world.topo.bathy.200407.3x21600x21600.C1.jpg',
+            dest: __dirname                  // Save to /path/to/dest/image.jpg
+        };
+
+        const { filename, image } = await download.image(options);
+
+        await usernameElement.sendKeys(filename);
+        await usernameElement.submit();
+        
+    }
+
     async enterPDFFile() {
         const usernameElement = await this.chooseFile();
         const path = require("path");
-        // console.log("./ = %s", path.resolve("./"));
-        // console.log("__dirname = %s", path.resolve(__dirname));
-
-
         const download = require('image-downloader');
 
         // Download to a directory and save with the original filename
@@ -53,7 +94,6 @@ class UploadTechCompetency {
         };
 
         const { filename, image } = await download.image(options);
-        //console.log(filename); // => /path/to/dest/image.jpg 
 
         await usernameElement.sendKeys(filename);
         await usernameElement.submit();
@@ -64,10 +104,7 @@ class UploadTechCompetency {
     async enterJPGFile() {
         const usernameElement = await this.chooseFile();
         const path = require("path");
-        // console.log("./ = %s", path.resolve("./"));
-        // console.log("__dirname = %s", path.resolve(__dirname));
-
-
+     
         const download = require('image-downloader');
 
         // Download to a directory and save with the original filename
@@ -77,8 +114,7 @@ class UploadTechCompetency {
         };
 
         const { filename, image } = await download.image(options);
-        //console.log(filename); // => /path/to/dest/image.jpg 
-
+  
         await usernameElement.sendKeys(filename);
         await usernameElement.submit();
 

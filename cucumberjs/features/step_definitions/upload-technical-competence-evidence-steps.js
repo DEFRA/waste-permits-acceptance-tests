@@ -2,11 +2,15 @@ const World = require("../support/world").World;
 const ks = require("node-key-sender");
 const driver = require('selenium-webdriver');
 
+
 module.exports = function () {
 
   this.World = World;
 
-
+  
+  this.defineStep(/^I should be able to see an error message "([^"]*)"$/, { timeout: 60000 }, function (message) {
+  this.uploadTechCompetency.waitUntilErrorMessageLoaded(message);
+});
 
   this.defineStep(/^following are the options on the the technical qualifications page:$/, { timeout: 60000 }, function (table) {
     //const data = table.rowsHash();
@@ -73,6 +77,19 @@ module.exports = function () {
   this.defineStep(/^I select pdf file to upload$/, { timeout: 60000 }, async function () {
     const chooseFile = await this.uploadTechCompetency.chooseFile();
   await this.uploadTechCompetency.enterPDFFile();
+
+  });
+
+  this.defineStep(/^I select ppt file to upload$/, { timeout: 60000 }, async function () {
+    const chooseFile = await this.uploadTechCompetency.chooseFile();
+  await this.uploadTechCompetency.enterPPTFile();
+
+  });
+
+  
+  this.defineStep(/^I select 40MB file to upload$/, { timeout: 60000 }, async function () {
+    const chooseFile = await this.uploadTechCompetency.chooseFile();
+  await this.uploadTechCompetency.enter30MBPlusFile();
 
   });
 
