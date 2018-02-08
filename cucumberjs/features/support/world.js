@@ -21,6 +21,7 @@ module.exports.World = function World(parameters) {
 	this.taskList = this.pageFactory.create("tasklist");
 	this.loginCRM = this.pageFactory.create("logincrm");
 	this.confirmRules = this.pageFactory.create("confirmrules");
+	this.giveContactDetails = this.pageFactory.create("givecontactdetails");
 	this.uploadTechCompetency = this.pageFactory.create("uploadtechcompetency");
 	this.parameters = parameters;
 

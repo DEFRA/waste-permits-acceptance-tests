@@ -6,6 +6,8 @@ const UploadTechCompetency = require("./upload-tech-competency").UploadTechCompe
 const LoginCRM = require("./login-crm").LoginCRM;
 const Fakes = require("./fakes").Fakes;
 const ConfirmRules = require("./confirm-meet-the-rules").ConfirmRules;
+const GiveContactDetails = require("./give-contact-details").GiveContactDetails;
+
 
 class Factory {
 
@@ -20,7 +22,8 @@ class Factory {
 			tasklist: TaskList,
 			confirmrules: ConfirmRules,
 			logincrm: LoginCRM,
-			fakes: Fakes
+			fakes: Fakes,
+			givecontactdetails: GiveContactDetails
 		};
 	}
 
