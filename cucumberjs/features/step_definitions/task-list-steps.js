@@ -13,6 +13,10 @@ module.exports = function () {
         await this.taskList.uploadCompleted();
     });
 
+    this.defineStep(/^Confirm you can meet the rules is marked as completed$/, { timeout: 60000 }, async function () {
+        await this.taskList.confirmRulesCompleted();
+    });
+
     this.defineStep(/^I click on the "(.*?)" link$/, { timeout: 60000 }, async function (option) {
         switch (option) {
             case "Upload technical management qualifications":

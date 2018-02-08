@@ -5,6 +5,7 @@ const TaskList = require("./task-list").TaskList;
 const UploadTechCompetency = require("./upload-tech-competency").UploadTechCompetency;
 const LoginCRM = require("./login-crm").LoginCRM;
 const Fakes = require("./fakes").Fakes;
+const ConfirmRules = require("./confirm-meet-the-rules").ConfirmRules;
 
 class Factory {
 
@@ -17,6 +18,7 @@ class Factory {
 			uploadtechcompetency: UploadTechCompetency,
 			selectpermit: SelectPermit,
 			tasklist: TaskList,
+			confirmrules: ConfirmRules,
 			logincrm: LoginCRM,
 			fakes: Fakes
 		};

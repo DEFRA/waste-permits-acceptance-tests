@@ -21,6 +21,10 @@ class TaskList {
     uploadCompleted() {
         return this.browser.wait(until.elementLocated(By.id("upload-completed")), 5 * 20000);
     }
+
+    confirmRulesCompleted() {
+        return this.browser.wait(until.elementLocated(By.id("operation-rules-completed")), 5 * 20000);
+    }
     
 
     confirmThatYourOperationMeetsRulesLink() {
