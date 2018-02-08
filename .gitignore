@@ -2,6 +2,7 @@
 .env
 
 /node_modules/
+/cucumberjs/features/reports/
 /govuk_modules/
 /log/
 /public/
