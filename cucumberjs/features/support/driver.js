@@ -32,6 +32,10 @@ class Driver {
 	getChromeDesktopSpec(width, height) {
 		return {
 			browserName: "chrome",
+			browserstack: {
+				user: "amrutabendre1",
+				key: "KDzfKFDVgAevzBNe5ymM"
+			},
 			chromeOptions: {
 				args: ["--window-size=" + width + "," + height]
 			}
