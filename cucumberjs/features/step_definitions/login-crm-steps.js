@@ -1,3 +1,5 @@
+//import { stringify } from "querystring";
+
 const World = require("../support/world").World;
 
 module.exports = function () {
@@ -20,9 +22,11 @@ module.exports = function () {
         await signin.click();
         const staysignin = await this.loginCRM.staySignedInNoButton();
         await staysignin.click();
-       // const close = await this.loginCRM.closePopup();
-        //await close.click();
-        
+        const title = await this.loginCRM.navtourtitle();
+        console.log(title);
+        // const close = await this.loginCRM.closePopup();
+        // await close.click();
+
 
     });
 };

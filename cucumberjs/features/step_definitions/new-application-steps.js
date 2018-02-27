@@ -4,7 +4,7 @@ module.exports = function () {
 
     this.World = World;
 
-    this.defineStep(/^I am on the "(.*?)" page$/,{ timeout: 60000 }, async function (title) {
+    this.defineStep(/^I am on the "(.*?)" page$/, { timeout: 60000 }, async function (title) {
         await this.newApplication.waitUntilLoaded(title);
     });
 

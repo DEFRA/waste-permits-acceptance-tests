@@ -2,184 +2,6 @@
   {
     "elements": [
       {
-        "id": "login-waste-permits-backend;login-waste-permits-backend",
-        "keyword": "Scenario",
-        "line": 10,
-        "name": "Login Waste Permits Backend",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Before ",
-            "result": {
-              "status": "passed",
-              "duration": 713101
-            },
-            "hidden": true,
-            "embeddings": [
-              {
-                "data": "Y2hyb21lLWRlc2t0b3AtdGVzdA==",
-                "mime_type": "text/plain"
-              }
-            ],
-            "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\support\\hooks.js:11"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "name": "the CRM application has been launched",
-            "result": {
-              "status": "passed",
-              "duration": 3739349891
-            },
-            "line": 11,
-            "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\application-steps.js:11"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "I am on the CRM login page",
-            "result": {
-              "status": "passed",
-              "duration": 34080706
-            },
-            "line": 12,
-            "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\login-crm-steps.js:7"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "I login as \"amruta.bendre@defradev.onmicrosoft.com\" password \"W@ste-Permits\"",
-            "result": {
-              "status": "passed",
-              "duration": 13676107449
-            },
-            "line": 13,
-            "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\login-crm-steps.js:12"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "After ",
-            "result": {
-              "status": "passed",
-              "duration": 266855
-            },
-            "hidden": true,
-            "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\support\\hooks.js:28"
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@desktop",
-            "line": 7
-          },
-          {
-            "name": "@phone",
-            "line": 8
-          },
-          {
-            "name": "@tablet",
-            "line": 9
-          }
-        ],
-        "type": "scenario"
-      }
-    ],
-    "id": "login-waste-permits-backend",
-    "keyword": "Feature",
-    "line": 1,
-    "name": "Login Waste Permits Backend",
-    "tags": [],
-    "uri": "C:/Program Files/Git/waste-permits-acceptance-tests/cucumberjs/features/login_backendCRM.feature"
-  },
-  {
-    "elements": [
-      {
-        "id": "login-waste-permits-frontend;login-waste-permits-frontend",
-        "keyword": "Scenario",
-        "line": 10,
-        "name": "Login Waste Permits Frontend",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Before ",
-            "result": {
-              "status": "passed",
-              "duration": 73631
-            },
-            "hidden": true,
-            "embeddings": [
-              {
-                "data": "Y2hyb21lLWRlc2t0b3AtdGVzdA==",
-                "mime_type": "text/plain"
-              }
-            ],
-            "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\support\\hooks.js:11"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "name": "the application has been launched",
-            "result": {
-              "status": "passed",
-              "duration": 910287579
-            },
-            "line": 11,
-            "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\application-steps.js:6"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "After ",
-            "result": {
-              "status": "passed",
-              "duration": 45517
-            },
-            "hidden": true,
-            "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\support\\hooks.js:28"
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@desktop",
-            "line": 7
-          },
-          {
-            "name": "@phone",
-            "line": 8
-          },
-          {
-            "name": "@tablet",
-            "line": 9
-          }
-        ],
-        "type": "scenario"
-      }
-    ],
-    "id": "login-waste-permits-frontend",
-    "keyword": "Feature",
-    "line": 1,
-    "name": "Login Waste Permits Frontend",
-    "tags": [],
-    "uri": "C:/Program Files/Git/waste-permits-acceptance-tests/cucumberjs/features/login_frontend.feature"
-  },
-  {
-    "elements": [
-      {
         "id": "we-832-upload-technical-competence-evidence;as-a-user-when-i-click-on-the-upload-technical-management-qualifications-page,-then-the-technical-qualifications-selection-page-should-be-displayed",
         "keyword": "Scenario",
         "line": 17,
@@ -190,7 +12,7 @@
             "keyword": "Before ",
             "result": {
               "status": "passed",
-              "duration": 49533
+              "duration": 790748
             },
             "hidden": true,
             "embeddings": [
@@ -209,7 +31,7 @@
             "name": "the application has been launched",
             "result": {
               "status": "passed",
-              "duration": 362699895
+              "duration": 3113207623
             },
             "line": 4,
             "match": {
@@ -222,7 +44,7 @@
             "name": "I am on the \"Apply for a mobile plant standard rules waste permit\" page",
             "result": {
               "status": "passed",
-              "duration": 27398171
+              "duration": 29907386
             },
             "line": 5,
             "match": {
@@ -235,7 +57,7 @@
             "name": "I click on \"Continue\" button",
             "result": {
               "status": "passed",
-              "duration": 2273104837
+              "duration": 5294004511
             },
             "line": 7,
             "match": {
@@ -248,7 +70,7 @@
             "name": "I am on the \"Select a permit\" page",
             "result": {
               "status": "passed",
-              "duration": 33353325
+              "duration": 34377876
             },
             "line": 8,
             "match": {
@@ -261,7 +83,7 @@
             "name": "I select a permit \"SR2010-No-4\"",
             "result": {
               "status": "passed",
-              "duration": 29047497
+              "duration": 29531201
             },
             "line": 9,
             "match": {
@@ -274,7 +96,7 @@
             "name": "I click on \"Continue\" button",
             "result": {
               "status": "passed",
-              "duration": 5493718193
+              "duration": 3647126311
             },
             "line": 10,
             "match": {
@@ -286,9 +108,8 @@
             "keyword": "And ",
             "name": "I am on the Task list page",
             "result": {
-              "status": "failed",
-              "duration": 60000725597,
-              "error_message": "function timed out after 60000 milliseconds"
+              "status": "passed",
+              "duration": 25764441
             },
             "line": 11,
             "match": {
@@ -300,19 +121,21 @@
             "keyword": "When ",
             "name": "I click on the \"Upload technical management qualifications\" link",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 20552738
             },
             "line": 19,
             "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\task-list-steps.js:16"
+              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\task-list-steps.js:20"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "name": "I am on the \"Who will provide technical management on your site?\" page",
+            "name": "I am on the \"What evidence of technical competence do you have?\" page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 937007066
             },
             "line": 20,
             "match": {
@@ -330,22 +153,22 @@
                   },
                   {
                     "cells": [
-                      "WAMITAB qualification"
+                      "WAMITAB or EPOC qualification"
                     ]
                   },
                   {
                     "cells": [
-                      "Registered on a course - grace period"
+                      "We’re getting WAMITAB or EPOC qualifications"
                     ]
                   },
                   {
                     "cells": [
-                      "Deemed competence"
+                      "Deemed competence or an Environment Agency assessment with WAMITAB continuing competence certification"
                     ]
                   },
                   {
                     "cells": [
-                      "ESA/EU skills"
+                      "Energy & Utility Skills / ESA Competence Management System"
                     ]
                   }
                 ]
@@ -354,7 +177,8 @@
             "keyword": "And ",
             "name": "following are the options on the the technical qualifications page:",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1573462
             },
             "line": 21,
             "match": {
@@ -366,7 +190,7 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 39270
+              "duration": 158744318
             },
             "hidden": true,
             "match": {
@@ -405,7 +229,7 @@
             "keyword": "Before ",
             "result": {
               "status": "passed",
-              "duration": 24989
+              "duration": 230709
             },
             "hidden": true,
             "embeddings": [
@@ -424,7 +248,7 @@
             "name": "the application has been launched",
             "result": {
               "status": "passed",
-              "duration": 345547982
+              "duration": 2110423496
             },
             "line": 4,
             "match": {
@@ -437,7 +261,7 @@
             "name": "I am on the \"Apply for a mobile plant standard rules waste permit\" page",
             "result": {
               "status": "passed",
-              "duration": 27679306
+              "duration": 28030031
             },
             "line": 5,
             "match": {
@@ -450,7 +274,7 @@
             "name": "I click on \"Continue\" button",
             "result": {
               "status": "passed",
-              "duration": 1711523770
+              "duration": 4495197057
             },
             "line": 7,
             "match": {
@@ -463,7 +287,7 @@
             "name": "I am on the \"Select a permit\" page",
             "result": {
               "status": "passed",
-              "duration": 47963422
+              "duration": 25661359
             },
             "line": 8,
             "match": {
@@ -476,7 +300,7 @@
             "name": "I select a permit \"SR2010-No-4\"",
             "result": {
               "status": "passed",
-              "duration": 29098815
+              "duration": 21062350
             },
             "line": 9,
             "match": {
@@ -489,7 +313,7 @@
             "name": "I click on \"Continue\" button",
             "result": {
               "status": "passed",
-              "duration": 1982211292
+              "duration": 3421214431
             },
             "line": 10,
             "match": {
@@ -502,7 +326,7 @@
             "name": "I am on the Task list page",
             "result": {
               "status": "passed",
-              "duration": 21802245
+              "duration": 35290002
             },
             "line": 11,
             "match": {
@@ -515,20 +339,20 @@
             "name": "I click on the \"Upload technical management qualifications\" link",
             "result": {
               "status": "passed",
-              "duration": 28015329
+              "duration": 27283015
             },
             "line": 34,
             "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\task-list-steps.js:16"
+              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\task-list-steps.js:20"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "name": "I am on the \"Who will provide technical management on your site?\" page",
+            "name": "I am on the \"What evidence of technical competence do you have?\" page",
             "result": {
               "status": "passed",
-              "duration": 554103322
+              "duration": 929097807
             },
             "line": 35,
             "match": {
@@ -546,22 +370,22 @@
                   },
                   {
                     "cells": [
-                      "WAMITAB qualification"
+                      "WAMITAB or EPOC qualification"
                     ]
                   },
                   {
                     "cells": [
-                      "Registered on a course - grace period"
+                      "We’re getting WAMITAB or EPOC qualifications"
                     ]
                   },
                   {
                     "cells": [
-                      "Deemed competence"
+                      "Deemed competence or an Environment Agency assessment with WAMITAB continuing competence certification"
                     ]
                   },
                   {
                     "cells": [
-                      "ESA/EU skills"
+                      "Energy & Utility Skills / ESA Competence Management System"
                     ]
                   }
                 ]
@@ -571,7 +395,7 @@
             "name": "following are the options on the the technical qualifications page:",
             "result": {
               "status": "passed",
-              "duration": 1050910
+              "duration": 809043
             },
             "line": 36,
             "match": {
@@ -581,10 +405,10 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "name": "I click on \"WAMITAB qualification\" on the Upload technical management qualifications page",
+            "name": "I click on \"WAMITAB or EPOC qualification\" on the Upload technical management qualifications page",
             "result": {
               "status": "passed",
-              "duration": 160968550
+              "duration": 139338431
             },
             "line": 42,
             "match": {
@@ -597,7 +421,7 @@
             "name": "I click on \"Continue\" button",
             "result": {
               "status": "passed",
-              "duration": 1307311385
+              "duration": 2467491894
             },
             "line": 43,
             "match": {
@@ -607,10 +431,10 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "name": "I am on the \"Upload the WAMITAB certificate\" page",
+            "name": "I am on the \"WAMITAB or EPOC: upload evidence\" page",
             "result": {
               "status": "passed",
-              "duration": 31847690
+              "duration": 28362930
             },
             "line": 44,
             "match": {
@@ -623,7 +447,7 @@
             "name": "I click back",
             "result": {
               "status": "passed",
-              "duration": 461378294
+              "duration": 679187280
             },
             "line": 45,
             "match": {
@@ -633,10 +457,10 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "name": "I am on the \"Who will provide technical management on your site?\" page",
+            "name": "I am on the \"What evidence of technical competence do you have?\" page",
             "result": {
               "status": "passed",
-              "duration": 13614968
+              "duration": 27832790
             },
             "line": 46,
             "match": {
@@ -646,10 +470,10 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "name": "I click on \"Registered on a course - grace period\" on the Upload technical management qualifications page",
+            "name": "I click on \"We’re getting WAMITAB or EPOC qualifications\" on the Upload technical management qualifications page",
             "result": {
               "status": "passed",
-              "duration": 68585347
+              "duration": 74885382
             },
             "line": 47,
             "match": {
@@ -662,7 +486,7 @@
             "name": "I click on \"Continue\" button",
             "result": {
               "status": "passed",
-              "duration": 1232949829
+              "duration": 3898750869
             },
             "line": 48,
             "match": {
@@ -672,10 +496,10 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "name": "I am on the \"Upload the course registration email or letter\" page",
+            "name": "I am on the \"Getting a qualification: upload evidence\" page",
             "result": {
               "status": "passed",
-              "duration": 23876397
+              "duration": 21626851
             },
             "line": 49,
             "match": {
@@ -688,7 +512,7 @@
             "name": "I click back",
             "result": {
               "status": "passed",
-              "duration": 351713318
+              "duration": 685417762
             },
             "line": 50,
             "match": {
@@ -698,10 +522,10 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "name": "I am on the \"Who will provide technical management on your site?\" page",
+            "name": "I am on the \"What evidence of technical competence do you have?\" page",
             "result": {
               "status": "passed",
-              "duration": 13419066
+              "duration": 36233365
             },
             "line": 51,
             "match": {
@@ -711,10 +535,10 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "name": "I click on \"Deemed competence\" on the Upload technical management qualifications page",
+            "name": "I click on \"Deemed competence or an Environment Agency assessment with WAMITAB continuing competence certification\" on the Upload technical management qualifications page",
             "result": {
               "status": "passed",
-              "duration": 65437081
+              "duration": 81650020
             },
             "line": 52,
             "match": {
@@ -727,7 +551,7 @@
             "name": "I click on \"Continue\" button",
             "result": {
               "status": "passed",
-              "duration": 1151631297
+              "duration": 1865276195
             },
             "line": 53,
             "match": {
@@ -737,10 +561,10 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "name": "I am on the \"Upload evidence of their qualification\" page",
+            "name": "I am on the \"Deemed competence or an assessment: upload evidence\" page",
             "result": {
               "status": "passed",
-              "duration": 24178506
+              "duration": 23934833
             },
             "line": 54,
             "match": {
@@ -753,7 +577,7 @@
             "name": "I click back",
             "result": {
               "status": "passed",
-              "duration": 558656371
+              "duration": 688521847
             },
             "line": 55,
             "match": {
@@ -763,10 +587,10 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "name": "I am on the \"Who will provide technical management on your site?\" page",
+            "name": "I am on the \"What evidence of technical competence do you have?\" page",
             "result": {
               "status": "passed",
-              "duration": 13046004
+              "duration": 25845212
             },
             "line": 56,
             "match": {
@@ -776,10 +600,10 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "name": "I click on \"ESA/EU skills\" on the Upload technical management qualifications page",
+            "name": "I click on \"Energy & Utility Skills / ESA Competence Management System\" on the Upload technical management qualifications page",
             "result": {
               "status": "passed",
-              "duration": 82468955
+              "duration": 92593750
             },
             "line": 57,
             "match": {
@@ -792,7 +616,7 @@
             "name": "I click on \"Continue\" button",
             "result": {
               "status": "passed",
-              "duration": 1351994898
+              "duration": 1763819560
             },
             "line": 58,
             "match": {
@@ -802,10 +626,10 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "name": "I am on the \"Upload the ESA EU Skills scheme certificate\" page",
+            "name": "I am on the \"Energy & Utility Skills / ESA: upload evidence\" page",
             "result": {
               "status": "passed",
-              "duration": 35342244
+              "duration": 29183576
             },
             "line": 59,
             "match": {
@@ -818,7 +642,7 @@
             "name": "I click back",
             "result": {
               "status": "passed",
-              "duration": 348163429
+              "duration": 674378982
             },
             "line": 60,
             "match": {
@@ -828,10 +652,10 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "name": "I am on the \"Who will provide technical management on your site?\" page",
+            "name": "I am on the \"What evidence of technical competence do you have?\" page",
             "result": {
               "status": "passed",
-              "duration": 9637576
+              "duration": 14452559
             },
             "line": 61,
             "match": {
@@ -843,7 +667,7 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 34361
+              "duration": 182569822
             },
             "hidden": true,
             "match": {
@@ -872,17 +696,17 @@
         "type": "scenario"
       },
       {
-        "id": "we-832-upload-technical-competence-evidence;as-a-user,-i-should-be-able-to-upload-technical-documents-for-the-technical-competencies",
+        "id": "we-832-upload-technical-competence-evidence;as-a-user,-i-should-be-able-to-upload-jpg-technical-documents-for-the-technical-competencies",
         "keyword": "Scenario",
         "line": 68,
-        "name": "As a user, I should be able to upload technical documents for the technical competencies",
+        "name": "As a user, I should be able to upload JPG technical documents for the technical competencies",
         "steps": [
           {
             "arguments": [],
             "keyword": "Before ",
             "result": {
               "status": "passed",
-              "duration": 28113
+              "duration": 127626
             },
             "hidden": true,
             "embeddings": [
@@ -901,7 +725,7 @@
             "name": "the application has been launched",
             "result": {
               "status": "passed",
-              "duration": 181195547
+              "duration": 2084186927
             },
             "line": 4,
             "match": {
@@ -914,7 +738,7 @@
             "name": "I am on the \"Apply for a mobile plant standard rules waste permit\" page",
             "result": {
               "status": "passed",
-              "duration": 11161953
+              "duration": 24549760
             },
             "line": 5,
             "match": {
@@ -927,7 +751,7 @@
             "name": "I click on \"Continue\" button",
             "result": {
               "status": "passed",
-              "duration": 1323050485
+              "duration": 2294427998
             },
             "line": 7,
             "match": {
@@ -940,7 +764,7 @@
             "name": "I am on the \"Select a permit\" page",
             "result": {
               "status": "passed",
-              "duration": 12531929
+              "duration": 25939370
             },
             "line": 8,
             "match": {
@@ -953,7 +777,7 @@
             "name": "I select a permit \"SR2010-No-4\"",
             "result": {
               "status": "passed",
-              "duration": 10194938
+              "duration": 21489854
             },
             "line": 9,
             "match": {
@@ -966,7 +790,7 @@
             "name": "I click on \"Continue\" button",
             "result": {
               "status": "passed",
-              "duration": 1904272628
+              "duration": 3143199350
             },
             "line": 10,
             "match": {
@@ -979,7 +803,7 @@
             "name": "I am on the Task list page",
             "result": {
               "status": "passed",
-              "duration": 12569413
+              "duration": 27919362
             },
             "line": 11,
             "match": {
@@ -992,20 +816,20 @@
             "name": "I click on the \"Upload technical management qualifications\" link",
             "result": {
               "status": "passed",
-              "duration": 9908894
+              "duration": 22488551
             },
             "line": 69,
             "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\task-list-steps.js:16"
+              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\task-list-steps.js:20"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "name": "I am on the \"Who will provide technical management on your site?\" page",
+            "name": "I am on the \"What evidence of technical competence do you have?\" page",
             "result": {
               "status": "passed",
-              "duration": 488411435
+              "duration": 914900054
             },
             "line": 70,
             "match": {
@@ -1023,22 +847,22 @@
                   },
                   {
                     "cells": [
-                      "WAMITAB qualification"
+                      "WAMITAB or EPOC qualification"
                     ]
                   },
                   {
                     "cells": [
-                      "Registered on a course - grace period"
+                      "We’re getting WAMITAB or EPOC qualifications"
                     ]
                   },
                   {
                     "cells": [
-                      "Deemed competence"
+                      "Deemed competence or an Environment Agency assessment with WAMITAB continuing competence certification"
                     ]
                   },
                   {
                     "cells": [
-                      "ESA/EU skills"
+                      "Energy & Utility Skills / ESA Competence Management System"
                     ]
                   }
                 ]
@@ -1048,7 +872,7 @@
             "name": "following are the options on the the technical qualifications page:",
             "result": {
               "status": "passed",
-              "duration": 551560
+              "duration": 515413
             },
             "line": 71,
             "match": {
@@ -1058,10 +882,10 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "name": "I click on \"WAMITAB qualification\" on the Upload technical management qualifications page",
+            "name": "I click on \"WAMITAB or EPOC qualification\" on the Upload technical management qualifications page",
             "result": {
               "status": "passed",
-              "duration": 104740651
+              "duration": 138663708
             },
             "line": 77,
             "match": {
@@ -1074,7 +898,7 @@
             "name": "I click on \"Continue\" button",
             "result": {
               "status": "passed",
-              "duration": 1639340342
+              "duration": 2286019837
             },
             "line": 78,
             "match": {
@@ -1084,10 +908,10 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "name": "I am on the \"Upload the WAMITAB certificate\" page",
+            "name": "I am on the \"WAMITAB or EPOC: upload evidence\" page",
             "result": {
               "status": "passed",
-              "duration": 15348188
+              "duration": 25779167
             },
             "line": 79,
             "match": {
@@ -1100,7 +924,7 @@
             "name": "I select img file to upload",
             "result": {
               "status": "passed",
-              "duration": 1753311146
+              "duration": 2919462470
             },
             "line": 80,
             "match": {
@@ -1109,26 +933,13 @@
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "name": "I select pdf file to upload",
-            "result": {
-              "status": "passed",
-              "duration": 5620368189
-            },
-            "line": 81,
-            "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\upload-technical-competence-evidence-steps.js:77"
-            }
-          },
-          {
-            "arguments": [],
             "keyword": "When ",
             "name": "I click on \"Continue\" button",
             "result": {
               "status": "passed",
-              "duration": 2048020542
+              "duration": 2053408469
             },
-            "line": 82,
+            "line": 81,
             "match": {
               "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\new-application-steps.js:25"
             }
@@ -1139,9 +950,9 @@
             "name": "I am on the Task list page",
             "result": {
               "status": "passed",
-              "duration": 32231909
+              "duration": 26261559
             },
-            "line": 83,
+            "line": 82,
             "match": {
               "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\task-list-steps.js:7"
             }
@@ -1152,9 +963,9 @@
             "name": "Upload documents is marked as completed",
             "result": {
               "status": "passed",
-              "duration": 23201673
+              "duration": 22064172
             },
-            "line": 84,
+            "line": 83,
             "match": {
               "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\task-list-steps.js:12"
             }
@@ -1164,7 +975,7 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 51764
+              "duration": 174573099
             },
             "hidden": true,
             "match": {
@@ -1193,17 +1004,17 @@
         "type": "scenario"
       },
       {
-        "id": "we-832-upload-technical-competence-evidence;as-a-user,-i-should-be-able-to-see-error-message-when-i-do-not-upload-a-file-and-try-to-proceed",
+        "id": "we-832-upload-technical-competence-evidence;as-a-user,-i-should-be-able-to-upload-pdf-technical-documents-for-the-technical-competencies",
         "keyword": "Scenario",
-        "line": 90,
-        "name": "As a user, I should be able to see error message when I do not upload a file and try to proceed",
+        "line": 89,
+        "name": "As a user, I should be able to upload PDF technical documents for the technical competencies",
         "steps": [
           {
             "arguments": [],
             "keyword": "Before ",
             "result": {
               "status": "passed",
-              "duration": 48195
+              "duration": 83448
             },
             "hidden": true,
             "embeddings": [
@@ -1222,7 +1033,7 @@
             "name": "the application has been launched",
             "result": {
               "status": "passed",
-              "duration": 170189779
+              "duration": 2072991068
             },
             "line": 4,
             "match": {
@@ -1235,7 +1046,7 @@
             "name": "I am on the \"Apply for a mobile plant standard rules waste permit\" page",
             "result": {
               "status": "passed",
-              "duration": 23086541
+              "duration": 29966291
             },
             "line": 5,
             "match": {
@@ -1248,7 +1059,7 @@
             "name": "I click on \"Continue\" button",
             "result": {
               "status": "passed",
-              "duration": 1453199049
+              "duration": 3445753035
             },
             "line": 7,
             "match": {
@@ -1261,7 +1072,7 @@
             "name": "I am on the \"Select a permit\" page",
             "result": {
               "status": "passed",
-              "duration": 36527921
+              "duration": 24648381
             },
             "line": 8,
             "match": {
@@ -1274,7 +1085,7 @@
             "name": "I select a permit \"SR2010-No-4\"",
             "result": {
               "status": "passed",
-              "duration": 24353434
+              "duration": 20196188
             },
             "line": 9,
             "match": {
@@ -1287,7 +1098,7 @@
             "name": "I click on \"Continue\" button",
             "result": {
               "status": "passed",
-              "duration": 2110781484
+              "duration": 2708953652
             },
             "line": 10,
             "match": {
@@ -1300,7 +1111,7 @@
             "name": "I am on the Task list page",
             "result": {
               "status": "passed",
-              "duration": 12774241
+              "duration": 23454673
             },
             "line": 11,
             "match": {
@@ -1313,22 +1124,22 @@
             "name": "I click on the \"Upload technical management qualifications\" link",
             "result": {
               "status": "passed",
-              "duration": 28796260
+              "duration": 19644182
             },
-            "line": 91,
+            "line": 90,
             "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\task-list-steps.js:16"
+              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\task-list-steps.js:20"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "name": "I am on the \"Who will provide technical management on your site?\" page",
+            "name": "I am on the \"What evidence of technical competence do you have?\" page",
             "result": {
               "status": "passed",
-              "duration": 460276066
+              "duration": 824523254
             },
-            "line": 92,
+            "line": 91,
             "match": {
               "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\new-application-steps.js:7"
             }
@@ -1344,22 +1155,22 @@
                   },
                   {
                     "cells": [
-                      "WAMITAB qualification"
+                      "WAMITAB or EPOC qualification"
                     ]
                   },
                   {
                     "cells": [
-                      "Registered on a course - grace period"
+                      "We’re getting WAMITAB or EPOC qualifications"
                     ]
                   },
                   {
                     "cells": [
-                      "Deemed competence"
+                      "Deemed competence or an Environment Agency assessment with WAMITAB continuing competence certification"
                     ]
                   },
                   {
                     "cells": [
-                      "ESA/EU skills"
+                      "Energy & Utility Skills / ESA Competence Management System"
                     ]
                   }
                 ]
@@ -1369,9 +1180,9 @@
             "name": "following are the options on the the technical qualifications page:",
             "result": {
               "status": "passed",
-              "duration": 584136
+              "duration": 947380
             },
-            "line": 93,
+            "line": 92,
             "match": {
               "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\upload-technical-competence-evidence-steps.js:15"
             }
@@ -1379,12 +1190,12 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "name": "I click on \"WAMITAB qualification\" on the Upload technical management qualifications page",
+            "name": "I click on \"WAMITAB or EPOC qualification\" on the Upload technical management qualifications page",
             "result": {
               "status": "passed",
-              "duration": 154777332
+              "duration": 125313376
             },
-            "line": 99,
+            "line": 98,
             "match": {
               "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\upload-technical-competence-evidence-steps.js:40"
             }
@@ -1395,9 +1206,9 @@
             "name": "I click on \"Continue\" button",
             "result": {
               "status": "passed",
-              "duration": 1239731432
+              "duration": 2063725670
             },
-            "line": 100,
+            "line": 99,
             "match": {
               "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\new-application-steps.js:25"
             }
@@ -1405,14 +1216,27 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "name": "I am on the \"Upload the WAMITAB certificate\" page",
+            "name": "I am on the \"WAMITAB or EPOC: upload evidence\" page",
             "result": {
               "status": "passed",
-              "duration": 26205356
+              "duration": 29394650
+            },
+            "line": 100,
+            "match": {
+              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\new-application-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I select pdf file to upload",
+            "result": {
+              "status": "passed",
+              "duration": 7183004465
             },
             "line": 101,
             "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\new-application-steps.js:7"
+              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\upload-technical-competence-evidence-steps.js:77"
             }
           },
           {
@@ -1421,7 +1245,7 @@
             "name": "I click on \"Continue\" button",
             "result": {
               "status": "passed",
-              "duration": 556123924
+              "duration": 2622320852
             },
             "line": 102,
             "match": {
@@ -1430,15 +1254,28 @@
           },
           {
             "arguments": [],
-            "keyword": "Then ",
-            "name": "I should be able to see an error message \"You must upload at least one file. Choose a file then press the 'Upload chosen file' button.\"",
+            "keyword": "And ",
+            "name": "I am on the Task list page",
             "result": {
               "status": "passed",
-              "duration": 804582
+              "duration": 28814977
             },
             "line": 103,
             "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\upload-technical-competence-evidence-steps.js:11"
+              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\task-list-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "Upload documents is marked as completed",
+            "result": {
+              "status": "passed",
+              "duration": 24630531
+            },
+            "line": 104,
+            "match": {
+              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\task-list-steps.js:12"
             }
           },
           {
@@ -1446,7 +1283,7 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 432412
+              "duration": 163105477
             },
             "hidden": true,
             "match": {
@@ -1457,35 +1294,35 @@
         "tags": [
           {
             "name": "@desktop",
-            "line": 86
+            "line": 85
           },
           {
             "name": "@phone",
-            "line": 87
+            "line": 86
           },
           {
             "name": "@tablet",
-            "line": 88
+            "line": 87
           },
           {
             "name": "@ui",
-            "line": 89
+            "line": 88
           }
         ],
         "type": "scenario"
       },
       {
-        "id": "we-832-upload-technical-competence-evidence;as-a-user,-when-i-try-to-upload-a-wrong-file,-i-should-be-able-to-see-error-message",
+        "id": "we-832-upload-technical-competence-evidence;as-a-user,-i-should-be-able-to-see-error-message-when-i-do-not-upload-a-file-and-try-to-proceed",
         "keyword": "Scenario",
-        "line": 109,
-        "name": "As a user, when I try to upload a wrong file, I should be able to see error message",
+        "line": 110,
+        "name": "As a user, I should be able to see error message when I do not upload a file and try to proceed",
         "steps": [
           {
             "arguments": [],
             "keyword": "Before ",
             "result": {
               "status": "passed",
-              "duration": 79878
+              "duration": 136997
             },
             "hidden": true,
             "embeddings": [
@@ -1504,7 +1341,7 @@
             "name": "the application has been launched",
             "result": {
               "status": "passed",
-              "duration": 193499444
+              "duration": 2209649350
             },
             "line": 4,
             "match": {
@@ -1517,7 +1354,7 @@
             "name": "I am on the \"Apply for a mobile plant standard rules waste permit\" page",
             "result": {
               "status": "passed",
-              "duration": 22928570
+              "duration": 31319754
             },
             "line": 5,
             "match": {
@@ -1530,7 +1367,7 @@
             "name": "I click on \"Continue\" button",
             "result": {
               "status": "passed",
-              "duration": 1323625250
+              "duration": 4634825996
             },
             "line": 7,
             "match": {
@@ -1543,7 +1380,7 @@
             "name": "I am on the \"Select a permit\" page",
             "result": {
               "status": "passed",
-              "duration": 12973712
+              "duration": 37278027
             },
             "line": 8,
             "match": {
@@ -1556,7 +1393,7 @@
             "name": "I select a permit \"SR2010-No-4\"",
             "result": {
               "status": "passed",
-              "duration": 15153624
+              "duration": 23023153
             },
             "line": 9,
             "match": {
@@ -1569,7 +1406,7 @@
             "name": "I click on \"Continue\" button",
             "result": {
               "status": "passed",
-              "duration": 2161755282
+              "duration": 3206468064
             },
             "line": 10,
             "match": {
@@ -1582,7 +1419,7 @@
             "name": "I am on the Task list page",
             "result": {
               "status": "passed",
-              "duration": 33783506
+              "duration": 30406735
             },
             "line": 11,
             "match": {
@@ -1595,22 +1432,22 @@
             "name": "I click on the \"Upload technical management qualifications\" link",
             "result": {
               "status": "passed",
-              "duration": 22613967
+              "duration": 20722757
             },
-            "line": 110,
+            "line": 111,
             "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\task-list-steps.js:16"
+              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\task-list-steps.js:20"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "name": "I am on the \"Who will provide technical management on your site?\" page",
+            "name": "I am on the \"What evidence of technical competence do you have?\" page",
             "result": {
               "status": "passed",
-              "duration": 402726831
+              "duration": 692454610
             },
-            "line": 111,
+            "line": 112,
             "match": {
               "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\new-application-steps.js:7"
             }
@@ -1626,22 +1463,22 @@
                   },
                   {
                     "cells": [
-                      "WAMITAB qualification"
+                      "WAMITAB or EPOC qualification"
                     ]
                   },
                   {
                     "cells": [
-                      "Registered on a course - grace period"
+                      "We’re getting WAMITAB or EPOC qualifications"
                     ]
                   },
                   {
                     "cells": [
-                      "Deemed competence"
+                      "Deemed competence or an Environment Agency assessment with WAMITAB continuing competence certification"
                     ]
                   },
                   {
                     "cells": [
-                      "ESA/EU skills"
+                      "Energy & Utility Skills / ESA Competence Management System"
                     ]
                   }
                 ]
@@ -1651,9 +1488,9 @@
             "name": "following are the options on the the technical qualifications page:",
             "result": {
               "status": "passed",
-              "duration": 980403
+              "duration": 638132
             },
-            "line": 112,
+            "line": 113,
             "match": {
               "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\upload-technical-competence-evidence-steps.js:15"
             }
@@ -1661,12 +1498,12 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "name": "I click on \"WAMITAB qualification\" on the Upload technical management qualifications page",
+            "name": "I click on \"WAMITAB or EPOC qualification\" on the Upload technical management qualifications page",
             "result": {
               "status": "passed",
-              "duration": 110687772
+              "duration": 149730602
             },
-            "line": 118,
+            "line": 119,
             "match": {
               "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\upload-technical-competence-evidence-steps.js:40"
             }
@@ -1677,9 +1514,9 @@
             "name": "I click on \"Continue\" button",
             "result": {
               "status": "passed",
-              "duration": 1123815887
+              "duration": 2213557569
             },
-            "line": 119,
+            "line": 120,
             "match": {
               "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\new-application-steps.js:25"
             }
@@ -1687,12 +1524,12 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "name": "I am on the \"Upload the WAMITAB certificate\" page",
+            "name": "I am on the \"WAMITAB or EPOC: upload evidence\" page",
             "result": {
               "status": "passed",
-              "duration": 15122388
+              "duration": 21451922
             },
-            "line": 120,
+            "line": 121,
             "match": {
               "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\new-application-steps.js:7"
             }
@@ -1700,23 +1537,10 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "name": "I select ppt file to upload",
-            "result": {
-              "status": "passed",
-              "duration": 2344686726
-            },
-            "line": 121,
-            "match": {
-              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\upload-technical-competence-evidence-steps.js:83"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
             "name": "I click on \"Continue\" button",
             "result": {
               "status": "passed",
-              "duration": 516390619
+              "duration": 400165021
             },
             "line": 122,
             "match": {
@@ -1726,10 +1550,10 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "name": "I should be able to see an error message \"That file’s too big. Upload a file that’s no more than 30MB.\"",
+            "name": "I should be able to see an error message \"You must upload at least one file. Choose a file then press the 'Upload chosen file' button.\"",
             "result": {
               "status": "passed",
-              "duration": 222677
+              "duration": 543527
             },
             "line": 123,
             "match": {
@@ -1741,7 +1565,7 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 297199
+              "duration": 174039835
             },
             "hidden": true,
             "match": {
@@ -1752,19 +1576,314 @@
         "tags": [
           {
             "name": "@desktop",
-            "line": 105
-          },
-          {
-            "name": "@phone",
             "line": 106
           },
           {
-            "name": "@tablet",
+            "name": "@phone",
             "line": 107
           },
           {
-            "name": "@ui",
+            "name": "@tablet",
             "line": 108
+          },
+          {
+            "name": "@ui",
+            "line": 109
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "id": "we-832-upload-technical-competence-evidence;as-a-user,-when-i-try-to-upload-a-wrong-file,-i-should-be-able-to-see-error-message",
+        "keyword": "Scenario",
+        "line": 129,
+        "name": "As a user, when I try to upload a wrong file, I should be able to see error message",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Before ",
+            "result": {
+              "status": "passed",
+              "duration": 108884
+            },
+            "hidden": true,
+            "embeddings": [
+              {
+                "data": "Y2hyb21lLWRlc2t0b3AtdGVzdA==",
+                "mime_type": "text/plain"
+              }
+            ],
+            "match": {
+              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\support\\hooks.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "the application has been launched",
+            "result": {
+              "status": "passed",
+              "duration": 2367568559
+            },
+            "line": 4,
+            "match": {
+              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\application-steps.js:6"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I am on the \"Apply for a mobile plant standard rules waste permit\" page",
+            "result": {
+              "status": "passed",
+              "duration": 29196517
+            },
+            "line": 5,
+            "match": {
+              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\new-application-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click on \"Continue\" button",
+            "result": {
+              "status": "passed",
+              "duration": 2421937349
+            },
+            "line": 7,
+            "match": {
+              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\new-application-steps.js:25"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I am on the \"Select a permit\" page",
+            "result": {
+              "status": "passed",
+              "duration": 23385059
+            },
+            "line": 8,
+            "match": {
+              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\new-application-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I select a permit \"SR2010-No-4\"",
+            "result": {
+              "status": "passed",
+              "duration": 19432661
+            },
+            "line": 9,
+            "match": {
+              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\select-permit-steps.js:9"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click on \"Continue\" button",
+            "result": {
+              "status": "passed",
+              "duration": 2732263295
+            },
+            "line": 10,
+            "match": {
+              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\new-application-steps.js:25"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I am on the Task list page",
+            "result": {
+              "status": "passed",
+              "duration": 24489517
+            },
+            "line": 11,
+            "match": {
+              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\task-list-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I click on the \"Upload technical management qualifications\" link",
+            "result": {
+              "status": "passed",
+              "duration": 23443071
+            },
+            "line": 130,
+            "match": {
+              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\task-list-steps.js:20"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I am on the \"What evidence of technical competence do you have?\" page",
+            "result": {
+              "status": "passed",
+              "duration": 830643514
+            },
+            "line": 131,
+            "match": {
+              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\new-application-steps.js:7"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "options"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "WAMITAB or EPOC qualification"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "We’re getting WAMITAB or EPOC qualifications"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Deemed competence or an Environment Agency assessment with WAMITAB continuing competence certification"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Energy & Utility Skills / ESA Competence Management System"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "name": "following are the options on the the technical qualifications page:",
+            "result": {
+              "status": "passed",
+              "duration": 530140
+            },
+            "line": 132,
+            "match": {
+              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\upload-technical-competence-evidence-steps.js:15"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I click on \"WAMITAB or EPOC qualification\" on the Upload technical management qualifications page",
+            "result": {
+              "status": "passed",
+              "duration": 131343048
+            },
+            "line": 138,
+            "match": {
+              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\upload-technical-competence-evidence-steps.js:40"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click on \"Continue\" button",
+            "result": {
+              "status": "passed",
+              "duration": 2268803231
+            },
+            "line": 139,
+            "match": {
+              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\new-application-steps.js:25"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I am on the \"WAMITAB or EPOC: upload evidence\" page",
+            "result": {
+              "status": "passed",
+              "duration": 25096412
+            },
+            "line": 140,
+            "match": {
+              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\new-application-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I select ppt file to upload",
+            "result": {
+              "status": "passed",
+              "duration": 885753071
+            },
+            "line": 141,
+            "match": {
+              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\upload-technical-competence-evidence-steps.js:83"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click on \"Continue\" button",
+            "result": {
+              "status": "passed",
+              "duration": 464096410
+            },
+            "line": 142,
+            "match": {
+              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\new-application-steps.js:25"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I should be able to see an error message \"You can only upload PDF or JPG files\"",
+            "result": {
+              "status": "passed",
+              "duration": 250790
+            },
+            "line": 143,
+            "match": {
+              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\step_definitions\\upload-technical-competence-evidence-steps.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 177461201
+            },
+            "hidden": true,
+            "match": {
+              "location": "Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\support\\hooks.js:28"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@desktop",
+            "line": 125
+          },
+          {
+            "name": "@phone",
+            "line": 126
+          },
+          {
+            "name": "@tablet",
+            "line": 127
+          },
+          {
+            "name": "@ui",
+            "line": 128
           }
         ],
         "type": "scenario"
@@ -1775,6 +1894,6 @@
     "line": 1,
     "name": "WE-832 Upload technical competence evidence",
     "tags": [],
-    "uri": "C:/Program Files/Git/waste-permits-acceptance-tests/cucumberjs/features/upload_technical_competence_evidence.feature"
+    "uri": "C:\\Program Files\\Git\\waste-permits-acceptance-tests\\cucumberjs\\features\\upload_technical_competence_evidence.feature"
   }
 ]

@@ -9,19 +9,19 @@ class NewApplication {
         this.testdata = testdata;
     }
 
-    waitUntilLoaded(title) {
+    async waitUntilLoaded(title) {
         return this.browser.wait(until.elementLocated(By.xpath(`//h1[contains(text(),"${title}")]`)), 5 * 20000);
     }
 
-    startApplicationRadio() {
+    async startApplicationRadio() {
         return this.browser.wait(until.elementLocated(By.id("start-application")), 5 * 20000);
     }
 
-    openApplicationRadio() {
+    async openApplicationRadio() {
         return this.browser.wait(until.elementLocated(By.id("open-application")), 5 * 20000);
     }
 
-    continueButton() {
+    async continueButton() {
         return this.browser.wait(until.elementLocated(By.id("submit-button")), 5 * 8000);
     }
 

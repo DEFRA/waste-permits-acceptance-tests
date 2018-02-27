@@ -42,7 +42,7 @@
     "eslint:fix": "eslint --fix cucumberjs",
     "start": "node echoargs.js $*",
     "test:chrome-desktop-dev": "node node_modules/cucumber/bin/cucumber.js cucumberjs/features/ -p chrome-desktop-dev -f json:cucumberjs/features/reports/cucumber_report_desktop.json",
-    "test:chrome-desktop-test": "node node_modules/cucumber/bin/cucumber.js cucumberjs/features -p chrome-desktop-test -f json:cucumberjs/features/reports/cucumber_report_desktop.json",
+    "test:chrome-desktop-test": "node node_modules/cucumber/bin/cucumber.js cucumberjs/features/upload_technical_competence_evidence.feature -p chrome-desktop-test -f json:cucumberjs/features/reports/cucumber_report_desktop.json",
     "test:chrome-desktop-headless-test": "node node_modules/cucumber/bin/cucumber.js cucumberjs/features -p chrome-desktop-headless-test -f json:cucumberjs/features/reports/cucumber_report_desktop-headless.json",
     "test:chrome-phone-dev": "node node_modules/cucumber/bin/cucumber.js cucumberjs/features -p chrome-phone-dev -f json:cucumberjs/features/reports/cucumber_report_chrome_phone.json",
     "test:chrome-phone-test": "node node_modules/cucumber/bin/cucumber.js cucumberjs/features -p chrome-phone-test -f json:cucumberjs/features/reports/cucumber_report_chrome_phone.json",
@@ -51,8 +51,11 @@
     "test:firefox-desktop-dev": "node node_modules/cucumber/bin/cucumber.js cucumberjs/features -p firefox-desktop-dev -f json:cucumberjs/features/reports/cucumber_report_firefox_desktop.json",
     "test:firefox-desktop-test": "node node_modules/cucumber/bin/cucumber.js cucumberjs/features -p firefox-desktop-test -f json:cucumberjs/features/reports/cucumber_report_firefox_desktop.json",
     "test:ie-desktop-dev": "node node_modules/cucumber/bin/cucumber.js cucumberjs/features -p ie-desktop-dev -f json:cucumberjs/features/reports/cucumber_report_ie_desktop.json",
-    "test:ie-desktop-test": "node node_modules/cucumber/bin/cucumber.js cucumberjs/features -p ie-desktop-test -f json:cucumberjs/features/reports/cucumber_report_ie_desktop.json"
+    "test:ie-desktop-test": "node node_modules/cucumber/bin/cucumber.js cucumberjs/features -p ie-desktop-test -f json:cucumberjs/features/reports/cucumber_report_ie_desktop.json",
+    "local": "CONFIG_FILE=local ./node_modules/cucumber/bin/cucumber.js cucumberjs/features"
   },
   "license": "ISC",
-  "dependencies": {}
+  "dependencies": {
+    "browserstack-local": "^1.0.0"
+  }
 }

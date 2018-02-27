@@ -40,7 +40,7 @@ class Application {
 		let foundElement;
 		try {
 			foundElement = await this.browser.wait(until.elementLocated(By.id(parameters)), 5 * 20000);
-			console.log (foundElement);
+			console.log(foundElement);
 		} catch (err) {
 			throw err;
 			//throw new Error(err + " NOT FOUND! " + parameters);

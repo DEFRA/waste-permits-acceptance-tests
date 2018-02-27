@@ -9,54 +9,64 @@ class LoginCRM {
         this.testdata = testdata;
     }
 
-    waitUntilLoaded() {
+    async waitUntilLoaded() {
         console.log("I am in wait until loaded");
         return this.browser.wait(until.elementLocated(By.id("loginHeader")), 5 * 20000);
     }
 
-    loginHeader() {
+    async loginHeader() {
         return this.browser.wait(until.elementLocated(By.id("loginHeader")), 5 * 20000);
     }
 
-    useAnotherAccount() {
+    async useAnotherAccount() {
         return this.browser.wait(until.elementLocated(By.id("otherTile")), 5 * 20000);
     }
 
-    inputUserName() {
+    async inputUserName() {
         return this.browser.wait(until.elementLocated(By.name("loginfmt")), 5 * 20000);
     }
 
-    inputUserName() {
+    async inputUserName() {
         return this.browser.wait(until.elementLocated(By.name("loginfmt")), 5 * 20000);
     }
 
-    inputUserPassword() {
+    async inputUserPassword() {
         return this.browser.wait(until.elementLocated(By.name("passwd")), 5 * 20000);
     }
 
-    nextButton() {
+    async nextButton() {
         return this.browser.wait(until.elementLocated(By.xpath("//input[contains(@type,'submit')]")), 5 * 20000);
     }
 
-    signinButton() {
+    async signinButton() {
         return this.browser.wait(until.elementLocated(By.xpath("//input[contains(@value,'Sign in')]")), 5 * 20000);
     }
 
-    staySignedInNoButton() {
+    async staySignedInNoButton() {
         return this.browser.wait(until.elementLocated(By.id("idBtn_Back")), 5 * 20000);
     }
 
-    header() {
+    async header() {
         return this.browser.wait(until.elementLocated(By.id("navTourHeader")), 5 * 20000);
     }
 
-    closePopup() {
+    async closePopup() {
        // return this.header.wait(until.elementLocated(By.xpath("//img[contains(@alt,'Close')]")), 5 * 20000);
         //this.browser.wait(until.elementLocated(By.xpath("//img[contains(@alt,'Close')]")), 5 * 20000);
         return this.browser.wait(until.elementLocated(By.id("buttonClose")), 5 * 200000);
     }
 
-    loggedInPageUserProfileImage() {
+    async navtourtitle() {
+        //InlineDialog
+        return this.browser.wait(until.elementLocated(By.xpath("//a[contains(@id,'buttonClose')]")), 5 * 20000);
+       // return this.browser.wait(until.elementLocated(By.id("buttonClose")), 5 * 200000);
+    }
+
+    async navtitletext() {
+        return navtourtitle.getAttribute("label");
+    }
+
+    async loggedInPageUserProfileImage() {
         return this.browser.wait(until.elementLocated(By.class("navTabButtonUserInfoProfileImage")), 5 * 20000);
     }
 

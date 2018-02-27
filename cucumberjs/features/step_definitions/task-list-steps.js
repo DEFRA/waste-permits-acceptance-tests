@@ -8,7 +8,7 @@ module.exports = function () {
         await this.taskList.waitUntilLoaded();
     });
 
-    
+
     this.defineStep(/^Upload documents is marked as completed$/, { timeout: 60000 }, async function () {
         await this.taskList.uploadCompleted();
     });

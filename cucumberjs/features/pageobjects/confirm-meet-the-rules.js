@@ -9,15 +9,15 @@ class ConfirmRules {
         this.testdata = testdata;
     }
 
-    returnToTaskListButton() {
+    async returnToTaskListButton() {
         return this.browser.wait(until.elementLocated(By.id("return-to-task-list-button")), 5 * 20000);
     }
 
-    operationMeetsRulesButton() {
+    async operationMeetsRulesButton() {
         return this.browser.wait(until.elementLocated(By.id("operation-meets-rules-button")), 5 * 20000);
     }
 
-    confirmResultMessage() {
+    async confirmResultMessage() {
         return this.browser.wait(until.elementLocated(By.id("confirm-result-message")), 5 * 20000);
     }
 

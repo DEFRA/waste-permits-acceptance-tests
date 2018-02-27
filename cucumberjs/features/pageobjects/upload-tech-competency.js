@@ -41,9 +41,10 @@ class UploadTechCompetency {
         return await this.browser.wait(until.elementLocated(By.id("error-summary-list")), 5 * 20000);
     }
 
-    waitUntilErrorMessageLoaded(title) {
+    async waitUntilErrorMessageLoaded(title) {
         return this.browser.wait(until.elementLocated(By.xpath(`//a[contains(text(),"${title}")]`)), 5 * 20000);
     }
+
 
 
     async enterPPTFile() {
@@ -53,7 +54,7 @@ class UploadTechCompetency {
 
         // Download to a directory and save with the original filename
         const options = {
-            url: 'https://scholar.harvard.edu/files/torman_personal/files/samplepptx.pptx',
+            url: 'https://www.iasted.org/conferences/formatting/Presentations-Tips.ppt',
             dest: __dirname                  // Save to /path/to/dest/image.jpg
         };
 
@@ -61,7 +62,7 @@ class UploadTechCompetency {
 
         await usernameElement.sendKeys(filename);
         await usernameElement.submit();
-        
+
     }
 
     async enter30MBPlusFile() {
@@ -79,7 +80,7 @@ class UploadTechCompetency {
 
         await usernameElement.sendKeys(filename);
         await usernameElement.submit();
-        
+
     }
 
     async enterPDFFile() {
@@ -87,7 +88,7 @@ class UploadTechCompetency {
         const path = require("path");
         const download = require('image-downloader');
 
-        // Download to a directory and save with the original filename
+        //Download to a directory and save with the original filename
         const options = {
             url: 'http://apps.who.int/iris/bitstream/10665/137592/1/roadmapsitrep_7Nov2014_eng.pdf',
             dest: __dirname                  // Save to /path/to/dest/image.jpg
@@ -95,6 +96,7 @@ class UploadTechCompetency {
 
         const { filename, image } = await download.image(options);
 
+        console.log("FILENAME" + filename);
         await usernameElement.sendKeys(filename);
         await usernameElement.submit();
 
@@ -104,7 +106,7 @@ class UploadTechCompetency {
     async enterJPGFile() {
         const usernameElement = await this.chooseFile();
         const path = require("path");
-     
+
         const download = require('image-downloader');
 
         // Download to a directory and save with the original filename
@@ -114,7 +116,7 @@ class UploadTechCompetency {
         };
 
         const { filename, image } = await download.image(options);
-  
+
         await usernameElement.sendKeys(filename);
         await usernameElement.submit();
 

@@ -10,31 +10,31 @@ class GiveContactDetails {
     }
 
 
-    firstNameField() {
+    async firstNameField() {
         return this.browser.wait(until.elementLocated(By.id("first-name")), 5 * 20000);
     }
 
-    lastNameField() {
+    async lastNameField() {
         return this.browser.wait(until.elementLocated(By.id("last-name")), 5 * 20000);
     }
 
-    agentCompanyCheckBox() {
+    async agentCompanyCheckBox() {
         return this.browser.wait(until.elementLocated(By.id("is-contact-an-agent")), 5 * 20000);
     }
 
-    agentCompanyField() {
+    async agentCompanyField() {
         return this.browser.wait(until.elementLocated(By.id("agent-company")), 5 * 20000);
     }
 
-    telephoneField() {
+    async telephoneField() {
         return this.browser.wait(until.elementLocated(By.id("telephone")), 5 * 20000);
     }
 
-    emailField() {
+    async emailField() {
         return this.browser.wait(until.elementLocated(By.id("email")), 5 * 20000);
     }
 
-    companySecretaryEmailField() {
+    async companySecretaryEmailField() {
         return this.browser.wait(until.elementLocated(By.id("company-secretary-email")), 5 * 20000);
     }
 }
