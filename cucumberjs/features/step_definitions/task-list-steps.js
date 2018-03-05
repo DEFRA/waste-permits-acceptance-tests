@@ -1,4 +1,5 @@
 const World = require("../support/world").World;
+const Assert = require("assert");
 
 module.exports = function () {
 
@@ -15,6 +16,13 @@ module.exports = function () {
 
     this.defineStep(/^Confirm you can meet the rules is marked as completed$/, { timeout: 60000 }, async function () {
         await this.taskList.confirmRulesCompleted();
+    });
+
+
+    this.defineStep(/^I am on the Task list page for "([^"]*)"$/, { timeout: 60000 }, async function (permit) {
+        const permitType = await this.taskList.permitTypeText();
+        actualtext = await this.taskList.getTextElement(permitType);
+        Assert.equal(actualtext, permit);
     });
 
     this.defineStep(/^I click on the "(.*?)" link$/, { timeout: 60000 }, async function (option) {

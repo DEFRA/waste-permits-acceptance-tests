@@ -13,6 +13,13 @@ class TaskList {
         return this.browser.wait(until.elementLocated(By.xpath(`//span[contains(text(),"Task list:")]`)), 5 * 20000);
     }
 
+    async getTextElement(element) {
+        return element.getText();
+    }
+
+    async permitTypeText() {
+        return this.browser.wait(until.elementLocated(By.id("standard-rule-name-and-code")), 5 * 20000);
+    }
 
     async uploadTechnicalManagementQualificationsLink() {
         return this.browser.wait(until.elementLocated(By.id("upload-technical-management-qualifications-link")), 5 * 20000);
