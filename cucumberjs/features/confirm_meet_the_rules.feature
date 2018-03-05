@@ -7,7 +7,7 @@ Feature: Confirm you can meet the rules page
         And I am on the "Select a permit" page
         And I select a permit "SR2010-No-4"
         And I click on "Continue" button
-        And I am on the Task list page
+        And I am on the "Apply for a standard rules waste permit" page
 
     @desktop
     @phone
@@ -16,6 +16,6 @@ Feature: Confirm you can meet the rules page
         When I click on the "Confirm that your operation meets the rules" link
         Then I am on the "Confirm your operation meets the rules" page
         When I click on "operation-meets-rules-button" button on the Confirm you meet the rules page
-        Then I am on the Task list page
+        Then I am on the "Apply for a standard rules waste permit" page
         And Confirm you can meet the rules is marked as completed  
         
