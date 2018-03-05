@@ -3,12 +3,12 @@ Feature:  WE-832 Upload technical competence evidence
     Background:
         Given the application has been launched
         And I am on the "Apply for a mobile plant standard rules waste permit" page
-        #And I select "Start a new application" waste permit application page
         And I click on "Continue" button
         And I am on the "Select a permit" page
         And I select a permit "SR2010-No-4"
         And I click on "Continue" button
-        And I am on the Task list page
+        And I am on the "Apply for a standard rules waste permit" page
+        
 
     @desktop
     @phone
@@ -79,7 +79,7 @@ Feature:  WE-832 Upload technical competence evidence
         Then I am on the "WAMITAB or EPOC: upload evidence" page
         When I select img file to upload
         When I click on "Continue" button
-        And I am on the Task list page
+        And I am on the "Apply for a standard rules waste permit" page
         And Upload documents is marked as completed
 
    @desktop
@@ -100,7 +100,7 @@ Feature:  WE-832 Upload technical competence evidence
         Then I am on the "WAMITAB or EPOC: upload evidence" page
         When I select pdf file to upload
         When I click on "Continue" button
-        And I am on the Task list page
+        And I am on the "Apply for a standard rules waste permit" page
         And Upload documents is marked as completed      
 
   @desktop
