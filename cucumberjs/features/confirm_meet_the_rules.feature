@@ -16,6 +16,6 @@ Feature: Confirm you can meet the rules page
         When I click on the "Confirm that your operation meets the rules" link
         Then I am on the "Confirm your operation meets the rules" page
         When I click on "operation-meets-rules-button" button on the Confirm you meet the rules page
-        Then I am on the Task list page for "SR2010 No 4"
+        Then I am on the Task list page for "Mobile plant for land-spreading - SR2010 No 4"
         And Confirm you can meet the rules is marked as completed
 
