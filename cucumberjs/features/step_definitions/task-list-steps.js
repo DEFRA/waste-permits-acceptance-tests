@@ -14,6 +14,10 @@ module.exports = function () {
         await this.taskList.uploadCompleted();
     });
 
+    this.defineStep(/^Give Contact Details is marked as completed$/, { timeout: 60000 }, async function () {
+        await this.taskList.giveContactDetailsCompleted();
+    });
+
     this.defineStep(/^Confirm you can meet the rules is marked as completed$/, { timeout: 60000 }, async function () {
         await this.taskList.confirmRulesCompleted();
     });

@@ -37,6 +37,14 @@ class GiveContactDetails {
     async companySecretaryEmailField() {
         return this.browser.wait(until.elementLocated(By.id("company-secretary-email")), 5 * 20000);
     }
+
+    async errorSummaryField() {
+        return this.browser.wait(until.elementLocated(By.id("error-summary")), 5 * 20000);
+    }
+
+    async getTextElement(element) {
+        return element.getText();
+    }
 }
 
 module.exports.GiveContactDetails = GiveContactDetails;
