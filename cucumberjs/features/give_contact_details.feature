@@ -5,9 +5,9 @@ Feature: Confirm you can meet the rules page
         And I am on the "Apply for a mobile plant standard rules waste permit" page
         And I click on "Continue" button
         And I am on the "Select a permit" page
-        And I select a permit "SR2010-No-4"
+        And I select a permit "SR2010 No 4"
         And I click on "Continue" button
-        And I am on the Task list page
+        And I am on the Task list page for "Mobile plant for land-spreading - SR2010 No 4"
 
     @desktop
     @phone
