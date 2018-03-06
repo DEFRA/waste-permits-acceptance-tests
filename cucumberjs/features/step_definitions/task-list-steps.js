@@ -18,6 +18,10 @@ module.exports = function () {
         await this.taskList.confirmRulesCompleted();
     });
 
+    this.defineStep(/^Confirm confidentiality needs is marked as completed$/, { timeout: 60000 }, async function () {
+        await this.taskList.confirmConfidentialityCompleted();
+    });
+
 
     this.defineStep(/^I am on the Task list page for "([^"]*)"$/, { timeout: 60000 }, async function (permit) {
         const permitType = await this.taskList.permitTypeText();

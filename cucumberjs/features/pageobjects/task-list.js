@@ -33,6 +33,10 @@ class TaskList {
         return this.browser.wait(until.elementLocated(By.id("operation-rules-completed")), 5 * 20000);
     }
 
+    async confirmConfidentialityCompleted() {
+        return this.browser.wait(until.elementLocated(By.id("confidentiality-completed")), 5 * 20000);
+    }
+
 
     async confirmThatYourOperationMeetsRulesLink() {
         return this.browser.wait(until.elementLocated(By.id("confirm-that-your-operation-meets-the-rules-link")), 5 * 20000);

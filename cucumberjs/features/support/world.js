@@ -23,6 +23,7 @@ module.exports.World = function World(parameters) {
 	this.confirmRules = this.pageFactory.create("confirmrules");
 	this.giveContactDetails = this.pageFactory.create("givecontactdetails");
 	this.uploadTechCompetency = this.pageFactory.create("uploadtechcompetency");
+	this.confirmConfidentiality = this.pageFactory.create("confirmConfidentiality");
 	this.parameters = parameters;
 
 	// Create page objects
