@@ -41,11 +41,9 @@ class TaskList {
         return this.browser.wait(until.elementLocated(By.id("site-operator-completed")), 5 * 20000);
     }
 
-    
     async giveContactDetailsCompleted() {
         return this.browser.wait(until.elementLocated(By.id("contact-details-completed")), 5 * 20000);
     }
-
 
     async confirmThatYourOperationMeetsRulesLink() {
         return this.browser.wait(until.elementLocated(By.id("confirm-that-your-operation-meets-the-rules-link")), 5 * 20000);
@@ -55,7 +53,6 @@ class TaskList {
         return this.browser.wait(until.elementLocated(By.id("give-contact-details-link")), 5 * 20000);
     }
 
-
     async confirmConfidentialityNeedsLink() {
         return this.browser.wait(until.elementLocated(By.id("confirm-confidentiality-needs-link")), 5 * 20000);
     }
@@ -64,9 +61,32 @@ class TaskList {
         return this.browser.wait(until.elementLocated(By.id("give-permit-holder-details-link")), 5 * 20000);
     }
 
-
     async submitPayLink() {
         return this.browser.wait(until.elementLocated(By.id("submit-pay-link")), 5 * 20000);
+    }
+
+    async taskList() {
+        return this.browser.wait(until.elementLocated(By.className("task-list")), 5 * 20000);
+    }
+
+    async siteNameAndLocationLink() {
+        return this.browser.wait(until.elementLocated(By.id("give-site-name-and-location-link")), 5 * 20000);
+    }
+
+    async uploadSitePlanLink() {
+        return this.browser.wait(until.elementLocated(By.id("upload-the-site-plan-link")), 5 * 20000);
+    }
+
+    async uploadFirePreventionPlanLink() {
+        return this.browser.wait(until.elementLocated(By.id("upload-the-fire-prevention-plan-link")), 5 * 20000);
+    }
+
+    async drainageSystemForVehicleStorageAreaLink() {
+        return this.browser.wait(until.elementLocated(By.id("confirm-the-drainage-system-for-the-vehicle-storage-area-link")), 5 * 20000);
+    }
+
+    async selectDifferentPermit() {
+        return this.browser.wait(until.elementLocated(By.id("select-a-different-permit")), 5 * 20000);
     }
 
 }

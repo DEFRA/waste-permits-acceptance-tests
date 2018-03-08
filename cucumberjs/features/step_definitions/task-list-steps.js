@@ -1,5 +1,6 @@
 const World = require("../support/world").World;
 const Assert = require("assert");
+let linkText;
 
 module.exports = function () {
 
@@ -41,31 +42,74 @@ module.exports = function () {
     this.defineStep(/^I click on the "(.*?)" link$/, { timeout: 60000 }, async function (option) {
         switch (option) {
             case "Upload technical management qualifications":
-                const uploadTechnicalManagementQualificationsLink = await this.taskList.uploadTechnicalManagementQualificationsLink();
-                await uploadTechnicalManagementQualificationsLink.click();
+                linkText = await this.taskList.uploadTechnicalManagementQualificationsLink();
+                await linkText.click();
                 break;
             case "Confirm that your operation meets the rules":
-                const confirmThatYourOperationMeetsRulesLink = await this.taskList.confirmThatYourOperationMeetsRulesLink();
-                await confirmThatYourOperationMeetsRulesLink.click();
+                linkText = await this.taskList.confirmThatYourOperationMeetsRulesLink();
+                await linkText.click();
                 break;
             case "Give contact details":
-                const giveContactDetailsLink = await this.taskList.giveContactDetailsLink();
-                await giveContactDetailsLink.click();
+                linkText = await this.taskList.giveContactDetailsLink();
+                await linkText.click();
                 break;
             case "Give company details":
-                const givePermitHolderDetailsLink = await this.taskList.givePermitHolderDetailsLink();
-                await givePermitHolderDetailsLink.click();
+                linkText = await this.taskList.givePermitHolderDetailsLink();
+                await linkText.click();
                 break;
             case "Confirm confidentiality needs":
-                const confirmConfidentialityNeedsLink = await this.taskList.confirmConfidentialityNeedsLink();
-                await confirmConfidentialityNeedsLink.click();
+                linkText = await this.taskList.confirmConfidentialityNeedsLink();
+                await linkText.click();
                 break;
             case "Send application and pay":
-                const submitPayLink = await this.taskList.submitPayLink();
-                await submitPayLink.click();
+                linkText = await this.taskList.submitPayLink();
+                await linkText.click();
+                break;
+
+            //
+            case "Give site name and location":
+                linkText = await this.taskList.siteNameAndLocationLink();
+                await linkText.click();
+                break;
+
+            case "Upload the site plan":
+                linkText = await this.taskList.uploadSitePlanLink();
+                await linkText.click();
+                break;
+
+            case "Upload the fire prevention plan":
+                linkText = await this.taskList.uploadFirePreventionPlanLink();
+                await linkText.click();
+                break;
+
+            case "Confirm the drainage system for your site":
+                clinkText = await this.taskList.drainageSystemForVehicleStorageAreaLink();
+                await linkText.click();
+                break;
+
+            case "Select a different permit":
+                clinkText = await this.taskList.selectDifferentPermit();
+                await linkText.click();
                 break;
             default: break;
         }
     });
+
+    this.defineStep(/^I should not be able to see "(.*?)" task link$/, { timeout: 60000 }, async function (option) {
+        fieldText = await this.taskList.taskList();
+        actualtext = await this.taskList.getTextElement(fieldText);
+        const value = actualtext.indexOf(option);
+        Assert.notEqual(value, 0, "error message not found Actual:- " + actualtext + "Expected was :-" + option);
+    });
+
+    this.defineStep(/^I should be able to see "(.*?)" task link$/, { timeout: 60000 }, async function (option) {
+        fieldText = await this.taskList.taskList();
+        actualtext = await this.taskList.getTextElement(fieldText);
+        const value = actualtext.indexOf(option);
+        Assert.notEqual(value, -1, "error message not found Actual:- " + actualtext + "Expected was :-" + option);
+    });
+
+
+
 
 };
