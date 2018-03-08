@@ -1,4 +1,4 @@
-Feature: WE-745 Give application contact details \nI want to give my contact details \nSo that I can get messages about the progress of the application \nAs a permitting manager \nI want to know if the applicant is an agent \nSo that I can get data later on who applied for permits \nAs a permitting officer \nI want a Company Secretary or a director email \nSo that I can avoid posting the permit and any official notices to save time and money
+Feature: WE-745 GIVE CONTACT DETAILS PAGE
 
     Background:
         Given the application has been launched

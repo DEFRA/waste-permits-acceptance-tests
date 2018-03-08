@@ -1,4 +1,4 @@
-Feature: WE-745 Give application contact details \nI want to give my contact details \nSo that I can get messages about the progress of the application \nAs a permitting manager \nI want to know if the applicant is an agent \nSo that I can get data later on who applied for permits \nAs a permitting officer \nI want a Company Secretary or a director email \nSo that I can avoid posting the permit and any official notices to save time and money
+Feature: WE-578 GIVE COMPANY DETAILS PAGE
 
     Background:
         Given the application has been launched
@@ -74,11 +74,41 @@ Feature: WE-745 Give application contact details \nI want to give my contact det
         When I select "No" option
         And I click on "Continue" button
         And I am on the Task list page for "Mobile plant for land-spreading - SR2010 No 4"
-        And Give Company Details is marked as completed   
+        And Give Company Details is marked as completed
 
-        
-        
+    @desktop
+    @phone
+    @tablet
+    Scenario: As a user, I should be able to change the company 
+        When I click on the "Give company details" link
+        Then I am on the "What's the UK company registration number?" page
+         When I enter "" in the "Company number" field
+        When I click on "Continue" button
+        And I should be able to see error "Enter a company registration number"
+        When I enter "11" in the "Company number" field
+        And I click on "Continue" button
+        And I should be able to see error "Enter a valid company registration number with either 8 digits or 2 letters and 6 digits"
+        When I enter "11141218" in the "Company number" field
+        And I click on "Continue" button
+        Then I am on the "Is this the right company?" page
+        And the Company number should be "11141218"
+        And the Company name should be "A A ALTERNATIVES LIMITED"
+        And the Company address should be "Brunel House 340 Firecrest Court, Centre Park, Warrington, Cheshire, WA1 1RG"
+        And I should be able to see "Enter a different number" link
+        When I click on "Enter a different number" link
+        Then I am on the "What's the UK company registration number?" page
+        When I enter "10667543" in the "Company number" field
+        And I click on "Continue" button
+        Then I am on the "Is this the right company?" page
+        And the Company number should be "10667543"
+        And the Company name should be "S&S UMBRELLA LIMITED"
+        And the Company address should be "15 Middlegate, Oldham, OL8 3AH"
 
 
-       
+
+
+
+
+
+
 

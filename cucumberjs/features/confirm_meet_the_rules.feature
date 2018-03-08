@@ -1,4 +1,4 @@
-Feature: Confirm you can meet the rules page
+Feature: CONFIRM YOU MEET THE RULES PAGE
 
     Background:
         Given the application has been launched

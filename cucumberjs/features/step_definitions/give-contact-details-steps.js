@@ -28,10 +28,12 @@ module.exports = function () {
         switch (field) {
             case "First name":
                 fieldText = await this.giveContactDetails.firstNameField();
+                await fieldText.clear();
                 await fieldText.sendKeys(text);
                 break;
             case "Last name":
                 fieldText = await this.giveContactDetails.lastNameField();
+                await fieldText.clear();
                 await fieldText.sendKeys(text);
                 break;
             case "Agent checkbox":
@@ -40,25 +42,30 @@ module.exports = function () {
                 break;
             case "Telephone number":
                 fieldText = await this.giveContactDetails.telephoneField();
+                await fieldText.clear();
                 await fieldText.sendKeys(text);
                 break;
 
             case "Main contact email":
                 fieldText = await this.giveContactDetails.emailField();
+                await fieldText.clear();
                 await fieldText.sendKeys(text);
                 break;
 
             case "Secratary/directors email":
                 fieldText = await this.giveContactDetails.companySecretaryEmailField();
+                await fieldText.clear();
                 await fieldText.sendKeys(text);
                 break;
 
             case "Company number":
                 fieldText = await this.giveCompanyDetails.enterCompanyNumberField();
+                await fieldText.clear();
                 await fieldText.sendKeys(text);
                 break;
             case "Business trading name":
                 fieldText = await this.giveCompanyDetails.businessTradingName();
+                await fieldText.clear();
                 await fieldText.sendKeys(text);
                 break;
 

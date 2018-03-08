@@ -1,4 +1,4 @@
-Feature: WE-475 Claim commercial confidentiality - As a user, I want to make a claim to keep any commercially sensitive information in my application out of the public register So that my competitors do not use this to their advantage
+Feature: WE-475 CONFIRM CONFIDENTIALITY NEEDS PAGE
 
     Background:
         Given the application has been launched

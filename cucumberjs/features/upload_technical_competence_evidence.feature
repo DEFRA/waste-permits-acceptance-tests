@@ -1,4 +1,4 @@
-Feature:  WE-832 Upload technical competence evidence
+Feature:  WE-832 UPLOAD TECHNICAL COMPETENCE EVIDENCE PAGE
 
     Background:
         Given the application has been launched

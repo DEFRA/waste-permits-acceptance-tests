@@ -1,4 +1,4 @@
-Feature:  WE-954 Select a Permit :- As an applicantI want to be able to tell EA which permit I am applying forSo I can apply for the permit
+Feature:  WE-954 SELECT A PERMIT PAGE
 
     Background:
         Given the application has been launched

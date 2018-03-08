@@ -30,6 +30,16 @@ module.exports = function () {
         }
     });
 
+    this.defineStep(/^I click on "(.*?)" link$/, { timeout: 60000 }, async function (option) {
+        switch (option) {
+            case "Enter a different number":
+                field = await this.giveCompanyDetails.enterDifferentCompanyLink();
+                await field.click();
+                break;
+            default: break;
+        }
+    });
+
     // And the Company name should be "A A ALTERNATIVES LIMITED"
     this.defineStep(/^the Company name should be "(.*?)"$/, { timeout: 60000 }, async function (companyNo) {
         fieldText = await this.giveCompanyDetails.companyNameField();
@@ -89,6 +99,7 @@ module.exports = function () {
     // When I enter "04" in the day field of the birthdate
     this.defineStep(/^I enter "([^"]*)" in the day field of the birthdate$/, { timeout: 60000 }, async function (birthDay) {
         fieldText = await this.giveCompanyDetails.directorDOBDayField();
+        await fieldText.clear();
         await fieldText.sendKeys(birthDay);
     });
 
@@ -114,6 +125,7 @@ module.exports = function () {
     //     When I enter "My declaration" in the "Declaration" text
     this.defineStep(/^I enter "([^"]*)" in the Declaration text$/, { timeout: 60000 }, async function (text) {
         const declarationText = await this.giveCompanyDetails.declaredTextField();
+        await declarationText.clear();
         await declarationText.sendKeys(text);
     });
 };
