@@ -10,7 +10,7 @@ class NewApplication {
     }
 
     async waitUntilLoaded(title) {
-        return this.browser.wait(until.elementLocated(By.xpath(`//h1[contains(text(),"${title}")]`)), 5 * 20000);
+        return this.browser.wait(until.elementLocated(By.id("page-heading")), 5 * 20000);
     }
 
     async startApplicationRadio() {

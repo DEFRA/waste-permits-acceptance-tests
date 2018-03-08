@@ -7,6 +7,7 @@ const LoginCRM = require("./login-crm").LoginCRM;
 const Fakes = require("./fakes").Fakes;
 const ConfirmRules = require("./confirm-meet-the-rules").ConfirmRules;
 const GiveContactDetails = require("./give-contact-details").GiveContactDetails;
+const GiveCompanyDetails = require("./give-company-details").GiveCompanyDetails;
 const ConfirmConfidentiality = require("./confirm-confidentiality-needs").ConfirmConfidentiality;
 
 
@@ -25,6 +26,7 @@ class Factory {
 			logincrm: LoginCRM,
 			fakes: Fakes,
 			givecontactdetails: GiveContactDetails,
+			givecompanydetails: GiveCompanyDetails,
 			confirmConfidentiality: ConfirmConfidentiality
 
 		};

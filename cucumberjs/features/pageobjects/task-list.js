@@ -37,6 +37,10 @@ class TaskList {
         return this.browser.wait(until.elementLocated(By.id("confidentiality-completed")), 5 * 20000);
     }
 
+    async giveCompanyDetailsCompleted() {
+        return this.browser.wait(until.elementLocated(By.id("site-operator-completed")), 5 * 20000);
+    }
+
     
     async giveContactDetailsCompleted() {
         return this.browser.wait(until.elementLocated(By.id("contact-details-completed")), 5 * 20000);
@@ -57,7 +61,7 @@ class TaskList {
     }
 
     async givePermitHolderDetailsLink() {
-        return this.browser.wait(until.elementsLocated(By.id("give-permit-holder-details-link")), 5 * 20000);
+        return this.browser.wait(until.elementLocated(By.id("give-permit-holder-details-link")), 5 * 20000);
     }
 
 

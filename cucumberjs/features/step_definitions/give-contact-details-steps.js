@@ -16,7 +16,7 @@ module.exports = function () {
         Assert.notEqual(value, -1, "error message not found Actual:- " + actualtext + "Expected was :-" + errorText);
     });
 
-    
+
     this.defineStep(/^I should not be able to see error "(.*?)"$/, { timeout: 60000 }, async function (errorText) {
         fieldText = await this.giveContactDetails.errorSummaryField();
         actualtext = await this.taskList.getTextElement(fieldText);
@@ -50,6 +50,15 @@ module.exports = function () {
 
             case "Secratary/directors email":
                 fieldText = await this.giveContactDetails.companySecretaryEmailField();
+                await fieldText.sendKeys(text);
+                break;
+
+            case "Company number":
+                fieldText = await this.giveCompanyDetails.enterCompanyNumberField();
+                await fieldText.sendKeys(text);
+                break;
+            case "Business trading name":
+                fieldText = await this.giveCompanyDetails.businessTradingName();
                 await fieldText.sendKeys(text);
                 break;
 
