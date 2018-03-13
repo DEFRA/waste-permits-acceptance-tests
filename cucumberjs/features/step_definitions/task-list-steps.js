@@ -82,7 +82,7 @@ module.exports = function () {
                 await linkText.click();
                 break;
 
-            case "Confirm the drainage system for your site":
+            case "Confirm you have suitable vehicle storage areas":
                 clinkText = await this.taskList.drainageSystemForVehicleStorageAreaLink();
                 await linkText.click();
                 break;

@@ -136,17 +136,18 @@ Feature:  WE-954 TASK LIST PAGE
         And I am on the Task list page for "Vehicle storage depollution and dismantling authorised treatment facility - SR2015 No 17"
         And I should be able to see <TaskList> task link
         Examples:
-            | TaskList                                    |
-            | "Confirm you can meet the rules"            |
-            | "Give contact details"                      |
-            | "Give technical management details"         |
-            | "Confirm confidentiality needs"             |
-            | "Give invoicing details"                    |
-            | "Send application and pay"                  |
-            | "Give site name and location"               |
-            | "Upload the site plan"                      |
-            | "Upload the fire prevention plan"           |
-            | "Confirm the drainage system for your site" |
+            | TaskList                                          |
+            | "Confirm you can meet the rules"                  |
+            | "Give contact details"                            |
+            | "Give company details"                            |
+            | "Give technical management details"               |
+            | "Confirm confidentiality needs"                   |
+            | "Give invoicing details"                          |
+            | "Send application and pay"                        |
+            | "Give site name and location"                     |
+            | "Upload the site plan"                            |
+            | "Upload the fire prevention plan"                 |
+            | "Confirm you have suitable vehicle storage areas" |
 
     #####################################
 
@@ -161,11 +162,11 @@ Feature:  WE-954 TASK LIST PAGE
         And I am on the Task list page for "Mobile plant for land-spreading - SR2010 No 4"
         And I should not be able to see <NotInTaskList> task link
         Examples:
-            | NotInTaskList                               |
-            | "Give site name and location"               |
-            | "Upload the site plan"                      |
-            | "Upload the fire prevention plan"           |
-            | "Confirm the drainage system for your site" |
+            | NotInTaskList                                     |
+            | "Give site name and location"                     |
+            | "Upload the site plan"                            |
+            | "Upload the fire prevention plan"                 |
+            | "Confirm you have suitable vehicle storage areas" |
 
 
     @desktop
@@ -179,11 +180,11 @@ Feature:  WE-954 TASK LIST PAGE
         And I am on the Task list page for "Mobile plant for land-spreading of sewage sludge - SR2010 No 6"
         And I should not be able to see <NotInTaskList> task link
         Examples:
-            | NotInTaskList                               |
-            | "Give site name and location"               |
-            | "Upload the site plan"                      |
-            | "Upload the fire prevention plan"           |
-            | "Confirm the drainage system for your site" |
+            | NotInTaskList                                     |
+            | "Give site name and location"                     |
+            | "Upload the site plan"                            |
+            | "Upload the fire prevention plan"                 |
+            | "Confirm you have suitable vehicle storage areas" |
 
     @desktop
     @phone
@@ -196,11 +197,11 @@ Feature:  WE-954 TASK LIST PAGE
         And I am on the Task list page for "Mobile plant for reclamation, restoration or improvement of land - SR2010 No 5"
         And I should not be able to see <NotInTaskList> task link
         Examples:
-            | NotInTaskList                               |
-            | "Give site name and location"               |
-            | "Upload the site plan"                      |
-            | "Upload the fire prevention plan"           |
-            | "Confirm the drainage system for your site" |
+            | NotInTaskList                                     |
+            | "Give site name and location"                     |
+            | "Upload the site plan"                            |
+            | "Upload the fire prevention plan"                 |
+            | "Confirm you have suitable vehicle storage areas" |
 
     @desktop
     @phone
@@ -213,11 +214,11 @@ Feature:  WE-954 TASK LIST PAGE
         And I am on the Task list page for "Mobile plant for the treatment of soils and contaminated material, substances or products - SR2008 No 27"
         And I should not be able to see <NotInTaskList> task link
         Examples:
-            | NotInTaskList                               |
-            | "Give site name and location"               |
-            | "Upload the site plan"                      |
-            | "Upload the fire prevention plan"           |
-            | "Confirm the drainage system for your site" |
+            | NotInTaskList                                     |
+            | "Give site name and location"                     |
+            | "Upload the site plan"                            |
+            | "Upload the fire prevention plan"                 |
+            | "Confirm you have suitable vehicle storage areas" |
 
     @desktop
     @phone
@@ -230,11 +231,11 @@ Feature:  WE-954 TASK LIST PAGE
         And I am on the Task list page for "Mobile plant for the treatment of waste to produce soil, soil substitutes and aggregate - SR2010 No 11"
         And I should not be able to see <NotInTaskList> task link
         Examples:
-            | NotInTaskList                               |
-            | "Give site name and location"               |
-            | "Upload the site plan"                      |
-            | "Upload the fire prevention plan"           |
-            | "Confirm the drainage system for your site" |
+            | NotInTaskList                                     |
+            | "Give site name and location"                     |
+            | "Upload the site plan"                            |
+            | "Upload the fire prevention plan"                 |
+            | "Confirm you have suitable vehicle storage areas" |
 
     @desktop
     @phone
@@ -247,6 +248,6 @@ Feature:  WE-954 TASK LIST PAGE
         And I am on the Task list page for "Treatment of waste to produce soil, soil substitutes and aggregate - SR2010 No 12"
         And I should not be able to see <NotInTaskList> task link
         Examples:
-            | NotInTaskList                               |
-            | "Upload fire prevention plan"               |
-            | "Confirm the drainage system for your site" |
+            | NotInTaskList                                     |
+            | "Upload fire prevention plan"                     |
+            | "Confirm you have suitable vehicle storage areas" |
