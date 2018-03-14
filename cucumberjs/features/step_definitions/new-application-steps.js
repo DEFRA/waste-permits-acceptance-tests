@@ -28,6 +28,10 @@ module.exports = function () {
                 const continueButton = await this.newApplication.continueButton();
                 await continueButton.click();
                 break;
+            case "Find Address":
+                const findAddressButton = await this.newApplication.continueButton();
+                await findAddressButton.click();
+                break;
             default: break;
         }
     });

@@ -19,6 +19,10 @@ module.exports = function () {
         await this.taskList.giveContactDetailsCompleted();
     });
 
+    this.defineStep(/^Give Invoicing Details is marked as completed$/, { timeout: 60000 }, async function () {
+        await this.taskList.giveInvoicingDetailsCompleted();
+    });
+
     this.defineStep(/^Give Company Details is marked as completed$/, { timeout: 60000 }, async function () {
         await this.taskList.giveCompanyDetailsCompleted();
     });
@@ -47,6 +51,10 @@ module.exports = function () {
                 break;
             case "Confirm that your operation meets the rules":
                 linkText = await this.taskList.confirmThatYourOperationMeetsRulesLink();
+                await linkText.click();
+                break;
+            case "Give invoicing details":
+                linkText = await this.taskList.giveInvoicingDetailsLink();
                 await linkText.click();
                 break;
             case "Give contact details":

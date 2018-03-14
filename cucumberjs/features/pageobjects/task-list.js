@@ -25,6 +25,10 @@ class TaskList {
         return this.browser.wait(until.elementLocated(By.id("upload-technical-management-qualifications-link")), 5 * 20000);
     }
 
+    async giveInvoicingDetailsLink() {
+        return this.browser.wait(until.elementLocated(By.id("invoicing-details-link")), 5 * 20000);
+    }
+
     async uploadCompleted() {
         return this.browser.wait(until.elementLocated(By.id("upload-completed")), 5 * 20000);
     }
@@ -43,6 +47,10 @@ class TaskList {
 
     async giveContactDetailsCompleted() {
         return this.browser.wait(until.elementLocated(By.id("contact-details-completed")), 5 * 20000);
+    }
+
+    async giveInvoicingDetailsCompleted() {
+        return this.browser.wait(until.elementLocated(By.id("invoicing-details-completed")), 5 * 20000);
     }
 
     async confirmThatYourOperationMeetsRulesLink() {

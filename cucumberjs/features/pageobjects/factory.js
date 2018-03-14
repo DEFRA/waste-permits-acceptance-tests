@@ -8,6 +8,7 @@ const Fakes = require("./fakes").Fakes;
 const ConfirmRules = require("./confirm-meet-the-rules").ConfirmRules;
 const GiveContactDetails = require("./give-contact-details").GiveContactDetails;
 const GiveCompanyDetails = require("./give-company-details").GiveCompanyDetails;
+const GiveInvoicingDetails = require("./give-invoicing-details").GiveInvoicingDetails;
 const ConfirmConfidentiality = require("./confirm-confidentiality-needs").ConfirmConfidentiality;
 
 
@@ -27,6 +28,7 @@ class Factory {
 			fakes: Fakes,
 			givecontactdetails: GiveContactDetails,
 			givecompanydetails: GiveCompanyDetails,
+			giveinvoicingdetails: GiveInvoicingDetails,
 			confirmConfidentiality: ConfirmConfidentiality
 
 		};

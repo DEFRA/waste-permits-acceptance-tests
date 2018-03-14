@@ -9,6 +9,18 @@ Feature:  WE-954 TASK LIST PAGE
     @phone
     @tablet
     @ui
+    Scenario: User should be able to see error message if he doesnt select a permit and wishes to proceed
+        When I am on the "Select a permit" page
+        And I click on "Continue" button
+        And I should be able to see error "Select the permit you want"
+        And I select a permit "SR2010 No 4"
+        And I click on "Continue" button
+        And I am on the Task list page for "Mobile plant for land-spreading - SR2010 No 4"
+
+    @desktop
+    @phone
+    @tablet
+    @ui
     Scenario Outline: SR2010 No 4 :- User should be able to see task list of that permit selected
         When I am on the "Select a permit" page
         And I select a permit "SR2010 No 4"
