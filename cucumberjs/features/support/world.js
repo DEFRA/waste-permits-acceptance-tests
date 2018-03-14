@@ -26,6 +26,8 @@ module.exports.World = function World(parameters) {
 	this.giveInvoicingDetails = this.pageFactory.create("giveinvoicingdetails");
 	this.uploadTechCompetency = this.pageFactory.create("uploadtechcompetency");
 	this.confirmConfidentiality = this.pageFactory.create("confirmConfidentiality");
+	this.giveSiteNameLocation = this.pageFactory.create("givesitenamelocation");
+	
 	this.parameters = parameters;
 
 	// Create page objects

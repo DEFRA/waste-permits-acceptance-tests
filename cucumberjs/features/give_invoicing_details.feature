@@ -39,6 +39,8 @@ Feature: WE-578 GIVE INVOICING DETAILS PAGE
         And I click on "Find Address" button
         Then I am on the "What's the invoice address?" page
         And I should be able to see Select Address dropdown
+        When I click on "Continue" button
+        And I should be able to see error "Select an address"
         When I select first address from the address dropdown
         And I click on "Continue" button
         Then I am on the Task list page for "Mobile plant for land-spreading - SR2010 No 4"

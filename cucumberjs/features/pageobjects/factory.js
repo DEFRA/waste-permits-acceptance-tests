@@ -9,6 +9,7 @@ const ConfirmRules = require("./confirm-meet-the-rules").ConfirmRules;
 const GiveContactDetails = require("./give-contact-details").GiveContactDetails;
 const GiveCompanyDetails = require("./give-company-details").GiveCompanyDetails;
 const GiveInvoicingDetails = require("./give-invoicing-details").GiveInvoicingDetails;
+const GiveSiteNameLocation = require("./give-site-name-location").GiveSiteNameLocation;
 const ConfirmConfidentiality = require("./confirm-confidentiality-needs").ConfirmConfidentiality;
 
 
@@ -28,6 +29,7 @@ class Factory {
 			fakes: Fakes,
 			givecontactdetails: GiveContactDetails,
 			givecompanydetails: GiveCompanyDetails,
+			givesitenamelocation: GiveSiteNameLocation,
 			giveinvoicingdetails: GiveInvoicingDetails,
 			confirmConfidentiality: ConfirmConfidentiality
 

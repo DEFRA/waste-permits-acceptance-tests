@@ -36,6 +36,17 @@ module.exports = function () {
         await this.taskList.confirmConfidentialityCompleted();
     });
 
+    this.defineStep(/^Upload site plan is marked as completed$/, { timeout: 60000 }, async function () {
+        await this.taskList.uploadSitePlanCompleted();
+    });
+
+    this.defineStep(/^Upload fire prevention plan is marked as completed$/, { timeout: 60000 }, async function () {
+        await this.taskList.uploadFirePreventionPlanCompleted();
+    });
+
+    this.defineStep(/^Give site name and address is marked as completed$/, { timeout: 60000 }, async function () {
+        await this.taskList.giveSiteNameAddressCompleted();
+    });
 
     this.defineStep(/^I am on the Task list page for "([^"]*)"$/, { timeout: 60000 }, async function (permit) {
         const permitType = await this.taskList.permitTypeText();
@@ -73,28 +84,22 @@ module.exports = function () {
                 linkText = await this.taskList.submitPayLink();
                 await linkText.click();
                 break;
-
-            //
             case "Give site name and location":
                 linkText = await this.taskList.siteNameAndLocationLink();
                 await linkText.click();
                 break;
-
             case "Upload the site plan":
                 linkText = await this.taskList.uploadSitePlanLink();
                 await linkText.click();
                 break;
-
             case "Upload the fire prevention plan":
                 linkText = await this.taskList.uploadFirePreventionPlanLink();
                 await linkText.click();
                 break;
-
             case "Confirm you have suitable vehicle storage areas":
                 clinkText = await this.taskList.drainageSystemForVehicleStorageAreaLink();
                 await linkText.click();
                 break;
-
             case "Select a different permit":
                 clinkText = await this.taskList.selectDifferentPermit();
                 await linkText.click();

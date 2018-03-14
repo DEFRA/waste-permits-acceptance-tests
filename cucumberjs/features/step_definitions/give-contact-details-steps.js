@@ -68,6 +68,16 @@ module.exports = function () {
                 await fieldText.clear();
                 await fieldText.sendKeys(text);
                 break;
+            case "Site Name":
+                fieldText = await this.giveSiteNameLocation.siteNameField();
+                await fieldText.clear();
+                await fieldText.sendKeys(text);
+                break;
+            case "Site Grid Reference":
+                fieldText = await this.giveSiteNameLocation.siteGridReferenceField();
+                await fieldText.clear();
+                await fieldText.sendKeys(text);
+                break;
 
             default: break;
         }

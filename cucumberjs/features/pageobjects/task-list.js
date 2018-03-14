@@ -37,6 +37,10 @@ class TaskList {
         return this.browser.wait(until.elementLocated(By.id("operation-rules-completed")), 5 * 20000);
     }
 
+    async uploadSitePlanCompleted() {
+        return this.browser.wait(until.elementLocated(By.id("site-plan-completed")), 5 * 20000);
+    }
+
     async confirmConfidentialityCompleted() {
         return this.browser.wait(until.elementLocated(By.id("confidentiality-completed")), 5 * 20000);
     }
@@ -53,6 +57,13 @@ class TaskList {
         return this.browser.wait(until.elementLocated(By.id("invoicing-details-completed")), 5 * 20000);
     }
 
+    async giveSiteNameAddressCompleted() {
+        return this.browser.wait(until.elementLocated(By.id("site-name-completed")), 5 * 20000);
+    }
+    
+    async uploadFirePreventionPlanCompleted() {
+        return this.browser.wait(until.elementLocated(By.id("firepp-completed")), 5 * 20000);
+    }
     async confirmThatYourOperationMeetsRulesLink() {
         return this.browser.wait(until.elementLocated(By.id("confirm-that-your-operation-meets-the-rules-link")), 5 * 20000);
     }
