@@ -11,4 +11,5 @@
 #   Given the CRM application has been launched
 #   And I am on the CRM login page
 #   And I login as "amruta.bendre@defradev.onmicrosoft.com" password "W@ste-Permits"
-#   #Then I am logged in to CRM
+#   Then I am logged in to CRM as "Amruta Bendre EA-LP-CRM-QA"
+#   When I click on LP tab

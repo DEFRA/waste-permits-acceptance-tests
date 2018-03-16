@@ -4,6 +4,9 @@ Feature: WE-475 CONFIRM CONFIDENTIALITY NEEDS PAGE
         Given the application has been launched
         And I am on the "Apply for a mobile plant standard rules waste permit" page
         And I click on "Continue" button
+        And I am on the "What do you want the permit for?" page
+        And I select "Dummy category" option for pemit
+        And I click on "Continue" button
         And I am on the "Select a permit" page
         And I select a permit "SR2010 No 4"
         And I click on "Continue" button
@@ -31,4 +34,4 @@ Feature: WE-475 CONFIRM CONFIDENTIALITY NEEDS PAGE
         And I select "No" on confidentiality page
         And I click on "Continue" button
         Then I am on the Task list page for "Mobile plant for land-spreading - SR2010 No 4"
-        Then Confirm confidentiality needs is marked as completed    
+        Then Confirm confidentiality needs is marked as completed

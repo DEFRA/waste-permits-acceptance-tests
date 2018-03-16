@@ -4,6 +4,9 @@ Feature: WE-578 GIVE COMPANY DETAILS PAGE
         Given the application has been launched
         And I am on the "Apply for a mobile plant standard rules waste permit" page
         And I click on "Continue" button
+        And I am on the "What do you want the permit for?" page
+        And I select "Dummy category" option for pemit
+        And I click on "Continue" button
         And I am on the "Select a permit" page
         And I select a permit "SR2010 No 4"
         And I click on "Continue" button
@@ -79,10 +82,10 @@ Feature: WE-578 GIVE COMPANY DETAILS PAGE
     @desktop
     @phone
     @tablet
-    Scenario: As a user, I should be able to change the company 
+    Scenario: As a user, I should be able to change the company
         When I click on the "Give company details" link
         Then I am on the "What's the UK company registration number?" page
-         When I enter "" in the "Company number" field
+        When I enter "" in the "Company number" field
         When I click on "Continue" button
         And I should be able to see error "Enter a company registration number"
         When I enter "11" in the "Company number" field

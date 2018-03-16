@@ -11,6 +11,7 @@ const GiveCompanyDetails = require("./give-company-details").GiveCompanyDetails;
 const GiveInvoicingDetails = require("./give-invoicing-details").GiveInvoicingDetails;
 const GiveSiteNameLocation = require("./give-site-name-location").GiveSiteNameLocation;
 const ConfirmConfidentiality = require("./confirm-confidentiality-needs").ConfirmConfidentiality;
+const PermitFor = require("./permit-for").PermitFor;
 
 
 class Factory {
@@ -31,7 +32,8 @@ class Factory {
 			givecompanydetails: GiveCompanyDetails,
 			givesitenamelocation: GiveSiteNameLocation,
 			giveinvoicingdetails: GiveInvoicingDetails,
-			confirmConfidentiality: ConfirmConfidentiality
+			confirmConfidentiality: ConfirmConfidentiality,
+			permitfor: PermitFor
 
 		};
 	}

@@ -27,6 +27,7 @@ module.exports.World = function World(parameters) {
 	this.uploadTechCompetency = this.pageFactory.create("uploadtechcompetency");
 	this.confirmConfidentiality = this.pageFactory.create("confirmConfidentiality");
 	this.giveSiteNameLocation = this.pageFactory.create("givesitenamelocation");
+	this.permitFor = this.pageFactory.create("permitfor");
 	
 	this.parameters = parameters;
 

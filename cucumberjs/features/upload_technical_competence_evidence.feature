@@ -4,11 +4,14 @@ Feature:  WE-832 UPLOAD TECHNICAL COMPETENCE EVIDENCE PAGE
         Given the application has been launched
         And I am on the "Apply for a mobile plant standard rules waste permit" page
         And I click on "Continue" button
+        And I am on the "What do you want the permit for?" page
+        And I select "Dummy category" option for pemit
+        And I click on "Continue" button
         And I am on the "Select a permit" page
         And I select a permit "SR2010 No 4"
         And I click on "Continue" button
         And I am on the Task list page for "Mobile plant for land-spreading - SR2010 No 4"
-        
+
 
     @desktop
     @phone
@@ -19,11 +22,11 @@ Feature:  WE-832 UPLOAD TECHNICAL COMPETENCE EVIDENCE PAGE
         When I click on the "Upload technical management qualifications" link
         Then I am on the "What evidence of technical competence do you have?" page
         And following are the options on the the technical qualifications page:
-            | options                                                                                                   |
-            | WAMITAB or EPOC qualification                                                                             |   
-            | We’re getting WAMITAB or EPOC qualifications                                                              |
-            | Deemed competence or an Environment Agency assessment with WAMITAB continuing competence certification    |
-            | Energy & Utility Skills / ESA Competence Management System                                                |
+            | options                                                                                                |
+            | WAMITAB or EPOC qualification                                                                          |
+            | We’re getting WAMITAB or EPOC qualifications                                                           |
+            | Deemed competence or an Environment Agency assessment with WAMITAB continuing competence certification |
+            | Energy & Utility Skills / ESA Competence Management System                                             |
 
 
     @desktop
@@ -34,11 +37,11 @@ Feature:  WE-832 UPLOAD TECHNICAL COMPETENCE EVIDENCE PAGE
         When I click on the "Upload technical management qualifications" link
         Then I am on the "What evidence of technical competence do you have?" page
         And following are the options on the the technical qualifications page:
-            | options                                                                                                   |
-            | WAMITAB or EPOC qualification                                                                             |   
-            | We’re getting WAMITAB or EPOC qualifications                                                              |
-            | Deemed competence or an Environment Agency assessment with WAMITAB continuing competence certification    |
-            | Energy & Utility Skills / ESA Competence Management System                                                |
+            | options                                                                                                |
+            | WAMITAB or EPOC qualification                                                                          |
+            | We’re getting WAMITAB or EPOC qualifications                                                           |
+            | Deemed competence or an Environment Agency assessment with WAMITAB continuing competence certification |
+            | Energy & Utility Skills / ESA Competence Management System                                             |
         When I click on "WAMITAB or EPOC qualification" on the Upload technical management qualifications page
         And I click on "Continue" button
         Then I am on the "WAMITAB or EPOC: upload evidence" page
@@ -69,11 +72,11 @@ Feature:  WE-832 UPLOAD TECHNICAL COMPETENCE EVIDENCE PAGE
         When I click on the "Upload technical management qualifications" link
         Then I am on the "What evidence of technical competence do you have?" page
         And following are the options on the the technical qualifications page:
-            | options                                                                                                   |
-            | WAMITAB or EPOC qualification                                                                             |   
-            | We’re getting WAMITAB or EPOC qualifications                                                              |
-            | Deemed competence or an Environment Agency assessment with WAMITAB continuing competence certification    |
-            | Energy & Utility Skills / ESA Competence Management System                                                |
+            | options                                                                                                |
+            | WAMITAB or EPOC qualification                                                                          |
+            | We’re getting WAMITAB or EPOC qualifications                                                           |
+            | Deemed competence or an Environment Agency assessment with WAMITAB continuing competence certification |
+            | Energy & Utility Skills / ESA Competence Management System                                             |
         When I click on "WAMITAB or EPOC qualification" on the Upload technical management qualifications page
         And I click on "Continue" button
         Then I am on the "WAMITAB or EPOC: upload evidence" page
@@ -82,7 +85,7 @@ Feature:  WE-832 UPLOAD TECHNICAL COMPETENCE EVIDENCE PAGE
         And I am on the Task list page for "Mobile plant for land-spreading - SR2010 No 4"
         And Upload documents is marked as completed
 
-   @desktop
+    @desktop
     @phone
     @tablet
     @ui
@@ -90,20 +93,20 @@ Feature:  WE-832 UPLOAD TECHNICAL COMPETENCE EVIDENCE PAGE
         When I click on the "Upload technical management qualifications" link
         Then I am on the "What evidence of technical competence do you have?" page
         And following are the options on the the technical qualifications page:
-            | options                                                                                                   |
-            | WAMITAB or EPOC qualification                                                                             |   
-            | We’re getting WAMITAB or EPOC qualifications                                                              |
-            | Deemed competence or an Environment Agency assessment with WAMITAB continuing competence certification    |
-            | Energy & Utility Skills / ESA Competence Management System                                                |
+            | options                                                                                                |
+            | WAMITAB or EPOC qualification                                                                          |
+            | We’re getting WAMITAB or EPOC qualifications                                                           |
+            | Deemed competence or an Environment Agency assessment with WAMITAB continuing competence certification |
+            | Energy & Utility Skills / ESA Competence Management System                                             |
         When I click on "WAMITAB or EPOC qualification" on the Upload technical management qualifications page
         And I click on "Continue" button
         Then I am on the "WAMITAB or EPOC: upload evidence" page
         When I select pdf file to upload
         When I click on "Continue" button
         And I am on the Task list page for "Mobile plant for land-spreading - SR2010 No 4"
-        And Upload documents is marked as completed      
+        And Upload documents is marked as completed
 
-  @desktop
+    @desktop
     @phone
     @tablet
     @ui
@@ -111,34 +114,34 @@ Feature:  WE-832 UPLOAD TECHNICAL COMPETENCE EVIDENCE PAGE
         When I click on the "Upload technical management qualifications" link
         Then I am on the "What evidence of technical competence do you have?" page
         And following are the options on the the technical qualifications page:
-            | options                                                                                                   |
-            | WAMITAB or EPOC qualification                                                                             |   
-            | We’re getting WAMITAB or EPOC qualifications                                                              |
-            | Deemed competence or an Environment Agency assessment with WAMITAB continuing competence certification    |
-            | Energy & Utility Skills / ESA Competence Management System                                                |
+            | options                                                                                                |
+            | WAMITAB or EPOC qualification                                                                          |
+            | We’re getting WAMITAB or EPOC qualifications                                                           |
+            | Deemed competence or an Environment Agency assessment with WAMITAB continuing competence certification |
+            | Energy & Utility Skills / ESA Competence Management System                                             |
         When I click on "WAMITAB or EPOC qualification" on the Upload technical management qualifications page
         And I click on "Continue" button
         Then I am on the "WAMITAB or EPOC: upload evidence" page
         When I click on "Continue" button
         Then I should be able to see an error message "You must upload at least one file. Choose a file then press the 'Upload chosen file' button."
 
- @desktop
- @phone
- @tablet
- @ui
- Scenario: As a user, when I try to upload a wrong file, I should be able to see error message
-  When I click on the "Upload technical management qualifications" link
+    @desktop
+    @phone
+    @tablet
+    @ui
+    Scenario: As a user, when I try to upload a wrong file, I should be able to see error message
+        When I click on the "Upload technical management qualifications" link
         Then I am on the "What evidence of technical competence do you have?" page
         And following are the options on the the technical qualifications page:
-            | options                                                                                                   |
-            | WAMITAB or EPOC qualification                                                                             |   
-            | We’re getting WAMITAB or EPOC qualifications                                                              |
-            | Deemed competence or an Environment Agency assessment with WAMITAB continuing competence certification    |
-            | Energy & Utility Skills / ESA Competence Management System                                                |
+            | options                                                                                                |
+            | WAMITAB or EPOC qualification                                                                          |
+            | We’re getting WAMITAB or EPOC qualifications                                                           |
+            | Deemed competence or an Environment Agency assessment with WAMITAB continuing competence certification |
+            | Energy & Utility Skills / ESA Competence Management System                                             |
         When I click on "WAMITAB or EPOC qualification" on the Upload technical management qualifications page
         And I click on "Continue" button
         Then I am on the "WAMITAB or EPOC: upload evidence" page
         When I select ppt file to upload
         And I click on "Continue" button
         Then I should be able to see an error message "You can only upload PDF or JPG files"
-        
+
