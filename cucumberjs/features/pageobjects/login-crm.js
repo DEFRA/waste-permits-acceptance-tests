@@ -2,7 +2,7 @@
 const webdriver = require("selenium-webdriver");
 const By = webdriver.By;
 const until = webdriver.until;
-const actionSequence = require('selenium-webdriver').ActionSequence;
+const alert = require("selenium-webdriver").Alert;
 
 
 class LoginCRM {
@@ -38,11 +38,41 @@ class LoginCRM {
     }
 
     async closeCSS() {
-        return this.browser.wait(until.elementLocated(By.css("img[alt='Close']")), 5 * 20000);;
+        return this.browser.wait(until.elementLocated(By.css("div[className='navTourClose']")), 5 * 20000);;
+    }
+
+    
+    async applicationLP() {
+        return this.browser.wait(until.elementLocated(By.css("a[title='Applications']")), 5 * 20000);;
+    }
+
+    async applicationsMenu() {
+        return this.browser.wait(until.elementLocated(By.css("ul[role='application']")), 5 * 20000);;
+    }
+    async newApplication() { 
+        return this.browser.wait(until.elementLocated(By.id("defra_application|NoRelationship|HomePageGrid|Mscrm.HomepageGrid.defra_application.NewRecord")), 5 * 20000);
+    }
+
+    async newapplicationTitle() {
+        return this.browser.wait(until.elementLocated(By.css("h1[title='New Application']")), 5 * 20000);;
+    }
+
+    //
+    async formNavigation() { 
+        return this.browser.wait(until.elementLocated(By.css("img[src='/_imgs/formsections_navigationflyout_button.png']")), 5 * 20000);
+    }
+
+    //
+    async selectCust() { 
+        return this.browser.wait(until.elementLocated(By.css("td[title='CUSTOMER']")), 5 * 20000);
+    }
+    
+    async customerID() { 
+        return this.browser.wait(until.elementLocated(By.id("header_process_defra_customerid_lookupValue")), 5 * 20000);
     }
 
     async userName(user) {
-        const user1 = "img[alt='"+ user +"']"
+        const user1 = "img[alt='" + user + "']"
         console.log(user1);
         return this.browser.wait(until.elementLocated(By.css(user1)), 5 * 20000);;
     }
@@ -59,32 +89,26 @@ class LoginCRM {
         return this.browser.wait(until.elementLocated(By.id("idBtn_Back")), 5 * 20000);
     }
 
+    
+    async getTextElement(element) {
+        return element.getText();
+    }
+
     async pressEscape() {
-        //const action = new Actions(this.browser);
-        //Actions action = new Actions(driver);
-        //return this.browser.SendKeys(Keys.Escape);
-       //return System.Windows.Forms.SendKeys.SendWait("{ESC}");
-       // return this.browser.sendKeys(Key.ESCAPE);
-      //perform();
-      //return ActionSequence.keyDown(webdriver.Key.ESCAPE).perform();
-      this.sleep();
-      console.log("ESCAPE");
-      const actn = this.browser.ActionSequence()
-      //const actions1 = this.browser.actions();
-      await actn.press(ESCAPE).release(ESCAPE)
-      return await actn.perform();
-     //   return this.browser.SendKeys(Keys.ESCAPE);
-     // return await new actionSequence(this.browser).sendKeys(this.browser.Keys.ESCAPE).perform();
-     //  return webdriver.ActionSequence(this.browser).keyDown(Key.ESCAPE).perform()
-       //return actn.perform();
+        this.sleep();
+        console.log("ESCAPE");
+      return await this.browser.switchTo().alert().dismiss();
+
+
+        
     }
 
     async header() {
-        return this.browser.wait(until.elementLocated(By.id("navTourHeader")), 5 * 20000);
+        return this.browser.wait(until.elementLocated(By.className("navTourTitleText")), 5 * 20000);
     }
 
     async closePopup() {
-       // return this.header.wait(until.elementLocated(By.xpath("//img[contains(@alt,'Close')]")), 5 * 20000);
+        // return this.header.wait(until.elementLocated(By.xpath("//img[contains(@alt,'Close')]")), 5 * 20000);
         //this.browser.wait(until.elementLocated(By.xpath("//img[contains(@alt,'Close')]")), 5 * 20000);
         return this.browser.wait(until.elementLocated(By.id("buttonClose")), 5 * 200000);
     }
@@ -92,7 +116,7 @@ class LoginCRM {
     async navtourtitle() {
         //InlineDialog
         return this.browser.wait(until.elementLocated(By.xpath("//a[contains(@id,'buttonClose')]")), 5 * 20000);
-       // return this.browser.wait(until.elementLocated(By.id("buttonClose")), 5 * 200000);
+        // return this.browser.wait(until.elementLocated(By.id("buttonClose")), 5 * 200000);
     }
 
     async navtitletext() {
@@ -100,7 +124,7 @@ class LoginCRM {
     }
 
     async loggedInPageUserProfileImage() {
-        return this.browser.wait(until.elementLocated(By.class("navTabButtonUserInfoProfileImage")), 5 * 20000);
+        return this.browser.wait(until.elementLocated(By.className("navTabButtonUserInfoProfileImage")), 5 * 20000);
     }
 
     async lpTab() {
