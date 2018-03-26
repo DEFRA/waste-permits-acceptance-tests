@@ -25,7 +25,6 @@ class NewApplication {
         return this.browser.wait(until.elementLocated(By.id("submit-button")), 5 * 8000);
     }
 
-
 }
 
 module.exports.NewApplication = NewApplication;

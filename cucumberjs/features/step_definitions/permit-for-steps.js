@@ -8,6 +8,18 @@ module.exports = function () {
     //I select "Dummy category" option for pemit
     this.defineStep(/^I select "(.*?)" option for pemit$/, { timeout: 60000 }, async function (option) {
         switch (option) {
+            case "Limited Company":
+                radioButton = await this.permitFor.limitedCompanyRadio();
+                radioButton.click();
+                break;
+            case "Car and vehicle dismantling":
+                radioButton = await this.permitFor.carDismantlingRadio();
+                radioButton.click();
+                break;
+            case "Mobile plant for land-spreading or treatment":
+                radioButton = await this.permitFor.mobileLandSpreadingRadio();
+                radioButton.click();
+                break;
             case "Dummy category":
                 radioButton = await this.permitFor.dummyCategoryRadio();
                 radioButton.click();

@@ -15,6 +15,10 @@ module.exports = function () {
         await this.taskList.uploadCompleted();
     });
 
+    this.defineStep(/^Confirm you have suitable vehicle storage areas is marked as completed$/, { timeout: 60000 }, async function () {
+        await this.taskList.confirmDrainageCompleted();
+    });
+
     this.defineStep(/^Give Contact Details is marked as completed$/, { timeout: 60000 }, async function () {
         await this.taskList.giveContactDetailsCompleted();
     });
@@ -97,7 +101,7 @@ module.exports = function () {
                 await linkText.click();
                 break;
             case "Confirm you have suitable vehicle storage areas":
-                clinkText = await this.taskList.drainageSystemForVehicleStorageAreaLink();
+                linkText = await this.taskList.drainageSystemForVehicleStorageAreaLink();
                 await linkText.click();
                 break;
             case "Select a different permit":

@@ -4,8 +4,8 @@ Feature:  WE-954 SELECT A PERMIT PAGE
         Given the application has been launched
         And I am on the "Apply for a mobile plant standard rules waste permit" page
         And I click on "Continue" button
-        And I am on the "What do you want the permit for?" page
-        And I select "Dummy category" option for pemit
+        And I am on the "Who will be the permit holder?" page
+        And I select "Limited Company" option for pemit
         And I click on "Continue" button
 
     @desktop

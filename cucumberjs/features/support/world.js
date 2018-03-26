@@ -18,6 +18,7 @@ module.exports.World = function World(parameters) {
 	this.pageFactory = new Factory(browser, this.testdata);
 	this.newApplication = this.pageFactory.create("newapplication");
 	this.selectPermit = this.pageFactory.create("selectpermit");
+	this.selectPayment = this.pageFactory.create("selectpayment");
 	this.taskList = this.pageFactory.create("tasklist");
 	this.loginCRM = this.pageFactory.create("logincrm");
 	this.confirmRules = this.pageFactory.create("confirmrules");

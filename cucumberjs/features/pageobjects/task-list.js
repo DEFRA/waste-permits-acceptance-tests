@@ -32,6 +32,10 @@ class TaskList {
     async uploadCompleted() {
         return this.browser.wait(until.elementLocated(By.id("upload-completed")), 5 * 20000);
     }
+   
+    async confirmDrainageCompleted() {
+        return this.browser.wait(until.elementLocated(By.id("confirm-drainage-completed")), 5 * 20000);
+    }
 
     async confirmRulesCompleted() {
         return this.browser.wait(until.elementLocated(By.id("operation-rules-completed")), 5 * 20000);

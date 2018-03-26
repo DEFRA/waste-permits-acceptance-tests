@@ -1,6 +1,7 @@
 const Application = require("./application").Application;
 const NewApplication = require("./new-application").NewApplication;
 const SelectPermit = require("./select-permit").SelectPermit;
+const SelectPayment = require("./select-payment").SelectPayment;
 const TaskList = require("./task-list").TaskList;
 const UploadTechCompetency = require("./upload-tech-competency").UploadTechCompetency;
 const LoginCRM = require("./login-crm").LoginCRM;
@@ -24,6 +25,7 @@ class Factory {
 			newapplication: NewApplication,
 			uploadtechcompetency: UploadTechCompetency,
 			selectpermit: SelectPermit,
+			selectpayment: SelectPayment,
 			tasklist: TaskList,
 			confirmrules: ConfirmRules,
 			logincrm: LoginCRM,

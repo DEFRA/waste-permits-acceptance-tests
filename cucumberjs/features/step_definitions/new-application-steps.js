@@ -32,6 +32,9 @@ module.exports = function () {
                 const findAddressButton = await this.newApplication.continueButton();
                 await findAddressButton.click();
                 break;
+            case "Send Application":
+                const submitButton = await this.newApplication.continueButton();
+                await submitButton.click();
             default: break;
         }
     });

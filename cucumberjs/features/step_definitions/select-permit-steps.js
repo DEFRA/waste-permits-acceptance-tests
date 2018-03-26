@@ -3,6 +3,7 @@
 const World = require("../support/world").World;
 const Assert = require("assert");
 let actualtext = "";
+let permitSelect;
 
 module.exports = function () {
 
@@ -96,37 +97,46 @@ module.exports = function () {
         }
     });
 
-    
+
     this.defineStep(/^I select a permit "(.*?)"$/, { timeout: 60000 }, async function (option) {
         switch (option) {
             case "SR2010 No 4":
-                const permitSR2010No4Radio = await this.selectPermit.permitSR2010No4Radio();
-                permitSR2010No4Radio.click();
+                permitSelect = await this.selectPermit.permitSR2010No4Radio();
+                permitSelect.click();
                 break;
             case "SR2010 No 6":
-                const permitSR2010No6Radio = await this.selectPermit.permitSR2010No6Radio();
-                permitSR2010No6Radio.click();
+                permitSelect = await this.selectPermit.permitSR2010No6Radio();
+                permitSelect.click();
                 break;
             case "SR2010 No 5":
-                const permitSR2010No5Radio = await this.selectPermit.permitSR2010No5Radio();
-                permitSR2010No5Radio.click();
+                permitSelect = await this.selectPermit.permitSR2010No5Radio();
+                permitSelect.click();
                 break;
             case "SR2008 No 27":
-                const permitSR2008No27Radio = await this.selectPermit.permitSR2008No27Radio();
-                permitSR2008No27Radio.click();
+                permitSelect = await this.selectPermit.permitSR2008No27Radio();
+                permitSelect.click();
                 break;
             case "SR2010 No 11":
-                const permitSR2010No11Radio = await this.selectPermit.permitSR2010No11Radio();
-                permitSR2010No11Radio.click();
+                permitSelect = await this.selectPermit.permitSR2010No11Radio();
+                permitSelect.click();
                 break;
             case "SR2010 No 12":
-                const permitSR2010No12Radio = await this.selectPermit.permitSR2010No12Radio();
-                permitSR2010No12Radio.click();
+                permitSelect = await this.selectPermit.permitSR2010No12Radio();
+                permitSelect.click();
                 break;
             case "SR2015 No 17":
-                const permitSR2015No17Radio = await this.selectPermit.permitSR2015No17Radio();
-                permitSR2015No17Radio.click();
+                permitSelect = await this.selectPermit.permitSR2015No17Radio();
+                permitSelect.click();
                 break;
+            case "SR2015 No 18":
+                permitSelect = await this.selectPermit.permitSR2015No18Radio();
+                permitSelect.click();
+                break;
+            case "SR2015 No 13":
+                permitSelect = await this.selectPermit.permitSR2015No13Radio();
+                permitSelect.click();
+                break;
+
             default: break;
         }
     });
