@@ -251,10 +251,6 @@ Feature: END TO END REGRESSION TEST
         When I click on "Continue" button
         And I am on the Task list page for <TasklistTitle>
         And Upload documents is marked as completed
-        When I click on the "Confirm you have suitable vehicle storage areas" link
-        Then I am on the "Confirm you have suitable vehicle storage areas" page
-        And I click on "Continue" button
-        And Confirm you have suitable vehicle storage areas is marked as completed
         When I click on the "Give site name and location" link
         Then I am on the "What's the site name?" page
         When I enter "Test Site" in the "Site Name" field

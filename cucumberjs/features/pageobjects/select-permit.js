@@ -17,18 +17,6 @@ class SelectPermit {
         return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2010-no-4-name")), 5 * 20000);
     }
 
-    async permitSR2015No18Radio() {
-        return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2015-no-18-input")), 5 * 20000);
-    }
-
-    async permitSR2015No13Radio() {
-        return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2015-no-13-input")), 5 * 20000);
-    }
-
-    async permitSR2010No5Weight() {
-        return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2010-no-4-weight")), 5 * 20000);
-    }
-
     async permitSR2010No4Code() {
         return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2010-no-4-code")), 5 * 20000);
     }
@@ -131,6 +119,30 @@ class SelectPermit {
     async permitSR2008No27Code() {
         return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2008-no-27-code")), 5 * 20000);
     }
+
+    ////////////////////////////////
+
+    async permitSR2015No18Radio() {
+        return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2015-no-18-input")), 5 * 20000);
+    }
+
+    async permitSR2015No13Radio() {
+        return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2015-no-13-input")), 5 * 20000);
+    }
+
+    async permitSR2010No5Weight() {
+        return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2010-no-4-weight")), 5 * 20000);
+    }
+
+
+
+
+
+
+
+
+
+
 
     async continueButton() {
         return this.browser.wait(until.elementLocated(By.id("submit-button")), 5 * 20000);
