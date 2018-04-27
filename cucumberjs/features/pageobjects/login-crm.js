@@ -41,7 +41,7 @@ class LoginCRM {
         return this.browser.wait(until.elementLocated(By.css("div[className='navTourClose']")), 5 * 20000);;
     }
 
-    
+
     async applicationLP() {
         return this.browser.wait(until.elementLocated(By.css("a[title='Applications']")), 5 * 20000);;
     }
@@ -49,25 +49,26 @@ class LoginCRM {
     async applicationsMenu() {
         return this.browser.wait(until.elementLocated(By.css("ul[role='application']")), 5 * 20000);;
     }
-    async newApplication() { 
-        return this.browser.wait(until.elementLocated(By.id("defra_application|NoRelationship|HomePageGrid|Mscrm.HomepageGrid.defra_application.NewRecord")), 5 * 20000);
-    }
-
-    async newapplicationTitle() {
+    async newApplication() {
+        
         return this.browser.wait(until.elementLocated(By.css("h1[title='New Application']")), 5 * 20000);;
     }
 
+    async newapplicationTitle() {
+        return this.browser.wait(until.elementLocated(By.className("ms-crm-CommandBarItem ms-crm-CommandBar-Menu ms-crm-CommandBar-Button")), 5 * 20000);;
+    }
+
     //
-    async formNavigation() { 
+    async formNavigation() {
         return this.browser.wait(until.elementLocated(By.css("img[src='/_imgs/formsections_navigationflyout_button.png']")), 5 * 20000);
     }
 
     //
-    async selectCust() { 
+    async selectCust() {
         return this.browser.wait(until.elementLocated(By.css("td[title='CUSTOMER']")), 5 * 20000);
     }
-    
-    async customerID() { 
+
+    async customerID() {
         return this.browser.wait(until.elementLocated(By.id("header_process_defra_customerid_lookupValue")), 5 * 20000);
     }
 
@@ -89,7 +90,11 @@ class LoginCRM {
         return this.browser.wait(until.elementLocated(By.id("idBtn_Back")), 5 * 20000);
     }
 
-    
+    async searchApplication() {
+        return this.browser.wait(until.elementLocated(By.xpath("//input[contains(@class,'ms-crm-Dialog-Lookup-QuickFind')]")), 5 * 20000);
+    }
+
+
     async getTextElement(element) {
         return element.getText();
     }
@@ -97,10 +102,10 @@ class LoginCRM {
     async pressEscape() {
         this.sleep();
         console.log("ESCAPE");
-      return await this.browser.switchTo().alert().dismiss();
+        return await this.browser.switchTo().alert().dismiss();
 
 
-        
+
     }
 
     async header() {

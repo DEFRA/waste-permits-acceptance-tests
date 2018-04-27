@@ -3,6 +3,7 @@ const appRootDir = require("app-root-dir").get();
 const encode = require("./chrome-util").base64EncodeCrx;
 const config = require("../../../config").config;
 const configCRM = require("../../../configCRM").configCRM;
+const fs = require("fs");
 
 require("chromedriver");
 require("geckodriver");
@@ -193,6 +194,16 @@ class Driver {
 		this.browser = null;
 		return browser.quit();
 	}
+
+	takeScreenshots() {
+		const browser = this.browser;
+		return browser.takeScreenshot().then(function(screenShot) {
+			// screenShot is a base-64 encoded PNG
+			this.world.attach(screenShot, 'image/png');
+			console.log("Screenshots");
+		  });
+	}
+
 }
 
 const _instance = new Driver();

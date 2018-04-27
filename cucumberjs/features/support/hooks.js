@@ -3,33 +3,19 @@ const getWorldParameters = require("./world").getWorldParameters;
 const config = require("../../../config").config;
 const configCRM = require("../../../configCRM").configCRM;
 const nock = require("nock");
-
+const fs = require("fs");
 let frontEndVersion;
 let backEndVersion;
 
 module.exports = function () {
 	this.Before((scenario) => {
 		scenario.attach(getWorldParameters().platform);
-		// nock.disableNetConnect();
-		// nock.enableNetConnect("127.0.0.1");
-		// const scope = nock("http://www.bbc.co.uk")
-		// 	.post("/qsp/gateway/http/js/signonService/signonByUser")
-		// 	.reply(200, {
-		// 		data: "hello world this is just a test"
-		// 	});
-
-		// //console.log(scope.isDone());
-		// console.log(nock.isDone());
-
-		//Empty reports folder
-
 	});
 
 	this.After(async () => {
-	//	console.log(nock.isDone());
 		const getBrowserHandle = await driver.getBrowser();
+		//await driver.takeScreenshots();
 		return driver.quitBrowser();
-
 	});
 
 	this.registerHandler("AfterFeatures", () => {
@@ -42,6 +28,8 @@ module.exports = function () {
 			reportSuiteAsScenarios: true,
 			launchReport: true,
 			ignoreBadJsonFile: true,
+			storeScreenshots: true,
+			screenshotsDirectory: 'cucumberjs/features/reports/screenshots/',
 			metadata: {
 				"App Version": "Waste Permits",
 				"FrontEnd Test Environment": config.appUrl,

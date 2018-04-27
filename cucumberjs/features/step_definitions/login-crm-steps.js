@@ -40,6 +40,12 @@ module.exports = function () {
         await this.loginCRM.newapplicationTitle();
     });
 
+    this.defineStep(/^I enter "(.*?)" in the search criteria$/, { timeout: 60000 }, async function (cust) {
+        const appln = await this.loginCRM.searchApplication();
+        //await appln.click();
+        await appln.sendKeys(cust);
+    });
+
     this.defineStep(/^I enter "(.*?)" in the customer id field$/, { timeout: 60000 }, async function (cust) {
         // const formNav = await this.loginCRM.formNavigation();
         // await formNav.click();
