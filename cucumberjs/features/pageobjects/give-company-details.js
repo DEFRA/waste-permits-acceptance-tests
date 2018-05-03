@@ -1,6 +1,8 @@
 const webdriver = require("selenium-webdriver");
 const By = webdriver.By;
 const until = webdriver.until;
+let exp_no;
+let id_aggr;
 
 class GiveCompanyDetails {
 
@@ -54,20 +56,26 @@ class GiveCompanyDetails {
         return element.getText();
     }
 
-    async directorNameField() {
-        return this.browser.wait(until.elementLocated(By.id("director-name-0")), 5 * 20000);
+    async directorNameField(no) {
+        exp_no= parseInt(no)-1;
+        id_aggr = "director-name-" + exp_no;
+        return this.browser.wait(until.elementLocated(By.id(id_aggr)), 5 * 20000);
     }
 
     async directorDOBField() {
         return this.browser.wait(until.elementLocated(By.id("director-dob")), 5 * 20000);
     }
 
-    async directorDOBDayField() {
-        return this.browser.wait(until.elementLocated(By.id("director-dob-day-0")), 5 * 20000);
+    async directorDOBDayField(no) {
+        exp_no= parseInt(no)-1;
+        id_aggr = "director-dob-day-" + exp_no;
+        return this.browser.wait(until.elementLocated(By.id(id_aggr)), 5 * 20000);
     }
 
-    async directorDOBMonthYearField() {
-        return this.browser.wait(until.elementLocated(By.id("dob-formatted-month-year-0")), 5 * 20000);
+    async directorDOBMonthYearField(no) {
+        exp_no= parseInt(no)-1;
+        id_aggr = "dob-formatted-month-year-" + exp_no;
+        return this.browser.wait(until.elementLocated(By.id(id_aggr)), 5 * 20000);
     }
 
     async declaredRadio() {

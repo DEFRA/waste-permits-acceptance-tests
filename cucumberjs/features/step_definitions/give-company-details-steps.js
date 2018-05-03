@@ -83,22 +83,22 @@ module.exports = function () {
     });
 
     // And the director name should be "Angela ANNETT"
-    this.defineStep(/^the director name should be "([^"]*)"$/, { timeout: 60000 }, async function (directorName) {
-        fieldText = await this.giveCompanyDetails.directorNameField();
+    this.defineStep(/^the director "([^"]*)" name should be "([^"]*)"$/, { timeout: 60000 }, async function (no, directorName) {
+        fieldText = await this.giveCompanyDetails.directorNameField(no);
         actualtext = await this.giveCompanyDetails.getTextElement(fieldText);
         Assert.equal(actualtext, directorName, "Incorrect director's name");
     });
 
     // And the month and year of birth should be "February 1954"
-    this.defineStep(/^the month and year of birth should be "([^"]*)"$/, { timeout: 60000 }, async function (monthYearBirth) {
-        fieldText = await this.giveCompanyDetails.directorDOBMonthYearField();
+    this.defineStep(/^the director "([^"]*)" month and year of birth should be "([^"]*)"$/, { timeout: 60000 }, async function (no, monthYearBirth) {
+        fieldText = await this.giveCompanyDetails.directorDOBMonthYearField(no);
         actualtext = await this.giveCompanyDetails.getTextElement(fieldText);
         Assert.equal(actualtext, monthYearBirth, "Incorrect month and year of director");
     });
 
     // When I enter "04" in the day field of the birthdate
-    this.defineStep(/^I enter "([^"]*)" in the day field of the birthdate$/, { timeout: 60000 }, async function (birthDay) {
-        fieldText = await this.giveCompanyDetails.directorDOBDayField();
+    this.defineStep(/^I enter "([^"]*)" in the day field of the director "([^"]*)" birthdate$/, { timeout: 60000 }, async function (birthDay,no) {
+        fieldText = await this.giveCompanyDetails.directorDOBDayField(no);
         await fieldText.clear();
         await fieldText.sendKeys(birthDay);
     });
