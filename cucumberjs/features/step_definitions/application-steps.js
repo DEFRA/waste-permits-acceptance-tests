@@ -1,4 +1,7 @@
 const World = require("../support/world").World;
+const html2canvas = require("html2canvas");
+const jsdom = require("jsdom");
+const { JSDOM } = jsdom;
 
 module.exports = function () {
 	this.World = World;
@@ -18,5 +21,11 @@ module.exports = function () {
 
 	this.defineStep(/^the app is started after being configured$/, { timeout: 60000 }, function () {
 		this.appConfiguration.startApp();
+	});
+
+	this.defineStep(/^take screenshots$/, { timeout: 60000 }, async function () {
+		const fieldText = await this.giveCompanyDetails.getTitleOfThePage();
+		const actualtext = await this.giveCompanyDetails.getTextElement(fieldText);
+		this.application.takeScreenshots(actualtext);
 	});
 };

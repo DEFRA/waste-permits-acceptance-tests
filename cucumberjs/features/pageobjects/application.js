@@ -4,11 +4,21 @@ const webdriver = require("selenium-webdriver");
 const By = webdriver.By;
 const until = webdriver.until;
 
+const fs = require("fs");
+
 class Application {
 
 	constructor(browser) {
 		this.browser = browser;
 	}
+
+	// async getTitleOfThePage() {
+    //     return this.browser.wait(until.elementLocated(By.id("page-heading")), 5 * 20000);
+	// }
+	
+	// async getTextElement(element) {
+    //     return await element.getText();
+    // }
 
 	async launch(appConfiguration) {
 		const args = process.argv;
@@ -17,6 +27,21 @@ class Application {
 			await this.browser.wait(appConfiguration.getReadyState()) === "complete"
 		), 10000);
 	}
+
+
+	async takeScreenshots(filename) {
+		const filenameNoSpecialChars = filename.replace(/[^a-zA-Z ]/g, "");
+		const titleDateStamp = filenameNoSpecialChars + Date.now() + ".png";
+		if (!fs.existsSync('MartinScreenshots')){
+			fs.mkdirSync('MartinScreenshots');
+		}
+		this.browser.takeScreenshot().then(function(data){
+			var base64Data = data.replace(/^data:image\/png;base64,/,"")
+			fs.writeFile('MartinScreenshots/'+titleDateStamp, base64Data, 'base64', function(err) {
+				 if(err) console.log(err);
+			});
+		 });
+	  };
 
 	async launchCRM(appConfiguration) {
 		await this.browser.get(config.appUrlCRM);

@@ -52,6 +52,10 @@ class GiveCompanyDetails {
         return this.browser.wait(until.elementLocated(By.id("error-summary")), 5 * 20000);
     }
 
+    async getTitleOfThePage() {
+        return this.browser.wait(until.elementLocated(By.id("page-heading")), 5 * 20000);
+	}
+
     async getTextElement(element) {
         return element.getText();
     }
