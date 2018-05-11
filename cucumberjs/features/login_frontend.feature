@@ -9,7 +9,8 @@ Feature: Login Waste Permits Frontend - To take screenshots
     Given the application has been launched
     And I am on the "Apply for a mobile plant standard rules waste permit" page
     Then take screenshots
-    And I click on "Continue" button
+    And I select "Start a new application" waste permit application page
+        And I click on "Continue" button
     And I am on the "Who will be the permit holder?" page
     Then take screenshots
     And I select "Limited Company" option for pemit
