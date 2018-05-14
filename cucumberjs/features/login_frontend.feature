@@ -58,9 +58,9 @@ Feature: Login Waste Permits Frontend - To take screenshots
     And I click on "Continue" button
     Then I am on the "What are the directors' dates of birth?" page
     Then take screenshots
-    And the director name should be "Angela ANNETT"
-    And the month and year of birth should be "February 1954"
-    When I enter "04" in the day field of the birthdate
+    And the director "1" name should be "Angela ANNETT"
+    And the director "1" month and year of birth should be "February 1954"
+    When I enter "04" in the day field of the director "1" birthdate
     And I click on "Continue" button
     Then I am on the "Does anyone connected with your business have a conviction for a relevant offence?" page
     Then take screenshots
