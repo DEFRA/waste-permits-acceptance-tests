@@ -104,6 +104,8 @@ Feature: Login Waste Permits Frontend - To take screenshots
     Then I am on the "Upload the fire prevention plan" page
     Then take screenshots
     When I select img file to upload
+    Then I am on the "Upload the fire prevention plan" page
+    Then take screenshots
     When I click on "Continue" button
     And I am on the Task list page for <TasklistTitle>
     And Upload fire prevention plan is marked as completed
@@ -113,64 +115,74 @@ Feature: Login Waste Permits Frontend - To take screenshots
     When I select img file to upload
     When I click on "Continue" button
     And I am on the Task list page for <TasklistTitle>
-    And Upload site plan is marked as completed
     When I click on the "Upload technical management qualifications" link
-    Then I am on the "What evidence of technical competence do you have?" page
-    Then take screenshots
-    And following are the options on the the technical qualifications page:
-      | options                                                                                                |
-      | WAMITAB or EPOC qualification                                                                          |
-      | We’re getting WAMITAB or EPOC qualifications                                                           |
-      | Deemed competence or an Environment Agency assessment with WAMITAB continuing competence certification |
-      | Energy & Utility Skills / ESA Competence Management System                                             |
-    When I click on "WAMITAB or EPOC qualification" on the Upload technical management qualifications page
-    And I click on "Continue" button
-    Then I am on the "WAMITAB or EPOC: upload evidence" page
+        Then I am on the "What evidence of technical competence do you have?" page
+        Then take screenshots
+        When I click on "WAMITAB or EPOC qualification" on the Upload technical management qualifications page
+        And I click on "Continue" button
+    Then I am on the "WAMITAB or EPOC: upload your evidence" page
     Then take screenshots
     When I select img file to upload
     When I click on "Continue" button
-    And I am on the Task list page for <TasklistTitle>
-    And Upload documents is marked as completed
-    When I click on the "Confirm you have suitable vehicle storage areas" link
-    Then I am on the "Confirm you have suitable vehicle storage areas" page
-    Then take screenshots
-    And I click on "Continue" button
-    And Confirm you have suitable vehicle storage areas is marked as completed
-    When I click on the "Give site name and location" link
-    Then I am on the "What's the site name?" page
-    Then take screenshots
-    When I enter "Test Site" in the "Site Name" field
-    And I click on "Continue" button
-    Then I am on the "What's the grid reference for the centre of the site?" page
-    Then take screenshots
-    When I enter "ST5813272695" in the "Site Grid Reference" field
-    And I click on "Continue" button
-    Then I am on the "What's the postcode for the site?" page
-    Then take screenshots
-    When I enter "TF3 2BS" in the "Postcode" field on the address page
-    And I click on "Find Address" button
-    Then I am on the "What's the site address?" page
-    Then take screenshots
-    And I should be able to see Select Address dropdown
-    When I select first address from the address dropdown
-    And I click on "Continue" button
-    And I am on the Task list page for <TasklistTitle>
-    Then take screenshots
-    And Give site name and address is marked as completed
-    When I click on the "Send application and pay" link
-    Then I am on the "Check your answers" page
+     Then I am on the "WAMITAB or EPOC: upload your evidence" page
     Then take screenshots
     When I click on "Continue" button
-    Then I am on the "How do you want to pay?" page
-    Then take screenshots
-    When I select "BACS" payment method
-    When I click on "Continue" button
-    Then I am on the "You’ve chosen to pay by bank transfer using Bacs" page
-    Then take screenshots
-    When I send the application
-    Then I am on the "Application received" page
-    Then take screenshots
-    And the application id is displayed
+    Then I am on the "Upload details for all technically competent managers" page
+     #Then take screenshots
+     When I select doc file to upload
+     When I click on "Continue" button
+#     Then I am on the "Upload details for all technically competent managers" page
+#     Then take screenshots
+#     When I click on "Continue" button
+#     And I am on the Task list page for <TasklistTitle>
+#     When I click on the "Confirm you have suitable vehicle storage areas" link
+#     Then I am on the "Where does the vehicle storage area drain to?" page
+#     Then take screenshots
+#     When I click on "Oil Separator" button on the Confirm vehicle storage area
+#     When I click on "Continue" button
+# Then I am on the "Your drainage system is not suitable - please contact us" page
+# Then take screenshots
+# When I click back
+# Then I am on the "Where does the vehicle storage area drain to?" page
+# When I click on "Sewer" button on the Confirm vehicle storage area
+# When I click on "Continue" button
+# And I am on the Task list page for <TasklistTitle>
+#  And Confirm you have suitable vehicle storage areas is marked as completed
+#     When I click on the "Give site name and location" link
+#     Then I am on the "What's the site name?" page
+#     Then take screenshots
+#     When I enter "Test Site" in the "Site Name" field
+#     And I click on "Continue" button
+#     Then I am on the "What's the grid reference for the centre of the site?" page
+#     Then take screenshots
+#     When I enter "ST5813272695" in the "Site Grid Reference" field
+#     And I click on "Continue" button
+#     Then I am on the "What's the postcode for the site?" page
+#     Then take screenshots
+#     When I enter "TF3 2BS" in the "Postcode" field on the address page
+#     And I click on "Find Address" button
+#     Then I am on the "What's the site address?" page
+#     Then take screenshots
+#     And I should be able to see Select Address dropdown
+#     When I select first address from the address dropdown
+#     And I click on "Continue" button
+#     And I am on the Task list page for <TasklistTitle>
+#     Then take screenshots
+#     And Give site name and address is marked as completed
+#     When I click on the "Send application and pay" link
+#     Then I am on the "Check your answers" page
+#     Then take screenshots
+#     When I click on "Continue" button
+#     Then I am on the "How do you want to pay?" page
+#     Then take screenshots
+#     When I select "BACS" payment method
+#     When I click on "Continue" button
+#     Then I am on the "You’ve chosen to pay by bank transfer using Bacs" page
+#     Then take screenshots
+#     When I send the application
+#     Then I am on the "Application received" page
+#     Then take screenshots
+#     And the application id is displayed
     Examples:
       | Permit         | TasklistTitle                                                                                |
       | "SR2015 No 13" | "Vehicle storage depollution and dismantling (authorised treatment) facility - SR2015 No 13" |

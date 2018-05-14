@@ -80,6 +80,12 @@ module.exports = function () {
 
   });
 
+  this.defineStep(/^I select doc file to upload$/, { timeout: 60000 }, async function () {
+    const chooseFile = await this.uploadTechCompetency.chooseFile();
+    await this.uploadTechCompetency.enterDOCFile();
+
+  });
+
   this.defineStep(/^I select ppt file to upload$/, { timeout: 60000 }, async function () {
     const chooseFile = await this.uploadTechCompetency.chooseFile();
     await this.uploadTechCompetency.enterPPTFile();

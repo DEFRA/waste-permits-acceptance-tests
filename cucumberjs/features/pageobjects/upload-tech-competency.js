@@ -65,6 +65,24 @@ class UploadTechCompetency {
 
     }
 
+    async enterDOCFile() {
+        const usernameElement = await this.chooseFile();
+        const path = require("path");
+        const download = require('image-downloader');
+
+        // Download to a directory and save with the original filename
+        const options = {
+            url: 'http://onlinepubs.trb.org/onlinepubs/crp/docs/CRP_Word-Template-Guide.doc',
+            dest: __dirname                  // Save to /path/to/dest/image.jpg
+        };
+
+        const { filename, image } = await download.image(options);
+
+        await usernameElement.sendKeys(filename);
+        await usernameElement.submit();
+
+    }
+
     async enter30MBPlusFile() {
         const usernameElement = await this.chooseFile();
         const path = require("path");
