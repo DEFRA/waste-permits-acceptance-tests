@@ -21,6 +21,21 @@ class ConfirmRules {
         return this.browser.wait(until.elementLocated(By.id("confirm-result-message")), 5 * 20000);
     }
 
+    async email() {
+        return this.browser.wait(until.elementLocated(By.id("save-and-return-email")), 5 * 20000);
+    }
+
+    async emailaddr() {
+        return this.browser.wait(until.elementLocated(By.id("save-and-return-email")), 5 * 20000);
+    }
+    
+    async gotemail() {
+        return this.browser.wait(until.elementLocated(By.id("got-email")), 5 * 20000);
+    }
+    
+    async notgotemail() {
+        return this.browser.wait(until.elementLocated(By.id("not-got-email")), 5 * 20000);
+    }
        
 }
 

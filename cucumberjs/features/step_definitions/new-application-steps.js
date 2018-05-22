@@ -35,6 +35,15 @@ module.exports = function () {
             case "Send Application":
                 const submitButton = await this.newApplication.continueButton();
                 await submitButton.click();
+                break;
+            case "I got the email":
+                const gotmail = await this.confirmRules.gotemail();
+                await gotmail.click();
+                break;
+            case "I didn't get the email":
+                const notgotmail = await this.confirmRules.notgotemail();
+                await notgotmail.click();
+                break;
             default: break;
         }
     });

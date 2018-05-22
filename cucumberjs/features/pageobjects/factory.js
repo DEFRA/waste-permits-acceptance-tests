@@ -36,7 +36,7 @@ class Factory {
 			givesitenamelocation: GiveSiteNameLocation,
 			giveinvoicingdetails: GiveInvoicingDetails,
 			confirmConfidentiality: ConfirmConfidentiality,
-			confirmSuitableStorageArea: ConfirmSuitableStorageArea,
+			confirmsuitablestoragearea: ConfirmSuitableStorageArea,
 			permitfor: PermitFor
 
 		};

@@ -60,6 +60,14 @@ module.exports = function () {
 
     this.defineStep(/^I click on the "(.*?)" link$/, { timeout: 60000 }, async function (option) {
         switch (option) {
+            case "Check cost and processing time":
+                linkText = await this.taskList.checkCostAndProcessingTime();
+                await linkText.click();
+                break;
+            case "Save your application":
+                linkText = await this.taskList.saveYourApplication();
+                await linkText.click();
+                break;    
             case "Upload technical management qualifications":
                 linkText = await this.taskList.uploadTechnicalManagementQualificationsLink();
                 await linkText.click();

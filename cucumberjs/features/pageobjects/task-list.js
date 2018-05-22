@@ -112,6 +112,15 @@ class TaskList {
         return this.browser.wait(until.elementLocated(By.id("select-a-different-permit")), 5 * 20000);
     }
 
+    async checkCostAndProcessingTime() {
+        return this.browser.wait(until.elementLocated(By.id("check-permit-cost-and-time-link")), 5 * 20000);
+    }
+
+    async saveYourApplication() {
+        return this.browser.wait(until.elementLocated(By.id("set-up-save-and-return-link")), 5 * 20000);
+    }
+
+
 }
 
 module.exports.TaskList = TaskList;

@@ -15,6 +15,7 @@ module.exports = function () {
 		this.appConfiguration.injectInterceptor();
 		return this.application.launchCRM(this.appConfiguration);
 	});
+	
 	this.defineStep(/^I configure the app for "([^"]*)"$/, { timeout: 60000 }, function (feature) {
 		this.appConfiguration.setConfigForFeature(feature);
 	});

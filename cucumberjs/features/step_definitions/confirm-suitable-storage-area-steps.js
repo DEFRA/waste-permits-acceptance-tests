@@ -14,15 +14,15 @@ module.exports = function () {
                 await button_select.click();
                 break;
             case "Blind Sump":
-                button_select = await this.ConfirmSuitableStorageArea.blindSumpRadio();
+                button_select = await this.confirmSuitableStorageArea.blindSumpRadio();
                 await button_select.click();
                 break;
             case "Oil Separator":
-                button_select = await this.ConfirmSuitableStorageArea.oilSeparatorRadio();
+                button_select = await this.confirmSuitableStorageArea.oilSeparatorRadio();
                 await button_select.click();
                 break;
             case "Surface water drains":
-                button_select = await this.ConfirmSuitableStorageArea.waterCourseRadio();
+                button_select = await this.confirmSuitableStorageArea.waterCourseRadio();
                 await button_select.click();
                 break;
             default:
