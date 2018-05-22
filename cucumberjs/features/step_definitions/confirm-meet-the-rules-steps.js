@@ -12,5 +12,10 @@ module.exports = function () {
     await confirmButton.click();
   });
 
+  //When I enter "Eadyn365test@gmail.com" in the email
+this.defineStep(/^I enter "([^"]*)" in the email$/, { timeout: 60000 }, async function (emailid) {
+	const email = await this.confirmRules.emailaddr();
+    await email.sendKeys(emailid);
+});
 
 };

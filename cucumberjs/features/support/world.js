@@ -29,6 +29,7 @@ module.exports.World = function World(parameters) {
 	this.confirmConfidentiality = this.pageFactory.create("confirmConfidentiality");
 	this.giveSiteNameLocation = this.pageFactory.create("givesitenamelocation");
 	this.permitFor = this.pageFactory.create("permitfor");
+	this.confirmSuitableStorageArea = this.pageFactory.create("confirmsuitablestoragearea");
 	
 	this.parameters = parameters;
 
