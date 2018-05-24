@@ -399,7 +399,7 @@ Feature: Login Waste Permits Frontend - For Screenshots
         When I select "Card" payment method
         When I click on "Continue" button
         Then I am on the "Enter card details" page for payment
-        Then take screenshots
+        Then take screenshots GovPay
         When I enter "4242424242424242" in the card number
         And I enter "01" in Expiry month
         And I enter "22" in the Expiry year
@@ -412,7 +412,7 @@ Feature: Login Waste Permits Frontend - For Screenshots
         And I enter "URSR2015No17@gmail.com" in the email on the payment screen
         And I submit card details
         And I am on the "Confirm your payment" page for payment
-        Then take screenshots
+        Then take screenshots GovPay
         When I click on Confirm payment on the payment page
         Then I am on the "Application and card payment received" page
         Then take screenshots

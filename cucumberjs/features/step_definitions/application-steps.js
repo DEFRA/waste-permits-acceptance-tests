@@ -29,4 +29,10 @@ module.exports = function () {
 		const actualtext = await this.giveCompanyDetails.getTextElement(fieldText);
 		this.application.takeScreenshots(actualtext);
 	});
+	
+	this.defineStep(/^take screenshots GovPay$/, { timeout: 60000 }, async function () {
+		const fieldText = await this.giveCompanyDetails.getTitleOfThePageGovPay();
+		const actualtext = await this.giveCompanyDetails.getTextElement(fieldText);
+		this.application.takeScreenshots(actualtext);
+	});
 };
