@@ -4,6 +4,7 @@ module.exports = {
 	"chrome-desktop-dev": "--tags @desktop --world-parameters " + JSON.stringify({ platform: "chrome-desktop-dev", width: 1800, height: 1180 }),
 	"chrome-desktop-test": "--tags @desktop --world-parameters " + JSON.stringify({ platform: "chrome-desktop-test", width: 1070, height: 1180 }),
 	"chrome-desktop-test-martin": "--tags @Martin --world-parameters " + JSON.stringify({ platform: "chrome-desktop-test", width: 1020, height: 1180 }),
+	"chrome-desktop-test-userresearch": "--tags @UserResearch --world-parameters " + JSON.stringify({ platform: "chrome-desktop-test", width: 1020, height: 1180 }),
 	"chrome-desktop-headless-test": "--tags @desktop --world-parameters " + JSON.stringify({ platform: "chrome-desktop-headless-test", width: 1800, height: 1180 }),
 	"chrome-tablet-dev": "--tags @tablet --world-parameters " + JSON.stringify({ platform: "chrome-tablet-dev", width: 1050, height: 850 }),
 	"chrome-tablet-test": "--tags @tablet --world-parameters " + JSON.stringify({ platform: "chrome-tablet-test", width: 1050, height: 850 }),

@@ -13,6 +13,10 @@ class NewApplication {
         return this.browser.wait(until.elementLocated(By.id("page-heading")), 5 * 20000);
     }
 
+    async waitUntilLoadedGovUK(title) {
+        return this.browser.wait(until.elementLocated(By.className("form-title")), 5 * 20000);
+    }
+
     async startApplicationRadio() {
         return this.browser.wait(until.elementLocated(By.id("start-application")), 5 * 20000);
     }

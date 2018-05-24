@@ -8,6 +8,10 @@ module.exports = function () {
         await this.newApplication.waitUntilLoaded(title);
     });
 
+    this.defineStep(/^I am on the "(.*?)" page for payment$/, { timeout: 60000 }, async function (title) {
+        await this.newApplication.waitUntilLoadedGovUK(title);
+    });
+
     this.defineStep(/^I select "(.*?)" waste permit application page$/, { timeout: 60000 }, async function (option) {
         switch (option) {
             case "Start a new application":
