@@ -47,6 +47,11 @@ module.exports = function () {
                 actualtext = await this.selectPermit.getTextElement(permitSR2015No17Code);
                 Assert.equal(actualtext, option);
                 break;
+            case "SR2012 No 12":
+                const permitSR2012No12Code = await this.selectPermit.permitSR2012No12Code();
+                actualtext = await this.selectPermit.getTextElement(permitSR2012No12Code);
+                Assert.equal(actualtext, option);
+                break;
             default:
                 Assert.fail("Permit type is invalid");
                 break;
@@ -91,6 +96,11 @@ module.exports = function () {
                 actualtext = await this.selectPermit.getTextElement(permitSR2015No17Name);
                 Assert.equal(actualtext, option);
                 break;
+            case "Anaerobic digestion facility including use of the resultant biogas (waste recovery operation)\nLess than 75,000 tonnes per year":
+                const permitSR2012No12Name = await this.selectPermit.permitSR2012No12Name();
+                actualtext = await this.selectPermit.getTextElement(permitSR2012No12Name);
+                Assert.equal(actualtext, option);
+                break;
             default:
                 Assert.fail("Permit type is invalid");
                 break;
@@ -122,6 +132,10 @@ module.exports = function () {
                 break;
             case "SR2010 No 12":
                 permitSelect = await this.selectPermit.permitSR2010No12Radio();
+                permitSelect.click();
+                break;
+            case "SR2012 No 12":
+                permitSelect = await this.selectPermit.permitSR2012No12Radio();
                 permitSelect.click();
                 break;
             case "SR2015 No 17":

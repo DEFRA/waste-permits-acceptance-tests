@@ -36,6 +36,11 @@ module.exports = function () {
                 radioButton = await this.permitFor.waterDischargesRadio();
                 radioButton.click();
                 break;
+            case "Anaerobic digestion including storing digestate":
+                radioButton = await this.permitFor.anaerobicDigestionRadio();
+                radioButton.click();
+                break;
+
             default: break;
         }
     });

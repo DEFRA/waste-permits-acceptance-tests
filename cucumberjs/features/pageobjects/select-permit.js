@@ -37,6 +37,21 @@ class SelectPermit {
         return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2010-no-12-input")), 5 * 20000);
     }
 
+    async permitSR2012No12Radio() {
+        return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2012-no-12-input")), 5 * 20000);
+    }
+    async permitSR2012No12Name() {
+        return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2012-no-12-name")), 5 * 20000);
+    }
+
+    async permitSR2012No12Weight() {
+        return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2012-no-12-weight")), 5 * 20000);
+    }
+
+    async permitSR2012No12Code() {
+        return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2012-no-12-code")), 5 * 20000);
+    }
+
     async permitSR2010No12Name() {
         return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2010-no-12-name")), 5 * 20000);
     }
