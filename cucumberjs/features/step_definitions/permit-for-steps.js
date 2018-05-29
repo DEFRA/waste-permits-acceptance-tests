@@ -40,7 +40,14 @@ module.exports = function () {
                 radioButton = await this.permitFor.anaerobicDigestionRadio();
                 radioButton.click();
                 break;
-
+            case "Waste transfer station or amenity site with or without treatment":
+                radioButton = await this.permitFor.wasteTransferStationRadio();
+                radioButton.click();
+                break;
+            case "Deposit for recovery":
+                radioButton = await this.permitFor.depositForRecoveryRadio();
+                radioButton.click();
+                break;
             default: break;
         }
     });

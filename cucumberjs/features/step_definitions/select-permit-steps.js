@@ -118,12 +118,24 @@ module.exports = function () {
                 permitSelect = await this.selectPermit.permitSR2010No6Radio();
                 permitSelect.click();
                 break;
+            case "SR2015 No 6":
+                permitSelect = await this.selectPermit.permitSR2015No6Radio();
+                permitSelect.click();
+                break;
             case "SR2010 No 5":
                 permitSelect = await this.selectPermit.permitSR2010No5Radio();
                 permitSelect.click();
                 break;
             case "SR2008 No 27":
                 permitSelect = await this.selectPermit.permitSR2008No27Radio();
+                permitSelect.click();
+                break;
+            case "SR2015 No 4":
+                permitSelect = await this.selectPermit.permitSR2015No4Radio();
+                permitSelect.click();
+                break;
+            case "SR2008 No 9":
+                permitSelect = await this.selectPermit.permitSR2008No9Radio();
                 permitSelect.click();
                 break;
             case "SR2010 No 11":
@@ -134,8 +146,16 @@ module.exports = function () {
                 permitSelect = await this.selectPermit.permitSR2010No12Radio();
                 permitSelect.click();
                 break;
+            case "SR2015 No 39":
+                permitSelect = await this.selectPermit.permitSR2015No39Radio();
+                permitSelect.click();
+                break;
             case "SR2012 No 12":
                 permitSelect = await this.selectPermit.permitSR2012No12Radio();
+                permitSelect.click();
+                break;
+            case "SR2012 No 10":
+                permitSelect = await this.selectPermit.permitSR2012No10Radio();
                 permitSelect.click();
                 break;
             case "SR2015 No 17":

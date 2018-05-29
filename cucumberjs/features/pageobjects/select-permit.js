@@ -147,6 +147,49 @@ class SelectPermit {
         return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2008-no-27-code")), 5 * 20000);
     }
 
+    async permitSR2015No39Radio() {
+        return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2015-no-39-input")), 5 * 20000);
+    }
+
+    async permitSR2015No6Radio() {
+        return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2015-no-6-input")), 5 * 20000);
+    }
+
+    async permitSR2008No9Radio() {
+        return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2008-no-9-input")), 5 * 20000);
+    }
+
+    async permitSR2015No4Radio() {
+        return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2015-no-4-input")), 5 * 20000);
+    }
+
+    async permitSR2015No6Name() {
+        return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2015-no-6-name")), 5 * 20000);
+    }
+
+    async permitSR2015No6Weight() {
+        return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2015-no-6-weight")), 5 * 20000);
+    }
+    async permitSR2015No6Code() {
+        return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2015-no-6-input")), 5 * 20000);
+    }
+
+
+    async permitSR2012No10Radio() {
+        return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2012-no-10-input")), 5 * 20000);
+    }
+    async permitSR2012No10Name() {
+        return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2012-no-10-name")), 5 * 20000);
+    }
+
+    async permitSR2012No10Weight() {
+        return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2012-no-10-weight")), 5 * 20000);
+    }
+
+    async permitSR2012No10Code() {
+        return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2012-no-10-code")), 5 * 20000);
+    }
+
     async continueButton() {
         return this.browser.wait(until.elementLocated(By.id("submit-button")), 5 * 20000);
     }
