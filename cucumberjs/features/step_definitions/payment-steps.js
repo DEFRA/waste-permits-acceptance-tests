@@ -2,6 +2,7 @@ const World = require("../support/world").World;
 const Assert = require("assert");
 let radioButton;
 let fieldText;
+const fs = require('fs');
 
 module.exports = function () {
 
@@ -26,6 +27,16 @@ module.exports = function () {
         fieldText = await this.selectPayment.applicationNumber();
         actualtext = await this.selectPayment.getTextElement(fieldText);
         Assert.notEqual(actualtext, null, "Application number not found:- " + actualtext);
+
+        fs.appendFile('Application_Numbers.txt', '\t', function (err) {
+            if (err) throw err;
+        });
+        fs.appendFile('Application_Numbers.txt', actualtext, function (err) {
+            if (err) throw err;
+        });
+        fs.appendFile('Application_Numbers.txt', '\n', function (err) {
+            if (err) throw err;
+        });
     });
 
 
@@ -108,5 +119,5 @@ module.exports = function () {
         fieldText.click();
     });
 
-    
+
 };

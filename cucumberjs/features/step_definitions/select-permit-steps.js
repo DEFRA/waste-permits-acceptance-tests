@@ -4,6 +4,7 @@ const World = require("../support/world").World;
 const Assert = require("assert");
 let actualtext = "";
 let permitSelect;
+const fs = require('fs');
 
 module.exports = function () {
 
@@ -109,6 +110,12 @@ module.exports = function () {
 
 
     this.defineStep(/^I select a permit "(.*?)"$/, { timeout: 60000 }, async function (option) {
+        fs.appendFile('Application_Numbers.txt', '\n', function (err) {
+            if (err) throw err;
+        });
+        fs.appendFile('Application_Numbers.txt', option, function (err) {
+            if (err) throw err;
+        });
         switch (option) {
             case "SR2010 No 4":
                 permitSelect = await this.selectPermit.permitSR2010No4Radio();
