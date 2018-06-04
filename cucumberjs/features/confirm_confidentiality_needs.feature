@@ -19,6 +19,7 @@ Feature: WE-475 CONFIRM CONFIDENTIALITY NEEDS PAGE
     @desktop
     @phone
     @tablet
+    @ui
     Scenario: As a user, I should be able to declare a claim to confidentiality details
         When I click on the "Confirm confidentiality needs" link
         Then I am on the "Is part of your application commercially confidential?" page
@@ -32,6 +33,7 @@ Feature: WE-475 CONFIRM CONFIDENTIALITY NEEDS PAGE
     @desktop
     @phone
     @tablet
+    @ui
     Scenario: As a user, I should be able to declare no claim to confidentiality details
         When I click on the "Confirm confidentiality needs" link
         Then I am on the "Is part of your application commercially confidential?" page

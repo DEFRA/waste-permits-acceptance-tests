@@ -159,6 +159,13 @@ class PermitFor {
         return this.browser.wait(until.elementLocated(By.id("summary")), 5 * 8000);
     }
 
+    async compostSewageBiogasRadio() {
+        return this.browser.wait(until.elementLocated(By.id("chosen-category-composting-input")), 5 * 20000);
+    }
+  
+    async electricalRadio() {
+        return this.browser.wait(until.elementLocated(By.id("chosen-category-electrical-input")), 5 * 20000);
+    }
 
 }
 

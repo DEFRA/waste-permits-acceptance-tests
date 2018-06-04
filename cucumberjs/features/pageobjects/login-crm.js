@@ -43,7 +43,7 @@ class LoginCRM {
 
     
     async applicationLP() {
-        return this.browser.wait(until.elementLocated(By.css("a[title='Applications']")), 5 * 20000);;
+        return this.browser.wait(until.elementLocated(By.xpath("//span[@class = 'nav-rowLabel' and (text() = 'Applications' or . = 'Applications')]")), 5 * 20000);;
     }
 
     async applicationsMenu() {
@@ -72,21 +72,63 @@ class LoginCRM {
     }
 
     async userName(user) {
-        const user1 = "img[alt='" + user + "']"
+        //img[@alt = 'Waste Test 1 AG-EA-LP-QA-MASTER' and @class = 'navTabButtonUserInfoProfileImage']
+        //img[@alt = 'Waste Test 1 AG-EA-LP-QA-MASTER' and @class = 'navTabButtonUserInfoProfileImage']
+        const user1 = "//img[@alt = '" + user + "' and @class = 'navTabButtonUserInfoProfileImage']"
         console.log(user1);
-        return this.browser.wait(until.elementLocated(By.css(user1)), 5 * 20000);;
+        return this.browser.wait(until.elementLocated(By.xpath(user1)), 5 * 20000);
+    }
+
+    async contentArea() {
+        return this.browser.wait(until.elementLocated(By.xpath("//iframe[@id = 'contentIFrame0' and @name = 'contentIFrame0' and @title = 'Content Area']")), 5*20000);
+    }
+
+    async clickSearch() {
+        return this.browser.wait(until.elementLocated(By.xpath("//span[@title = 'Start search' and @class = 'navImageFlipHorizontal']")),5*20000);
+    }
+
+    async enterSearch() {
+        return this.browser.wait(until.elementLocated(By.xpath("//input[@aria-label = 'Search Dynamics 365 data' and @class = 'ms-crm-Dialog-Lookup-QuickFind navBarSearchTextBox' and @id = 'search' and @type = 'text']")),5*20000);
+    }
+
+    async doSearch() {
+        return this.browser.wait(until.elementLocated(By.xpath("//img[@title = 'Start search' and @id = 'findCriteriaImg' and @class = 'navImageFlipHorizontal' and @alt = 'Start search']")),5*20000);
+    }
+
+    async searchApp(appno) {
+        const path = "//span[@id = 'attribone' and (text() = '"+ appno+"' or . = '"+appno+"') and @ref_element = 'Object Repository/tmm/Page_Microsoft Dynamics 365/iframe_contentIFrame1']";
+        return this.browser.wait(until.elementLocated(By.xpath("//span[@id = 'attribone' and (text() = 'WE6081QA/A001' or . = 'WE6081QA/A001') and @ref_element = 'Object Repository/FrontEnd/Page_Microsoft Dynamics 365/iframe_contentIFrame1']")),5*20000);
+    }
+
+    async searchAppNo() {
+
+        //const myElement = this.browser.wait(until.elementLocated(By.xpath("//iframe[@id = 'contentIFrame0' and @name = 'contentIFrame0' and @title = 'Content Area']")), 5*20000);
+       // const parent = myElement.searchAppNo();
+       const elem = this.browser.wait(until.elementLocated(By.xpath("//iframe[@id = 'contentIFrame0' and @name = 'contentIFrame0' and @title = 'Content Area']")), 5*20000);
+       const elem1 = this.elem.wait(until.elementLocated(By.xpath("//input[@id = 'crmGrid_findCriteria' and @title = 'Search for records' and @type = 'text' and @ref_element = 'Object Repository/tryss/Page_Applications Active Applicatio/iframe_contentIFrame0']")),5*20000);
+       return elem1;
+       //return contentArea.wait(until.elementLocated(By.xpath("//input[@id = 'crmGrid_findCriteria' and @title = 'Search for records' and @type = 'text' and @ref_element = 'Object Repository/tryss/Page_Applications Active Applicatio/iframe_contentIFrame0']")),5*20000); 
+        //this.contentArea.wait(until.elementLocated(By.xpath("")), 5*20000);
+        //return this.browser.wait(until.elementLocated(By.xpath("//input[@id = 'crmGrid_findCriteria' and @title = 'Search for records' and @type = 'text' and @ref_element = 'Object Repository/tryss/Page_Applications Active Applicatio/iframe_contentIFrame0']")), 5 * 20000);
+    }
+
+    async clickSearchButton() {
+        return this.browser.wait(until.elementLocated(By.id("crmGrid_findCriteriaButton")), 5 * 20000);
+        
     }
 
     async nextButton() {
-        return this.browser.wait(until.elementLocated(By.xpath("//input[contains(@type,'submit')]")), 5 * 20000);
+        //return this.browser.wait(until.elementLocated(By.xpath("//input[contains(@type,'submit')]")), 5 * 20000);
+        return this.browser.wait(until.elementLocated(By.id("idSIButton9")), 5*20000);
     }
+
 
     async signinButton() {
         return this.browser.wait(until.elementLocated(By.xpath("//input[contains(@value,'Sign in')]")), 5 * 20000);
     }
 
     async staySignedInNoButton() {
-        return this.browser.wait(until.elementLocated(By.id("idBtn_Back")), 5 * 20000);
+        return this.browser.wait(until.elementLocated(By.xpath("//input[@type = 'button' and @id = 'idBtn_Back']")), 5 * 20000);
     }
 
     

@@ -173,11 +173,135 @@ module.exports = function () {
                 permitSelect = await this.selectPermit.permitSR2015No18Radio();
                 permitSelect.click();
                 break;
+            case "SR2012 No 3":
+                permitSelect = await this.selectPermit.permitSR2012No3Radio();
+                permitSelect.click();
+                break;
             case "SR2015 No 13":
                 permitSelect = await this.selectPermit.permitSR2015No13Radio();
                 permitSelect.click();
                 break;
+            case "SR2010 No 14":
+                permitSelect = await this.selectPermit.permitSR2010No14Radio();
+                permitSelect.click();
+                break;
+            case "SR2012 No 7":
+                permitSelect = await this.selectPermit.permitSR2012No7Radio();
+                permitSelect.click();
+                break;
+            case "SR2011 No 1":
+                permitSelect = await this.selectPermit.permitSR2011No1Radio();
+                permitSelect.click();
+                break;
+            case "SR2008 No 19 75kte":
+                permitSelect = await this.selectPermit.permitSR2008No1975kteRadio();
+                permitSelect.click();
+            case "SR2008 No 19 250kte":
+                permitSelect = await this.selectPermit.permitSR2008No19250kteRadio();
+                permitSelect.click();
+                break;
+            case "SR2012 No 15":
+                permitSelect = await this.selectPermit.permitSR2012No15Radio();
+                permitSelect.click();
+                break;
+            case "SR2015 No3":
+                permitSelect = await this.selectPermit.permitSR2015No3Radio();
+                permitSelect.click();
+                break;
+            case "SR2015 No14":
+                permitSelect = await this.selectPermit.permitSR2015No14Radio();
+                permitSelect.click();
+                break;
+            case "SR2015 No16":
+                permitSelect = await this.selectPermit.permitSR2015No16Radio();
+                permitSelect.click();
+                break;
+            case "SR2008 No22":
+                permitSelect = await this.selectPermit.permitSR2008No22Radio();
+                permitSelect.click();
+                break;
+            case "SR2009 No7":
+                permitSelect = await this.selectPermit.permitSR2009No7Radio();
+                permitSelect.click();
+                break;
+            case "SR2015 No15":
+                permitSelect = await this.selectPermit.permitSR2015No15Radio();
+                permitSelect.click();
+                break;
+            case "SR2015 No14":
+                permitSelect = await this.selectPermit.permitSR2015No14Radio();
+                permitSelect.click();
+                break;
+            case "SR2015 No 2":
+                permitSelect = await this.selectPermit.permitSR2015No2Radio();
+                permitSelect.click();
+                break;
+            case "SR2015 No 21":
+                permitSelect = await this.selectPermit.permitSR2015No21Radio();
+                permitSelect.click();
+                break;
+            case "SR2015 No 22":
+                permitSelect = await this.selectPermit.permitSR2015No22Radio();
+                permitSelect.click();
+                break;
+            case "SR2010 No 18":
+                permitSelect = await this.selectPermit.permitSR2010No18Radio();
+                permitSelect.click();
+                break;
+            case "SR2010 No 17":
+                permitSelect = await this.selectPermit.permitSR2010No17Radio();
+                permitSelect.click();
+                break;
+            case "SR2013 No 1":
+                permitSelect = await this.selectPermit.permitSR2013No1Radio();
+                permitSelect.click();
+                break;
+            case "SR2010 No 12":
+                permitSelect = await this.selectPermit.permitSR2010No12Radio();
+                permitSelect.click();
+                break;
+            case "SR2015 No 23":
+                permitSelect = await this.selectPermit.permitSR2015No23Radio();
+                permitSelect.click();
+                break;
+            case "SR2015 No 24":
+                permitSelect = await this.selectPermit.permitSR2015No24Radio();
+                permitSelect.click();
+                break;
+                case "SR2008 No 24":
+                permitSelect = await this.selectPermit.permitSR2008No24Radio();
+                permitSelect.click();
+                break;
+                case "SR2008 No 25":
+                permitSelect = await this.selectPermit.permitSR2008No25Radio();
+                permitSelect.click();
+                break;
 
+
+                case "SR2015 No 11":
+                permitSelect = await this.selectPermit.permitSR2015No11Radio();
+                permitSelect.click();
+                break;
+                case "SR2015 No 10":
+                permitSelect = await this.selectPermit.permitSR2015No10Radio();
+                permitSelect.click();
+                break;
+                case "SR2015 No 5":
+                permitSelect = await this.selectPermit.permitSR2015No5Radio();
+                permitSelect.click();
+                break;
+                case "SR2015 No 9":
+                permitSelect = await this.selectPermit.permitSR2015No9Radio();
+                permitSelect.click();
+                break;
+                case "SR2015 No 8":
+                permitSelect = await this.selectPermit.permitSR2015No8Radio();
+                permitSelect.click();
+                break;
+                case "SR2015 No 22":
+                permitSelect = await this.selectPermit.permitSR2015No22Radio();
+                permitSelect.click();
+                break;    
             default: break;
         }
     });

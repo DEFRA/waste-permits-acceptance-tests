@@ -36,6 +36,20 @@ module.exports = function () {
         await this.loginCRM.applicationsMenu();
     });
 
+    this.defineStep(/^I search for "(.*?)" application$/, { timeout: 60000 }, async function (appno) {
+        const app1 =  await this.loginCRM.clickSearch();
+        await app1.click();
+        const app2 =  await this.loginCRM.enterSearch();
+        await app2.sendKeys(appno);
+        const app3 =  await this.loginCRM.doSearch();
+        await app3.click();
+        await app3.click();
+
+        const app4 = await this.loginCRM.searchApp(appno);
+        await app4.click();
+
+    });
+
     this.defineStep(/^I am on the New Applications page$/, { timeout: 60000 }, async function () {
         await this.loginCRM.newapplicationTitle();
     });
@@ -52,13 +66,15 @@ module.exports = function () {
     });
 
 
-    //And I login as "amruta.bendre@defradev.onmicrosoft.com" password "W@ste-Permits"
+    //And I login as "amruta.bendre@defradev.onmicrosoft.com" password "W@stPermits1"
     this.defineStep(/^I login as "(.*?)" password "(.*?)"$/, { timeout: 60000 }, async function (username, password) {
         const name = await this.loginCRM.inputUserName();
+        await name.clear();
         await name.sendKeys(username);
         const next = await this.loginCRM.nextButton();
         await next.click();
         const pass = await this.loginCRM.inputUserPassword();
+        await pass.clear();
         await pass.sendKeys(password);
         const signin = await this.loginCRM.signinButton();
         await signin.click();

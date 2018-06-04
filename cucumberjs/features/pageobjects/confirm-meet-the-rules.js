@@ -36,6 +36,18 @@ class ConfirmRules {
     async notgotemail() {
         return this.browser.wait(until.elementLocated(By.id("not-got-email")), 5 * 20000);
     }
+
+    async cost() {
+        return this.browser.wait(until.elementLocated(By.id("cost")), 5 * 20000);
+    }
+
+    async timeForApplication() {
+        return this.browser.wait(until.elementLocated(By.id("length-of-time-text")), 5 * 20000);
+    }
+
+    async getTextElement(element) {
+        return element.getText();
+    }
        
 }
 

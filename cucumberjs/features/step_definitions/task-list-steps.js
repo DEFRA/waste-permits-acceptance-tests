@@ -19,6 +19,11 @@ module.exports = function () {
         await this.taskList.confirmDrainageCompleted();
     });
 
+    //
+    this.defineStep(/^Check costs and processing time is marked as completed$/, { timeout: 60000 }, async function () {
+        await this.taskList.confirmCostProcessingTimeCompleted();
+    });
+
     this.defineStep(/^Give Contact Details is marked as completed$/, { timeout: 60000 }, async function () {
         await this.taskList.giveContactDetailsCompleted();
     });

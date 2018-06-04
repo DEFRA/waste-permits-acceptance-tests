@@ -48,6 +48,34 @@ module.exports = function () {
                 radioButton = await this.permitFor.depositForRecoveryRadio();
                 radioButton.click();
                 break;
+            case "Composting, sewage or sludge treatment, biogas":
+                radioButton = await this.permitFor.compostSewageBiogasRadio();
+                radioButton.click();
+                break;
+            case "Electrical insulating oil storage":
+                radioButton = await this.permitFor.electricalInsulatingRadio();
+                radioButton.click();
+                break;
+            case "Metal recycling, scrap metal and WEEE - not cars or vehicles":
+                radioButton = await this.permitFor.metalRecyclingRadio();
+                radioButton.click();
+                break;
+            case "Mining, oil and gas":
+                radioButton = await this.permitFor.miningRadio();
+                radioButton.click();
+                break;
+            case "Storage or treatment of waste - recycling, dredgings, clinical, soil or wood treatment":
+                radioButton = await this.permitFor.storageTreatmentRecyclingRadio();
+                radioButton.click();
+                break;
+            case "Waste transfer station or amenity site with or without treatment":
+                radioButton = await this.permitFor.wasteTransferStationRadio();
+                radioButton.click();
+                break;
+            case "Water discharges":
+                radioButton = await this.permitFor.waterDischargesRadio();
+                radioButton.click();
+                break;
             default: break;
         }
     });
