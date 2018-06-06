@@ -335,7 +335,7 @@ class SelectPermit {
     }
 
     async changeSelectionLink() {
-        return this.browser.wait(until.elementsLocated(By.id("change-selection-link")),5*20000);
+        return this.browser.wait(until.elementLocated(By.id("change-selection-link")),5*20000);
     }
 
     async permitSR2008No11Radio() {

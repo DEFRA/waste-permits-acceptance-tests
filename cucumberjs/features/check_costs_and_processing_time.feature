@@ -127,6 +127,8 @@ Feature: Check cost and Processing Time
         And I click on "Continue" button
         And I am on the <TasklistTitle> page
         And I should be able to see <link> to download manual guidance for water discharges
+        And I click back
+        And I am on the "What do you want the permit for?" page
         Examples:
             | PermitOption       | TasklistTitle                        | link                                                                                                               |
             | "Water discharges" | "Apply for water discharges permits" | "https://www.gov.uk/government/collections/environmental-permit-application-forms-standard-permit-water-discharge" |
@@ -149,12 +151,14 @@ Feature: Check cost and Processing Time
         And I click on "Continue" button
         And I am on the <TasklistTitle> page
         And I should be able to see <link> to download manual guidance for flood risk activities
+        When I click on "Change your selection" link on the permit page
+        And I am on the "What do you want the permit for?" page
         Examples:
-            | PermitOption            | TasklistTitle                             | link                                                                                                               |
-            | "Flood risk activities" | "Apply for flood risk activities permits" | "https://www.gov.uk/government/collections/environmental-permit-application-forms-standard-permit-water-discharge" |
+            | PermitOption            | TasklistTitle                             | link                                                                                             |
+            | "Flood risk activities" | "Apply for flood risk activities permits" | "https://www.gov.uk/guidance/flood-risk-activities-environmental-permits#standard-rules-permits" |
 
 
-    @desktop
+@desktop
 @phone
 @tablet
 @uat
@@ -172,6 +176,33 @@ Feature: Check cost and Processing Time
         And I click on "Continue" button
         And I am on the <TasklistTitle> page
         And I should be able to see <link> to download manual guidance for Radioactive substances for non-nuclear sites
+        When I click on "Change your selection" link on the permit page
+        And I am on the "What do you want the permit for?" page
         Examples:
-            | PermitOption            | TasklistTitle                             | link                                                                                                               |
-            | "Radioactive substances for non-nuclear sites" | "Apply for radioactive substances for non-nuclear sites permits" | "https://www.gov.uk/government/collections/radioactive-substances-regulation-for-non-nuclear-sites" |        
+            | PermitOption                                   | TasklistTitle                                                    | link                                                                                                |
+            | "Radioactive substances for non-nuclear sites" | "Apply for radioactive substances for non-nuclear sites permits" | "https://www.gov.uk/government/collections/radioactive-substances-regulation-for-non-nuclear-sites" |
+
+
+@desktop
+@phone
+@tablet
+@uat
+    @UserResearch
+    Scenario Outline: As a user, when i select a permit which is not applicable, then I should be able to download the manual form
+        Given the application has been launched
+        And I am on the "Apply for a mobile plant standard rules waste permit" page
+        And I select "Start a new application" waste permit application page
+        And I click on "Continue" button
+        And I am on the "Who will be the permit holder?" page
+        And I select "Limited Company" option for pemit
+        And I click on "Continue" button
+        And I am on the "What do you want the permit for?" page
+        And I select <PermitOption> option for pemit
+        And I click on "Continue" button
+        And I am on the <TasklistTitle> page
+        And I should be able to see <link> to download manual guidance for Radioactive substances for non-nuclear sites
+        When I click on "Change your selection" link on the permit page
+        And I am on the "What do you want the permit for?" page
+        Examples:
+            | PermitOption                                   | TasklistTitle                                                    | link                                                                                                |
+            | "Radioactive substances for non-nuclear sites" | "Apply for radioactive substances for non-nuclear sites permits" | "https://www.gov.uk/government/collections/radioactive-substances-regulation-for-non-nuclear-sites" |

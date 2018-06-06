@@ -137,11 +137,11 @@ module.exports = function () {
         Assert.equal(link, urlhref, "Incorrect: expected: " + urlhref + " Expected:- " + link);
     });
 
-    this.defineStep(/^I click on "(.*?)" link$/, { timeout: 60000 }, async function (link) {
+    this.defineStep(/^I click on "(.*?)" link on the permit page$/, { timeout: 60000 }, async function (link) {
         switch (link) {
             case "Change your selection":
-                const linkurl = await this.selectPermit.changeSelectionLink();
-                await linkurl.click();
+                permitSelect = await this.selectPermit.changeSelectionLink();
+                permitSelect.click();
                 break;
             default: break;
         }
