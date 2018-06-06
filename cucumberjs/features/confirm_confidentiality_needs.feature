@@ -16,6 +16,7 @@ Feature: WE-475 CONFIRM CONFIDENTIALITY NEEDS PAGE
         And I click on "Continue" button
         And I am on the Task list page for "Mobile plant for land-spreading - SR2010 No 4"
 
+    @Smoke
     @desktop
     @phone
     @tablet

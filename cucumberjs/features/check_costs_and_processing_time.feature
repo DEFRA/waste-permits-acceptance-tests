@@ -183,6 +183,7 @@ Feature: Check cost and Processing Time
             | "Radioactive substances for non-nuclear sites" | "Apply for radioactive substances for non-nuclear sites permits" | "https://www.gov.uk/government/collections/radioactive-substances-regulation-for-non-nuclear-sites" |
 
 
+@Smoke
 @desktop
 @phone
 @tablet

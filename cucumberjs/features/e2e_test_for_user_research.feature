@@ -1,5 +1,6 @@
 Feature: Login Waste Permits Frontend - For User Research Testing
 
+@Smoke
 @desktop
 @phone
 @tablet
@@ -174,6 +175,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
             | Permit         | TasklistTitle                                                                                |
             | "SR2015 No 13" | "Vehicle storage depollution and dismantling (authorised treatment) facility - SR2015 No 13" |
 
+@Smoke
 @desktop
 @phone
 @tablet
