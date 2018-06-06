@@ -108,6 +108,44 @@ module.exports = function () {
         }
     });
 
+    //I should be able to see <link> to download manual guidance
+    this.defineStep(/^I should be able to see "(.*?)" to download manual guidance$/, { timeout: 60000 }, async function (link) {
+        const linkurl = await this.selectPermit.manualPermitLink();
+        const urlhref = await this.selectPermit.elementHrefAttribute(linkurl);
+        actualtext = await this.selectPermit.getTextElement(linkurl);
+        Assert.equal(link, urlhref, "Incorrect: expected: " + urlhref + " Expected:- " + link);
+    });
+
+    this.defineStep(/^I should be able to see "(.*?)" to download manual guidance for Radioactive substances for non-nuclear sites$/, { timeout: 60000 }, async function (link) {
+        const linkurl = await this.selectPermit.radioActiveLink();
+        const urlhref = await this.selectPermit.elementHrefAttribute(linkurl);
+        actualtext = await this.selectPermit.getTextElement(linkurl);
+        Assert.equal(link, urlhref, "Incorrect: expected: " + urlhref + " Expected:- " + link);
+    });
+
+    this.defineStep(/^I should be able to see "(.*?)" to download manual guidance for flood risk activities$/, { timeout: 60000 }, async function (link) {
+        const linkurl = await this.selectPermit.floodRiskLink();
+        const urlhref = await this.selectPermit.elementHrefAttribute(linkurl);
+        actualtext = await this.selectPermit.getTextElement(linkurl);
+        Assert.equal(link, urlhref, "Incorrect: expected: " + urlhref + " Expected:- " + link);
+    });
+
+    this.defineStep(/^I should be able to see "(.*?)" to download manual guidance for water discharges$/, { timeout: 60000 }, async function (link) {
+        const linkurl = await this.selectPermit.waterLink();
+        const urlhref = await this.selectPermit.elementHrefAttribute(linkurl);
+        actualtext = await this.selectPermit.getTextElement(linkurl);
+        Assert.equal(link, urlhref, "Incorrect: expected: " + urlhref + " Expected:- " + link);
+    });
+
+    this.defineStep(/^I click on "(.*?)" link$/, { timeout: 60000 }, async function (link) {
+        switch (link) {
+            case "Change your selection":
+                const linkurl = await this.selectPermit.changeSelectionLink();
+                await linkurl.click();
+                break;
+            default: break;
+        }
+    });
 
     this.defineStep(/^I select a permit "(.*?)"$/, { timeout: 60000 }, async function (option) {
         fs.appendFile('Application_Numbers.txt', '\n', function (err) {
@@ -268,38 +306,108 @@ module.exports = function () {
                 permitSelect = await this.selectPermit.permitSR2015No24Radio();
                 permitSelect.click();
                 break;
-                case "SR2008 No 24":
+            case "SR2008 No 24":
                 permitSelect = await this.selectPermit.permitSR2008No24Radio();
                 permitSelect.click();
                 break;
-                case "SR2008 No 25":
+            case "SR2008 No 25":
                 permitSelect = await this.selectPermit.permitSR2008No25Radio();
                 permitSelect.click();
                 break;
-
-
-                case "SR2015 No 11":
+            case "SR2015 No 11":
                 permitSelect = await this.selectPermit.permitSR2015No11Radio();
                 permitSelect.click();
                 break;
-                case "SR2015 No 10":
+            case "SR2015 No 10":
                 permitSelect = await this.selectPermit.permitSR2015No10Radio();
                 permitSelect.click();
                 break;
-                case "SR2015 No 5":
+            case "SR2015 No 5":
                 permitSelect = await this.selectPermit.permitSR2015No5Radio();
                 permitSelect.click();
                 break;
-                case "SR2015 No 9":
+            case "SR2015 No 9":
                 permitSelect = await this.selectPermit.permitSR2015No9Radio();
                 permitSelect.click();
                 break;
-                case "SR2015 No 8":
+            case "SR2015 No 8":
                 permitSelect = await this.selectPermit.permitSR2015No8Radio();
                 permitSelect.click();
                 break;
-                case "SR2015 No 22":
+            case "SR2015 No 22":
                 permitSelect = await this.selectPermit.permitSR2015No22Radio();
+                permitSelect.click();
+                break;
+            case "SR2015 No 7":
+                permitSelect = await this.selectPermit.permitSR2015No7Radio();
+                permitSelect.click();
+                break;
+            case "SR2015 No 19":
+                permitSelect = await this.selectPermit.permitSR2015No19Radio();
+                permitSelect.click();
+                break;
+            case "SR2015 No 20":
+                permitSelect = await this.selectPermit.permitSR2015No20Radio();
+                permitSelect.click();
+                break;
+            case "SR2009 No 6":
+                permitSelect = await this.selectPermit.permitSR2009No6Radio();
+                permitSelect.click();
+                break;
+            case "SR2008 No 11":
+                permitSelect = await this.selectPermit.permitSR2008No11Radio();
+                permitSelect.click();
+                break;
+            case "SR2009 No 5":
+                permitSelect = await this.selectPermit.permitSR2009No5Radio();
+                permitSelect.click();
+                break;
+            case "SR2008 No 10":
+                permitSelect = await this.selectPermit.permitSR2008No10Radio();
+                permitSelect.click();
+                break;
+                case "SR2012 No 11":
+                permitSelect = await this.selectPermit.permitSR2012No11Radio();
+                permitSelect.click();
+                break;
+                case "SR2012 No 9":
+                permitSelect = await this.selectPermit.permitSR2012No9Radio();
+                permitSelect.click();
+                break;
+                case "SR2009 No 4":
+                permitSelect = await this.selectPermit.permitSR2009No4Radio();
+                permitSelect.click();
+                break;
+                case "SR2012 No 4":
+                permitSelect = await this.selectPermit.permitSR2012No4Radio();
+                permitSelect.click();
+                break;
+                case "SR2012 No 8":
+                permitSelect = await this.selectPermit.permitSR2012No8Radio();
+                permitSelect.click();
+                break;
+                case "SR2009 No 3":
+                permitSelect = await this.selectPermit.permitSR2009No3Radio();
+                permitSelect.click();
+                break;
+                case "SR2015 No 1":
+                permitSelect = await this.selectPermit.permitSR2015No1Radio();
+                permitSelect.click();
+                break;
+                case "SR2014 No 2":
+                permitSelect = await this.selectPermit.permitSR2014No2Radio();
+                permitSelect.click();
+                break;
+                case "SR2009 No 8":
+                permitSelect = await this.selectPermit.permitSR2009No8Radio();
+                permitSelect.click();
+                break;
+                case "SR2009 No 2":
+                permitSelect = await this.selectPermit.permitSR2009No2Radio();
+                permitSelect.click();
+                break;
+                case "SR2012 No 13":
+                permitSelect = await this.selectPermit.permitSR2012No13Radio();
                 permitSelect.click();
                 break;    
             default: break;

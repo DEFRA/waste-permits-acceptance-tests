@@ -302,6 +302,96 @@ class SelectPermit {
         return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2008-no-25-input")), 11 * 20000);
     }
 
+    async permitSR2015No7Radio() {
+        return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2015-no-7-input")), 11 * 20000);
+    }
+
+    async permitSR2008No10Radio() {
+        return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2008-no-10-input")), 11 * 20000);
+    }
+
+    async permitSR2009No5Radio() {
+        return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2009-no-5-input")), 11 * 20000);
+    }
+
+    async permitSR2009No6Radio() {
+        return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2009-no-6-input")), 11 * 20000);
+    }
+
+    async manualPermitLink() {
+        return this.browser.wait(until.elementLocated(By.id("standard-rules-link")), 11 * 20000);
+    }
+
+    async floodRiskLink() {
+        return this.browser.wait(until.elementLocated(By.id("flood-link")), 11 * 20000);
+    }
+
+    async waterLink() {
+        return this.browser.wait(until.elementLocated(By.id("water-link")), 11 * 20000);
+    }
+
+    async radioActiveLink() {
+        return this.browser.wait(until.elementLocated(By.id("radioactive-link")), 11 * 20000);
+    }
+
+    async changeSelectionLink() {
+        return this.browser.wait(until.elementsLocated(By.id("change-selection-link")),5*20000);
+    }
+
+    async permitSR2008No11Radio() {
+        return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2008-no-11-input")), 11 * 20000);
+    }
+
+    async permitSR2009No6Radio() {
+        return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2009-no-6-input")), 11 * 20000);
+    }
+
+    async permitSR2015No20Radio() {
+        return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2015-no-20-input")), 11 * 20000);
+    }
+
+    async permitSR2015No19Radio() {
+        return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2015-no-19-input")), 11 * 20000);
+    }
+
+    async permitSR2012No11Radio() {
+        return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2012-no-11-input")), 11 * 20000);
+    }
+    async permitSR2012No9Radio() {
+        return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2012-no-9-input")), 11 * 20000);
+    }
+    async permitSR2009No4Radio() {
+        return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2009-no-4-input")), 11 * 20000);
+    }
+    async permitSR2012No4Radio() {
+        return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2012-no-4-input")), 11 * 20000);
+    }
+    async permitSR2012No8Radio() {
+        return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2012-no-8-input")), 11 * 20000);
+    }
+    async permitSR2009No3Radio() {
+        return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2009-no-3-input")), 11 * 20000);
+    }
+    async permitSR2015No1Radio() {
+        return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2015-no-1-input")), 11 * 20000);
+    }
+    async permitSR2014No2Radio() {
+        return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2014-no-2-input")), 11 * 20000);
+    }
+    async permitSR2009No8Radio() {
+        return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2009-no-8-input")), 11 * 20000);
+    }
+    async permitSR2009No2Radio() {
+        return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2009-no-2-input")), 11 * 20000);
+    }
+    async permitSR2012No13Radio() {
+        return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2012-no-13-input")), 11 * 20000);
+    }
+
+    async elementHrefAttribute(element) {
+        return element.getAttribute("href");
+    }
+
     async getTextElement(element) {
         return element.getText();
     }

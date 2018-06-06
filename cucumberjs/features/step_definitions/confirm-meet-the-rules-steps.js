@@ -23,7 +23,7 @@ module.exports = function () {
   this.defineStep(/^the cost to apply is "([^"]*)"$/, { timeout: 60000 }, async function (cost) {
     fieldText = await this.confirmRules.cost();
     actualtext = await this.confirmRules.getTextElement(fieldText);
-    Assert.equal(actualtext, cost, "Incorrect cost");
+    Assert.equal(actualtext, cost, "Incorrect Expected cost: "+cost+ " Actual cost is :"+ actualtext);
   });
 
 
