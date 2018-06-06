@@ -78,8 +78,6 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         When I enter "TF3 2BS" in the "Postcode" field on the address page
         And I click on "Find Address" button
-        Then I am on the "What's the invoice address?" page
-        When I click on  I can't find address in the link
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         When I enter "221b" in the "Building Number" field on the address page
         And I enter "Baker St" in the "Address Line 1" field on the address page
@@ -135,8 +133,6 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         Then I am on the "What's the postcode for the site?" page
         When I enter "TF3 2BS" in the "Postcode" field on the address page
         And I click on "Find Address" button
-        Then I am on the "What's the site address?" page
-        When I click on  I can't find address in the link
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         When I enter "221b" in the "Building Number" field on the address page
         And I enter "Baker St" in the "Address Line 1" field on the address page
@@ -243,8 +239,6 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         When I enter "TF3 2BS" in the "Postcode" field on the address page
         And I click on "Find Address" button
-        Then I am on the "What's the invoice address?" page
-        When I click on  I can't find address in the link
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         When I enter "221b" in the "Building Number" field on the address page
         And I enter "Baker St" in the "Address Line 1" field on the address page
@@ -295,8 +289,6 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         Then I am on the "What's the postcode for the site?" page
         When I enter "TF3 2BS" in the "Postcode" field on the address page
         And I click on "Find Address" button
-        Then I am on the "What's the site address?" page
-        When I click on  I can't find address in the link
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         When I enter "221b" in the "Building Number" field on the address page
         And I enter "Baker St" in the "Address Line 1" field on the address page
@@ -416,8 +408,6 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         When I enter "TF3 2BS" in the "Postcode" field on the address page
         And I click on "Find Address" button
-        Then I am on the "What's the invoice address?" page
-        When I click on  I can't find address in the link
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         When I enter "221b" in the "Building Number" field on the address page
         And I enter "Baker St" in the "Address Line 1" field on the address page
@@ -455,8 +445,6 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         Then I am on the "What's the postcode for the site?" page
         When I enter "TF3 2BS" in the "Postcode" field on the address page
         And I click on "Find Address" button
-        Then I am on the "What's the site address?" page
-        When I click on  I can't find address in the link
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         When I enter "221b" in the "Building Number" field on the address page
         And I enter "Baker St" in the "Address Line 1" field on the address page
@@ -575,8 +563,6 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         When I enter "TF3 2BS" in the "Postcode" field on the address page
         And I click on "Find Address" button
-        Then I am on the "What's the invoice address?" page
-        When I click on  I can't find address in the link
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         When I enter "221b" in the "Building Number" field on the address page
         And I enter "Baker St" in the "Address Line 1" field on the address page
@@ -723,8 +709,6 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         When I enter "TF3 2BS" in the "Postcode" field on the address page
         And I click on "Find Address" button
-        Then I am on the "What's the invoice address?" page
-        When I click on  I can't find address in the link
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         When I enter "221b" in the "Building Number" field on the address page
         And I enter "Baker St" in the "Address Line 1" field on the address page
@@ -773,8 +757,6 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         Then I am on the "What's the postcode for the site?" page
         When I enter "TF3 2BS" in the "Postcode" field on the address page
         And I click on "Find Address" button
-        Then I am on the "What's the site address?" page
-        When I click on  I can't find address in the link
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         When I enter "221b" in the "Building Number" field on the address page
         And I enter "Baker St" in the "Address Line 1" field on the address page
@@ -898,8 +880,6 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         When I enter "TF3 2BS" in the "Postcode" field on the address page
         And I click on "Find Address" button
-        Then I am on the "What's the invoice address?" page
-        When I click on  I can't find address in the link
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         When I enter "221b" in the "Building Number" field on the address page
         And I enter "Baker St" in the "Address Line 1" field on the address page
@@ -940,8 +920,6 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         Then I am on the "What's the postcode for the site?" page
         When I enter "TF3 2BS" in the "Postcode" field on the address page
         And I click on "Find Address" button
-        Then I am on the "What's the site address?" page
-        When I click on  I can't find address in the link
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         When I enter "221b" in the "Building Number" field on the address page
         And I enter "Baker St" in the "Address Line 1" field on the address page
@@ -1066,8 +1044,6 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         When I enter "TF3 2BS" in the "Postcode" field on the address page
         And I click on "Find Address" button
-        Then I am on the "What's the invoice address?" page
-        When I click on  I can't find address in the link
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         When I enter "221b" in the "Building Number" field on the address page
         And I enter "Baker St" in the "Address Line 1" field on the address page
@@ -1195,8 +1171,6 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         When I enter "TF3 2BS" in the "Postcode" field on the address page
         And I click on "Find Address" button
-        Then I am on the "What's the invoice address?" page
-        When I click on  I can't find address in the link
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         When I enter "221b" in the "Building Number" field on the address page
         And I enter "Baker St" in the "Address Line 1" field on the address page
@@ -1343,8 +1317,6 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         When I enter "TF3 2BS" in the "Postcode" field on the address page
         And I click on "Find Address" button
-        Then I am on the "What's the invoice address?" page
-        When I click on  I can't find address in the link
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         When I enter "221b" in the "Building Number" field on the address page
         And I enter "Baker St" in the "Address Line 1" field on the address page
@@ -1385,8 +1357,6 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         Then I am on the "What's the postcode for the site?" page
         When I enter "TF3 2BS" in the "Postcode" field on the address page
         And I click on "Find Address" button
-        Then I am on the "What's the site address?" page
-        When I click on  I can't find address in the link
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         When I enter "221b" in the "Building Number" field on the address page
         And I enter "Baker St" in the "Address Line 1" field on the address page
@@ -1510,8 +1480,6 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         When I enter "TF3 2BS" in the "Postcode" field on the address page
         And I click on "Find Address" button
-        Then I am on the "What's the invoice address?" page
-        When I click on  I can't find address in the link
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         When I enter "221b" in the "Building Number" field on the address page
         And I enter "Baker St" in the "Address Line 1" field on the address page
@@ -1552,8 +1520,6 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         Then I am on the "What's the postcode for the site?" page
         When I enter "TF3 2BS" in the "Postcode" field on the address page
         And I click on "Find Address" button
-        Then I am on the "What's the site address?" page
-        When I click on  I can't find address in the link
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         When I enter "221b" in the "Building Number" field on the address page
         And I enter "Baker St" in the "Address Line 1" field on the address page
