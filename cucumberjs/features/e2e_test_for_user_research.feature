@@ -192,6 +192,12 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         And I select a permit <Permit>
         And I click on "Continue" button
         And I am on the Task list page for <TasklistTitle>
+        When I click on the "Confirm you have suitable vehicle storage areas" link
+        Then I am on the "Where does the vehicle storage area drain to?" page
+        When I click on "Sewer" button on the Confirm vehicle storage area
+        When I click on "Continue" button
+        And I am on the Task list page for <TasklistTitle>
+        And Confirm you have suitable vehicle storage areas is marked as completed
         When I click on the "Confirm confidentiality needs" link
         Then I am on the "Is part of your application commercially confidential?" page
         And I select "No" on confidentiality page
@@ -273,12 +279,6 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         When I select doc file to upload
         When I click on "Continue" button
         And I am on the Task list page for <TasklistTitle>
-        When I click on the "Confirm you have suitable vehicle storage areas" link
-        Then I am on the "Where does the vehicle storage area drain to?" page
-        When I click on "Oil Separator" button on the Confirm vehicle storage area
-        When I click on "Continue" button
-        And I am on the Task list page for <TasklistTitle>
-        And Confirm you have suitable vehicle storage areas is marked as completed
         When I click on the "Give site name and location" link
         Then I am on the "What's the site name?" page
         When I enter "UR SR2015 No 17 Test Site" in the "Site Name" field
