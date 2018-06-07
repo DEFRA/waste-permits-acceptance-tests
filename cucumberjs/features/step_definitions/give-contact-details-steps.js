@@ -13,7 +13,6 @@ module.exports = function () {
         fieldText = await this.giveContactDetails.errorSummaryField();
         actualtext = await this.taskList.getTextElement(fieldText);
         Assert.notEqual(actualtext,null);
-        Console.log("********Application created for :" + actualtext+ "*********");
     });
 
 

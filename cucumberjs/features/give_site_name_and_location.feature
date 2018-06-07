@@ -3,6 +3,7 @@ Feature:  WE-832 GIVE SITE NAME AND LOCATION PAGE
     Background:
         Given the application has been launched
         And I am on the "Apply for a mobile plant standard rules waste permit" page
+         And I select "Start a new application" waste permit application page
         And I click on "Continue" button
         And I am on the "Who will be the permit holder?" page
         And I select "Limited Company" option for pemit
@@ -32,10 +33,15 @@ Feature:  WE-832 GIVE SITE NAME AND LOCATION PAGE
         When I enter "TF3 2BS" in the "Postcode" field on the address page
         And I click on "Find Address" button
         Then I am on the "What's the site address?" page
-        And I should be able to see Select Address dropdown
-        When I click on "Continue" button
-        And I should be able to see error "Select an address"
-        When I select first address from the address dropdown
+        #And I should be able to see Select Address dropdown
+        #When I click on "Continue" button
+        And I should be able to see error "Please enter the address below"
+        #When I select first address from the address dropdown
+        When I enter "221b" in the "Building Number" field on the address page
+        And I enter "Baker St" in the "Address Line 1" field on the address page
+        And I enter "Marylebone" in the "Address Line 2" field on the address page
+        And I enter "London" in the "Town or City" field on the address page
+        And I enter "NW1 6XE" in the "Postcode" field on the address page
         And I click on "Continue" button
         And I am on the Task list page for "Vehicle storage depollution and dismantling authorised treatment facility - SR2015 No 17"
         And Give site name and address is marked as completed
