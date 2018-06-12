@@ -192,7 +192,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         And the application id is displayed
         Given the CRM application has been launched
         And I am on the CRM login page
-        And I login as "wastetest1@defradev.onmicrosoft.com" password "W@stePermits1"
+        And I login as "" password ""
         Then I am logged in to CRM as "Waste Test 1 AG-EA-LP-QA-MASTER"
         When I click on LP tab
         And I select "Applications" from the LP menu
