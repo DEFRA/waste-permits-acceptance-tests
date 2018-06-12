@@ -197,7 +197,10 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         When I click on LP tab
         And I select "Applications" from the LP menu
         Then I am on the Applications page
-        #When I search for "WE6081QA/A001" application
+        When I search for "WE6081QA/A001" application
+        Then the application is open
+        And I should be able to verify the customer
+        And I should be able to verify the finance details
         Examples:
             | Permit         | TasklistTitle                                                                                |
             | "SR2015 No 13" | "Vehicle storage depollution and dismantling (authorised treatment) facility - SR2015 No 13" |
