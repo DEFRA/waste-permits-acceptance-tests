@@ -34,7 +34,7 @@ class Driver {
 			browserName: "chrome",
 			browserstack: {
 				user: "amrutabendre1",
-				key: "KDzfKFDVgAevzBNe5ymM"
+				key: ""
 			},
 			chromeOptions: {
 				args: ["--window-size=" + width + "," + height]
