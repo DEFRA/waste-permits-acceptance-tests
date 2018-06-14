@@ -8,7 +8,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
     @UserResearch
     Scenario Outline: As a use I should be able to apply for a waste permit for a limited company
         Given the application has been launched
-        And I am on the "Apply for a mobile plant standard rules waste permit" page
+        And I am on the "Apply for a standard rules environmental permit" page
         And I select "Start a new application" waste permit application page
         And I click on "Continue" button
         And I am on the "Who will be the permit holder?" page
@@ -35,7 +35,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         And I am on the Task list page for <TasklistTitle>
         And Confirm you can meet the rules is marked as completed
         When I click on the "Give company details" link
-        Then I am on the "What's the UK company registration number?" page
+        Then I am on the "What is the UK company registration number?" page
         When I enter "06919623" in the "Company number" field
         And I click on "Continue" button
         Then I am on the "Is this the right company?" page
@@ -48,9 +48,12 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         When I click on "We use a different trading name" field
         And I enter "URNew Business Trading Name" in the "Business trading name" field
         And I click on "Continue" button
-        Then I am on the "What are the directors' dates of birth?" page
+        Then I am on the "What is the director's date of birth?" page
         And the director "1" name should be "Sebastian Douglas Leonard CLARK"
         When I enter "04" in the day field of the director "1" birthdate
+        And I click on "Continue" button
+        Then I am on the "What is the email address for the Company Secretary or a director?" page
+        And I enter "URSR2015No13@gmail.com" in the "Secratary/directors email" field
         And I click on "Continue" button
         Then I am on the "Does anyone connected with your business have a conviction for a relevant offence?" page
         When I select "Yes" option
@@ -70,7 +73,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         And I enter "URLastName" in the "Last name" field
         And I enter "07777777777" in the "Telephone number" field
         And I enter "URSR2015No13@gmail.com" in the "Main contact email" field
-        And I enter "URSR2015No13@gmail.com" in the "Secratary/directors email" field
+        #And I enter "URSR2015No13@gmail.com" in the "Secratary/directors email" field
         And I click on "Continue" button
         And I am on the Task list page for <TasklistTitle>
         And Give Contact Details is marked as completed
@@ -78,6 +81,8 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         When I enter "TF3 2BS" in the "Postcode" field on the address page
         And I click on "Find Address" button
+        Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
+        When I click on  I can't find address in the link
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         When I enter "221b" in the "Building Number" field on the address page
         And I enter "Baker St" in the "Address Line 1" field on the address page
@@ -106,8 +111,6 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         Then I am on the "WAMITAB or EPOC: upload your evidence" page
         When I select img file to upload
         When I click on "Continue" button
-        Then I am on the "WAMITAB or EPOC: upload your evidence" page
-        When I click on "Continue" button
         Then I am on the "Upload details for all technically competent managers" page
         When I select doc file to upload
         When I click on "Continue" button
@@ -124,16 +127,18 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         And I am on the Task list page for <TasklistTitle>
         And Confirm you have suitable vehicle storage areas is marked as completed
         When I click on the "Give site name and location" link
-        Then I am on the "What's the site name?" page
+        Then I am on the "What is the site name?" page
         When I enter "UR SR2015 No 13 Test Site" in the "Site Name" field
         And I click on "Continue" button
-        Then I am on the "What's the grid reference for the centre of the site?" page
+        Then I am on the "What is the grid reference for the centre of the site?" page
         When I enter "ST5813272695" in the "Site Grid Reference" field
         And I click on "Continue" button
-        Then I am on the "What's the postcode for the site?" page
+        Then I am on the "What is the postcode for the site?" page
         When I enter "TF3 2BS" in the "Postcode" field on the address page
         And I click on "Find Address" button
-        Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
+        Then I am on the "What is the site address?" page
+        When I click on  I can't find address in the link
+        Then I am on the "Enter the site address" page
         When I enter "221b" in the "Building Number" field on the address page
         And I enter "Baker St" in the "Address Line 1" field on the address page
         And I enter "Marylebone" in the "Address Line 2" field on the address page
@@ -162,7 +167,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         Then I am on the "How do you want to pay?" page
         When I select "BACS" payment method
         When I click on "Continue" button
-        Then I am on the "You’ve chosen to pay by bank transfer using Bacs" page
+        Then I am on the "You have chosen to pay by bank transfer using Bacs" page
         When I send the application
         Then I am on the "Application received" page
         And the application id is displayed
@@ -179,7 +184,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
     @UserResearch
     Scenario Outline: As a use I should be able to apply for a waste permit for a limited company
         Given the application has been launched
-        And I am on the "Apply for a mobile plant standard rules waste permit" page
+        And I am on the "Apply for a standard rules environmental permit" page
         And I select "Start a new application" waste permit application page
         And I click on "Continue" button
         And I am on the "Who will be the permit holder?" page
@@ -210,7 +215,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         And I am on the Task list page for <TasklistTitle>
         And Confirm you can meet the rules is marked as completed
         When I click on the "Give company details" link
-        Then I am on the "What's the UK company registration number?" page
+        Then I am on the "What is the UK company registration number?" page
         When I enter "06919623" in the "Company number" field
         And I click on "Continue" button
         Then I am on the "Is this the right company?" page
@@ -219,9 +224,12 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         And the Company name should be "UR LTD"
         And the Company address should be "25 South Road, Saffron Walden, Essex, CB11 3DG"
         And I click on "Continue" button
-        Then I am on the "What are the directors' dates of birth?" page
+        Then I am on the "What is the director's date of birth?" page
         And the director "1" name should be "Sebastian Douglas Leonard CLARK"
         When I enter "04" in the day field of the director "1" birthdate
+        And I click on "Continue" button
+        Then I am on the "What is the email address for the Company Secretary or a director?" page
+        And I enter "URSR2015No17@gmail.com" in the "Secratary/directors email" field
         And I click on "Continue" button
         Then I am on the "Does anyone connected with your business have a conviction for a relevant offence?" page
         When I select "No" option
@@ -237,7 +245,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         And I enter "URLastName" in the "Last name" field
         And I enter "07777777777" in the "Telephone number" field
         And I enter "URSR2015No17@gmail.com" in the "Main contact email" field
-        And I enter "URSR2015No17@gmail.com" in the "Secratary/directors email" field
+        #And I enter "URSR2015No17@gmail.com" in the "Secratary/directors email" field
         And I click on "Continue" button
         And I am on the Task list page for <TasklistTitle>
         And Give Contact Details is marked as completed
@@ -245,6 +253,8 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         When I enter "TF3 2BS" in the "Postcode" field on the address page
         And I click on "Find Address" button
+        Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
+        When I click on  I can't find address in the link
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         When I enter "221b" in the "Building Number" field on the address page
         And I enter "Baker St" in the "Address Line 1" field on the address page
@@ -273,23 +283,23 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         Then I am on the "Getting a qualification: upload your evidence" page
         When I select img file to upload
         When I click on "Continue" button
-        Then I am on the "Getting a qualification: upload your evidence" page
-        When I click on "Continue" button
         Then I am on the "Upload details for all technically competent managers" page
         When I select doc file to upload
         When I click on "Continue" button
         And I am on the Task list page for <TasklistTitle>
         When I click on the "Give site name and location" link
-        Then I am on the "What's the site name?" page
+        Then I am on the "What is the site name?" page
         When I enter "UR SR2015 No 17 Test Site" in the "Site Name" field
         And I click on "Continue" button
-        Then I am on the "What's the grid reference for the centre of the site?" page
+        Then I am on the "What is the grid reference for the centre of the site?" page
         When I enter "ST5813272695" in the "Site Grid Reference" field
         And I click on "Continue" button
-        Then I am on the "What's the postcode for the site?" page
+        Then I am on the "What is the postcode for the site?" page
         When I enter "TF3 2BS" in the "Postcode" field on the address page
         And I click on "Find Address" button
-        Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
+        Then I am on the "What is the site address?" page
+        When I click on  I can't find address in the link
+        Then I am on the "Enter the site address" page
         When I enter "221b" in the "Building Number" field on the address page
         And I enter "Baker St" in the "Address Line 1" field on the address page
         And I enter "Marylebone" in the "Address Line 2" field on the address page
@@ -348,7 +358,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
     @UserResearch
     Scenario Outline: As a use I should be able to apply for a waste permit for a limited company
         Given the application has been launched
-        And I am on the "Apply for a mobile plant standard rules waste permit" page
+        And I am on the "Apply for a standard rules environmental permit" page
         And I select "Start a new application" waste permit application page
         And I click on "Continue" button
         And I am on the "Who will be the permit holder?" page
@@ -373,7 +383,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         And I am on the Task list page for <TasklistTitle>
         And Confirm you can meet the rules is marked as completed
         When I click on the "Give company details" link
-        Then I am on the "What's the UK company registration number?" page
+        Then I am on the "What is the UK company registration number?" page
         When I enter "06919623" in the "Company number" field
         And I click on "Continue" button
         Then I am on the "Is this the right company?" page
@@ -382,9 +392,12 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         And the Company name should be "UR LTD"
         And the Company address should be "25 South Road, Saffron Walden, Essex, CB11 3DG"
         And I click on "Continue" button
-        Then I am on the "What are the directors' dates of birth?" page
+        Then I am on the "What is the director's date of birth?" page
         And the director "1" name should be "Sebastian Douglas Leonard CLARK"
         When I enter "04" in the day field of the director "1" birthdate
+        And I click on "Continue" button
+        Then I am on the "What is the email address for the Company Secretary or a director?" page
+        And I enter "URSR2012No12@gmail.com" in the "Secratary/directors email" field
         And I click on "Continue" button
         Then I am on the "Does anyone connected with your business have a conviction for a relevant offence?" page
         When I select "No" option
@@ -400,7 +413,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         And I enter "URLastName" in the "Last name" field
         And I enter "07777777777" in the "Telephone number" field
         And I enter "URSR2012No12@gmail.com" in the "Main contact email" field
-        And I enter "URSR2012No12@gmail.com" in the "Secratary/directors email" field
+        #And I enter "URSR2012No12@gmail.com" in the "Secratary/directors email" field
         And I click on "Continue" button
         And I am on the Task list page for <TasklistTitle>
         And Give Contact Details is marked as completed
@@ -408,6 +421,8 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         When I enter "TF3 2BS" in the "Postcode" field on the address page
         And I click on "Find Address" button
+        Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
+        When I click on  I can't find address in the link
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         When I enter "221b" in the "Building Number" field on the address page
         And I enter "Baker St" in the "Address Line 1" field on the address page
@@ -429,23 +444,23 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         Then I am on the "Getting a qualification: upload your evidence" page
         When I select img file to upload
         When I click on "Continue" button
-        Then I am on the "Getting a qualification: upload your evidence" page
-        When I click on "Continue" button
         Then I am on the "Upload details for all technically competent managers" page
         When I select doc file to upload
         When I click on "Continue" button
         And I am on the Task list page for <TasklistTitle>
         When I click on the "Give site name and location" link
-        Then I am on the "What's the site name?" page
+        Then I am on the "What is the site name?" page
         When I enter "UR SR2012 No 12 Test Site" in the "Site Name" field
         And I click on "Continue" button
-        Then I am on the "What's the grid reference for the centre of the site?" page
+        Then I am on the "What is the grid reference for the centre of the site?" page
         When I enter "ST5813272695" in the "Site Grid Reference" field
         And I click on "Continue" button
-        Then I am on the "What's the postcode for the site?" page
+        Then I am on the "What is the postcode for the site?" page
         When I enter "TF3 2BS" in the "Postcode" field on the address page
         And I click on "Find Address" button
-        Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
+        Then I am on the "What is the site address?" page
+        When I click on  I can't find address in the link
+        Then I am on the "Enter the site address" page
         When I enter "221b" in the "Building Number" field on the address page
         And I enter "Baker St" in the "Address Line 1" field on the address page
         And I enter "Marylebone" in the "Address Line 2" field on the address page
@@ -503,7 +518,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
     @UserResearch
     Scenario Outline: As a use I should be able to apply for a waste permit for a limited company
         Given the application has been launched
-        And I am on the "Apply for a mobile plant standard rules waste permit" page
+        And I am on the "Apply for a standard rules environmental permit" page
         And I select "Start a new application" waste permit application page
         And I click on "Continue" button
         And I am on the "Who will be the permit holder?" page
@@ -528,7 +543,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         And I am on the Task list page for <TasklistTitle>
         And Confirm you can meet the rules is marked as completed
         When I click on the "Give company details" link
-        Then I am on the "What's the UK company registration number?" page
+        Then I am on the "What is the UK company registration number?" page
         When I enter "06919623" in the "Company number" field
         And I click on "Continue" button
         Then I am on the "Is this the right company?" page
@@ -537,9 +552,12 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         And the Company name should be "UR LTD"
         And the Company address should be "25 South Road, Saffron Walden, Essex, CB11 3DG"
         And I click on "Continue" button
-        Then I am on the "What are the directors' dates of birth?" page
+        Then I am on the "What is the director's date of birth?" page
         And the director "1" name should be "Sebastian Douglas Leonard CLARK"
         When I enter "04" in the day field of the director "1" birthdate
+        And I click on "Continue" button
+        Then I am on the "What is the email address for the Company Secretary or a director?" page
+        And I enter "URSR2010No4@gmail.com" in the "Secratary/directors email" field
         And I click on "Continue" button
         Then I am on the "Does anyone connected with your business have a conviction for a relevant offence?" page
         When I select "No" option
@@ -555,7 +573,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         And I enter "URLastName" in the "Last name" field
         And I enter "07777777777" in the "Telephone number" field
         And I enter "URSR2010No4@gmail.com" in the "Main contact email" field
-        And I enter "URSR2010No4@gmail.com" in the "Secratary/directors email" field
+        #And I enter "URSR2010No4@gmail.com" in the "Secratary/directors email" field
         And I click on "Continue" button
         And I am on the Task list page for <TasklistTitle>
         And Give Contact Details is marked as completed
@@ -563,6 +581,8 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         When I enter "TF3 2BS" in the "Postcode" field on the address page
         And I click on "Find Address" button
+        Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
+        When I click on  I can't find address in the link
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         When I enter "221b" in the "Building Number" field on the address page
         And I enter "Baker St" in the "Address Line 1" field on the address page
@@ -578,8 +598,6 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         And I click on "Continue" button
         Then I am on the "Getting a qualification: upload your evidence" page
         When I select img file to upload
-        When I click on "Continue" button
-        Then I am on the "Getting a qualification: upload your evidence" page
         When I click on "Continue" button
         Then I am on the "Upload details for all technically competent managers" page
         When I select doc file to upload
@@ -635,7 +653,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
     @UserResearch
     Scenario Outline: As a use I should be able to apply for a waste permit for a limited company
         Given the application has been launched
-        And I am on the "Apply for a mobile plant standard rules waste permit" page
+        And I am on the "Apply for a standard rules environmental permit" page
         And I select "Start a new application" waste permit application page
         And I click on "Continue" button
         And I am on the "Who will be the permit holder?" page
@@ -665,7 +683,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         And Confirm you can meet the rules is marked as completed
         #give company details
         When I click on the "Give company details" link
-        Then I am on the "What's the UK company registration number?" page
+        Then I am on the "What is the UK company registration number?" page
         When I enter "06919623" in the "Company number" field
         And I click on "Continue" button
         Then I am on the "Is this the right company?" page
@@ -678,9 +696,12 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         When I click on "We use a different trading name" field
         And I enter "URNew Business Trading Name" in the "Business trading name" field
         And I click on "Continue" button
-        Then I am on the "What are the directors' dates of birth?" page
+        Then I am on the "What is the director's date of birth?" page
         And the director "1" name should be "Sebastian Douglas Leonard CLARK"
         When I enter "04" in the day field of the director "1" birthdate
+        And I click on "Continue" button
+        Then I am on the "What is the email address for the Company Secretary or a director?" page
+        And I enter "URSR2015No6@gmail.com" in the "Secratary/directors email" field
         And I click on "Continue" button
         Then I am on the "Does anyone connected with your business have a conviction for a relevant offence?" page
         When I select "Yes" option
@@ -701,7 +722,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         And I enter "URLastName" in the "Last name" field
         And I enter "07777777777" in the "Telephone number" field
         And I enter "URSR2015No6@gmail.com" in the "Main contact email" field
-        And I enter "URSR2015No6@gmail.com" in the "Secratary/directors email" field
+        #And I enter "URSR2015No6@gmail.com" in the "Secratary/directors email" field
         And I click on "Continue" button
         And I am on the Task list page for <TasklistTitle>
         And Give Contact Details is marked as completed
@@ -709,6 +730,8 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         When I enter "TF3 2BS" in the "Postcode" field on the address page
         And I click on "Find Address" button
+        Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
+        When I click on  I can't find address in the link
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         When I enter "221b" in the "Building Number" field on the address page
         And I enter "Baker St" in the "Address Line 1" field on the address page
@@ -740,24 +763,24 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         Then I am on the "WAMITAB or EPOC: upload your evidence" page
         When I select img file to upload
         When I click on "Continue" button
-        Then I am on the "WAMITAB or EPOC: upload your evidence" page
-        When I click on "Continue" button
         Then I am on the "Upload details for all technically competent managers" page
         When I select doc file to upload
         When I click on "Continue" button
         And I am on the Task list page for <TasklistTitle>
         #site name and location
         When I click on the "Give site name and location" link
-        Then I am on the "What's the site name?" page
+        Then I am on the "What is the site name?" page
         When I enter "UR SR2015 No 6 Test Site" in the "Site Name" field
         And I click on "Continue" button
-        Then I am on the "What's the grid reference for the centre of the site?" page
+        Then I am on the "What is the grid reference for the centre of the site?" page
         When I enter "ST5813272695" in the "Site Grid Reference" field
         And I click on "Continue" button
-        Then I am on the "What's the postcode for the site?" page
+        Then I am on the "What is the postcode for the site?" page
         When I enter "TF3 2BS" in the "Postcode" field on the address page
         And I click on "Find Address" button
-        Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
+        Then I am on the "What is the site address?" page
+        When I click on  I can't find address in the link
+        Then I am on the "Enter the site address" page
         When I enter "221b" in the "Building Number" field on the address page
         And I enter "Baker St" in the "Address Line 1" field on the address page
         And I enter "Marylebone" in the "Address Line 2" field on the address page
@@ -789,7 +812,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         Then I am on the "How do you want to pay?" page
         When I select "BACS" payment method
         When I click on "Continue" button
-        Then I am on the "You’ve chosen to pay by bank transfer using Bacs" page
+        Then I am on the "You have chosen to pay by bank transfer using Bacs" page
         When I send the application
         Then I am on the "Application received" page
         And the application id is displayed
@@ -806,7 +829,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
     @UserResearch
     Scenario Outline: As a use I should be able to apply for a waste permit for a limited company
         Given the application has been launched
-        And I am on the "Apply for a mobile plant standard rules waste permit" page
+        And I am on the "Apply for a standard rules environmental permit" page
         And I select "Start a new application" waste permit application page
         And I click on "Continue" button
         And I am on the "Who will be the permit holder?" page
@@ -836,7 +859,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         And Confirm you can meet the rules is marked as completed
         #give company details
         When I click on the "Give company details" link
-        Then I am on the "What's the UK company registration number?" page
+        Then I am on the "What is the UK company registration number?" page
         When I enter "06919623" in the "Company number" field
         And I click on "Continue" button
         Then I am on the "Is this the right company?" page
@@ -849,9 +872,12 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         When I click on "We use a different trading name" field
         And I enter "URNew Business Trading Name" in the "Business trading name" field
         And I click on "Continue" button
-        Then I am on the "What are the directors' dates of birth?" page
+        Then I am on the "What is the director's date of birth?" page
         And the director "1" name should be "Sebastian Douglas Leonard CLARK"
         When I enter "04" in the day field of the director "1" birthdate
+        And I click on "Continue" button
+        Then I am on the "What is the email address for the Company Secretary or a director?" page
+        And I enter "URSR2012No10@gmail.com" in the "Secratary/directors email" field
         And I click on "Continue" button
         Then I am on the "Does anyone connected with your business have a conviction for a relevant offence?" page
         When I select "Yes" option
@@ -872,7 +898,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         And I enter "URLastName" in the "Last name" field
         And I enter "07777777777" in the "Telephone number" field
         And I enter "URSR2012No10@gmail.com" in the "Main contact email" field
-        And I enter "URSR2012No10@gmail.com" in the "Secratary/directors email" field
+        #And I enter "URSR2012No10@gmail.com" in the "Secratary/directors email" field
         And I click on "Continue" button
         And I am on the Task list page for <TasklistTitle>
         And Give Contact Details is marked as completed
@@ -880,6 +906,8 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         When I enter "TF3 2BS" in the "Postcode" field on the address page
         And I click on "Find Address" button
+        Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
+        When I click on  I can't find address in the link
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         When I enter "221b" in the "Building Number" field on the address page
         And I enter "Baker St" in the "Address Line 1" field on the address page
@@ -903,24 +931,24 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         Then I am on the "WAMITAB or EPOC: upload your evidence" page
         When I select img file to upload
         When I click on "Continue" button
-        Then I am on the "WAMITAB or EPOC: upload your evidence" page
-        When I click on "Continue" button
         Then I am on the "Upload details for all technically competent managers" page
         When I select doc file to upload
         When I click on "Continue" button
         And I am on the Task list page for <TasklistTitle>
         #site name and location
         When I click on the "Give site name and location" link
-        Then I am on the "What's the site name?" page
+        Then I am on the "What is the site name?" page
         When I enter "UR SR2012 No 10 Test Site" in the "Site Name" field
         And I click on "Continue" button
-        Then I am on the "What's the grid reference for the centre of the site?" page
+        Then I am on the "What is the grid reference for the centre of the site?" page
         When I enter "ST5813272695" in the "Site Grid Reference" field
         And I click on "Continue" button
-        Then I am on the "What's the postcode for the site?" page
+        Then I am on the "What is the postcode for the site?" page
         When I enter "TF3 2BS" in the "Postcode" field on the address page
         And I click on "Find Address" button
-        Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
+        Then I am on the "What is the site address?" page
+        When I click on  I can't find address in the link
+        Then I am on the "Enter the site address" page
         When I enter "221b" in the "Building Number" field on the address page
         And I enter "Baker St" in the "Address Line 1" field on the address page
         And I enter "Marylebone" in the "Address Line 2" field on the address page
@@ -952,7 +980,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         Then I am on the "How do you want to pay?" page
         When I select "BACS" payment method
         When I click on "Continue" button
-        Then I am on the "You’ve chosen to pay by bank transfer using Bacs" page
+        Then I am on the "You have chosen to pay by bank transfer using Bacs" page
         When I send the application
         Then I am on the "Application received" page
         And the application id is displayed
@@ -970,7 +998,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
     @UserResearch
     Scenario Outline: As a use I should be able to apply for a waste permit for a limited company
         Given the application has been launched
-        And I am on the "Apply for a mobile plant standard rules waste permit" page
+        And I am on the "Apply for a standard rules environmental permit" page
         And I select "Start a new application" waste permit application page
         And I click on "Continue" button
         And I am on the "Who will be the permit holder?" page
@@ -1000,7 +1028,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         And Confirm you can meet the rules is marked as completed
         #give company details
         When I click on the "Give company details" link
-        Then I am on the "What's the UK company registration number?" page
+        Then I am on the "What is the UK company registration number?" page
         When I enter "06919623" in the "Company number" field
         And I click on "Continue" button
         Then I am on the "Is this the right company?" page
@@ -1013,9 +1041,12 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         When I click on "We use a different trading name" field
         And I enter "URNew Business Trading Name" in the "Business trading name" field
         And I click on "Continue" button
-        Then I am on the "What are the directors' dates of birth?" page
+        Then I am on the "What is the director's date of birth?" page
         And the director "1" name should be "Sebastian Douglas Leonard CLARK"
         When I enter "04" in the day field of the director "1" birthdate
+        And I click on "Continue" button
+        Then I am on the "What is the email address for the Company Secretary or a director?" page
+        And I enter "URSR2008No27@gmail.com" in the "Secratary/directors email" field
         And I click on "Continue" button
         Then I am on the "Does anyone connected with your business have a conviction for a relevant offence?" page
         When I select "Yes" option
@@ -1036,7 +1067,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         And I enter "URLastName" in the "Last name" field
         And I enter "07777777777" in the "Telephone number" field
         And I enter "URSR2008No27@gmail.com" in the "Main contact email" field
-        And I enter "URSR2008No27@gmail.com" in the "Secratary/directors email" field
+        #And I enter "URSR2008No27@gmail.com" in the "Secratary/directors email" field
         And I click on "Continue" button
         And I am on the Task list page for <TasklistTitle>
         And Give Contact Details is marked as completed
@@ -1044,6 +1075,8 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         When I enter "TF3 2BS" in the "Postcode" field on the address page
         And I click on "Find Address" button
+        Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
+        When I click on  I can't find address in the link
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         When I enter "221b" in the "Building Number" field on the address page
         And I enter "Baker St" in the "Address Line 1" field on the address page
@@ -1060,8 +1093,6 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         And I click on "Continue" button
         Then I am on the "WAMITAB or EPOC: upload your evidence" page
         When I select img file to upload
-        When I click on "Continue" button
-        Then I am on the "WAMITAB or EPOC: upload your evidence" page
         When I click on "Continue" button
         Then I am on the "Upload details for all technically competent managers" page
         When I select doc file to upload
@@ -1090,7 +1121,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         Then I am on the "How do you want to pay?" page
         When I select "BACS" payment method
         When I click on "Continue" button
-        Then I am on the "You’ve chosen to pay by bank transfer using Bacs" page
+        Then I am on the "You have chosen to pay by bank transfer using Bacs" page
         When I send the application
         Then I am on the "Application received" page
         And the application id is displayed
@@ -1110,7 +1141,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
     @UserResearch
     Scenario Outline: As a use I should be able to apply for a waste permit for a limited company
         Given the application has been launched
-        And I am on the "Apply for a mobile plant standard rules waste permit" page
+        And I am on the "Apply for a standard rules environmental permit" page
         And I select "Start a new application" waste permit application page
         And I click on "Continue" button
         And I am on the "Who will be the permit holder?" page
@@ -1136,7 +1167,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         And I am on the Task list page for <TasklistTitle>
         And Confirm you can meet the rules is marked as completed
         When I click on the "Give company details" link
-        Then I am on the "What's the UK company registration number?" page
+        Then I am on the "What is the UK company registration number?" page
         When I enter "06919623" in the "Company number" field
         And I click on "Continue" button
         Then I am on the "Is this the right company?" page
@@ -1145,9 +1176,12 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         And the Company name should be "UR LTD"
         And the Company address should be "25 South Road, Saffron Walden, Essex, CB11 3DG"
         And I click on "Continue" button
-        Then I am on the "What are the directors' dates of birth?" page
+        Then I am on the "What is the director's date of birth?" page
         And the director "1" name should be "Sebastian Douglas Leonard CLARK"
         When I enter "04" in the day field of the director "1" birthdate
+        And I click on "Continue" button
+        Then I am on the "What is the email address for the Company Secretary or a director?" page
+        And I enter "URSR2010No4@gmail.com" in the "Secratary/directors email" field
         And I click on "Continue" button
         Then I am on the "Does anyone connected with your business have a conviction for a relevant offence?" page
         When I select "No" option
@@ -1163,7 +1197,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         And I enter "URLastName" in the "Last name" field
         And I enter "07777777777" in the "Telephone number" field
         And I enter "URSR2010No4@gmail.com" in the "Main contact email" field
-        And I enter "URSR2010No4@gmail.com" in the "Secratary/directors email" field
+        #And I enter "URSR2010No4@gmail.com" in the "Secratary/directors email" field
         And I click on "Continue" button
         And I am on the Task list page for <TasklistTitle>
         And Give Contact Details is marked as completed
@@ -1171,6 +1205,8 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         When I enter "TF3 2BS" in the "Postcode" field on the address page
         And I click on "Find Address" button
+        Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
+        When I click on  I can't find address in the link
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         When I enter "221b" in the "Building Number" field on the address page
         And I enter "Baker St" in the "Address Line 1" field on the address page
@@ -1186,8 +1222,6 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         And I click on "Continue" button
         Then I am on the "Getting a qualification: upload your evidence" page
         When I select img file to upload
-        When I click on "Continue" button
-        Then I am on the "Getting a qualification: upload your evidence" page
         When I click on "Continue" button
         Then I am on the "Upload details for all technically competent managers" page
         When I select doc file to upload
@@ -1243,7 +1277,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
     @UserResearch
     Scenario Outline: As a use I should be able to apply for a waste permit for a limited company
         Given the application has been launched
-        And I am on the "Apply for a mobile plant standard rules waste permit" page
+        And I am on the "Apply for a standard rules environmental permit" page
         And I select "Start a new application" waste permit application page
         And I click on "Continue" button
         And I am on the "Who will be the permit holder?" page
@@ -1273,7 +1307,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         And Confirm you can meet the rules is marked as completed
         #give company details
         When I click on the "Give company details" link
-        Then I am on the "What's the UK company registration number?" page
+        Then I am on the "What is the UK company registration number?" page
         When I enter "06919623" in the "Company number" field
         And I click on "Continue" button
         Then I am on the "Is this the right company?" page
@@ -1286,9 +1320,12 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         When I click on "We use a different trading name" field
         And I enter "URNew Business Trading Name" in the "Business trading name" field
         And I click on "Continue" button
-        Then I am on the "What are the directors' dates of birth?" page
+        Then I am on the "What is the director's date of birth?" page
         And the director "1" name should be "Sebastian Douglas Leonard CLARK"
         When I enter "04" in the day field of the director "1" birthdate
+        And I click on "Continue" button
+        Then I am on the "What is the email address for the Company Secretary or a director?" page
+        And I enter "URSR2008No9@gmail.com" in the "Secratary/directors email" field
         And I click on "Continue" button
         Then I am on the "Does anyone connected with your business have a conviction for a relevant offence?" page
         When I select "Yes" option
@@ -1309,7 +1346,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         And I enter "URLastName" in the "Last name" field
         And I enter "07777777777" in the "Telephone number" field
         And I enter "URSR2008No9@gmail.com" in the "Main contact email" field
-        And I enter "URSR2008No9@gmail.com" in the "Secratary/directors email" field
+        #And I enter "URSR2008No9@gmail.com" in the "Secratary/directors email" field
         And I click on "Continue" button
         And I am on the Task list page for <TasklistTitle>
         And Give Contact Details is marked as completed
@@ -1317,6 +1354,8 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         When I enter "TF3 2BS" in the "Postcode" field on the address page
         And I click on "Find Address" button
+        Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
+        When I click on  I can't find address in the link
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         When I enter "221b" in the "Building Number" field on the address page
         And I enter "Baker St" in the "Address Line 1" field on the address page
@@ -1340,24 +1379,24 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         Then I am on the "WAMITAB or EPOC: upload your evidence" page
         When I select img file to upload
         When I click on "Continue" button
-        Then I am on the "WAMITAB or EPOC: upload your evidence" page
-        When I click on "Continue" button
         Then I am on the "Upload details for all technically competent managers" page
         When I select doc file to upload
         When I click on "Continue" button
         And I am on the Task list page for <TasklistTitle>
         #site name and location
         When I click on the "Give site name and location" link
-        Then I am on the "What's the site name?" page
+        Then I am on the "What is the site name?" page
         When I enter "UR SR2008 No 9 Test Site" in the "Site Name" field
         And I click on "Continue" button
-        Then I am on the "What's the grid reference for the centre of the site?" page
+        Then I am on the "What is the grid reference for the centre of the site?" page
         When I enter "ST5813272695" in the "Site Grid Reference" field
         And I click on "Continue" button
-        Then I am on the "What's the postcode for the site?" page
+        Then I am on the "What is the postcode for the site?" page
         When I enter "TF3 2BS" in the "Postcode" field on the address page
         And I click on "Find Address" button
-        Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
+        Then I am on the "What is the site address?" page
+        When I click on  I can't find address in the link
+        Then I am on the "Enter the site address" page
         When I enter "221b" in the "Building Number" field on the address page
         And I enter "Baker St" in the "Address Line 1" field on the address page
         And I enter "Marylebone" in the "Address Line 2" field on the address page
@@ -1389,7 +1428,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         Then I am on the "How do you want to pay?" page
         When I select "BACS" payment method
         When I click on "Continue" button
-        Then I am on the "You’ve chosen to pay by bank transfer using Bacs" page
+        Then I am on the "You have chosen to pay by bank transfer using Bacs" page
         When I send the application
         Then I am on the "Application received" page
         And the application id is displayed
@@ -1406,7 +1445,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
     @UserResearch
     Scenario Outline: As a use I should be able to apply for a waste permit for a limited company
         Given the application has been launched
-        And I am on the "Apply for a mobile plant standard rules waste permit" page
+        And I am on the "Apply for a standard rules environmental permit" page
         And I select "Start a new application" waste permit application page
         And I click on "Continue" button
         And I am on the "Who will be the permit holder?" page
@@ -1436,7 +1475,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         And Confirm you can meet the rules is marked as completed
         #give company details
         When I click on the "Give company details" link
-        Then I am on the "What's the UK company registration number?" page
+        Then I am on the "What is the UK company registration number?" page
         When I enter "06919623" in the "Company number" field
         And I click on "Continue" button
         Then I am on the "Is this the right company?" page
@@ -1449,9 +1488,12 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         When I click on "We use a different trading name" field
         And I enter "URNew Business Trading Name" in the "Business trading name" field
         And I click on "Continue" button
-        Then I am on the "What are the directors' dates of birth?" page
+        Then I am on the "What is the director's date of birth?" page
         And the director "1" name should be "Sebastian Douglas Leonard CLARK"
         When I enter "04" in the day field of the director "1" birthdate
+        And I click on "Continue" button
+        Then I am on the "What is the email address for the Company Secretary or a director?" page
+        And I enter "URSR2015No4@gmail.com" in the "Secratary/directors email" field
         And I click on "Continue" button
         Then I am on the "Does anyone connected with your business have a conviction for a relevant offence?" page
         When I select "Yes" option
@@ -1472,7 +1514,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         And I enter "URLastName" in the "Last name" field
         And I enter "07777777777" in the "Telephone number" field
         And I enter "URSR2015No4@gmail.com" in the "Main contact email" field
-        And I enter "URSR2015No4@gmail.com" in the "Secratary/directors email" field
+        #And I enter "URSR2015No4@gmail.com" in the "Secratary/directors email" field
         And I click on "Continue" button
         And I am on the Task list page for <TasklistTitle>
         And Give Contact Details is marked as completed
@@ -1480,6 +1522,8 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         When I enter "TF3 2BS" in the "Postcode" field on the address page
         And I click on "Find Address" button
+        Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
+        When I click on  I can't find address in the link
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         When I enter "221b" in the "Building Number" field on the address page
         And I enter "Baker St" in the "Address Line 1" field on the address page
@@ -1503,24 +1547,24 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         Then I am on the "WAMITAB or EPOC: upload your evidence" page
         When I select img file to upload
         When I click on "Continue" button
-        Then I am on the "WAMITAB or EPOC: upload your evidence" page
-        When I click on "Continue" button
         Then I am on the "Upload details for all technically competent managers" page
         When I select doc file to upload
         When I click on "Continue" button
         And I am on the Task list page for <TasklistTitle>
         #site name and location
         When I click on the "Give site name and location" link
-        Then I am on the "What's the site name?" page
+        Then I am on the "What is the site name?" page
         When I enter "UR SR2015 No 4 Test Site" in the "Site Name" field
         And I click on "Continue" button
-        Then I am on the "What's the grid reference for the centre of the site?" page
+        Then I am on the "What is the grid reference for the centre of the site?" page
         When I enter "ST5813272695" in the "Site Grid Reference" field
         And I click on "Continue" button
-        Then I am on the "What's the postcode for the site?" page
+        Then I am on the "What is the postcode for the site?" page
         When I enter "TF3 2BS" in the "Postcode" field on the address page
         And I click on "Find Address" button
-        Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
+        Then I am on the "What is the site address?" page
+        When I click on  I can't find address in the link
+        Then I am on the "Enter the site address" page
         When I enter "221b" in the "Building Number" field on the address page
         And I enter "Baker St" in the "Address Line 1" field on the address page
         And I enter "Marylebone" in the "Address Line 2" field on the address page
@@ -1560,7 +1604,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         Then I am on the "How do you want to pay?" page
         When I select "BACS" payment method
         When I click on "Continue" button
-        Then I am on the "You’ve chosen to pay by bank transfer using Bacs" page
+        Then I am on the "You have chosen to pay by bank transfer using Bacs" page
         When I send the application
         Then I am on the "Application received" page
         And the application id is displayed

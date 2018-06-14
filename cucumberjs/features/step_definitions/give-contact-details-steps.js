@@ -52,7 +52,7 @@ module.exports = function () {
                 break;
 
             case "Secratary/directors email":
-                fieldText = await this.giveContactDetails.companySecretaryEmailField();
+                fieldText = await this.giveContactDetails.emailField();
                 await fieldText.clear();
                 await fieldText.sendKeys(text);
                 break;

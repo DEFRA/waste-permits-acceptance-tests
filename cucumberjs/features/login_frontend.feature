@@ -62,6 +62,9 @@ Feature: Login Waste Permits Frontend - For Screenshots
         And the director "1" name should be "Sebastian Douglas Leonard CLARK"
         When I enter "04" in the day field of the director "1" birthdate
         And I click on "Continue" button
+        Then I am on the "What is the email address for the Company Secretary or a director?" page
+        And I enter "URSR2015No13@gmail.com" in the "Secratary/directors email" field
+        And I click on "Continue" button
         Then I am on the "Does anyone connected with your business have a conviction for a relevant offence?" page
         Then take screenshots
         When I select "Yes" option
@@ -268,6 +271,9 @@ Feature: Login Waste Permits Frontend - For Screenshots
         And the director "1" name should be "Sebastian Douglas Leonard CLARK"
         When I enter "04" in the day field of the director "1" birthdate
         And I click on "Continue" button
+        Then I am on the "What is the email address for the Company Secretary or a director?" page
+        And I enter "URSR2015No17@gmail.com" in the "Secratary/directors email" field
+        And I click on "Continue" button
         Then I am on the "Does anyone connected with your business have a conviction for a relevant offence?" page
         Then take screenshots
         When I select "No" option
@@ -285,7 +291,7 @@ Feature: Login Waste Permits Frontend - For Screenshots
         And I enter "URLastName" in the "Last name" field
         And I enter "07777777777" in the "Telephone number" field
         And I enter "URSR2015No17@gmail.com" in the "Main contact email" field
-        And I enter "URSR2015No17@gmail.com" in the "Secratary/directors email" field
+        #And I enter "URSR2015No17@gmail.com" in the "Secratary/directors email" field
         And I click on "Continue" button
         And I am on the Task list page for <TasklistTitle>
         And Give Contact Details is marked as completed

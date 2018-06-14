@@ -1,11 +1,15 @@
 const World = require("../support/world").World;
+const Assert = require("assert");
 
 module.exports = function () {
 
     this.World = World;
 
     this.defineStep(/^I am on the "(.*?)" page$/, { timeout: 60000 }, async function (title) {
-        await this.newApplication.waitUntilLoaded(title);
+        //await this.newApplication.waitUntilLoaded(title);
+        const titleText = await this.newApplication.waitUntilLoaded(title);
+        actualtext = await this.confirmRules.getTextElement(titleText);
+        Assert.equal(actualtext, title, "Incorrect title Expected: "+title+ " Actual title is :"+ actualtext);
     });
 
     this.defineStep(/^I am on the "(.*?)" page for payment$/, { timeout: 60000 }, async function (title) {
