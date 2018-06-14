@@ -7,7 +7,7 @@ Feature: Login Waste Permits Frontend - For Screenshots
 @Martin
     Scenario Outline: As a use I should be able to apply for a waste permit for a limited company
         Given the application has been launched
-        And I am on the "Apply for a mobile plant standard rules waste permit" page
+        And I am on the "Apply for a standard rules environmental permit" page
         Then take screenshots
         And I select "Start a new application" waste permit application page
         And I click on "Continue" button
@@ -42,7 +42,7 @@ Feature: Login Waste Permits Frontend - For Screenshots
         And I am on the Task list page for <TasklistTitle>
         And Confirm you can meet the rules is marked as completed
         When I click on the "Give company details" link
-        Then I am on the "What's the UK company registration number?" page
+        Then I am on the "What is the UK company registration number?" page
         Then take screenshots
         When I enter "06919623" in the "Company number" field
         And I click on "Continue" button
@@ -57,7 +57,7 @@ Feature: Login Waste Permits Frontend - For Screenshots
         When I click on "We use a different trading name" field
         And I enter "URNew Business Trading Name" in the "Business trading name" field
         And I click on "Continue" button
-        Then I am on the "What are the directors' dates of birth?" page
+        Then I am on the "What is the director's date of birth?" page
         Then take screenshots
         And the director "1" name should be "Sebastian Douglas Leonard CLARK"
         When I enter "04" in the day field of the director "1" birthdate
@@ -95,7 +95,6 @@ Feature: Login Waste Permits Frontend - For Screenshots
         Then take screenshots
         When I enter "TF3 2BS" in the "Postcode" field on the address page
         And I click on "Find Address" button
-        Then I am on the "What's the invoice address?" page
         Then take screenshots
         When I click on  I can't find address in the link
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
@@ -154,19 +153,18 @@ Feature: Login Waste Permits Frontend - For Screenshots
         And I am on the Task list page for <TasklistTitle>
         And Confirm you have suitable vehicle storage areas is marked as completed
         When I click on the "Give site name and location" link
-        Then I am on the "What's the site name?" page
+        Then I am on the "What is the site name?" page
         Then take screenshots
         When I enter "UR SR2015 No 13 Test Site" in the "Site Name" field
         And I click on "Continue" button
-        Then I am on the "What's the grid reference for the centre of the site?" page
+        Then I am on the "What is the grid reference for the centre of the site?" page
         Then take screenshots
         When I enter "ST5813272695" in the "Site Grid Reference" field
         And I click on "Continue" button
-        Then I am on the "What's the postcode for the site?" page
+        Then I am on the "What is the postcode for the site?" page
         Then take screenshots
         When I enter "TF3 2BS" in the "Postcode" field on the address page
         And I click on "Find Address" button
-        Then I am on the "What's the site address?" page
         Then take screenshots
         When I click on  I can't find address in the link
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
@@ -223,7 +221,7 @@ Feature: Login Waste Permits Frontend - For Screenshots
 @Martin
     Scenario Outline: As a use I should be able to apply for a waste permit for a limited company
         Given the application has been launched
-        And I am on the "Apply for a mobile plant standard rules waste permit" page
+        And I am on the "Apply for a standard rules environmental permit" page
         Then take screenshots
         And I select "Start a new application" waste permit application page
         And I click on "Continue" button
@@ -255,7 +253,7 @@ Feature: Login Waste Permits Frontend - For Screenshots
         And I am on the Task list page for <TasklistTitle>
         And Confirm you can meet the rules is marked as completed
         When I click on the "Give company details" link
-        Then I am on the "What's the UK company registration number?" page
+        Then I am on the "What is the UK company registration number?" page
         Then take screenshots
         When I enter "06919623" in the "Company number" field
         And I click on "Continue" button
@@ -266,7 +264,7 @@ Feature: Login Waste Permits Frontend - For Screenshots
         And the Company name should be "UR LTD"
         And the Company address should be "25 South Road, Saffron Walden, Essex, CB11 3DG"
         And I click on "Continue" button
-        Then I am on the "What are the directors' dates of birth?" page
+        Then I am on the "What is the director's date of birth?" page
         Then take screenshots
         And the director "1" name should be "Sebastian Douglas Leonard CLARK"
         When I enter "04" in the day field of the director "1" birthdate
@@ -300,7 +298,6 @@ Feature: Login Waste Permits Frontend - For Screenshots
         Then take screenshots
         When I enter "TF3 2BS" in the "Postcode" field on the address page
         And I click on "Find Address" button
-        Then I am on the "What's the invoice address?" page
         Then take screenshots
         When I click on  I can't find address in the link
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
@@ -353,19 +350,18 @@ Feature: Login Waste Permits Frontend - For Screenshots
         And I am on the Task list page for <TasklistTitle>
         And Confirm you have suitable vehicle storage areas is marked as completed
         When I click on the "Give site name and location" link
-        Then I am on the "What's the site name?" page
+        Then I am on the "What is the site name?" page
         Then take screenshots
         When I enter "UR SR2015 No 17 Test Site" in the "Site Name" field
         And I click on "Continue" button
-        Then I am on the "What's the grid reference for the centre of the site?" page
+        Then I am on the "What is the grid reference for the centre of the site?" page
         Then take screenshots
         When I enter "ST5813272695" in the "Site Grid Reference" field
         And I click on "Continue" button
-        Then I am on the "What's the postcode for the site?" page
+        Then I am on the "What is the postcode for the site?" page
         Then take screenshots
         When I enter "TF3 2BS" in the "Postcode" field on the address page
         And I click on "Find Address" button
-        Then I am on the "What's the site address?" page
         Then take screenshots
         When I click on  I can't find address in the link
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page

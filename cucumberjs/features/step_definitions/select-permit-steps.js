@@ -5,6 +5,8 @@ const Assert = require("assert");
 let actualtext = "";
 let permitSelect;
 const fs = require('fs');
+let radioButton;
+let status;
 
 module.exports = function () {
 
@@ -107,6 +109,122 @@ module.exports = function () {
                 break;
         }
     });
+
+    //And "Start a new application" radio button default value is unchecked
+    this.defineStep(/^"(.*?)" radio button default value is "(.*?)"$/, { timeout: 60000 }, async function (button, attrib) {
+        switch (attrib) {
+            case "unchecked":
+                switch (button) {
+                    case "Start a new application":
+                        radioButton = await this.newApplication.startApplicationRadio();
+                        status = await this.selectPermit.getRadioButtonSelected(radioButton);
+                        Assert.equal(status, false, "Incorrect: Actual:" + status + " Expected:- false");
+                        break;
+                    case "Limited company":
+                        radioButton = await this.permitFor.limitedCompanyRadio();
+                        status = await this.selectPermit.getRadioButtonSelected(radioButton);
+                        Assert.equal(status, false, "Incorrect: Actual:" + status + " Expected:- false");
+                        break;
+                    case "Individual or sole trader":
+                        radioButton = await this.permitFor.individualTraderRadio();
+                        status = await this.selectPermit.getRadioButtonSelected(radioButton);
+                        Assert.equal(status, false, "Incorrect: Actual:" + status + " Expected:- false");
+                        break;
+                    case "Partnership":
+                        radioButton = await this.permitFor.partnershipRadio();
+                        status = await this.selectPermit.getRadioButtonSelected(radioButton);
+                        Assert.equal(status, false, "Incorrect: Actual:" + status + " Expected:- false");
+                        break;
+                    case "Registered charity":
+                        radioButton = await this.permitFor.registeredCharityRadio();
+                        status = await this.selectPermit.getRadioButtonSelected(radioButton);
+                        Assert.equal(status, false, "Incorrect: Actual:" + status + " Expected:- false");
+                        break;
+                    case "Limited liability partnership":
+                        radioButton = await this.permitFor.limitedLiabilityPartnershipRadio();
+                        status = await this.selectPermit.getRadioButtonSelected(radioButton);
+                        Assert.equal(status, false, "Incorrect: Actual:" + status + " Expected:- false");
+                        break;
+                    case "Other organisation, for example a clud or association":
+                        radioButton = await this.permitFor.otherOrganisationRadio();
+                        status = await this.selectPermit.getRadioButtonSelected(radioButton);
+                        Assert.equal(status, false, "Incorrect: Actual:" + status + " Expected:- false");
+                        break;
+                    case "Local authority or public body":
+                        radioButton = await this.permitFor.localAuthorityRadio();
+                        status = await this.selectPermit.getRadioButtonSelected(radioButton);
+                        Assert.equal(status, false, "Incorrect: Actual:" + status + " Expected:- false");
+                        break;
+                    case "Other organisation, for example a club or association":
+                        radioButton = await this.permitFor.otherOrganisationRadio();
+                        status = await this.selectPermit.getRadioButtonSelected(radioButton);
+                        Assert.equal(status, false, "Incorrect: Actual:" + status + " Expected:- false");
+                        break;
+                    default:
+                        Assert.fail('No button selected');
+                        break;
+                }
+                break;
+            case "checked":
+                switch (button) {
+                    case "Start a new application":
+                        radioButton = await this.newApplication.startApplicationRadio();
+                        status = await this.selectPermit.getRadioButtonSelected(radioButton);
+                        Assert.equal(status, true, "Incorrect: Actual:" + status + " Expected:- true");
+                        break;
+                    case "Limited company":
+                        radioButton = await this.permitFor.limitedCompanyRadio();
+                        status = await this.selectPermit.getRadioButtonSelected(radioButton);
+                        Assert.equal(status, true, "Incorrect: Actual:" + status + " Expected:- true");
+                        break;
+                    case "Individual or sole trader":
+                        radioButton = await this.permitFor.individualTraderRadio();
+                        status = await this.selectPermit.getRadioButtonSelected(radioButton);
+                        Assert.equal(status, true, "Incorrect: Actual:" + status + " Expected:- true");
+                        break;
+                    case "Partnership":
+                        radioButton = await this.permitFor.partnershipRadio();
+                        status = await this.selectPermit.getRadioButtonSelected(radioButton);
+                        Assert.equal(status, true, "Incorrect: Actual:" + status + " Expected:- true");
+                        break;
+                    case "Registered charity":
+                        radioButton = await this.permitFor.registeredCharityRadio();
+                        status = await this.selectPermit.getRadioButtonSelected(radioButton);
+                        Assert.equal(status, true, "Incorrect: Actual:" + status + " Expected:- true");
+                        break;
+                    case "Limited liability partnership":
+                        radioButton = await this.permitFor.limitedLiabilityPartnershipRadio();
+                        status = await this.selectPermit.getRadioButtonSelected(radioButton);
+                        Assert.equal(status, true, "Incorrect: Actual:" + status + " Expected:- true");
+                        break;
+                    case "Other organisation, for example a clud or association":
+                        radioButton = await this.permitFor.otherOrganisationRadio();
+                        status = await this.selectPermit.getRadioButtonSelected(radioButton);
+                        Assert.equal(status, true, "Incorrect: Actual:" + status + " Expected:- true");
+                        break;
+                    case "Local authority or public body":
+                        radioButton = await this.permitFor.localAuthorityRadio();
+                        status = await this.selectPermit.getRadioButtonSelected(radioButton);
+                        Assert.equal(status, true, "Incorrect: Actual:" + status + " Expected:- true");
+                        break;
+                    case "Other organisation, for example a club or association":
+                        radioButton = await this.permitFor.otherOrganisationRadio();
+                        status = await this.selectPermit.getRadioButtonSelected(radioButton);
+                        Assert.equal(status, true, "Incorrect: Actual:" + status + " Expected:- true");
+                        break;
+                    default:
+                        Assert.fail('No button selected');
+                        break;
+                }
+                break;
+            default:
+                Assert.fail("No attribute selected");
+                break;
+        }
+
+
+    });
+
 
     //I should be able to see <link> to download manual guidance
     this.defineStep(/^I should be able to see "(.*?)" to download manual guidance$/, { timeout: 60000 }, async function (link) {
@@ -366,50 +484,50 @@ module.exports = function () {
                 permitSelect = await this.selectPermit.permitSR2008No10Radio();
                 permitSelect.click();
                 break;
-                case "SR2012 No 11":
+            case "SR2012 No 11":
                 permitSelect = await this.selectPermit.permitSR2012No11Radio();
                 permitSelect.click();
                 break;
-                case "SR2012 No 9":
+            case "SR2012 No 9":
                 permitSelect = await this.selectPermit.permitSR2012No9Radio();
                 permitSelect.click();
                 break;
-                case "SR2009 No 4":
+            case "SR2009 No 4":
                 permitSelect = await this.selectPermit.permitSR2009No4Radio();
                 permitSelect.click();
                 break;
-                case "SR2012 No 4":
+            case "SR2012 No 4":
                 permitSelect = await this.selectPermit.permitSR2012No4Radio();
                 permitSelect.click();
                 break;
-                case "SR2012 No 8":
+            case "SR2012 No 8":
                 permitSelect = await this.selectPermit.permitSR2012No8Radio();
                 permitSelect.click();
                 break;
-                case "SR2009 No 3":
+            case "SR2009 No 3":
                 permitSelect = await this.selectPermit.permitSR2009No3Radio();
                 permitSelect.click();
                 break;
-                case "SR2015 No 1":
+            case "SR2015 No 1":
                 permitSelect = await this.selectPermit.permitSR2015No1Radio();
                 permitSelect.click();
                 break;
-                case "SR2014 No 2":
+            case "SR2014 No 2":
                 permitSelect = await this.selectPermit.permitSR2014No2Radio();
                 permitSelect.click();
                 break;
-                case "SR2009 No 8":
+            case "SR2009 No 8":
                 permitSelect = await this.selectPermit.permitSR2009No8Radio();
                 permitSelect.click();
                 break;
-                case "SR2009 No 2":
+            case "SR2009 No 2":
                 permitSelect = await this.selectPermit.permitSR2009No2Radio();
                 permitSelect.click();
                 break;
-                case "SR2012 No 13":
+            case "SR2012 No 13":
                 permitSelect = await this.selectPermit.permitSR2012No13Radio();
                 permitSelect.click();
-                break;    
+                break;
             default: break;
         }
     });

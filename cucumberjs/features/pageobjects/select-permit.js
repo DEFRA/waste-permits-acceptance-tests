@@ -396,6 +396,10 @@ class SelectPermit {
         return element.getText();
     }
 
+    async getRadioButtonSelected(element) {
+        return element.isSelected();
+    }
+
 }
 
 module.exports.SelectPermit = SelectPermit;
