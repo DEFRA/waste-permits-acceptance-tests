@@ -130,7 +130,7 @@ Feature: Login Waste Permits Frontend - For Screenshots
         Then take screenshots
         When I select img file to upload
         When I click on "Continue" button
-        Then I am on the "WAMITAB or EPOC: upload your evidence" page
+        Then I am on the "Upload details for all technically competent managers" page
         Then take screenshots
         When I click on "Continue" button
         Then I am on the "Upload details for all technically competent managers" page
@@ -330,7 +330,7 @@ Feature: Login Waste Permits Frontend - For Screenshots
         Then take screenshots
         When I click on "We’re getting WAMITAB or EPOC qualifications" on the Upload technical management qualifications page
         And I click on "Continue" button
-        Then I am on the "Getting a qualification: upload your evidence" page
+        Then I am on the "Upload details for all technically competent managers" page
         Then take screenshots
         When I select img file to upload
         When I click on "Continue" button
