@@ -191,7 +191,7 @@ Feature: Check cost and Processing Time
     @UserResearch
     Scenario Outline: As a user, when i select a permit which is not applicable, then I should be able to download the manual form
         Given the application has been launched
-        And I am on the "Apply for a standard rules environmental permitt" page
+        And I am on the "Apply for a standard rules environmental permit" page
         And I select "Start a new application" waste permit application page
         And I click on "Continue" button
         And I am on the "Who will be the permit holder?" page
