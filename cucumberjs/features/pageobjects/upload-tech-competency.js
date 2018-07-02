@@ -37,6 +37,10 @@ class UploadTechCompetency {
         return await this.browser.wait(until.elementLocated(By.id("file")), 5 * 20000);
     }
 
+    async uploadAnotherFile() {
+        return await this.browser.wait(until.elementLocated(By.id("is-upload-file")), 5*20000);
+    }
+
     async errorMessage() {
         return await this.browser.wait(until.elementLocated(By.id("error-summary-list")), 5 * 20000);
     }
@@ -54,7 +58,7 @@ class UploadTechCompetency {
 
         // Download to a directory and save with the original filename
         const options = {
-            url: 'https://www.iasted.org/conferences/formatting/Presentations-Tips.ppt',
+            url: 'https://www.unm.edu/~unmvclib/powerpoint/pptexamples.ppt',
             dest: __dirname                  // Save to /path/to/dest/image.jpg
         };
 
@@ -108,7 +112,7 @@ class UploadTechCompetency {
 
         //Download to a directory and save with the original filename
         const options = {
-            url: 'http://apps.who.int/iris/bitstream/10665/137592/1/roadmapsitrep_7Nov2014_eng.pdf',
+            url: 'http://www.africau.edu/images/default/sample.pdf',
             dest: __dirname                  // Save to /path/to/dest/image.jpg
         };
 

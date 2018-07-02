@@ -42,6 +42,10 @@ class GiveContactDetails {
         return this.browser.wait(until.elementLocated(By.id("error-summary")), 5 * 20000);
     }
 
+    async mainContent() {
+        return this.browser.wait(until.elementLocated(By.id("content")), 5*20000);
+    }
+
     async getTextElement(element) {
         return element.getText();
     }

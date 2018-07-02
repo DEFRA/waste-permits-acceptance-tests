@@ -2,15 +2,20 @@ const World = require("../support/world").World;
 const ks = require("node-key-sender");
 const driver = require('selenium-webdriver');
 
-
 module.exports = function () {
 
   this.World = World;
 
 
   this.defineStep(/^I should be able to see an error message "([^"]*)"$/, { timeout: 60000 }, function (message) {
-    this.uploadTechCompetency.waitUntilErrorMessageLoaded(message);
+   this.uploadTechCompetency.waitUntilErrorMessageLoaded(message);
   });
+
+  this.defineStep(/^I select another file to upload$/, { timeout: 60000 }, async function () {
+    const uploadAnother = await this.uploadTechCompetency.uploadAnotherFile();
+    await uploadAnother.click();
+   });
+
 
   this.defineStep(/^following are the options on the the technical qualifications page:$/, { timeout: 60000 }, function (table) {
     //const data = table.rowsHash();
@@ -93,7 +98,7 @@ module.exports = function () {
   });
 
 
-  this.defineStep(/^I select 40MB file to upload$/, { timeout: 60000 }, async function () {
+  this.defineStep(/^I select 40MB file to upload$/, { timeout: 20000000 }, async function () {
     const chooseFile = await this.uploadTechCompetency.chooseFile();
     await this.uploadTechCompetency.enter30MBPlusFile();
 
