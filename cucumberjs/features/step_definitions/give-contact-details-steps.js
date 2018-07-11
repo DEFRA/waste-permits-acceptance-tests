@@ -31,6 +31,20 @@ module.exports = function () {
         Assert.notEqual(value, -1, "error message found Actual:- " + actualtext + "Expected was :-" + message);
       });
 
+      this.defineStep(/^I should be able to see "([^"]*)" on the page$/, { timeout: 60000 }, async function (message) {
+        fieldText = await this.giveContactDetails.mainContent();
+        actualtext = await this.taskList.getTextElement(fieldText);
+        const value = actualtext.indexOf(message);
+        Assert.notEqual(value, -1, "error message found Actual:- " + actualtext + "Expected was :-" + message);
+      });
+
+      this.defineStep(/^I should be able to see "([^"]*)" link on the page$/, { timeout: 60000 }, async function (message) {
+        fieldText = await this.giveContactDetails.mainContent();
+        actualtext = await this.taskList.getTextElementLink(fieldText);
+        const value = actualtext.indexOf(message);
+        Assert.notEqual(value, -1, "error message found Actual:- " + actualtext + "Expected was :-" + message);
+      });
+
     this.defineStep(/^I enter "(.*?)" in the "(.*?)" field$/, { timeout: 60000 }, async function (text, field) {
         switch (field) {
             case "First name":

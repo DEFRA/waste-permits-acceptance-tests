@@ -50,6 +50,16 @@ module.exports = function () {
                 actualtext = await this.selectPermit.getTextElement(permitSR2015No17Code);
                 Assert.equal(actualtext, option);
                 break;
+            case "SR2015 No 18":
+                const permitSR2015No18Code = await this.selectPermit.permitSR2015No18Code();
+                actualtext = await this.selectPermit.getTextElement(permitSR2015No18Code);
+                Assert.equal(actualtext, option);
+                break;
+            case "SR2015 No 13":
+                const permitSR2015No13Code = await this.selectPermit.permitSR2015No13Code();
+                actualtext = await this.selectPermit.getTextElement(permitSR2015No13Code);
+                Assert.equal(actualtext, option);
+                break;
             case "SR2012 No 12":
                 const permitSR2012No12Code = await this.selectPermit.permitSR2012No12Code();
                 actualtext = await this.selectPermit.getTextElement(permitSR2012No12Code);
@@ -102,6 +112,16 @@ module.exports = function () {
             case "Anaerobic digestion facility including use of the resultant biogas (waste recovery operation)\nLess than 75,000 tonnes per year":
                 const permitSR2012No12Name = await this.selectPermit.permitSR2012No12Name();
                 actualtext = await this.selectPermit.getTextElement(permitSR2012No12Name);
+                Assert.equal(actualtext, option);
+                break;
+                case "Metal recycling, vehicle storage, depollution and dismantling facility\nLess than 25,000 tonnes a year of waste metal and less than 5,000 tonnes a year of waste motor vehicles":
+                const permitSR2015No18Name = await this.selectPermit.permitSR2015No18Name();
+                actualtext = await this.selectPermit.getTextElement(permitSR2015No18Name);
+                Assert.equal(actualtext, option);
+                break;
+                case "Vehicle storage depollution and dismantling (authorised treatment) facility\nLess than 75,000 tonnes per year":
+                const permitSR2015No13Name = await this.selectPermit.permitSR2015No13Name();
+                actualtext = await this.selectPermit.getTextElement(permitSR2015No13Name);
                 Assert.equal(actualtext, option);
                 break;
             default:

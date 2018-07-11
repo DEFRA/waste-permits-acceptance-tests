@@ -72,12 +72,28 @@ class SelectPermit {
         return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2015-no-17-name")), 5 * 20000);
     }
 
+    async permitSR2015No18Name() {
+        return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2015-no-18-name")), 5 * 20000);
+    }
+
+    async permitSR2015No13Name() {
+        return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2015-no-13-name")), 5 * 20000);
+    }
+
     async permitSR2015No17Weight() {
         return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2015-no-17-weight")), 5 * 20000);
     }
 
     async permitSR2015No17Code() {
         return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2015-no-17-code")), 5 * 20000);
+    }
+
+    async permitSR2015No18Code() {
+        return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2015-no-18-code")), 5 * 20000);
+    }
+
+    async permitSR2015No13Code() {
+        return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2015-no-13-code")), 5 * 20000);
     }
 
     //Radio

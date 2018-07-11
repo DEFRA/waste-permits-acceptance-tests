@@ -17,6 +17,17 @@ class TaskList {
         return element.getText();
     }
 
+    async getTextElementLink(element) {
+        const arr= await this.gettag(element);
+        for(var i = 0; i< arr.length; i++){
+            alert(arr[i].href);
+          }
+    }
+
+    async gettag(element) {
+        return this.browser.wait(until.elementsLocated(By.tagName("a")));
+    }
+
     async permitTypeText() {
         return this.browser.wait(until.elementLocated(By.id("standard-rule-name-and-code")), 5 * 20000);
     }
