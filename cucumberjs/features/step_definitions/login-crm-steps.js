@@ -75,7 +75,7 @@ module.exports = function () {
         await next.click();
         const pass = await this.loginCRM.inputUserPassword();
         await pass.clear();
-        await pass.sendKeys(config.appCRMPass);
+        await pass.sendKeys(password);
         const signin = await this.loginCRM.signinButton();
         await signin.click();
         const staysignin = await this.loginCRM.staySignedInNoButton();
