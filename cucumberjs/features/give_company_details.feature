@@ -2,7 +2,7 @@ Feature: WE-578 GIVE COMPANY DETAILS PAGE
 
     Background:
         Given the application has been launched
-        And I am on the "Apply for a mobile plant standard rules waste permit" page
+        And I am on the "Apply for a standard rules environmental permit" page
          And I select "Start a new application" waste permit application page
         And I click on "Continue" button
         And I am on the "Who will be the permit holder?" page
@@ -21,66 +21,63 @@ Feature: WE-578 GIVE COMPANY DETAILS PAGE
     @tablet
     Scenario: As a user, I should be able to fill in company details for the application with declarations
         When I click on the "Give company details" link
-        Then I am on the "What's the UK company registration number?" page
-        When I enter "05684641" in the "Company number" field
+        Then I am on the "What is the UK company registration number?" page
+        When I enter "06919623" in the "Company number" field
         And I click on "Continue" button
         Then I am on the "Is this the right company?" page
-        And the Company number should be "05684641"
+        And the Company number should be "06919623"
         And I should be able to see "Enter a different number" link
-        And the Company name should be "ATIDEA DESIGNS LIMITED"
-        And the Company address should be "Suite 1, Unit A1 Tectonic Place, Holyport Road, Maidenhead, Berkshire, SL6 2YE"
+        And the Company name should be "UR LTD"
+        And the Company address should be "25 South Road, Saffron Walden, Essex, CB11 3DG"
         And I should be able to see "That’s not our registered office address" link
         And I should be able to see "We use a different trading name" field
         When I click on "We use a different trading name" field
-        And I enter "New Business Trading Name" in the "Business trading name" field
+        And I enter "URNew Business Trading Name" in the "Business trading name" field
         And I click on "Continue" button
-        Then I am on the "What are the directors' dates of birth?" page
-        And the director "1" name should be "Janni DANIELSEN"
-        And the director "2" name should be "Hugo HERRERA"
-        And the director "1" month and year of birth should be "May 1978"
-        And the director "2" month and year of birth should be "November 1976"
+        Then I am on the "What is the director's date of birth?" page
+        And the director "1" name should be "Sebastian Douglas Leonard CLARK"
         When I enter "04" in the day field of the director "1" birthdate
-        When I enter "04" in the day field of the director "2" birthdate
+        And I click on "Continue" button
+        Then I am on the "What is the email address for the Company Secretary or a director?" page
+        And I enter "URSR2015No13@gmail.com" in the "Secratary/directors email" field
         And I click on "Continue" button
         Then I am on the "Does anyone connected with your business have a conviction for a relevant offence?" page
         When I select "Yes" option
         Then Declaration text area should be displayed
-        When I enter "My declaration" in the Declaration text
+        When I enter "UR SR2015 No 13 My declaration" in the Declaration text
         And I click on "Continue" button
         Then I am on the "Do you have current or past bankruptcy or insolvency proceedings to declare?" page
         When I select "Yes" option
         Then Declaration text area should be displayed
-        When I enter "My declaration" in the Declaration text
+        When I enter "UR SR2015 No 13 My declaration" in the Declaration text
         And I click on "Continue" button
         And I am on the Task list page for "Mobile plant for land-spreading - SR2010 No 4"
         And Give Company Details is marked as completed
-
 
     @desktop
     @phone
     @tablet
     Scenario: As a user, I should be able to fill in company details for the application without declarations and different company name
         When I click on the "Give company details" link
-        Then I am on the "What's the UK company registration number?" page
-        When I enter "05684641" in the "Company number" field
+        Then I am on the "What is the UK company registration number?" page
+        When I enter "06919623" in the "Company number" field
         And I click on "Continue" button
         Then I am on the "Is this the right company?" page
-        And the Company number should be "05684641"
+        And the Company number should be "06919623"
         And I should be able to see "Enter a different number" link
-        And the Company name should be "ATIDEA DESIGNS LIMITED"
-        And the Company address should be "Suite 1, Unit A1 Tectonic Place, Holyport Road, Maidenhead, Berkshire, SL6 2YE"
+        And the Company name should be "UR LTD"
+        And the Company address should be "25 South Road, Saffron Walden, Essex, CB11 3DG"
         And I should be able to see "That’s not our registered office address" link
         And I should be able to see "We use a different trading name" field
         When I click on "We use a different trading name" field
-        And I enter "New Business Trading Name" in the "Business trading name" field
+        And I enter "URNew Business Trading Name" in the "Business trading name" field
         And I click on "Continue" button
-        Then I am on the "What are the directors' dates of birth?" page
-        And the director "1" name should be "Janni DANIELSEN"
-        And the director "2" name should be "Hugo HERRERA"
-        And the director "1" month and year of birth should be "May 1978"
-        And the director "2" month and year of birth should be "November 1976"
+        Then I am on the "What is the director's date of birth?" page
+        And the director "1" name should be "Sebastian Douglas Leonard CLARK"
         When I enter "04" in the day field of the director "1" birthdate
-        When I enter "04" in the day field of the director "2" birthdate
+        And I click on "Continue" button
+        Then I am on the "What is the email address for the Company Secretary or a director?" page
+        And I enter "URSR2015No13@gmail.com" in the "Secratary/directors email" field
         And I click on "Continue" button
         Then I am on the "Does anyone connected with your business have a conviction for a relevant offence?" page
         When I select "No" option
@@ -96,7 +93,7 @@ Feature: WE-578 GIVE COMPANY DETAILS PAGE
     @tablet
     Scenario: As a user, I should be able to change the company
         When I click on the "Give company details" link
-        Then I am on the "What's the UK company registration number?" page
+        Then I am on the "What is the UK company registration number?" page
         When I click on "Continue" button
         And I should be able to see error "Enter a company registration number"
         When I enter "11" in the "Company number" field
@@ -110,7 +107,7 @@ Feature: WE-578 GIVE COMPANY DETAILS PAGE
         And the Company address should be "Brunel House 340 Firecrest Court, Centre Park, Warrington, Cheshire, WA1 1RG"
         And I should be able to see "Enter a different number" link
         When I click on "Enter a different number" link
-        Then I am on the "What's the UK company registration number?" page
+        Then I am on the "What is the UK company registration number?" page
         When I enter "05684641" in the "Company number" field
         And I click on "Continue" button
         Then I am on the "Is this the right company?" page
