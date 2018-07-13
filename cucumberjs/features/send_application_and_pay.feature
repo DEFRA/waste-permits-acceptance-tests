@@ -80,6 +80,7 @@ Feature: END TO END REGRESSION TEST
         And I click on "Continue" button
         And I am on the Task list page for <TasklistTitle>
         And Give Contact Details is marked as completed
+        ## invoice address ####
         When I click on the "Give invoicing details" link
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         When I enter "BS10 6DS" in the "Postcode" field on the address page
