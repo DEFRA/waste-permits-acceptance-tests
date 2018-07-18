@@ -1,14 +1,8 @@
 const webdriver = require("selenium-webdriver");
 const By = webdriver.By;
-const until = webdriver.until;
+const until = webdriver.until;const PageObject = require("./page-object").PageObject;
 
-class GiveContactDetails {
-
-    constructor(browser, testdata) {
-        this.browser = browser;
-        this.testdata = testdata;
-    }
-
+class GiveContactDetails extends PageObject {
 
     async firstNameField() {
         return this.browser.wait(until.elementLocated(By.id("first-name")), 5 * 20000);
@@ -42,13 +36,6 @@ class GiveContactDetails {
         return this.browser.wait(until.elementLocated(By.id("error-summary")), 5 * 20000);
     }
 
-    async mainContent() {
-        return this.browser.wait(until.elementLocated(By.id("content")), 5*20000);
-    }
-
-    getTextElement(element) {
-        return element.getText();
-    }
 }
 
 module.exports.GiveContactDetails = GiveContactDetails;

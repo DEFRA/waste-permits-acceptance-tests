@@ -9,17 +9,19 @@ const assetsJson = jsel(json1);
 let params;
 
 module.exports.World = function World(parameters) {
-	
+
 	params = parameters;
 
-	console.log("PARAM" +JSON.stringify(parameters));
+	console.log("PARAM" + JSON.stringify(parameters));
 	const browser = driver.getBrowser(parameters);
 	this.testdata = new TestData(assetsJson);
 	this.pageFactory = new Factory(browser, this.testdata);
 	this.newApplication = this.pageFactory.create("newapplication");
 	this.selectPermit = this.pageFactory.create("selectpermit");
 	this.selectPayment = this.pageFactory.create("selectpayment");
+	this.saveApplication = this.pageFactory.create("saveapplication");
 	this.taskList = this.pageFactory.create("tasklist");
+	this.checkCost = this.pageFactory.create("checkcost");
 	this.loginCRM = this.pageFactory.create("logincrm");
 	this.confirmRules = this.pageFactory.create("confirmrules");
 	this.giveContactDetails = this.pageFactory.create("givecontactdetails");
@@ -29,8 +31,11 @@ module.exports.World = function World(parameters) {
 	this.confirmConfidentiality = this.pageFactory.create("confirmConfidentiality");
 	this.giveSiteNameLocation = this.pageFactory.create("givesitenamelocation");
 	this.permitFor = this.pageFactory.create("permitfor");
+	this.permitHolderDetails = this.pageFactory.create("permitholderdetails");
+    this.wasteRecoveryPlan = this.pageFactory.create("wasterecoveryplan");
+    this.firePreventionPlan = this.pageFactory.create("firepreventionplan");
 	this.confirmSuitableStorageArea = this.pageFactory.create("confirmsuitablestoragearea");
-	
+
 	this.parameters = parameters;
 
 	// Create page objects
@@ -39,7 +44,6 @@ module.exports.World = function World(parameters) {
 
 	// Config injection
 	this.appConfiguration = new AppConfiguration(browser);
-
 
 };
 

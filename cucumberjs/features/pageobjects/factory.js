@@ -2,11 +2,13 @@ const Application = require("./application").Application;
 const NewApplication = require("./new-application").NewApplication;
 const SelectPermit = require("./select-permit").SelectPermit;
 const SelectPayment = require("./select-payment").SelectPayment;
+const SaveApplication = require("./save-application").SaveApplication;
 const TaskList = require("./task-list").TaskList;
 const UploadTechCompetency = require("./upload-tech-competency").UploadTechCompetency;
 const LoginCRM = require("./login-crm").LoginCRM;
 const Fakes = require("./fakes").Fakes;
 const ConfirmRules = require("./confirm-meet-the-rules").ConfirmRules;
+const CheckCost = require("./check-cost").CheckCost;
 const GiveContactDetails = require("./give-contact-details").GiveContactDetails;
 const GiveCompanyDetails = require("./give-company-details").GiveCompanyDetails;
 const GiveInvoicingDetails = require("./give-invoicing-details").GiveInvoicingDetails;
@@ -14,7 +16,9 @@ const GiveSiteNameLocation = require("./give-site-name-location").GiveSiteNameLo
 const ConfirmConfidentiality = require("./confirm-confidentiality-needs").ConfirmConfidentiality;
 const ConfirmSuitableStorageArea = require("./confirm-suitable-storage-area").ConfirmSuitableStorageArea;
 const PermitFor = require("./permit-for").PermitFor;
-
+const PermitHolderDetails = require("./permit-holder-details").PermitHolderDetails;
+const FirePreventionPlan = require("./fire-prevention-plan").FirePreventionPlan;
+const WasteRecoveryPlan = require("./waste-recovery-plan").WasteRecoveryPlan;
 
 class Factory {
 
@@ -27,8 +31,10 @@ class Factory {
 			uploadtechcompetency: UploadTechCompetency,
 			selectpermit: SelectPermit,
 			selectpayment: SelectPayment,
+			saveapplication: SaveApplication,
 			tasklist: TaskList,
 			confirmrules: ConfirmRules,
+			checkcost: CheckCost,
 			logincrm: LoginCRM,
 			fakes: Fakes,
 			givecontactdetails: GiveContactDetails,
@@ -37,7 +43,10 @@ class Factory {
 			giveinvoicingdetails: GiveInvoicingDetails,
 			confirmConfidentiality: ConfirmConfidentiality,
 			confirmsuitablestoragearea: ConfirmSuitableStorageArea,
-			permitfor: PermitFor
+			permitfor: PermitFor,
+			permitholderdetails: PermitHolderDetails,
+			wasterecoveryplan: WasteRecoveryPlan,
+			firepreventionplan: FirePreventionPlan
 
 		};
 	}

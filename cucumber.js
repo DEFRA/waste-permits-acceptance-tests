@@ -3,6 +3,7 @@ module.exports = {
 	"chrome-phone-dev": "--tags @phone --world-parameters " + JSON.stringify({ platform: "chrome-phone-dev", width: 520, height: 920 }),
 	"chrome-desktop-dev": "--tags @desktop --world-parameters " + JSON.stringify({ platform: "chrome-desktop-dev", width: 1800, height: 1180 }),
 	"chrome-desktop-test": "--tags @desktop --world-parameters " + JSON.stringify({ platform: "chrome-desktop-test", width: 1070, height: 1180 }),
+	"chrome-desktop-test-ben": "--tags @Ben --world-parameters " + JSON.stringify({ platform: "chrome-desktop-test", width: 1070, height: 1180 }),
 	"chrome-desktop-test-martin": "--tags @Martin --world-parameters " + JSON.stringify({ platform: "chrome-desktop-test", width: 1020, height: 1180 }),
 	"chrome-phone-test-martin": "--tags @Martin --world-parameters " + JSON.stringify({ platform: "chrome-phone-test", width: 520, height: 920 }),
 	"chrome-tablet-test-martin": "--tags @Martin --world-parameters " + JSON.stringify({ platform: "chrome-tablet-test", width: 520, height: 920 }),

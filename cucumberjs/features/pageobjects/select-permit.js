@@ -1,13 +1,9 @@
 const webdriver = require("selenium-webdriver");
 const By = webdriver.By;
 const until = webdriver.until;
+const PageObject = require("./page-object").PageObject;
 
-class SelectPermit {
-
-    constructor(browser, testdata) {
-        this.browser = browser;
-        this.testdata = testdata;
-    }
+class SelectPermit extends PageObject {
 
     async permitSR2010No4Radio() {
         return this.browser.wait(until.elementLocated(By.id("chosen-permit-sr2010-no-4-input")), 5 * 20000);

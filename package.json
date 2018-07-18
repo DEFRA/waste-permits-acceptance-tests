@@ -48,6 +48,7 @@
     "start": "node echoargs.js $*",
     "test:chrome-desktop-dev": "node node_modules/cucumber/bin/cucumber.js cucumberjs/features/ -p chrome-desktop-dev -f json:cucumberjs/features/reports/cucumber_report_desktop.json",
     "test:chrome-desktop-test": "node node_modules/cucumber/bin/cucumber.js cucumberjs/features/ -p chrome-desktop-test -f json:cucumberjs/features/reports/cucumber_report_desktop.json",
+    "test:chrome-desktop-test-ben": "node node_modules/cucumber/bin/cucumber.js cucumberjs/features/ -p chrome-desktop-test-ben -f json:cucumberjs/features/reports/cucumber_report_desktop.json",
     "test:chrome-desktop-test-martin": "node node_modules/cucumber/bin/cucumber.js cucumberjs/features/ -p chrome-desktop-test-martin -f json:cucumberjs/features/reports/cucumber_report_desktop.json",
     "test:chrome-phone-test-martin": "node node_modules/cucumber/bin/cucumber.js cucumberjs/features/ -p chrome-phone-test-martin -f json:cucumberjs/features/reports/cucumber_report_desktop.json",
     "test:chrome-tablet-test-martin": "node node_modules/cucumber/bin/cucumber.js cucumberjs/features/ -p chrome-tablet-test-martin -f json:cucumberjs/features/reports/cucumber_report_desktop.json",
@@ -67,6 +68,7 @@
     "local": "CONFIG_FILE=local ./node_modules/cucumber/bin/cucumber.js cucumberjs/features"
   },
   "dependencies": {
-    "browserstack-local": "^1.0.0"
+    "browserstack-local": "^1.0.0",
+    "lodash": "^4.17.10"
   }
 }

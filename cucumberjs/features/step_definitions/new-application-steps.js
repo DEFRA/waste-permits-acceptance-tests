@@ -8,7 +8,7 @@ module.exports = function () {
     this.defineStep(/^I am on the "(.*?)" page$/, { timeout: 4000000 }, async function (title) {
         //await this.newApplication.waitUntilLoaded(title);
         const titleText = await this.newApplication.waitUntilLoaded(title);
-        actualtext = await this.confirmRules.getTextElement(titleText);
+        actualtext = await this.newApplication.getTextElement(titleText);
         Assert.equal(actualtext, title, "Incorrect title Expected: "+title+ " Actual title is :"+ actualtext);
     });
 
