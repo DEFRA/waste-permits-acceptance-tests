@@ -6,7 +6,7 @@ module.exports = function () {
     this.World = World;
 
     //I select "Dummy category" option for pemit
-    this.defineStep(/^I select "(.*?)" option for pemit$/, { timeout: 60000 }, async function (option) {
+    this.defineStep(/^I select "(.*?)" option for pemit$/, { timeout: 2000000 }, async function (option) {
         switch (option) {
             case "Limited Company":
                 radioButton = await this.permitFor.limitedCompanyRadio();

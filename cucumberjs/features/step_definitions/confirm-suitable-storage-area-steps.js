@@ -7,7 +7,7 @@ module.exports = function () {
 
     this.World = World;
 
-    this.defineStep(/^I click on "(.*?)" button on the Confirm vehicle storage area$/, { timeout: 60000 }, async function (button) {
+    this.defineStep(/^I click on "(.*?)" button on the Confirm vehicle storage area$/, { timeout: 2000000 }, async function (button) {
         switch (button) {
             case "Sewer":
                 button_select = await this.confirmSuitableStorageArea.sewerRadio();

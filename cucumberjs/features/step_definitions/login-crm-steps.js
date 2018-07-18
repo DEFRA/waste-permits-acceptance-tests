@@ -6,37 +6,37 @@ module.exports = function () {
 
     this.World = World;
 
-    this.defineStep(/^I am on the CRM login page$/, { timeout: 60000 }, async function () {
+    this.defineStep(/^I am on the CRM login page$/, { timeout: 2000000 }, async function () {
         await this.loginCRM.waitUntilLoaded();
     });
 
-    this.defineStep(/^I click on LP tab$/, { timeout: 60000 }, async function () {
+    this.defineStep(/^I click on LP tab$/, { timeout: 2000000 }, async function () {
         const lp = await this.loginCRM.lpTab();
         await lp.click();
     });
 
 
-    this.defineStep(/^I click on the New Application button$/, { timeout: 60000 }, async function () {
+    this.defineStep(/^I click on the New Application button$/, { timeout: 2000000 }, async function () {
         const newapp = await this.loginCRM.newApplication();
         await newapp.click();
     });
 
     //Amruta Bendre EA-LP-CRM-QA
-    this.defineStep(/^I am logged in to CRM as "(.*?)"$/, { timeout: 60000 }, async function (user) {
+    this.defineStep(/^I am logged in to CRM as "(.*?)"$/, { timeout: 2000000 }, async function (user) {
         await this.loginCRM.userName(user);
     });
 
-    this.defineStep(/^I select "(.*?)" from the LP menu$/, { timeout: 60000 }, async function (user) {
+    this.defineStep(/^I select "(.*?)" from the LP menu$/, { timeout: 2000000 }, async function (user) {
         const appln = await this.loginCRM.applicationLP();
         await appln.click();
     });
 
 
-    this.defineStep(/^I am on the Applications page$/, { timeout: 60000 }, async function () {
+    this.defineStep(/^I am on the Applications page$/, { timeout: 2000000 }, async function () {
         await this.loginCRM.applicationsMenu();
     });
 
-    this.defineStep(/^I search for "(.*?)" application$/, { timeout: 60000 }, async function (appno) {
+    this.defineStep(/^I search for "(.*?)" application$/, { timeout: 2000000 }, async function (appno) {
         const app1 =  await this.loginCRM.clickSearch();
         await app1.click();
         const app2 =  await this.loginCRM.enterSearch();
@@ -50,11 +50,11 @@ module.exports = function () {
 
     });
 
-    this.defineStep(/^I am on the New Applications page$/, { timeout: 60000 }, async function () {
+    this.defineStep(/^I am on the New Applications page$/, { timeout: 2000000 }, async function () {
         await this.loginCRM.newapplicationTitle();
     });
 
-    this.defineStep(/^I enter "(.*?)" in the customer id field$/, { timeout: 60000 }, async function (cust) {
+    this.defineStep(/^I enter "(.*?)" in the customer id field$/, { timeout: 2000000 }, async function (cust) {
         // const formNav = await this.loginCRM.formNavigation();
         // await formNav.click();
         // const applnsel = await this.loginCRM.selectCust();
@@ -67,7 +67,7 @@ module.exports = function () {
 
 
     //And I login as "amruta.bendre@defradev.onmicrosoft.com" password "W@stPermits1"
-    this.defineStep(/^I login as "(.*?)" password "(.*?)"$/, { timeout: 60000 }, async function (username, password) {
+    this.defineStep(/^I login as "(.*?)" password "(.*?)"$/, { timeout: 2000000 }, async function (username, password) {
         const name = await this.loginCRM.inputUserName();
         await name.clear();
         await name.sendKeys(username);

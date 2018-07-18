@@ -8,19 +8,19 @@ module.exports = function () {
 
   this.World = World;
 
-  this.defineStep(/^I click on "(.*?)" button on the Confirm you meet the rules page$/, { timeout: 60000 }, async function (button) {
+  this.defineStep(/^I click on "(.*?)" button on the Confirm you meet the rules page$/, { timeout: 2000000 }, async function (button) {
     const confirmButton = await this.confirmRules.operationMeetsRulesButton();
     await confirmButton.click();
   });
 
   //When I enter "Eadyn365test@gmail.com" in the email
-  this.defineStep(/^I enter "([^"]*)" in the email$/, { timeout: 60000 }, async function (emailid) {
+  this.defineStep(/^I enter "([^"]*)" in the email$/, { timeout: 2000000 }, async function (emailid) {
     const email = await this.confirmRules.emailaddr();
     await email.sendKeys(emailid);
   });
 
   //And the cost to apply is "3,926"
-  this.defineStep(/^the cost to apply is "([^"]*)"$/, { timeout: 60000 }, async function (cost) {
+  this.defineStep(/^the cost to apply is "([^"]*)"$/, { timeout: 2000000 }, async function (cost) {
     fieldText = await this.confirmRules.cost();
     actualtext = await this.confirmRules.getTextElement(fieldText);
     Assert.equal(actualtext, cost, "Incorrect Expected cost: "+cost+ " Actual cost is :"+ actualtext);
@@ -28,7 +28,7 @@ module.exports = function () {
 
 
   //And the time to wait is "up to 13 weeks"
-  this.defineStep(/^the time to wait is "([^"]*)"$/, { timeout: 60000 }, async function (time) {
+  this.defineStep(/^the time to wait is "([^"]*)"$/, { timeout: 2000000 }, async function (time) {
     fieldText = await this.confirmRules.timeForApplication();
     actualtext = await this.confirmRules.getTextElement(fieldText);
     Assert.equal(actualtext, time, "Incorrect time");

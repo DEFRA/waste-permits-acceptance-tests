@@ -13,7 +13,7 @@ module.exports = function () {
     this.World = World;
 
 
-    this.defineStep(/^I should be able to see "(.*?)" Permit$/, { timeout: 60000 }, async function (option) {
+    this.defineStep(/^I should be able to see "(.*?)" Permit$/, { timeout: 2000000 }, async function (option) {
         switch (option) {
             case "SR2010 No 4":
                 const permitSR2010No4Code = await this.selectPermit.permitSR2010No4Code();
@@ -72,7 +72,7 @@ module.exports = function () {
     });
 
 
-    this.defineStep(/^the title of the permit should be "([^"]*)"$/, { timeout: 60000 }, async function (option) {
+    this.defineStep(/^the title of the permit should be "([^"]*)"$/, { timeout: 2000000 }, async function (option) {
         switch (option) {
             case "Mobile plant for land-spreading\nSpreading waste for agricultural or ecological benefit - up to 10 waste types with 50 hectares per deployment":
                 const permitSR2010No4Name = await this.selectPermit.permitSR2010No4Name();
@@ -131,7 +131,7 @@ module.exports = function () {
     });
 
     //And "Start a new application" radio button default value is unchecked
-    this.defineStep(/^"(.*?)" radio button default value is "(.*?)"$/, { timeout: 60000 }, async function (button, attrib) {
+    this.defineStep(/^"(.*?)" radio button default value is "(.*?)"$/, { timeout: 2000000 }, async function (button, attrib) {
         switch (attrib) {
             case "unchecked":
                 switch (button) {
@@ -247,35 +247,35 @@ module.exports = function () {
 
 
     //I should be able to see <link> to download manual guidance
-    this.defineStep(/^I should be able to see "(.*?)" to download manual guidance$/, { timeout: 60000 }, async function (link) {
+    this.defineStep(/^I should be able to see "(.*?)" to download manual guidance$/, { timeout: 2000000 }, async function (link) {
         const linkurl = await this.selectPermit.manualPermitLink();
         const urlhref = await this.selectPermit.elementHrefAttribute(linkurl);
         actualtext = await this.selectPermit.getTextElement(linkurl);
         Assert.equal(link, urlhref, "Incorrect: expected: " + urlhref + " Expected:- " + link);
     });
 
-    this.defineStep(/^I should be able to see "(.*?)" to download manual guidance for Radioactive substances for non-nuclear sites$/, { timeout: 60000 }, async function (link) {
+    this.defineStep(/^I should be able to see "(.*?)" to download manual guidance for Radioactive substances for non-nuclear sites$/, { timeout: 2000000 }, async function (link) {
         const linkurl = await this.selectPermit.radioActiveLink();
         const urlhref = await this.selectPermit.elementHrefAttribute(linkurl);
         actualtext = await this.selectPermit.getTextElement(linkurl);
         Assert.equal(link, urlhref, "Incorrect: expected: " + urlhref + " Expected:- " + link);
     });
 
-    this.defineStep(/^I should be able to see "(.*?)" to download manual guidance for flood risk activities$/, { timeout: 60000 }, async function (link) {
+    this.defineStep(/^I should be able to see "(.*?)" to download manual guidance for flood risk activities$/, { timeout: 2000000 }, async function (link) {
         const linkurl = await this.selectPermit.floodRiskLink();
         const urlhref = await this.selectPermit.elementHrefAttribute(linkurl);
         actualtext = await this.selectPermit.getTextElement(linkurl);
         Assert.equal(link, urlhref, "Incorrect: expected: " + urlhref + " Expected:- " + link);
     });
 
-    this.defineStep(/^I should be able to see "(.*?)" to download manual guidance for water discharges$/, { timeout: 60000 }, async function (link) {
+    this.defineStep(/^I should be able to see "(.*?)" to download manual guidance for water discharges$/, { timeout: 2000000 }, async function (link) {
         const linkurl = await this.selectPermit.waterLink();
         const urlhref = await this.selectPermit.elementHrefAttribute(linkurl);
         actualtext = await this.selectPermit.getTextElement(linkurl);
         Assert.equal(link, urlhref, "Incorrect: expected: " + urlhref + " Expected:- " + link);
     });
 
-    this.defineStep(/^I click on "(.*?)" link on the permit page$/, { timeout: 60000 }, async function (link) {
+    this.defineStep(/^I click on "(.*?)" link on the permit page$/, { timeout: 2000000 }, async function (link) {
         switch (link) {
             case "Change your selection":
                 permitSelect = await this.selectPermit.changeSelectionLink();
@@ -285,7 +285,7 @@ module.exports = function () {
         }
     });
 
-    this.defineStep(/^I select a permit "(.*?)"$/, { timeout: 60000 }, async function (option) {
+    this.defineStep(/^I select a permit "(.*?)"$/, { timeout: 2000000 }, async function (option) {
         fs.appendFile('Application_Numbers.txt', '\n', function (err) {
             if (err) throw err;
         });

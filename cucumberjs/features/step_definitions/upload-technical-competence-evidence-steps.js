@@ -7,17 +7,17 @@ module.exports = function () {
   this.World = World;
 
 
-  this.defineStep(/^I should be able to see an error message "([^"]*)"$/, { timeout: 60000 }, function (message) {
+  this.defineStep(/^I should be able to see an error message "([^"]*)"$/, { timeout: 2000000 }, function (message) {
    this.uploadTechCompetency.waitUntilErrorMessageLoaded(message);
   });
 
-  this.defineStep(/^I select another file to upload$/, { timeout: 60000 }, async function () {
+  this.defineStep(/^I select another file to upload$/, { timeout: 2000000 }, async function () {
     const uploadAnother = await this.uploadTechCompetency.uploadAnotherFile();
     await uploadAnother.click();
    });
 
 
-  this.defineStep(/^following are the options on the the technical qualifications page:$/, { timeout: 60000 }, function (table) {
+  this.defineStep(/^following are the options on the the technical qualifications page:$/, { timeout: 2000000 }, function (table) {
     //const data = table.rowsHash();
     let list = table.rows();
     list.forEach(([element]) => {
@@ -42,7 +42,7 @@ module.exports = function () {
   });
 
   // When 
-  this.defineStep(/^I click on "(.*?)" on the Upload technical management qualifications page$/, { timeout: 60000 }, async function (option) {
+  this.defineStep(/^I click on "(.*?)" on the Upload technical management qualifications page$/, { timeout: 2000000 }, async function (option) {
     let link;
     switch (option) {
       case "WAMITAB or EPOC qualification":
@@ -68,30 +68,30 @@ module.exports = function () {
 
   });
 
-  this.defineStep(/^I click back$/, { timeout: 60000 }, async function () {
+  this.defineStep(/^I click back$/, { timeout: 2000000 }, async function () {
     const backlink = await this.uploadTechCompetency.backLink();
     await backlink.click();
   });
 
-  this.defineStep(/^I select img file to upload$/, { timeout: 60000 }, async function () {
+  this.defineStep(/^I select img file to upload$/, { timeout: 2000000 }, async function () {
     const chooseFile = await this.uploadTechCompetency.chooseFile();
     await this.uploadTechCompetency.enterJPGFile();
 
   });
 
-  this.defineStep(/^I select pdf file to upload$/, { timeout: 60000 }, async function () {
+  this.defineStep(/^I select pdf file to upload$/, { timeout: 2000000 }, async function () {
     const chooseFile = await this.uploadTechCompetency.chooseFile();
     await this.uploadTechCompetency.enterPDFFile();
 
   });
 
-  this.defineStep(/^I select doc file to upload$/, { timeout: 60000 }, async function () {
+  this.defineStep(/^I select doc file to upload$/, { timeout: 2000000 }, async function () {
     const chooseFile = await this.uploadTechCompetency.chooseFile();
     await this.uploadTechCompetency.enterDOCFile();
 
   });
 
-  this.defineStep(/^I select ppt file to upload$/, { timeout: 60000 }, async function () {
+  this.defineStep(/^I select ppt file to upload$/, { timeout: 2000000 }, async function () {
     const chooseFile = await this.uploadTechCompetency.chooseFile();
     await this.uploadTechCompetency.enterPPTFile();
 
@@ -104,7 +104,7 @@ module.exports = function () {
 
   });
 
-  this.defineStep(/^I click on Upload chosen file$/, { timeout: 60000 }, async function () {
+  this.defineStep(/^I click on Upload chosen file$/, { timeout: 2000000 }, async function () {
     const uploadChosenFile = await this.uploadTechCompetency.uploadChosenFile();
     //await uploadChosenFile.click();
   });

@@ -9,7 +9,7 @@ module.exports = function () {
 
     this.World = World;
 
-    this.defineStep(/^I should be able to see error "(.*?)"$/, { timeout: 60000 }, async function (errorText) {
+    this.defineStep(/^I should be able to see error "(.*?)"$/, { timeout: 20000000 }, async function (errorText) {
         fieldText = await this.giveContactDetails.errorSummaryField();
         actualtext = await this.taskList.getTextElement(fieldText);
         const value = actualtext.indexOf(errorText);
@@ -17,42 +17,42 @@ module.exports = function () {
     });
 
 
-    this.defineStep(/^I should not be able to see error "(.*?)"$/, { timeout: 60000 }, async function (errorText) {
+    this.defineStep(/^I should not be able to see error "(.*?)"$/, { timeout: 20000000 }, async function (errorText) {
         fieldText = await this.giveContactDetails.errorSummaryField();
         actualtext = await this.taskList.getTextElement(fieldText);
         const value = actualtext.indexOf(errorText);
         Assert.notEqual(value, 0, "error message found Actual:- " + actualtext + "Expected was :-" + errorText);
     });
 
-    this.defineStep(/^I should be able to see text:"([^"]*)"$/, { timeout: 60000 }, async function (message) {
+    this.defineStep(/^I should be able to see text:"([^"]*)"$/, { timeout: 20000000 }, async function (message) {
         fieldText = await this.giveContactDetails.mainContent();
         actualtext = await this.taskList.getTextElement(fieldText);
         const value = actualtext.indexOf(message);
         Assert.notEqual(value, -1, "error message found Actual:- " + actualtext + "Expected was :-" + message);
       });
 
-      this.defineStep(/^I should not be able to see text:"([^"]*)"$/, { timeout: 60000 }, async function (message) {
+      this.defineStep(/^I should not be able to see text:"([^"]*)"$/, { timeout: 20000000 }, async function (message) {
         fieldText = await this.giveContactDetails.mainContent();
         actualtext = await this.taskList.getTextElement(fieldText);
         const value = actualtext.indexOf(message);
         Assert.notEqual(value, 0, "error message found Actual:- " + actualtext + "Expected was :-" + message);
       });
 
-      this.defineStep(/^I should be able to see "([^"]*)" on the page$/, { timeout: 60000 }, async function (message) {
+      this.defineStep(/^I should be able to see "([^"]*)" on the page$/, { timeout: 20000000 }, async function (message) {
         fieldText = await this.giveContactDetails.mainContent();
         actualtext = await this.taskList.getTextElement(fieldText);
         const value = actualtext.indexOf(message);
         Assert.notEqual(value, -1, "error message found Actual:- " + actualtext + "Expected was :-" + message);
       });
 
-      this.defineStep(/^I should be able to see "([^"]*)" link on the page$/, { timeout: 60000 }, async function (message) {
+      this.defineStep(/^I should be able to see "([^"]*)" link on the page$/, { timeout: 20000000 }, async function (message) {
         fieldText = await this.giveContactDetails.mainContent();
         actualtext = await this.taskList.getTextElementLink(fieldText);
         const value = actualtext.indexOf(message);
         Assert.notEqual(value, -1, "error message found Actual:- " + actualtext + "Expected was :-" + message);
       });
 
-    this.defineStep(/^I enter "(.*?)" in the "(.*?)" field$/, { timeout: 60000 }, async function (text, field) {
+    this.defineStep(/^I enter "(.*?)" in the "(.*?)" field$/, { timeout: 20000000 }, async function (text, field) {
         switch (field) {
             case "First name":
                 fieldText = await this.giveContactDetails.firstNameField();

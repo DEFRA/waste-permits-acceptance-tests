@@ -6,65 +6,69 @@ module.exports = function () {
 
     this.World = World;
 
-    this.defineStep(/^I am on the Task list page$/, { timeout: 60000 }, async function () {
+    this.defineStep(/^I am on the Task list page$/, { timeout: 2000000 }, async function () {
         await this.taskList.waitUntilLoaded();
     });
 
 
-    this.defineStep(/^Upload documents is marked as completed$/, { timeout: 60000 }, async function () {
+    this.defineStep(/^Upload documents is marked as completed$/, { timeout: 2000000 }, async function () {
         await this.taskList.uploadCompleted();
     });
 
-    this.defineStep(/^Confirm you have suitable vehicle storage areas is marked as completed$/, { timeout: 60000 }, async function () {
+    this.defineStep(/^Confirm you have suitable vehicle storage areas is marked as completed$/, { timeout: 2000000 }, async function () {
         await this.taskList.confirmDrainageCompleted();
     });
 
     //
-    this.defineStep(/^Check costs and processing time is marked as completed$/, { timeout: 60000 }, async function () {
+    this.defineStep(/^Check costs and processing time is marked as completed$/, { timeout: 2000000 }, async function () {
         await this.taskList.confirmCostProcessingTimeCompleted();
     });
 
-    this.defineStep(/^Give Contact Details is marked as completed$/, { timeout: 60000 }, async function () {
+    this.defineStep(/^Give Contact Details is marked as completed$/, { timeout: 2000000 }, async function () {
         await this.taskList.giveContactDetailsCompleted();
     });
 
-    this.defineStep(/^Give Invoicing Details is marked as completed$/, { timeout: 60000 }, async function () {
+    this.defineStep(/^Give Invoicing Details is marked as completed$/, { timeout: 2000000 }, async function () {
         await this.taskList.giveInvoicingDetailsCompleted();
     });
 
-    this.defineStep(/^Give Company Details is marked as completed$/, { timeout: 60000 }, async function () {
+    this.defineStep(/^Give Company Details is marked as completed$/, { timeout: 2000000 }, async function () {
         await this.taskList.giveCompanyDetailsCompleted();
     });
 
 
-    this.defineStep(/^Confirm you can meet the rules is marked as completed$/, { timeout: 60000 }, async function () {
+    this.defineStep(/^Confirm you can meet the rules is marked as completed$/, { timeout: 2000000 }, async function () {
         await this.taskList.confirmRulesCompleted();
     });
 
-    this.defineStep(/^Confirm confidentiality needs is marked as completed$/, { timeout: 60000 }, async function () {
+    this.defineStep(/^Confirm confidentiality needs is marked as completed$/, { timeout: 2000000 }, async function () {
         await this.taskList.confirmConfidentialityCompleted();
     });
 
-    this.defineStep(/^Upload site plan is marked as completed$/, { timeout: 60000 }, async function () {
+    this.defineStep(/^Upload site plan is marked as completed$/, { timeout: 2000000 }, async function () {
         await this.taskList.uploadSitePlanCompleted();
     });
 
-    this.defineStep(/^Upload fire prevention plan is marked as completed$/, { timeout: 60000 }, async function () {
+    this.defineStep(/^Upload fire prevention plan is marked as completed$/, { timeout: 2000000 }, async function () {
         await this.taskList.uploadFirePreventionPlanCompleted();
     });
 
-    this.defineStep(/^Give site name and address is marked as completed$/, { timeout: 60000 }, async function () {
+    this.defineStep(/^Give site name and address is marked as completed$/, { timeout: 2000000 }, async function () {
         await this.taskList.giveSiteNameAddressCompleted();
     });
 
-    this.defineStep(/^I am on the Task list page for "([^"]*)"$/, { timeout: 60000 }, async function (permit) {
+    this.defineStep(/^I am on the Task list page for "([^"]*)"$/, { timeout: 2000000 }, async function (permit) {
         const permitType = await this.taskList.permitTypeText();
         actualtext = await this.taskList.getTextElement(permitType);
         Assert.equal(actualtext, permit);
     });
 
-    this.defineStep(/^I click on the "(.*?)" link$/, { timeout: 60000 }, async function (option) {
+    this.defineStep(/^I click on the "(.*?)" link$/, { timeout: 2000000 }, async function (option) {
         switch (option) {
+            case "Go back to try the payment again":
+                linkText= await this.newApplication.returnURL();
+                await linkText.click();
+                break;
             case "Check cost and processing time":
                 linkText = await this.taskList.checkCostAndProcessingTime();
                 await linkText.click();
@@ -125,14 +129,14 @@ module.exports = function () {
         }
     });
 
-    this.defineStep(/^I should not be able to see "(.*?)" task link$/, { timeout: 60000 }, async function (option) {
+    this.defineStep(/^I should not be able to see "(.*?)" task link$/, { timeout: 2000000 }, async function (option) {
         fieldText = await this.taskList.taskList();
         actualtext = await this.taskList.getTextElement(fieldText);
         const value = actualtext.indexOf(option);
         Assert.notEqual(value, 0, "error message not found Actual:- " + actualtext + "Expected was :-" + option);
     });
 
-    this.defineStep(/^I should be able to see "(.*?)" task link$/, { timeout: 60000 }, async function (option) {
+    this.defineStep(/^I should be able to see "(.*?)" task link$/, { timeout: 2000000 }, async function (option) {
         fieldText = await this.taskList.taskList();
         actualtext = await this.taskList.getTextElement(fieldText);
         const value = actualtext.indexOf(option);

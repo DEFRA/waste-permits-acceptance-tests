@@ -340,10 +340,18 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         And I enter "BS1 5AH" in the uk postcode
         And I enter "URSR2015No17@gmail.com" in the email on the payment screen
         And I submit card details
-        And I am on the "Confirm your payment" page for payment
-        When I click on Confirm payment on the payment page
-        Then I am on the "Application and card payment received" page
+        Then I am on the "Your payment has been declined" page for payment
+        When I click on the "Go back to try the payment again" link
+        Then I am on the "Your card payment failed" page
+        When I select "BACS" payment method
+        When I click on "Continue" button
+        Then I am on the "You have chosen to pay by bank transfer using Bacs" page
+        When I send the application
+        Then I am on the "Application received" page
         And the application id is displayed
+#Note we have disabled these steps as we have production GovPay UK links now for real payments and fake payments have been avoided hence forth        #When I click on Confirm payment on the payment page
+#Then I am on the "Application and card payment received" page
+        #And the application id is displayed
         Then take screenshots
         Examples:
             | Permit         | TasklistTitle                                                                              |
@@ -501,9 +509,18 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         And I enter "BS1 5AH" in the uk postcode
         And I enter "URSR2012No12@gmail.com" in the email on the payment screen
         And I submit card details
-        And I am on the "Confirm your payment" page for payment
-        When I click on Confirm payment on the payment page
-        Then I am on the "Application and card payment received" page
+        Then I am on the "Your payment has been declined" page for payment
+        When I click on the "Go back to try the payment again" link
+        Then I am on the "Your card payment failed" page
+        When I select "BACS" payment method
+        When I click on "Continue" button
+        Then I am on the "You have chosen to pay by bank transfer using Bacs" page
+        When I send the application
+        Then I am on the "Application received" page
+#Note we have disabled these steps as we have production GovPay UK links now for real payments and fake payments have been avoided hence forth        #When I click on Confirm payment on the payment page
+# And I am on the "Confirm your payment" page for payment
+# When I click on Confirm payment on the payment page
+        # Then I am on the "Application and card payment received" page
         And the application id is displayed
         Then take screenshots
         Examples:
@@ -635,10 +652,20 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         And I enter "BS1 5AH" in the uk postcode
         And I enter "URSR2010No4@gmail.com" in the email on the payment screen
         And I submit card details
-        And I am on the "Confirm your payment" page for payment
-        When I click on Confirm payment on the payment page
-        Then I am on the "Application and card payment received" page
+        Then I am on the "Your payment has been declined" page for payment
+        When I click on the "Go back to try the payment again" link
+        Then I am on the "Your card payment failed" page
+        When I select "BACS" payment method
+        When I click on "Continue" button
+        Then I am on the "You have chosen to pay by bank transfer using Bacs" page
+        When I send the application
+        Then I am on the "Application received" page
         And the application id is displayed
+#Note we have disabled these steps as we have production GovPay UK links now for real payments and fake payments have been avoided hence forth        #When I click on Confirm payment on the payment page
+# And I am on the "Confirm your payment" page for payment
+# When I click on Confirm payment on the payment page
+# Then I am on the "Application and card payment received" page
+        # And the application id is displayed
         Then take screenshots
         Examples:
             | Permit        | TasklistTitle                                   |
@@ -986,7 +1013,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         And the application id is displayed
         Then take screenshots
         Examples:
-            | Permit        | TasklistTitle                                                                              |
+            | Permit         | TasklistTitle                                                                                                       |
             | "SR2012 No 10" | "On-farm anaerobic digestion facility using farm wastes only, including use of the resultant biogas - SR2012 No 10" |
 
 
@@ -1127,7 +1154,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         And the application id is displayed
         Then take screenshots
         Examples:
-            | Permit        | TasklistTitle                                                                              |
+            | Permit         | TasklistTitle                                                                                              |
             | "SR2008 No 27" | "Mobile plant for the treatment of soils and contaminated material, substances or products - SR2008 No 27" |
 
 #SR‌-2015-39 Use of waste in a deposit for recovery operation 12
@@ -1259,10 +1286,20 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         And I enter "BS1 5AH" in the uk postcode
         And I enter "URSR2010No4@gmail.com" in the email on the payment screen
         And I submit card details
-        And I am on the "Confirm your payment" page for payment
-        When I click on Confirm payment on the payment page
-        Then I am on the "Application and card payment received" page
+        Then I am on the "Your payment has been declined" page for payment
+        When I click on the "Go back to try the payment again" link
+        Then I am on the "Your card payment failed" page
+        When I select "BACS" payment method
+        When I click on "Continue" button
+        Then I am on the "You have chosen to pay by bank transfer using Bacs" page
+        When I send the application
+        Then I am on the "Application received" page
         And the application id is displayed
+#Note we have disabled these steps as we have production GovPay UK links now for real payments and fake payments have been avoided hence forth        #When I click on Confirm payment on the payment page
+# And I am on the "Confirm your payment" page for payment
+# When I click on Confirm payment on the payment page
+# Then I am on the "Application and card payment received" page
+        # And the application id is displayed
         Then take screenshots
         Examples:
             | Permit        | TasklistTitle                                   |
@@ -1434,7 +1471,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         And the application id is displayed
         Then take screenshots
         Examples:
-            | Permit        | TasklistTitle                                                                              |
+            | Permit        | TasklistTitle                                   |
             | "SR2008 No 9" | "Asbestos waste transfer station - SR2008 No 9" |
 
 #SR‌-2015-4 Household,

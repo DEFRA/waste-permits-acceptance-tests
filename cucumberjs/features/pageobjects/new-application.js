@@ -17,6 +17,10 @@ class NewApplication {
         return this.browser.wait(until.elementLocated(By.className("form-title")), 5 * 20000);
     }
 
+    async returnURL() {
+        return this.browser.wait(until.elementLocated(By.id("return-url")), 5*30000);
+    }
+
     async startApplicationRadio() {
         return this.browser.wait(until.elementLocated(By.id("start-application")), 5 * 20000);
     }

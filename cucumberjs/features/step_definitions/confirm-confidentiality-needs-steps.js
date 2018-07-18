@@ -20,7 +20,7 @@ module.exports = function () {
 
     this.World = World;
 
-    this.defineStep(/^I select "([^"]*)" on confidentiality page$/, { timeout: 60000 }, async function (button) {
+    this.defineStep(/^I select "([^"]*)" on confidentiality page$/, { timeout: 2000000 }, async function (button) {
         switch (button) {
             case "Yes, I want to claim confidentiality for part of my application":
                 const declareRadio = await this.confirmConfidentiality.decalredRadio();
@@ -34,11 +34,11 @@ module.exports = function () {
         }
     });
 
-    this.defineStep(/^I should be able to see the confidentiality declaration text box$/, { timeout: 60000 }, async function () {
+    this.defineStep(/^I should be able to see the confidentiality declaration text box$/, { timeout: 2000000 }, async function () {
        await this.confirmConfidentiality.declarationDetailsText();
     });
 
-    this.defineStep(/^I enter "([^"]*)" in the declaration text box$/, { timeout: 60000 }, async function (text) {
+    this.defineStep(/^I enter "([^"]*)" in the declaration text box$/, { timeout: 2000000 }, async function (text) {
         const declarationText = await this.confirmConfidentiality.declarationDetailsText();
         await declarationText.sendKeys(text);
     });

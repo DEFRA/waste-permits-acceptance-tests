@@ -13,7 +13,7 @@ module.exports = function () {
 
 
     //When I enter "TF3 2BS" in the postcode field
-    this.defineStep(/^I enter "(.*?)" in the "(.*?)" field on the address page$/, { timeout: 60000 }, async function (text, field) {
+    this.defineStep(/^I enter "(.*?)" in the "(.*?)" field on the address page$/, { timeout: 2000000 }, async function (text, field) {
         switch (field) {
             case "Postcode":
                 field = await this.giveInvoicingDetails.postCodeField();
@@ -47,12 +47,12 @@ module.exports = function () {
     });
 
     // And I should be able to see Select Address dropdown
-    this.defineStep(/^I should be able to see Select Address dropdown$/, { timeout: 60000 }, async function () {
+    this.defineStep(/^I should be able to see Select Address dropdown$/, { timeout: 2000000 }, async function () {
         await this.giveInvoicingDetails.selectAddressDropdown();
     });
 
     // When I select "1, DELBURY COURT, DEERCOTE, TELFORD, TF3 2BS" from the address dropdown
-    this.defineStep(/^I select first address from the address dropdown$/, { timeout: 60000 }, async function () {
+    this.defineStep(/^I select first address from the address dropdown$/, { timeout: 2000000 }, async function () {
         const dropdown = await this.giveInvoicingDetails.selectAddressDropdown();
         await dropdown.click();
         const tex = await this.giveInvoicingDetails.selectAddressDropdownText();
@@ -60,7 +60,7 @@ module.exports = function () {
     });
 
 
-    this.defineStep(/^I click on  I can't find address in the link$/, { timeout: 60000 }, async function () {
+    this.defineStep(/^I click on  I can't find address in the link$/, { timeout: 2000000 }, async function () {
         const manAddr = await this.giveInvoicingDetails.manualAddressEntryLink();
         await manAddr.click();
     });

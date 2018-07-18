@@ -410,12 +410,24 @@ Feature: Login Waste Permits Frontend - For Screenshots
         And I enter "BS1 5AH" in the uk postcode
         And I enter "URSR2015No17@gmail.com" in the email on the payment screen
         And I submit card details
-        And I am on the "Confirm your payment" page for payment
-        Then take screenshots GovPay
-        When I click on Confirm payment on the payment page
-        Then I am on the "Application and card payment received" page
+        Then I am on the "Your payment has been declined" page for payment
+         When I click on the "Go back to try the payment again" link
+         Then I am on the "Your card payment failed" page
+         When I select "BACS" payment method
+         Then take screenshots
+        When I click on "Continue" button
+        Then I am on the "You have chosen to pay by bank transfer using Bacs" page
+        When I send the application
+        Then I am on the "Application received" page
         Then take screenshots
         And the application id is displayed
+        #Note we have disabled these steps as we have production GovPay UK links now for real payments and fake payments have been avoided hence forth        #When I click on Confirm payment on the payment page
+        # And I am on the "Confirm your payment" page for payment
+        # Then take screenshots GovPay
+        # When I click on Confirm payment on the payment page
+        # Then I am on the "Application and card payment received" page
+        # Then take screenshots
+        # And the application id is displayed
         Examples:
             | Permit         | TasklistTitle                                                                              |
             | "SR2015 No 17" | "Vehicle storage depollution and dismantling authorised treatment facility - SR2015 No 17" |
