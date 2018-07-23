@@ -136,8 +136,8 @@ Feature: END TO END REGRESSION TEST
         And I click on "Continue" button
         Then I am on the "What is the postcode for the site?" page
         When I enter "BS10 6DS" in the "Postcode" field on the address page
-        And I click on "Find Address" button
-        Then I am on the "What is the site address?" page
+#        And I click on "Find Address" button
+#        Then I am on the "What is the site address?" page
         When I click on  I can't find address in the link
         Then I am on the "Enter the site address" page
         When I enter "221b" in the "Building Number" field on the address page
@@ -169,23 +169,23 @@ Feature: END TO END REGRESSION TEST
         Then I am on the "Check your answers" page
         When I click on "Continue" button
         Then I am on the "How do you want to pay?" page
-        When I select "Card" payment method
-        When I click on "Continue" button
-        Then I am on the "Enter card details" page for payment
-        When I enter "4242424242424242" in the card number
-        And I enter "01" in Expiry month
-        And I enter "22" in the Expiry year
-        And I enter "UR Test" in the cardholders name
-        And I enter "111" in the security code
-        And I enter "UR Test Address ln1" in card address line 1
-        And I enter "UR Test Address ln2" in card address line 2
-        And I enter "Bristol" in the address City
-        And I enter "BS1 5AH" in the uk postcode
-        And I enter "amruta.bendre@gmail.com" in the email on the payment screen
-        And I submit card details
-        Then I am on the "Your payment has been declined" page for payment
-         When I click on the "Go back to try the payment again" link
-         Then I am on the "Your card payment failed" page
+#        When I select "Card" payment method
+#        When I click on "Continue" button
+#        Then I am on the "Enter card details" page for payment
+#        When I enter "4242424242424242" in the card number
+#        And I enter "01" in Expiry month
+#        And I enter "22" in the Expiry year
+#        And I enter "UR Test" in the cardholders name
+#        And I enter "111" in the security code
+#        And I enter "UR Test Address ln1" in card address line 1
+#        And I enter "UR Test Address ln2" in card address line 2
+#        And I enter "Bristol" in the address City
+#        And I enter "BS1 5AH" in the uk postcode
+#        And I enter "amruta.bendre@gmail.com" in the email on the payment screen
+#        And I submit card details
+#        Then I am on the "Your payment has been declined" page for payment
+#         When I click on the "Go back to try the payment again" link
+#         Then I am on the "Your card payment failed" page
          When I select "BACS" payment method
         When I click on "Continue" button
         Then I am on the "You have chosen to pay by bank transfer using Bacs" page
