@@ -41,8 +41,8 @@ Feature:  WE-832 GIVE SITE NAME AND LOCATION PAGE
         And I click on "Continue" button
         Then I am on the "What is the postcode for the site?" page
         When I enter "TF3 2BS" in the "Postcode" field on the address page
-        And I click on "Find Address" button
-        Then I am on the "What is the site address?" page
+#        And I click on "Find Address" button
+#        Then I am on the "What is the site address?" page
         And I should be able to see Select Address dropdown
         When I click on "Continue" button
         When I select first address from the address dropdown
@@ -64,8 +64,8 @@ Feature:  WE-832 GIVE SITE NAME AND LOCATION PAGE
         And I click on "Continue" button
         Then I am on the "What is the postcode for the site?" page
         When I enter "BS10 6DS" in the "Postcode" field on the address page
-        And I click on "Find Address" button
-        Then I am on the "What is the site address?" page
+#        And I click on "Find Address" button
+#        Then I am on the "What is the site address?" page
         When I click on  I can't find address in the link
         Then I am on the "Enter the site address" page
         When I enter "221b" in the "Building Number" field on the address page

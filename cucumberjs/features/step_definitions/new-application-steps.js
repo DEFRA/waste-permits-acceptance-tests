@@ -5,7 +5,7 @@ module.exports = function () {
 
     this.World = World;
 
-    this.defineStep(/^I am on the "(.*?)" page$/, { timeout: 2000000 }, async function (title) {
+    this.defineStep(/^I am on the "(.*?)" page$/, { timeout: 4000000 }, async function (title) {
         //await this.newApplication.waitUntilLoaded(title);
         const titleText = await this.newApplication.waitUntilLoaded(title);
         actualtext = await this.confirmRules.getTextElement(titleText);
