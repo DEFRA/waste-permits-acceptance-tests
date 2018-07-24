@@ -84,8 +84,8 @@ Feature: END TO END REGRESSION TEST
         When I click on the "Give invoicing details" link
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         When I enter "BS10 6DS" in the "Postcode" field on the address page
-        And I click on "Find Address" button
-        Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
+#        And I click on "Find Address" button
+#        Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         When I click on  I can't find address in the link
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         When I enter "6" in the "Building Number" field on the address page
