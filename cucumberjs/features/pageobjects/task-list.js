@@ -13,7 +13,7 @@ class TaskList {
         return this.browser.wait(until.elementLocated(By.xpath(`//span[contains(text(),"Task list:")]`)), 5 * 20000);
     }
 
-    async getTextElement(element) {
+    getTextElement(element) {
         return element.getText();
     }
 

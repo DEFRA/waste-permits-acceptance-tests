@@ -46,7 +46,7 @@ class GiveContactDetails {
         return this.browser.wait(until.elementLocated(By.id("content")), 5*20000);
     }
 
-    async getTextElement(element) {
+    getTextElement(element) {
         return element.getText();
     }
 }
