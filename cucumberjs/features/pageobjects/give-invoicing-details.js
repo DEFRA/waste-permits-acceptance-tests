@@ -26,7 +26,7 @@ class GiveInvoicingDetails {
         return this.browser.wait(until.elementLocated(By.id("change-postcode-link")), 5 * 20000);
     }
 
-    async getTextElement(element) {
+    getTextElement(element) {
         return element.getText();
     }
 

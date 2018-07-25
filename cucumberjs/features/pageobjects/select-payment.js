@@ -11,7 +11,7 @@ class SelectPayment {
 
 
 
-    async getTextElement(element) {
+    getTextElement(element) {
         return element.getText();
     }
 

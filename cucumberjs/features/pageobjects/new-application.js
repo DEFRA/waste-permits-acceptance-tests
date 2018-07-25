@@ -33,7 +33,7 @@ class NewApplication {
         return this.browser.wait(until.elementLocated(By.id("submit-button")), 5 * 8000);
     }
 
-    async getTextElement(element) {
+    getTextElement(element) {
         return element.getText();
     }
 

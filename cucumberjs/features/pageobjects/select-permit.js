@@ -408,7 +408,7 @@ class SelectPermit {
         return element.getAttribute("href");
     }
 
-    async getTextElement(element) {
+    getTextElement(element) {
         return element.getText();
     }
 

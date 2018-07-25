@@ -60,7 +60,7 @@ class GiveCompanyDetails {
         return this.browser.wait(until.elementLocated(By.className("form-title")), 5 * 20000);
     }
 
-    async getTextElement(element) {
+    getTextElement(element) {
         return element.getText();
     }
 

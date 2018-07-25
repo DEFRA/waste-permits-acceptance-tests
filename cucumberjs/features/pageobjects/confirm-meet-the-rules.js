@@ -45,7 +45,7 @@ class ConfirmRules {
         return this.browser.wait(until.elementLocated(By.id("length-of-time-text")), 5 * 20000);
     }
 
-    async getTextElement(element) {
+    getTextElement(element) {
         return element.getText();
     }
        

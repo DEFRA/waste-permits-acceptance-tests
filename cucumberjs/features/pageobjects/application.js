@@ -16,7 +16,7 @@ class Application {
     //     return this.browser.wait(until.elementLocated(By.id("page-heading")), 5 * 20000);
 	// }
 	
-	// async getTextElement(element) {
+	// getTextElement(element) {
     //     return await element.getText();
     // }
 

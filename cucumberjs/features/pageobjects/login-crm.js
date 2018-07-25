@@ -132,7 +132,7 @@ class LoginCRM {
     }
 
     
-    async getTextElement(element) {
+    getTextElement(element) {
         return element.getText();
     }
 
