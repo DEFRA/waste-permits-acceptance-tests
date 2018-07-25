@@ -94,8 +94,8 @@ Feature: Login Waste Permits Frontend - For Screenshots
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         Then take screenshots
         When I enter "TF3 2BS" in the "Postcode" field on the address page
-        And I click on "Find Address" button
-        Then take screenshots
+#        And I click on "Find Address" button
+#        Then take screenshots
         When I click on  I can't find address in the link
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         Then take screenshots
@@ -164,8 +164,8 @@ Feature: Login Waste Permits Frontend - For Screenshots
         Then I am on the "What is the postcode for the site?" page
         Then take screenshots
         When I enter "TF3 2BS" in the "Postcode" field on the address page
-        And I click on "Find Address" button
-        Then take screenshots
+#        And I click on "Find Address" button
+#        Then take screenshots
         When I click on  I can't find address in the link
         Then I am on the "Enter the site address" page
         Then take screenshots
@@ -297,8 +297,8 @@ Feature: Login Waste Permits Frontend - For Screenshots
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         Then take screenshots
         When I enter "TF3 2BS" in the "Postcode" field on the address page
-        And I click on "Find Address" button
-        Then take screenshots
+#        And I click on "Find Address" button
+#        Then take screenshots
         When I click on  I can't find address in the link
         Then I am on the "Where should we send invoices for the annual costs after the permit has been issued?" page
         Then take screenshots
@@ -358,8 +358,8 @@ Feature: Login Waste Permits Frontend - For Screenshots
         Then I am on the "What is the postcode for the site?" page
         Then take screenshots
         When I enter "TF3 2BS" in the "Postcode" field on the address page
-        And I click on "Find Address" button
-        Then take screenshots
+#        And I click on "Find Address" button
+#        Then take screenshots
         When I click on  I can't find address in the link
         Then I am on the "Enter the site address" page
         Then take screenshots
