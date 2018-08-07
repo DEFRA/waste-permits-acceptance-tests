@@ -31,6 +31,14 @@ module.exports = function () {
         Assert.notEqual(value, -1, "error message found Actual:- " + actualtext + "Expected was :-" + message);
       });
 
+      
+      this.defineStep(/^I should be able to see text:"([^"]*)" on GovPay$/, { timeout: 20000000 }, async function (message) {
+        fieldText = await this.giveContactDetails.mainContentGovPay();
+        actualtext = await this.taskList.getTextElement(fieldText);
+        const value = actualtext.indexOf(message);
+        Assert.notEqual(value, -1, "error message found Actual:- " + actualtext + "Expected was :-" + message);
+      });  
+
       this.defineStep(/^I should not be able to see text:"([^"]*)"$/, { timeout: 20000000 }, async function (message) {
         fieldText = await this.giveContactDetails.mainContent();
         actualtext = await this.taskList.getTextElement(fieldText);

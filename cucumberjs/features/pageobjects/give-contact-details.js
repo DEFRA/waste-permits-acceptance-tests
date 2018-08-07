@@ -45,6 +45,10 @@ class GiveContactDetails {
     async mainContent() {
         return this.browser.wait(until.elementLocated(By.id("content")), 5*20000);
     }
+    
+    async mainContentGovPay() {
+        return this.browser.wait(until.elementLocated(By.id("main-content")), 5*20000);
+    }
 
     getTextElement(element) {
         return element.getText();

@@ -14,11 +14,11 @@ class NewApplication {
     }
 
     async waitUntilLoadedGovUK(title) {
-        return this.browser.wait(until.elementLocated(By.className("form-title")), 5 * 20000);
+        return this.browser.wait(until.elementLocated(By.className("govuk-heading-l")), 5 * 20000);
     }
 
     async returnURL() {
-        return this.browser.wait(until.elementLocated(By.id("return-url")), 5*30000);
+        return this.browser.wait(until.elementLocated(By.id("return-url")), 5*3000000);
     }
 
     async startApplicationRadio() {
