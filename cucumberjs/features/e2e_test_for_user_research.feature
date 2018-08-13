@@ -171,7 +171,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         When I send the application
         Then I am on the "Application received" page
         And the application id is displayed
-        Then take screenshots
+        #Then take screenshots
         Examples:
             | Permit         | TasklistTitle                                                                                |
             | "SR2015 No 13" | "Vehicle storage depollution and dismantling (authorised treatment) facility - SR2015 No 13" |
@@ -352,7 +352,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
 #Note we have disabled these steps as we have production GovPay UK links now for real payments and fake payments have been avoided hence forth        #When I click on Confirm payment on the payment page
 #Then I am on the "Application and card payment received" page
         #And the application id is displayed
-        Then take screenshots
+        #Then take screenshots
         Examples:
             | Permit         | TasklistTitle                                                                              |
             | "SR2015 No 17" | "Vehicle storage depollution and dismantling authorised treatment facility - SR2015 No 17" |
@@ -522,7 +522,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
 # When I click on Confirm payment on the payment page
         # Then I am on the "Application and card payment received" page
         And the application id is displayed
-        Then take screenshots
+        #Then take screenshots
         Examples:
             | Permit         | TasklistTitle                                                                                                  |
             | "SR2012 No 12" | "Anaerobic digestion facility including use of the resultant biogas (waste recovery operation) - SR2012 No 12" |
@@ -666,7 +666,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
 # When I click on Confirm payment on the payment page
 # Then I am on the "Application and card payment received" page
         # And the application id is displayed
-        Then take screenshots
+       # Then take screenshots
         Examples:
             | Permit        | TasklistTitle                                   |
             | "SR2010 No 4" | "Mobile plant for land-spreading - SR2010 No 4" |
@@ -843,7 +843,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         When I send the application
         Then I am on the "Application received" page
         And the application id is displayed
-        Then take screenshots
+        #Then take screenshots
         Examples:
             | Permit        | TasklistTitle                                                                              |
             | "SR2015 No 6" | "Household, commercial and industrial waste transfer station with treatment - SR2015 No 6" |
@@ -1011,7 +1011,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         When I send the application
         Then I am on the "Application received" page
         And the application id is displayed
-        Then take screenshots
+        #Then take screenshots
         Examples:
             | Permit         | TasklistTitle                                                                                                       |
             | "SR2012 No 10" | "On-farm anaerobic digestion facility using farm wastes only, including use of the resultant biogas - SR2012 No 10" |
@@ -1152,7 +1152,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         When I send the application
         Then I am on the "Application received" page
         And the application id is displayed
-        Then take screenshots
+       # Then take screenshots
         Examples:
             | Permit         | TasklistTitle                                                                                              |
             | "SR2008 No 27" | "Mobile plant for the treatment of soils and contaminated material, substances or products - SR2008 No 27" |
@@ -1300,7 +1300,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
 # When I click on Confirm payment on the payment page
 # Then I am on the "Application and card payment received" page
         # And the application id is displayed
-        Then take screenshots
+        #Then take screenshots
         Examples:
             | Permit        | TasklistTitle                                   |
             | "SR2010 No 4" | "Mobile plant for land-spreading - SR2010 No 4" |
@@ -1469,7 +1469,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         When I send the application
         Then I am on the "Application received" page
         And the application id is displayed
-        Then take screenshots
+       # Then take screenshots
         Examples:
             | Permit        | TasklistTitle                                   |
             | "SR2008 No 9" | "Asbestos waste transfer station - SR2008 No 9" |
@@ -1645,7 +1645,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         When I send the application
         Then I am on the "Application received" page
         And the application id is displayed
-        Then take screenshots
+       # Then take screenshots
         Examples:
             | Permit        | TasklistTitle                                                               |
             | "SR2015 No 4" | "Household, commercial and industrial waste transfer station - SR2015 No 4" |

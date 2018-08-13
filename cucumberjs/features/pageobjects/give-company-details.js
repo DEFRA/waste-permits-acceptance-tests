@@ -57,7 +57,7 @@ class GiveCompanyDetails {
     }
     
     async getTitleOfThePageGovPay() {
-        return this.browser.wait(until.elementLocated(By.className("form-title")), 5 * 20000);
+        return this.browser.wait(until.elementLocated(By.tagName("h1")), 5 * 20000);
     }
 
     getTextElement(element) {
