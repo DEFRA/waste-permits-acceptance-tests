@@ -352,41 +352,47 @@ Feature: END TO END REGRESSION TEST - PAYMENTS TYPES
                 Then I am on the "Check your answers" page
                 When I click on "Continue" button
                 Then I am on the "How do you want to pay?" page
-                When I select "Card" payment method
-                Then take screenshots GovPay
+# When I select "Card" payment method
+# Then take screenshots GovPay
+# When I click on "Continue" button
+# Then I am on the "Enter card details" page for payment
+# Then take screenshots GovPay
+# And I submit card details
+# And I should be able to see text:"Application charge for a standard rules waste permit: Vehicle storage depollution and dismantling authorised treatment facility SR2015 No 17" on GovPay
+# And I should be able to see text:"£3926.00" on GovPay
+# And I should be able to see text:"The following fields are missing or contain errors" on GovPay
+# And I should be able to see text:"Enter a valid card number" on GovPay
+# And I should be able to see text:"Enter a valid expiry date" on GovPay
+# And I should be able to see text:"Enter a valid name" on GovPay
+# And I should be able to see text:"Enter a valid card security code" on GovPay
+# And I should be able to see text:"Enter a valid building name/number and street" on GovPay
+# And I should be able to see text:"Enter a valid town/city" on GovPay
+# And I should be able to see text:"Enter a valid postcode" on GovPay
+# And I should be able to see text:"Enter a valid email" on GovPay
+# Then take screenshots GovPay
+# When I enter "4242424242424242" in the card number
+# And I enter "01" in Expiry month
+# And I enter "22" in the Expiry year
+# And I enter "UR Test" in the cardholders name
+# And I enter "111" in the security code
+# And I enter "UR Test Address ln1" in card address line 1
+# And I enter "UR Test Address ln2" in card address line 2
+# And I enter "Bristol" in the address City
+# And I enter "BS1 5AH" in the uk postcode
+# And I enter "amruta.bendre@gmail.com" in the email on the payment screen
+# Then take screenshots GovPay
+# And I submit card details
+# And I am on the "Confirm your payment" page for payment
+# When I click on Confirm payment on the payment page
+# Then take screenshots GovPay
+# Then I am on the "Application and card payment received" page
+# Then take screenshots GovPay
+                # And the application id is displayed
+                When I select "BACS" payment method
                 When I click on "Continue" button
-                Then I am on the "Enter card details" page for payment
-                Then take screenshots GovPay
-                And I submit card details
-                And I should be able to see text:"Application charge for a standard rules waste permit: Vehicle storage depollution and dismantling authorised treatment facility SR2015 No 17" on GovPay
-                And I should be able to see text:"£3926.00" on GovPay
-                And I should be able to see text:"The following fields are missing or contain errors" on GovPay
-                And I should be able to see text:"Enter a valid card number" on GovPay
-                And I should be able to see text:"Enter a valid expiry date" on GovPay
-                And I should be able to see text:"Enter a valid name" on GovPay
-                And I should be able to see text:"Enter a valid card security code" on GovPay
-                And I should be able to see text:"Enter a valid building name/number and street" on GovPay
-                And I should be able to see text:"Enter a valid town/city" on GovPay
-                And I should be able to see text:"Enter a valid postcode" on GovPay
-                And I should be able to see text:"Enter a valid email" on GovPay
-                Then take screenshots GovPay
-                When I enter "4242424242424242" in the card number
-                And I enter "01" in Expiry month
-                And I enter "22" in the Expiry year
-                And I enter "UR Test" in the cardholders name
-                And I enter "111" in the security code
-                And I enter "UR Test Address ln1" in card address line 1
-                And I enter "UR Test Address ln2" in card address line 2
-                And I enter "Bristol" in the address City
-                And I enter "BS1 5AH" in the uk postcode
-                And I enter "amruta.bendre@gmail.com" in the email on the payment screen
-                Then take screenshots GovPay
-                And I submit card details
-                And I am on the "Confirm your payment" page for payment
-                When I click on Confirm payment on the payment page
-                Then take screenshots GovPay
-                Then I am on the "Application and card payment received" page
-                Then take screenshots GovPay
+                Then I am on the "You have chosen to pay by bank transfer using Bacs" page
+                When I send the application
+                Then I am on the "Application received" page
                 And the application id is displayed
                 Examples:
                         | Permit         | TasklistTitle                                                                              |
@@ -562,100 +568,105 @@ Feature: END TO END REGRESSION TEST - PAYMENTS TYPES
                 Then I am on the "Check your answers" page
                 When I click on "Continue" button
                 Then I am on the "How do you want to pay?" page
-                When I select "Card" payment method
-                Then take screenshots GovPay
+# When I select "Card" payment method
+# Then take screenshots GovPay
+# When I click on "Continue" button
+# Then I am on the "Enter card details" page for payment
+# And I should be able to see text:"Application charge for a standard rules waste permit: Metal recycling, vehicle storage, depollution and dismantling facility SR2015 No 18" on GovPay
+# And I should be able to see text:"£3926.00" on GovPay
+# When I enter "4000000000000002" in the card number
+# And I enter "01" in Expiry month
+# And I enter "22" in the Expiry year
+# And I enter "UR Test" in the cardholders name
+# And I enter "111" in the security code
+# And I enter "UR Test Address ln1" in card address line 1
+# And I enter "UR Test Address ln2" in card address line 2
+# And I enter "Bristol" in the address City
+# And I enter "BS1 5AH" in the uk postcode
+# And I enter "amruta.bendre@gmail.com" in the email on the payment screen
+# Then take screenshots GovPay
+# And I submit card details
+# Then I am on the "Your payment has been declined" page for payment
+# Then take screenshots GovPay
+# When I click on the "Go back to try the payment again" link
+# Then I am on the "Your card payment failed" page
+# Then take screenshots GovPay
+# When I select "Card" payment method
+# When I click on "Continue" button
+# Then I am on the "Enter card details" page for payment
+# And I should be able to see text:"Application charge for a standard rules waste permit: Metal recycling, vehicle storage, depollution and dismantling facility SR2015 No 18" on GovPay
+# And I should be able to see text:"£3926.00" on GovPay
+# When I enter "6759649826438453" in the card number
+# And I enter "01" in Expiry month
+# And I enter "22" in the Expiry year
+# And I enter "UR Test" in the cardholders name
+# And I enter "111" in the security code
+# And I enter "UR Test Address ln1" in card address line 1
+# And I enter "UR Test Address ln2" in card address line 2
+# And I enter "Bristol" in the address City
+# And I enter "BS1 5AH" in the uk postcode
+# And I enter "amruta.bendre@gmail.com" in the email on the payment screen
+# And I submit card details
+# And I should be able to see text:"Maestro is not supported" on GovPay
+# Then take screenshots GovPay
+# When I enter "4000000000000069" in the card number
+# And I submit card details
+# Then I am on the "Your payment has been declined" page for payment
+# Then take screenshots GovPay
+# When I click on the "Go back to try the payment again" link
+# Then take screenshots GovPay
+# Then I am on the "Your card payment failed" page
+# When I select "Card" payment method
+# Then take screenshots GovPay
+# When I click on "Continue" button
+# Then I am on the "Enter card details" page for payment
+# And I should be able to see text:"Application charge for a standard rules waste permit: Metal recycling, vehicle storage, depollution and dismantling facility SR2015 No 18" on GovPay
+# And I should be able to see text:"£3926.00" on GovPay
+# When I enter "4000000000000119" in the card number
+# And I enter "01" in Expiry month
+# And I enter "22" in the Expiry year
+# And I enter "UR Test" in the cardholders name
+# And I enter "111" in the security code
+# And I enter "UR Test Address ln1" in card address line 1
+# And I enter "UR Test Address ln2" in card address line 2
+# And I enter "Bristol" in the address City
+# And I enter "BS1 5AH" in the uk postcode
+# And I enter "amruta.bendre@gmail.com" in the email on the payment screen
+# Then take screenshots GovPay
+# And I submit card details
+# Then I am on the "Sorry, we’re experiencing technical problems" page for payment
+# Then take screenshots GovPay
+# When I click on the "Go back to try the payment again" link
+# Then I am on the "Your card payment failed" page
+# Then take screenshots GovPay
+# When I select "Card" payment method
+# Then take screenshots GovPay
+# When I click on "Continue" button
+# Then I am on the "Enter card details" page for payment
+# When I enter "4242424242424242" in the card number
+# And I enter "01" in Expiry month
+# And I enter "22" in the Expiry year
+# And I enter "UR Test" in the cardholders name
+# And I enter "111" in the security code
+# And I enter "UR Test Address ln1" in card address line 1
+# And I enter "UR Test Address ln2" in card address line 2
+# And I enter "Bristol" in the address City
+# And I enter "BS1 5AH" in the uk postcode
+# And I enter "amruta.bendre@gmail.com" in the email on the payment screen
+# Then take screenshots GovPay
+# And I submit card details
+# And I am on the "Confirm your payment" page for payment
+# Then take screenshots GovPay
+# When I click on Confirm payment on the payment page
+# Then I am on the "Application and card payment received" page
+# Then take screenshots GovPay
+                # And the application id is displayed
+                When I select "BACS" payment method
                 When I click on "Continue" button
-                Then I am on the "Enter card details" page for payment
-                And I should be able to see text:"Application charge for a standard rules waste permit: Metal recycling, vehicle storage, depollution and dismantling facility SR2015 No 18" on GovPay
-                And I should be able to see text:"£3926.00" on GovPay
-                When I enter "4000000000000002" in the card number
-                And I enter "01" in Expiry month
-                And I enter "22" in the Expiry year
-                And I enter "UR Test" in the cardholders name
-                And I enter "111" in the security code
-                And I enter "UR Test Address ln1" in card address line 1
-                And I enter "UR Test Address ln2" in card address line 2
-                And I enter "Bristol" in the address City
-                And I enter "BS1 5AH" in the uk postcode
-                And I enter "amruta.bendre@gmail.com" in the email on the payment screen
-                Then take screenshots GovPay
-                And I submit card details
-                Then I am on the "Your payment has been declined" page for payment
-                Then take screenshots GovPay
-                When I click on the "Go back to try the payment again" link
-                Then I am on the "Your card payment failed" page
-                Then take screenshots GovPay
-                When I select "Card" payment method
-                When I click on "Continue" button
-                Then I am on the "Enter card details" page for payment
-                And I should be able to see text:"Application charge for a standard rules waste permit: Metal recycling, vehicle storage, depollution and dismantling facility SR2015 No 18" on GovPay
-                And I should be able to see text:"£3926.00" on GovPay
-                When I enter "6759649826438453" in the card number
-                And I enter "01" in Expiry month
-                And I enter "22" in the Expiry year
-                And I enter "UR Test" in the cardholders name
-                And I enter "111" in the security code
-                And I enter "UR Test Address ln1" in card address line 1
-                And I enter "UR Test Address ln2" in card address line 2
-                And I enter "Bristol" in the address City
-                And I enter "BS1 5AH" in the uk postcode
-                And I enter "amruta.bendre@gmail.com" in the email on the payment screen
-                And I submit card details
-                And I should be able to see text:"Maestro is not supported" on GovPay
-                Then take screenshots GovPay
-                When I enter "4000000000000069" in the card number
-                And I submit card details
-                Then I am on the "Your payment has been declined" page for payment
-                Then take screenshots GovPay
-                When I click on the "Go back to try the payment again" link
-                Then take screenshots GovPay
-                Then I am on the "Your card payment failed" page
-                When I select "Card" payment method
-                Then take screenshots GovPay
-                When I click on "Continue" button
-                Then I am on the "Enter card details" page for payment
-                And I should be able to see text:"Application charge for a standard rules waste permit: Metal recycling, vehicle storage, depollution and dismantling facility SR2015 No 18" on GovPay
-                And I should be able to see text:"£3926.00" on GovPay
-                When I enter "4000000000000119" in the card number
-                And I enter "01" in Expiry month
-                And I enter "22" in the Expiry year
-                And I enter "UR Test" in the cardholders name
-                And I enter "111" in the security code
-                And I enter "UR Test Address ln1" in card address line 1
-                And I enter "UR Test Address ln2" in card address line 2
-                And I enter "Bristol" in the address City
-                And I enter "BS1 5AH" in the uk postcode
-                And I enter "amruta.bendre@gmail.com" in the email on the payment screen
-                Then take screenshots GovPay
-                And I submit card details
-                Then I am on the "Sorry, we’re experiencing technical problems" page for payment
-                Then take screenshots GovPay
-                When I click on the "Go back to try the payment again" link
-                Then I am on the "Your card payment failed" page
-                Then take screenshots GovPay
-                When I select "Card" payment method
-                Then take screenshots GovPay
-                When I click on "Continue" button
-                Then I am on the "Enter card details" page for payment
-                When I enter "4242424242424242" in the card number
-                And I enter "01" in Expiry month
-                And I enter "22" in the Expiry year
-                And I enter "UR Test" in the cardholders name
-                And I enter "111" in the security code
-                And I enter "UR Test Address ln1" in card address line 1
-                And I enter "UR Test Address ln2" in card address line 2
-                And I enter "Bristol" in the address City
-                And I enter "BS1 5AH" in the uk postcode
-                And I enter "amruta.bendre@gmail.com" in the email on the payment screen
-                Then take screenshots GovPay
-                And I submit card details
-                And I am on the "Confirm your payment" page for payment
-                Then take screenshots GovPay
-                When I click on Confirm payment on the payment page
-                Then I am on the "Application and card payment received" page
-                Then take screenshots GovPay
+                Then I am on the "You have chosen to pay by bank transfer using Bacs" page
+                When I send the application
+                Then I am on the "Application received" page
                 And the application id is displayed
-
                 Examples:
                         | Permit         | TasklistTitle                                                                           |
                         | "SR2015 No 18" | "Metal recycling, vehicle storage, depollution and dismantling facility - SR2015 No 18" |
