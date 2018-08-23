@@ -42,7 +42,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         And the Company number should be "06919623"
         And I should be able to see "Enter a different number" link
         And the Company name should be "UR LTD"
-        And the Company address should be "25 South Road, Saffron Walden, Essex, CB11 3DG"
+        And the Company address should be "Visit Http://Www.Buy-This-Company-Name.Co.Uk, 25 South Road, Saffron Walden, Essex, United Kingdom, CB11 3DG"
         And I should be able to see "That’s not our registered office address" link
         And I should be able to see "We use a different trading name" field
         When I click on "We use a different trading name" field
@@ -222,7 +222,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         And the Company number should be "06919623"
         And I should be able to see "Enter a different number" link
         And the Company name should be "UR LTD"
-        And the Company address should be "25 South Road, Saffron Walden, Essex, CB11 3DG"
+        And the Company address should be "Visit Http://Www.Buy-This-Company-Name.Co.Uk, 25 South Road, Saffron Walden, Essex, United Kingdom, CB11 3DG"
         And I click on "Continue" button
         Then I am on the "What is the director's date of birth?" page
         And the director "1" name should be "Sebastian Douglas Leonard CLARK"
@@ -398,7 +398,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         And the Company number should be "06919623"
         And I should be able to see "Enter a different number" link
         And the Company name should be "UR LTD"
-        And the Company address should be "25 South Road, Saffron Walden, Essex, CB11 3DG"
+        And the Company address should be "Visit Http://Www.Buy-This-Company-Name.Co.Uk, 25 South Road, Saffron Walden, Essex, United Kingdom, CB11 3DG"
         And I click on "Continue" button
         Then I am on the "What is the director's date of birth?" page
         And the director "1" name should be "Sebastian Douglas Leonard CLARK"
@@ -567,7 +567,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         And the Company number should be "06919623"
         And I should be able to see "Enter a different number" link
         And the Company name should be "UR LTD"
-        And the Company address should be "25 South Road, Saffron Walden, Essex, CB11 3DG"
+        And the Company address should be "Visit Http://Www.Buy-This-Company-Name.Co.Uk, 25 South Road, Saffron Walden, Essex, United Kingdom, CB11 3DG"
         And I click on "Continue" button
         Then I am on the "What is the director's date of birth?" page
         And the director "1" name should be "Sebastian Douglas Leonard CLARK"
@@ -717,7 +717,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         And the Company number should be "06919623"
         And I should be able to see "Enter a different number" link
         And the Company name should be "UR LTD"
-        And the Company address should be "25 South Road, Saffron Walden, Essex, CB11 3DG"
+        And the Company address should be "Visit Http://Www.Buy-This-Company-Name.Co.Uk, 25 South Road, Saffron Walden, Essex, United Kingdom, CB11 3DG"
         And I should be able to see "That’s not our registered office address" link
         And I should be able to see "We use a different trading name" field
         When I click on "We use a different trading name" field
@@ -893,7 +893,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         And the Company number should be "06919623"
         And I should be able to see "Enter a different number" link
         And the Company name should be "UR LTD"
-        And the Company address should be "25 South Road, Saffron Walden, Essex, CB11 3DG"
+        And the Company address should be "Visit Http://Www.Buy-This-Company-Name.Co.Uk, 25 South Road, Saffron Walden, Essex, United Kingdom, CB11 3DG"
         And I should be able to see "That’s not our registered office address" link
         And I should be able to see "We use a different trading name" field
         When I click on "We use a different trading name" field
@@ -1062,7 +1062,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         And the Company number should be "06919623"
         And I should be able to see "Enter a different number" link
         And the Company name should be "UR LTD"
-        And the Company address should be "25 South Road, Saffron Walden, Essex, CB11 3DG"
+        And the Company address should be "Visit Http://Www.Buy-This-Company-Name.Co.Uk, 25 South Road, Saffron Walden, Essex, United Kingdom, CB11 3DG"
         And I should be able to see "That’s not our registered office address" link
         And I should be able to see "We use a different trading name" field
         When I click on "We use a different trading name" field
@@ -1201,7 +1201,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         And the Company number should be "06919623"
         And I should be able to see "Enter a different number" link
         And the Company name should be "UR LTD"
-        And the Company address should be "25 South Road, Saffron Walden, Essex, CB11 3DG"
+        And the Company address should be "Visit Http://Www.Buy-This-Company-Name.Co.Uk, 25 South Road, Saffron Walden, Essex, United Kingdom, CB11 3DG"
         And I click on "Continue" button
         Then I am on the "What is the director's date of birth?" page
         And the director "1" name should be "Sebastian Douglas Leonard CLARK"
@@ -1351,7 +1351,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         And the Company number should be "06919623"
         And I should be able to see "Enter a different number" link
         And the Company name should be "UR LTD"
-        And the Company address should be "25 South Road, Saffron Walden, Essex, CB11 3DG"
+        And the Company address should be "Visit Http://Www.Buy-This-Company-Name.Co.Uk, 25 South Road, Saffron Walden, Essex, United Kingdom, CB11 3DG"
         And I should be able to see "That’s not our registered office address" link
         And I should be able to see "We use a different trading name" field
         When I click on "We use a different trading name" field
@@ -1519,7 +1519,7 @@ Feature: Login Waste Permits Frontend - For User Research Testing
         And the Company number should be "06919623"
         And I should be able to see "Enter a different number" link
         And the Company name should be "UR LTD"
-        And the Company address should be "25 South Road, Saffron Walden, Essex, CB11 3DG"
+        And the Company address should be "Visit Http://Www.Buy-This-Company-Name.Co.Uk, 25 South Road, Saffron Walden, Essex, United Kingdom, CB11 3DG"
         And I should be able to see "That’s not our registered office address" link
         And I should be able to see "We use a different trading name" field
         When I click on "We use a different trading name" field
